@@ -1,6 +1,9 @@
 ## UKB-KG Construction
 To facilitate monitoring of intermediate outputs, the pipeline is modularized into multiple sequential steps.
 
+### LLM Settings
+Please configure your OpenAI `base_url` and `api_key` in `llm/openai_chat.py`. We provide functions for calling GPT-5 series models, supporting both structured and unstructured outputs.
+
 ### Triple Extraction
 From text:
 - Extract Triples: `extract_from_text/01_extract.sh`
@@ -26,3 +29,5 @@ From table:
 ### Baseline Extraction
 - Select tables containing study cohort demographics: `extract_from_table/02_select_tables.sh` (Skip if already executed during triple extraction.)
 - Extract baseline information: `extract_from_table/03_extract_from_tables.sh` with `MODE='baseline'`.
+
+Note that some minor manual processing may be required during the workflow if needed (e.g., merging triples extracted from text and tables).
