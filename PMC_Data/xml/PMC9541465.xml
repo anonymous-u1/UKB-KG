@@ -1,0 +1,1071 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" id="gepi22449" xml:lang="en" article-type="research-article"><?properties open_access?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Genet Epidemiol</journal-id><journal-id journal-id-type="iso-abbrev">Genet Epidemiol</journal-id><journal-id journal-id-type="doi">10.1002/(ISSN)1098-2272</journal-id><journal-id journal-id-type="publisher-id">GEPI</journal-id><journal-title-group><journal-title>Genetic Epidemiology</journal-title></journal-title-group><issn pub-type="ppub">0741-0395</issn><issn pub-type="epub">1098-2272</issn><publisher><publisher-name>John Wiley and Sons Inc.</publisher-name><publisher-loc>Hoboken</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">35438196</article-id><article-id pub-id-type="pmc">PMC9541465</article-id><article-id pub-id-type="doi">10.1002/gepi.22449</article-id><article-id pub-id-type="publisher-id">GEPI22449</article-id><article-categories><subj-group subj-group-type="overline"><subject>Research Article</subject></subj-group><subj-group subj-group-type="heading"><subject>Research Articles</subject></subj-group></article-categories><title-group><article-title>Exploring polygenic&#x02010;environment and residual&#x02010;environment interactions for depressive symptoms within the UK Biobank</article-title><alt-title alt-title-type="left-running-head">GILLETT <sc>et al.</sc>
+</alt-title></title-group><contrib-group><contrib id="gepi22449-cr-0001" contrib-type="author" corresp="yes"><name><surname>Gillett</surname><given-names>Alexandra C.</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">http://orcid.org/0000-0002-5069-3197</contrib-id><xref rid="gepi22449-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="gepi22449-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref><address><email>alexandra.a.gillett@kcl.ac.uk</email></address></contrib><contrib id="gepi22449-cr-0002" contrib-type="author"><name><surname>Jermy</surname><given-names>Bradley S.</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">http://orcid.org/0000-0002-3188-9581</contrib-id><xref rid="gepi22449-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="gepi22449-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="gepi22449-cr-0003" contrib-type="author"><name><surname>Lee</surname><given-names>Sang Hong</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">http://orcid.org/0000-0001-9701-2718</contrib-id><xref rid="gepi22449-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref><xref rid="gepi22449-aff-0004" ref-type="aff">
+<sup>4</sup>
+</xref></contrib><contrib id="gepi22449-cr-0004" contrib-type="author"><name><surname>Pain</surname><given-names>Oliver</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">http://orcid.org/0000-0001-5680-3281</contrib-id><xref rid="gepi22449-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="gepi22449-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="gepi22449-cr-0005" contrib-type="author"><name><surname>Howard</surname><given-names>David M.</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">http://orcid.org/0000-0002-6005-1972</contrib-id><xref rid="gepi22449-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="gepi22449-aff-0005" ref-type="aff">
+<sup>5</sup>
+</xref></contrib><contrib id="gepi22449-cr-0006" contrib-type="author"><name><surname>Hagenaars</surname><given-names>Saskia P.</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">http://orcid.org/0000-0001-9697-8596</contrib-id><xref rid="gepi22449-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="gepi22449-cr-0007" contrib-type="author"><name><surname>Hanscombe</surname><given-names>Ken B.</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">http://orcid.org/0000-0002-3715-6805</contrib-id><xref rid="gepi22449-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="gepi22449-cr-0008" contrib-type="author"><name><surname>Coleman</surname><given-names>Jonathan R. I.</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">http://orcid.org/0000-0002-6759-0944</contrib-id><xref rid="gepi22449-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="gepi22449-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="gepi22449-cr-0009" contrib-type="author"><name><surname>Lewis</surname><given-names>Cathryn M.</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">http://orcid.org/0000-0002-8249-8476</contrib-id><xref rid="gepi22449-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="gepi22449-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref><xref rid="gepi22449-aff-0006" ref-type="aff">
+<sup>6</sup>
+</xref></contrib></contrib-group><aff id="gepi22449-aff-0001">
+<label>
+<sup>1</sup>
+</label>
+<named-content content-type="organisation-division">Social, Genetic and Developmental Psychiatry Centre, Institute of Psychiatry, Psychology and Neuroscience</named-content>
+<institution>King's College London</institution>
+<city>London</city>
+<country country="GB">UK</country>
+</aff><aff id="gepi22449-aff-0002">
+<label>
+<sup>2</sup>
+</label>
+<named-content content-type="organisation-division">NIHR Maudsley Biomedical Research Centre</named-content>
+<institution>South London and Maudsley NHS Trust</institution>
+<city>London</city>
+<country country="GB">UK</country>
+</aff><aff id="gepi22449-aff-0003">
+<label>
+<sup>3</sup>
+</label>
+<named-content content-type="organisation-division">Australian Centre for Precision Health</named-content>
+<institution>University of South Australia</institution>
+<named-content content-type="country-part">SA</named-content>
+<city>Adelaide</city>
+<country country="AU">Australia</country>
+</aff><aff id="gepi22449-aff-0004">
+<label>
+<sup>4</sup>
+</label>
+<named-content content-type="organisation-division">UniSA Allied Health and Human Performance</named-content>
+<institution>University of South Australia</institution>
+<city>Adelaide</city>
+<named-content content-type="country-part">SA</named-content>
+<country country="AU">Australia</country>
+</aff><aff id="gepi22449-aff-0005">
+<label>
+<sup>5</sup>
+</label>
+<named-content content-type="organisation-division">Division of Psychiatry, Royal Edinburgh Hospital</named-content>
+<institution>University of Edinburgh</institution>
+<city>Edinburgh</city>
+<country country="GB">UK</country>
+</aff><aff id="gepi22449-aff-0006">
+<label>
+<sup>6</sup>
+</label>
+<named-content content-type="organisation-division">Department of Medical and Molecular Genetics, Faculty of Life Sciences and Medicine</named-content>
+<institution>King's College London</institution>
+<city>London</city>
+<country country="GB">UK</country>
+</aff><author-notes><corresp id="correspondenceTo">
+<label>*</label>
+<bold>Correspondence</bold> Alexandra Gillett, Social, Genetic and Developmental Psychiatry Centre Institute of Psychiatry, Psychology and Neuroscience, PO80, De Crespigny Park, Denmark Hill, London SE5 8AF, UK.<break/>
+Email: <email>alexandra.a.gillett@kcl.ac.uk</email>
+<break/>
+</corresp></author-notes><pub-date pub-type="epub"><day>19</day><month>4</month><year>2022</year></pub-date><pub-date pub-type="ppub"><season>Jul-Sep</season><year>2022</year></pub-date><volume>46</volume><issue seq="20">5-6</issue><issue-id pub-id-type="doi">10.1002/gepi.v46.5-6</issue-id><fpage>219</fpage><lpage>233</lpage><history>
+<date date-type="rev-recd"><day>04</day><month>2</month><year>2022</year></date>
+<date date-type="received"><day>06</day><month>8</month><year>2021</year></date>
+<date date-type="accepted"><day>15</day><month>3</month><year>2022</year></date>
+</history><permissions><!--&#x000a9; 2022 Wiley Periodicals LLC.--><copyright-statement content-type="article-copyright">&#x000a9; 2022 The Authors. <italic toggle="yes">Genetic Epidemiology</italic> published by Wiley Periodicals LLC.</copyright-statement><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article under the terms of the <ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri content-type="pdf" xlink:href="file:GEPI-46-219.pdf"/><abstract><title>Abstract</title><p>Substantial advances have been made in identifying genetic contributions to depression, but little is known about how the effect of genes can be modulated by the environment, creating a gene&#x02013;environment interaction. Using multivariate reaction norm models (MRNMs) within the UK Biobank (<italic toggle="yes">N</italic>&#x02009;=&#x02009;61294&#x02013;91644), we investigate whether the polygenic and residual variance components of depressive symptoms are modulated by 17 a priori selected covariate traits&#x02014;12 environmental variables and 5 biomarkers. MRNMs, a mixed&#x02010;effects modelling approach, provide unbiased polygenic&#x02013;covariate interaction estimates for a quantitative trait by controlling for outcome&#x02010;covariate correlations and residual&#x02013;covariate interactions. A continuous depressive symptom variable was the outcome in 17 MRNMs&#x02014;one for each covariate trait. Each MRNM had a fixed&#x02010;effects model (fixed effects included the covariate trait, demographic variables, and principal components) and a random effects model (where polygenic&#x02013;covariate and residual&#x02013;covariate interactions are modelled). Of the 17 selected covariates, 11 significantly modulate deviations in depressive symptoms through the modelled interactions, but no single interaction explains a large proportion of phenotypic variation. Results are dominated by residual&#x02013;covariate interactions, suggesting that covariate traits (including neuroticism, childhood trauma, and BMI) typically interact with unmodelled variables, rather than a genome&#x02010;wide polygenic component, to influence depressive symptoms. Only average sleep duration has a polygenic&#x02013;covariate interaction explaining a demonstrably nonzero proportion of the variability in depressive symptoms. This effect is small, accounting for only 1.22% (95% confidence interval: [0.54, 1.89]) of variation. The presence of an interaction highlights a specific focus for intervention, but the negative results here indicate a limited contribution from polygenic&#x02013;environment interactions.</p></abstract><kwd-group><kwd id="gepi22449-kwd-0001">genotype&#x02013;environment interaction</kwd><kwd id="gepi22449-kwd-0002">depressive symptoms</kwd><kwd id="gepi22449-kwd-0003">multivariate reaction norm model</kwd><kwd id="gepi22449-kwd-0004">residual&#x02013;environment interaction</kwd></kwd-group><funding-group><award-group id="funding-0001"><funding-source>NIHR Biomedical Research Centre at South London and Maudsley NHS Foundation Trust and King's College London</funding-source></award-group><award-group id="funding-0002"><funding-source>Medical Research Council</funding-source><award-id>MR/N015746/1</award-id><award-id>MR/S0151132</award-id></award-group><award-group id="funding-0003"><funding-source>Sir Henry Wellcome Postdoctoral Fellowship</funding-source><award-id>213674/Z/18/Z</award-id></award-group><award-group id="funding-0004"><funding-source>Brain and Behavior Research Foundation</funding-source><award-id>27404</award-id></award-group><award-group id="funding-0005"><funding-source>Maudsley Charity</funding-source><award-id>980</award-id></award-group><award-group id="funding-0006"><funding-source>Guy's and St Thomas' Charity</funding-source><award-id>TR130505</award-id></award-group></funding-group><counts><fig-count count="3"/><table-count count="1"/><page-count count="15"/><word-count count="9525"/></counts><custom-meta-group><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>July-September 2022</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_JATSPMC version:6.2.0 mode:remove_FC converted:07.10.2022</meta-value></custom-meta></custom-meta-group></article-meta><notes><p content-type="self-citation">
+<mixed-citation publication-type="journal" id="gepi22449-cit-0065">
+<string-name>
+<surname>Gillett</surname>, <given-names>A. C.</given-names>
+</string-name>, <string-name>
+<surname>Jermy</surname>, <given-names>B. S.</given-names>
+</string-name>, <string-name>
+<surname>Lee</surname>, <given-names>S. H.</given-names>
+</string-name>, <string-name>
+<surname>Pain</surname>, <given-names>O.</given-names>
+</string-name>, <string-name>
+<surname>Howard</surname>, <given-names>D. M.</given-names>
+</string-name>, <string-name>
+<surname>Hagenaars</surname>, <given-names>S. P.</given-names>
+</string-name>, <string-name>
+<surname>Hanscombe</surname>, <given-names>K. B.</given-names>
+</string-name>, <string-name>
+<surname>Coleman</surname>, <given-names>J. R. I.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Lewis</surname>, <given-names>C. M.</given-names>
+</string-name> (<year>2022</year>). <article-title>Exploring polygenic&#x02010;environment and residual&#x02010;environment interactions for depressive symptoms within the UK Biobank</article-title>. <source>Genetic Epidemiology</source>, <volume>46</volume>, <fpage>219</fpage>&#x02013;<lpage>233</lpage>. <pub-id pub-id-type="doi">10.1002/gepi.22449</pub-id>
+<pub-id pub-id-type="pmid">35438196</pub-id></mixed-citation>
+</p></notes></front><body><sec id="gepi22449-sec-0020"><label>1</label><title>INTRODUCTION</title><p>Major depressive disorder (MDD) is a common and debilitating mental disorder that is the second leading cause of years lived with disability worldwide (Vos et al.,&#x000a0;<xref rid="gepi22449-bib-0012" ref-type="bibr">2020</xref>). It has a lifetime prevalence of 17.8% in global populations (Vos et al.,&#x000a0;<xref rid="gepi22449-bib-0058" ref-type="bibr">2016</xref>). The core symptoms of depression are persistent low mood and anhedonia, with other diagnostic signs and symptoms including changes in cognition, appetite, or sleep, and feelings of fatigue and worthlessness. The heritability of MDD is lower than many other psychiatric disorders, estimated at between 30% and 40%, with higher values for severe cases (Kendall et al.,&#x000a0;<xref rid="gepi22449-bib-0030" ref-type="bibr">2021</xref>). This lower heritability suggests that a substantial proportion of liability to depression is due to environmental risk factors.</p><p>Genome&#x02010;wide association studies (GWAS) have made progress in identifying variants associated with MDD, with 178 loci now identified and single nucleotide polymorphism (SNP)&#x02010;heritability estimates ranging between 5.5% and 11.2%, depending on the depression definition used (Levey et al.,&#x000a0;<xref rid="gepi22449-bib-0037" ref-type="bibr">2021</xref>). The difference between pedigree and SNP&#x02010;heritability estimates may indicate a role for additional sources of genetic&#x02010;related variation, such as gene&#x02013;environment (G&#x02013;E) interactions. Identifying G&#x02013;E interactions would provide insight into the biological mechanisms of depression, improve the accuracy of heritability estimates, and path the way to individualised preventative healthcare (Hunter,&#x000a0;<xref rid="gepi22449-bib-0025" ref-type="bibr">2005</xref>). Genetic studies have used a wide range of definitions of MDD, from diagnosis in clinical studies, to self&#x02010;report of a diagnosis with depression, to reported presence of depressive symptoms. These criteria show a strong common genetic overlap, with pairwise genetic correlations of at least 0.7 for most MDD definitions (Jermy et al.,&#x000a0;<xref rid="gepi22449-bib-0028" ref-type="bibr">2020</xref>; Levey et al.,&#x000a0;<xref rid="gepi22449-bib-0037" ref-type="bibr">2021</xref>). We have previously shown that a continuous measure of depression, based on factor analysis of questionnaire responses in the general population effectively captures the polygenic component of depression (Jermy et al.,&#x000a0;<xref rid="gepi22449-bib-0028" ref-type="bibr">2020</xref>).</p><p>As noted above, a substantial component of the liability to depression arises from nongenetic factors. Stressful life events and exposure to trauma provide the strongest risks, with smoking, obesity, body mass index (BMI) and exercise also associated with depression (Coleman et al.,&#x000a0;<xref rid="gepi22449-bib-0013" ref-type="bibr">2020</xref>; Gianfredi, et al.,&#x000a0;<xref rid="gepi22449-bib-0023" ref-type="bibr">2020</xref>; Luppino et al.,&#x000a0;<xref rid="gepi22449-bib-0038" ref-type="bibr">2010</xref>). The interaction between these risk factors and the genetic predisposition to depression has been largely uninvestigated. Performing studies to disentangle the genetic and environmental contributions to complex traits such as depression is challenging. The environmental variables potentially have a genetic component, and these traits may also be genetically correlated with depression (Wray et al.,&#x000a0;<xref rid="gepi22449-bib-0061" ref-type="bibr">2018</xref>). Causation might be multidirectional, with depression risk increased as a consequence of a risk factor, or a risk factor being observed because a healthy lifestyle is more challenging to maintain during a depressive episode. Further, depression may influence the reporting of risk factor status, for example, retrospective reporting of trauma differs from prospective reporting (Baldwin et al.,&#x000a0;<xref rid="gepi22449-bib-0005" ref-type="bibr">2019</xref>). These complexities make testing for G&#x02013;E interactions challenging, as highlighted by studies investigating an interaction between polygenic risk scores (PRSs) for depression and reported childhood trauma. Early investigations identified an interaction (Mullins et al.,&#x000a0;<xref rid="gepi22449-bib-0040" ref-type="bibr">2016</xref>; Peyrot et al.,&#x000a0;<xref rid="gepi22449-bib-0047" ref-type="bibr">2014</xref>), but a larger study in the Psychiatric Genomics Consortium (PGC) found no evidence for departure from additive contribution to risk of depression (Peyrot et al.,&#x000a0;<xref rid="gepi22449-bib-0046" ref-type="bibr">2018</xref>).</p><p>In this paper, we model a continuous measure of depressive symptoms and explore genome&#x02010;wide genotype&#x02013;covariate (G&#x02013;C) and residual&#x02013;covariate (R&#x02013;C) interactions for 17 covariate traits, including environmental risk factors. A significant G&#x02013;C interaction means that the additive genetic component for symptoms of depression (G), which has been estimated internal to the data, varies with respect to a covariate trait (C) (Xuan et al.,&#x000a0;<xref rid="gepi22449-bib-0062" ref-type="bibr">2020</xref>). This can be thought of as a polygenic&#x02013;covariate interaction (Dahl et al.,&#x000a0;<xref rid="gepi22449-bib-0016" ref-type="bibr">2020</xref>). A significant R&#x02013;C interaction means that the variation observed in symptoms of depression is modulated by the covariate trait, but in a manner not specified by the model; hence it is a residual interaction. We analyse 17 measured traits in UK Biobank (UKB) including BMI and related body composition traits, exercise measures, smoking, neuroticism, sleep duration, childhood trauma, Townsend deprivation index (TDI) and biomarkers. The interactions are modelled in a reaction norm (RN) analysis using mtg2 software (Lee &#x00026; van der Werf,&#x000a0;<xref rid="gepi22449-bib-0034" ref-type="bibr">2016</xref>) which tests whether individual differences in the genetic and residual effects are modulated by another risk factor. The multivariate reaction norm model (MRNM) uses covariance functions to model interactions between high&#x02010;dimensional sets of genetic variants and an environmental covariate while controlling for trait correlations. It is useful when it is not feasible to investigate interactions variant by variant due to dimensionality (Jarqu&#x000ed;n et al.,&#x000a0;<xref rid="gepi22449-bib-0027" ref-type="bibr">2014</xref>), and has higher power compared to single variant interaction tests for polygenic traits (Dahl et al.,&#x000a0;<xref rid="gepi22449-bib-0016" ref-type="bibr">2020</xref>). This statistical framework allows us to robustly investigate the role of these factors in modulating the polygenic, and residual, effects on depression symptoms.</p></sec><sec sec-type="methods" id="gepi22449-sec-0030"><label>2</label><title>METHODS</title><sec id="gepi22449-sec-0040"><label>2.1</label><title>UK Biobank (UKB)</title><p>Analysis was performed using the UKB, a health study of over 500,000 UK participants who were recruited in mid&#x02010;life (40&#x02013;69 years old) between 2006 and 2010 (Sudlow et al.,&#x000a0;<xref rid="gepi22449-bib-0056" ref-type="bibr">2015</xref>). Detailed information on health and lifestyle are available from self&#x02010;report at baseline, when biological samples for genetic analysis and biomarker testing were also taken. A follow&#x02010;up Mental Health Questionnaire (MHQ), completed online by 157,339 participants in 2016, collected information on a wide range of lifetime psychiatric diagnoses and current depression symptoms (Davis et al.,&#x000a0;<xref rid="gepi22449-bib-0018" ref-type="bibr">2020</xref>).</p></sec><sec id="gepi22449-sec-0050"><label>2.2</label><title>Outcome trait</title><p>An outcome trait measuring depression symptoms was derived from the MHQ assessment of depressive symptoms over the last 2 weeks, which are drawn from the PHQ&#x02010;9 and correspond to the Diagnostic and Statistical Manual of Mental Disorders criteria for MDD. This trait, which we call depSympt, was constructed via a hierarchical model by Jermy et al. (<xref rid="gepi22449-bib-0028" ref-type="bibr">2020</xref>) using MHQ depression&#x02010;related symptom data. It summarises symptoms related to mood, anxiety, subjective well&#x02010;being, psychomotor cognitive factors, and neuro&#x02010;vegetative factors. A summary of depSympt and its construction can be found in the Supporting Information (Supplementary Materials (SM) section 1.1), with full information given in Jermy et al. (<xref rid="gepi22449-bib-0028" ref-type="bibr">2020</xref>).</p><p>The SNP&#x02010;based heritability of depSympt is 8.5% (95% confidence interval [CI]: [7.7, 9.2]), which is comparable to the SNP&#x02010;based heritability of depression, where estimates range from 5.5% to 11.2% depending on the definition of depression used (Levey et al.,&#x000a0;<xref rid="gepi22449-bib-0037" ref-type="bibr">2021</xref>). Additionally, depSympt is strongly associated with lifetime MDD status, defined using the Composite International Diagnostic Interview Short Form, where it explains 11% of the variation in liability to MDD (Jermy et al.,&#x000a0;<xref rid="gepi22449-bib-0028" ref-type="bibr">2020</xref>). On average, prevalent MDD cases have higher depSympt values compared to controls, showing that ever having had depression is associated with increased current depressive symptoms compared to never having had depression (Figure&#x000a0;<xref rid="gepi22449-suppl-0001" ref-type="supplementary-material">S2</xref>). Permutation tests (used as depSympt is nonnormal) showed highly significant differences between both mean and median depSympt values in MDD cases and controls (<mml:math id="jats-math-1"><mml:mrow><mml:mrow><mml:mi>p</mml:mi><mml:mo>&#x0003c;</mml:mo><mml:mn>1</mml:mn><mml:mi mathvariant="normal">E</mml:mi><mml:mo>&#x02212;</mml:mo><mml:mn>315</mml:mn></mml:mrow></mml:mrow></mml:math>).</p></sec><sec id="gepi22449-sec-0060"><label>2.3</label><title>Covariate traits</title><p>Seventeen environmental and biomarker covariate traits were selected, based on previous associations with MDD phenotypes and availability in UKB. Body composition was represented by BMI, waist&#x02010;to&#x02010;hip ratio, and waist circumference. Exercise variables used the metabolic equivalent task (MET) scores based on the International Physical Activity Questionnaire, which assesses the frequency, intensity, and duration of exercise in three categories: walking, moderate exercise, and vigorous exercise. Four variables of summed MET minutes per week were analysed: all activities (MET total), and the separate categories of walking (MET walk), moderate exercise (MET mod), and vigorous exercise (MET vig). Other covariate traits from the baseline assessment were TDI, average sleep duration (sleep), neuroticism score, and pack years of smoking (smoking). Five biomarkers of low&#x02010;density lipoprotein (LDL) cholesterol, high&#x02010;density lipoprotein (HDL) cholesterol, triglycerides, C&#x02010;reactive protein (CRP) and vitamin D were analysed. All biomarkers except for LDL were log&#x02010;transformed (see SM section 1.2). From the MHQ, a continuous variable summarising reported childhood trauma was analysed (Pitharouli et al.,&#x000a0;<xref rid="gepi22449-bib-0048" ref-type="bibr">2021</xref>). All covariates were from the baseline UKB assessment, except reported childhood trauma, which was collected in the MHQ.</p></sec><sec id="gepi22449-sec-0070"><label>2.4</label><title>Genetic data</title><p>Autosomal genotype data underwent a centralised quality control procedure described by Bycroft et al. (<xref rid="gepi22449-bib-0008" ref-type="bibr">2018</xref>) before imputation. We then selected HapMap3 SNPs from the imputed UKB genetic data (Ni et al.,&#x000a0;<xref rid="gepi22449-bib-0042" ref-type="bibr">2019</xref>; Xuan et al.,&#x000a0;<xref rid="gepi22449-bib-0062" ref-type="bibr">2020</xref>), and further removed variants with a minor allele frequency &#x0003c;0.01, an information score (used to index the quality of genotype imputation) &#x0003c;0.7 and completeness &#x0003c;95% (Coleman et al.,&#x000a0;<xref rid="gepi22449-bib-0014" ref-type="bibr">2016</xref>).</p><p>Quality control for participants followed procedures detailed by Coleman et al. (<xref rid="gepi22449-bib-0013" ref-type="bibr">2020</xref>). Briefly, analysis was limited to unrelated individuals of European ancestry who had completed the online MHQ, had a call rate of &#x0003e;98% for genotyped SNPs and for whom genetic sex&#x02010;matched self&#x02010;reported sex. Additionally, individuals were removed for unusual levels of missingness or heterozygosity where recommended by the UKB core analysis team, or if they had withdrawn consent for analysis. After quality control, 126,522 participants were retained. This reduced to 119,692 after omitting individuals missing the outcome trait, depSympt (Jermy et al.,&#x000a0;<xref rid="gepi22449-bib-0028" ref-type="bibr">2020</xref>). From the 1,118,287 SNPs retained, genetic relationship matrices (GRMs) were created using Plink version 1.9 for use in the interaction models (Chang et al.,&#x000a0;<xref rid="gepi22449-bib-0010" ref-type="bibr">2015</xref>; Yang et al.,&#x000a0;<xref rid="gepi22449-bib-0063" ref-type="bibr">2011</xref>).</p></sec><sec id="gepi22449-sec-0080"><label>2.5</label><title>Statistical analysis</title><p>Interaction analysis was performed using a mixed&#x02010;effects model called the MRNM (Ni et al.,&#x000a0;<xref rid="gepi22449-bib-0042" ref-type="bibr">2019</xref>), which includes two interaction types (polygenic and residual) as random effects and adjusts for genetic and residual correlations between the outcome and covariate traits. In the sections that follow we provide a broad overview of the MRNM and detail its application in this study, with Figure&#x000a0;<xref rid="gepi22449-fig-0001" ref-type="fig">1</xref> summarising our approach within the UKB. A detailed description of the MRNM is provided in SM section 1.3.</p><fig position="float" fig-type="Figure" id="gepi22449-fig-0001"><label>Figure 1</label><caption><p>Methods flowchart for UK Biobank: participant exclusion, analysis groupings and scheme for interaction analysis. FEM, fixed effects model; LRT, likelihood ratio test; REM, random effects model; G&#x02013;C, genotype&#x02010;covariate; MRNM, multivariate reaction norm model; R&#x02013;C, residual&#x02010;covariate; <mml:math id="jats-math-2"><mml:mrow><mml:mrow><mml:msub><mml:mi>N</mml:mi><mml:mtext mathvariant="italic">ik</mml:mtext></mml:msub></mml:mrow></mml:mrow></mml:math>, sample size for analysis group <italic toggle="yes">i</italic>, subgroup <mml:math id="jats-math-3"><mml:mrow><mml:mrow><mml:mi>k</mml:mi></mml:mrow></mml:mrow></mml:math>; <mml:math id="jats-math-4"><mml:mrow><mml:mrow><mml:msub><mml:munder accentunder="true"><mml:mi mathvariant="italic">C</mml:mi><mml:mo mathvariant="italic">&#x000af;</mml:mo></mml:munder><mml:mtext mathvariant="italic">ij</mml:mtext></mml:msub></mml:mrow></mml:mrow></mml:math> (<mml:math id="jats-math-5"><mml:mrow><mml:mrow><mml:msub><mml:munder accentunder="true"><mml:mi mathvariant="italic">C</mml:mi><mml:mo mathvariant="italic">&#x000af;</mml:mo></mml:munder><mml:mtext mathvariant="italic">ijk</mml:mtext></mml:msub></mml:mrow></mml:mrow></mml:math>), vector of length <mml:math id="jats-math-6"><mml:mrow><mml:mrow><mml:msub><mml:mi>N</mml:mi><mml:mi mathvariant="italic">i</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math> (<mml:math id="jats-math-7"><mml:mrow><mml:mrow><mml:msub><mml:mi>N</mml:mi><mml:mtext mathvariant="italic">ijk</mml:mtext></mml:msub></mml:mrow></mml:mrow></mml:math>) containing the <mml:math id="jats-math-8"><mml:mrow><mml:mrow><mml:mi>j</mml:mi><mml:mi>th</mml:mi></mml:mrow></mml:mrow></mml:math> standardised residual covariate trait from analysis group <mml:math id="jats-math-9"><mml:mrow><mml:mrow><mml:mi>i</mml:mi></mml:mrow></mml:mrow></mml:math> (and subgroup <mml:math id="jats-math-10"><mml:mrow><mml:mrow><mml:mi>k</mml:mi></mml:mrow></mml:mrow></mml:math>); <mml:math id="jats-math-11"><mml:mrow><mml:mrow><mml:msub><mml:munder accentunder="true"><mml:mi mathvariant="italic">Y</mml:mi><mml:mo mathvariant="italic">&#x000af;</mml:mo></mml:munder><mml:mtext mathvariant="italic">ij</mml:mtext></mml:msub></mml:mrow></mml:mrow></mml:math> (<mml:math id="jats-math-12"><mml:mrow><mml:mrow><mml:msub><mml:munder accentunder="true"><mml:mi mathvariant="italic">Y</mml:mi><mml:mo mathvariant="italic">&#x000af;</mml:mo></mml:munder><mml:mtext mathvariant="italic">ijk</mml:mtext></mml:msub></mml:mrow></mml:mrow></mml:math>), vector of length <mml:math id="jats-math-13"><mml:mrow><mml:mrow><mml:msub><mml:mi>N</mml:mi><mml:mi mathvariant="italic">i</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math> (<mml:math id="jats-math-14"><mml:mrow><mml:mrow><mml:msub><mml:mi>N</mml:mi><mml:mtext mathvariant="italic">ik</mml:mtext></mml:msub></mml:mrow></mml:mrow></mml:math>) containing the standardised residual outcome trait for interaction analysis with <mml:math id="jats-math-15"><mml:mrow><mml:mrow><mml:msub><mml:munder accentunder="true"><mml:mi mathvariant="italic">C</mml:mi><mml:mo mathvariant="italic">&#x000af;</mml:mo></mml:munder><mml:mtext mathvariant="italic">ij</mml:mtext></mml:msub></mml:mrow></mml:mrow></mml:math> (<mml:math id="jats-math-16"><mml:mrow><mml:mrow><mml:msub><mml:munder accentunder="true"><mml:mi mathvariant="italic">C</mml:mi><mml:mo mathvariant="italic">&#x000af;</mml:mo></mml:munder><mml:mtext mathvariant="italic">ijk</mml:mtext></mml:msub></mml:mrow></mml:mrow></mml:math>); <mml:math id="jats-math-17"><mml:mrow><mml:mrow><mml:msub><mml:munder accentunder="true"><mml:mi>&#x003b1;</mml:mi><mml:mo>&#x000af;</mml:mo></mml:munder><mml:mrow><mml:mn>0</mml:mn><mml:mo mathvariant="italic">,</mml:mo><mml:mtext mathvariant="italic">ijk</mml:mtext></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math> (<mml:math id="jats-math-18"><mml:mrow><mml:mrow><mml:msub><mml:munder accentunder="true"><mml:mi mathvariant="italic">&#x003b2;</mml:mi><mml:mo mathvariant="italic">&#x000af;</mml:mo></mml:munder><mml:mrow><mml:mn>0</mml:mn><mml:mo mathvariant="italic">,</mml:mo><mml:mtext mathvariant="italic">ijk</mml:mtext></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math>), random effects vector of length <mml:math id="jats-math-19"><mml:mrow><mml:mrow><mml:msub><mml:mi>N</mml:mi><mml:mtext mathvariant="italic">ik</mml:mtext></mml:msub></mml:mrow></mml:mrow></mml:math> representing the contribution to the outcome (covariate) trait for each individual from the homogeneous polygenic component; <mml:math id="jats-math-20"><mml:mrow><mml:mrow><mml:msub><mml:munder accentunder="true"><mml:mi>&#x003c4;</mml:mi><mml:mo>&#x000af;</mml:mo></mml:munder><mml:mrow><mml:mn>0</mml:mn><mml:mo>,</mml:mo><mml:mtext mathvariant="italic">ijk</mml:mtext></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math> (<mml:math id="jats-math-21"><mml:mrow><mml:mrow><mml:msub><mml:munder accentunder="true"><mml:mi>&#x003b5;</mml:mi><mml:mo>&#x000af;</mml:mo></mml:munder><mml:mrow><mml:mn>0</mml:mn><mml:mo>,</mml:mo><mml:mtext mathvariant="italic">ijk</mml:mtext></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math>), random effects vector of length <mml:math id="jats-math-22"><mml:mrow><mml:mrow><mml:msub><mml:mi>N</mml:mi><mml:mtext mathvariant="italic">ik</mml:mtext></mml:msub></mml:mrow></mml:mrow></mml:math> representing the contribution to the outcome (covariate) trait for each individual from the homogeneous residual component; <mml:math id="jats-math-23"><mml:mrow><mml:mrow><mml:msub><mml:munder accentunder="true"><mml:mi>&#x003b1;</mml:mi><mml:mo>&#x000af;</mml:mo></mml:munder><mml:mrow><mml:mn>1</mml:mn><mml:mo mathvariant="italic">,</mml:mo><mml:mtext mathvariant="italic">ijk</mml:mtext></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math> (<mml:math id="jats-math-24"><mml:mrow><mml:mrow><mml:msub><mml:munder accentunder="true"><mml:mi>&#x003c4;</mml:mi><mml:mo>&#x000af;</mml:mo></mml:munder><mml:mrow><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mtext mathvariant="italic">ijk</mml:mtext></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math>), random effects vector of length <mml:math id="jats-math-25"><mml:mrow><mml:mrow><mml:msub><mml:mi>N</mml:mi><mml:mtext mathvariant="italic">ik</mml:mtext></mml:msub></mml:mrow></mml:mrow></mml:math> representing the contribution to the outcome trait for each individual due to G&#x02013;C (R&#x02013;C) interaction</p></caption><graphic xlink:href="GEPI-46-219-g003" position="anchor" id="jats-graphic-1"/></fig></sec><sec id="gepi22449-sec-0090"><label>2.6</label><title>Model overview</title><p>A RN is a genotype&#x02010;specific function describing the relationship between an outcome and a covariate trait. Interactions are indicated by nonparallel RNs which produce a relationship between the variability of outcome and the covariate within a population. The MRNM looks for evidence of interactions by estimating the trend in outcome variability across the covariate trait and decomposing this into an additive genetic variance component and a residual variance component using estimated genetic similarities from genome&#x02010;wide SNP data within a random&#x02010;effects model (Jarqu&#x000ed;n et al.,&#x000a0;<xref rid="gepi22449-bib-0027" ref-type="bibr">2014</xref>; Ni et al.,&#x000a0;<xref rid="gepi22449-bib-0042" ref-type="bibr">2019</xref>; Schaeffer,&#x000a0;<xref rid="gepi22449-bib-0053" ref-type="bibr">2004</xref>). Genetic similarity here is defined using the GRM. We refer to the additive genetic variance component as the polygenic component.</p><p>The MRNM is an extension of bivariate genome&#x02010;wide genomic restricted maximum likelihood (bivariate&#x02010;GREML) (Lee et al.,&#x000a0;<xref rid="gepi22449-bib-0035" ref-type="bibr">2012</xref>; Yang et al.,&#x000a0;<xref rid="gepi22449-bib-0063" ref-type="bibr">2011</xref>) that focuses on estimating a genome&#x02010;wide G&#x02013;E interaction. Bivariate&#x02010;GREML estimates the genome&#x02010;wide SNP heritability for two traits and their genetic correlation via a bivariate mixed model that includes polygenic random effects for each trait. The MRNM extends this such that the SNP heritability of one trait, which we call the outcome trait, can vary with respect to the second trait, which we call the covariate trait. The MRNM can therefore estimate the proportion of variability in outcome attributable to a genome&#x02010;wide G&#x02013;C interaction, while controlling for genetic correlation between the outcome and covariate traits.</p><p>This bivariate mixed model approach (for investigating the modulation of the polygenic effects on the outcome trait from a covariate trait) is the simplest MRNM. In theory, the MRNM can incorporate multiple covariate traits, and so multiple G&#x02013;C interactions, for the outcome trait via a multivariate mixed model. However, the computational burden increases with the number of covariates included (see Ni et al.,&#x000a0;<xref rid="gepi22449-bib-0042" ref-type="bibr">2019</xref>) and for this study, we only consider the bivariate case.</p><p>The MRNM used here has two modelling stages. First, in the fixed effects model, linear regression is used to estimate the expected value of a trait using a set of variables (fixed effects) selected for inclusion (e.g., genotype batch to adjust for possible confounding). This is done for both the outcome trait (here, depSympt) and the covariate traits (see SM section 1.2). Second, using a bivariate random effects model, the standardised residual variation in outcome (<mml:math id="jats-math-26"><mml:mrow><mml:mrow><mml:mi>Y</mml:mi></mml:mrow></mml:mrow></mml:math>) and the covariate trait (<mml:math id="jats-math-27"><mml:mrow><mml:mrow><mml:mi>C</mml:mi></mml:mrow></mml:mrow></mml:math>), not explained by their respective fixed effects models, is partitioned into polygenic and residual random components. For the outcome trait, these polygenic and residual random effects can be a function of <mml:math id="jats-math-28"><mml:mrow><mml:mrow><mml:mi>C</mml:mi></mml:mrow></mml:mrow></mml:math>, allowing heterogeneity of the polygenic and residual variance components for <mml:math id="jats-math-29"><mml:mrow><mml:mrow><mml:mi>Y</mml:mi></mml:mrow></mml:mrow></mml:math> across <mml:math id="jats-math-30"><mml:mrow><mml:mrow><mml:mi>C</mml:mi></mml:mrow></mml:mrow></mml:math>, thereby incorporating G&#x02013;C and R&#x02013;C interactions into the model. This random effects model can be written as follows:
+<disp-formula id="gepi22449-disp-0001">
+<label>(1)</label>
+<mml:math id="jats-math-31" display="block"><mml:mrow><mml:mrow><mml:mfenced open="[" close="]"><mml:mtable displaystyle="false"><mml:mtr><mml:mtd><mml:msub><mml:mi>Y</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>|</mml:mo><mml:msub><mml:mi>C</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:msub><mml:mi>c</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:msub><mml:mi>C</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mtd></mml:mtr></mml:mtable></mml:mfenced><mml:mo>=</mml:mo><mml:mfenced open="[" close="]"><mml:mtable displaystyle="false"><mml:mtr><mml:mtd><mml:msub><mml:mi>&#x003b1;</mml:mi><mml:mrow><mml:mn>0</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mi>&#x003b1;</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:msub><mml:mi>c</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:msub><mml:mi>&#x003b2;</mml:mi><mml:mrow><mml:mn>0</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub></mml:mtd></mml:mtr></mml:mtable></mml:mfenced><mml:mo>+</mml:mo><mml:mfenced open="[" close="]"><mml:mtable displaystyle="false"><mml:mtr><mml:mtd><mml:msub><mml:mi>&#x003c4;</mml:mi><mml:mrow><mml:mn>0</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mi>&#x003c4;</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub><mml:msub><mml:mi>c</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mtd></mml:mtr><mml:mtr><mml:mtd><mml:msub><mml:mi>&#x003b5;</mml:mi><mml:mrow><mml:mn>0</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub></mml:mtd></mml:mtr></mml:mtable></mml:mfenced></mml:mrow></mml:mrow></mml:math>
+</disp-formula>where for an individual <mml:math id="jats-math-32"><mml:mrow><mml:mrow><mml:mi>i</mml:mi></mml:mrow></mml:mrow></mml:math>: (1) <mml:math id="jats-math-33"><mml:mrow><mml:mrow><mml:msub><mml:mi>&#x003b1;</mml:mi><mml:mrow><mml:mn>0</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math> (<mml:math id="jats-math-34"><mml:mrow><mml:mrow><mml:msub><mml:mi>&#x003b2;</mml:mi><mml:mrow><mml:mn>0</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math>) is a random effect defining the random polygenic intercept for <mml:math id="jats-math-35"><mml:mrow><mml:mrow><mml:msub><mml:mi>Y</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math> (<mml:math id="jats-math-36"><mml:mrow><mml:mrow><mml:msub><mml:mi>C</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math>), (2) <mml:math id="jats-math-37"><mml:mrow><mml:mrow><mml:msub><mml:mi>&#x003c4;</mml:mi><mml:mrow><mml:mn>0</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math> (<mml:math id="jats-math-38"><mml:mrow><mml:mrow><mml:msub><mml:mi>&#x003b5;</mml:mi><mml:mrow><mml:mn>0</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math>) is a random effect defining the random residual intercept for <mml:math id="jats-math-39"><mml:mrow><mml:mrow><mml:msub><mml:mi>Y</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math> (<mml:math id="jats-math-40"><mml:mrow><mml:mrow><mml:msub><mml:mi>C</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math>), (3) <mml:math id="jats-math-41"><mml:mrow><mml:mrow><mml:msub><mml:mi>&#x003b1;</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math> is a random effect capturing the interaction of the polygenic component for <mml:math id="jats-math-42"><mml:mrow><mml:mrow><mml:msub><mml:mi>Y</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math> with <mml:math id="jats-math-43"><mml:mrow><mml:mrow><mml:msub><mml:mi>C</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math> (the G&#x02013;C interaction/polygenic&#x02010;covariate interaction), and 4. <mml:math id="jats-math-44"><mml:mrow><mml:mrow><mml:msub><mml:mi>&#x003c4;</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mi>i</mml:mi></mml:mrow></mml:msub></mml:mrow></mml:mrow></mml:math> is a random effect capturing the trend in the phenotypic variability of <mml:math id="jats-math-45"><mml:mrow><mml:mrow><mml:msub><mml:mi>Y</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math> across <mml:math id="jats-math-46"><mml:mrow><mml:mrow><mml:msub><mml:mi>C</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math> that is not explained by the measured genetic variables (the R&#x02013;C interaction, which can be thought of as covariate&#x02010;specific noise). These random effects are random variables, characterised by a population multivariate normal distribution with mean zero, and a covariance matrix requiring estimation. The MRNM is therefore parameterised by estimating the covariance matrix between the random effects, which represent sources of (co)variation for <mml:math id="jats-math-47"><mml:mrow><mml:mrow><mml:mi>Y</mml:mi></mml:mrow></mml:mrow></mml:math> and <mml:math id="jats-math-48"><mml:mrow><mml:mrow><mml:mi>C</mml:mi></mml:mrow></mml:mrow></mml:math> within the population (see SM equation 5). Genetic (residual) correlation between the two traits is included in the model by estimating the covariance parameters between the genetic (residual) random effects for <mml:math id="jats-math-49"><mml:mrow><mml:mrow><mml:mi>Y</mml:mi></mml:mrow></mml:mrow></mml:math> and for <mml:math id="jats-math-50"><mml:mrow><mml:mrow><mml:mi>C</mml:mi></mml:mrow></mml:mrow></mml:math>. This is an advantage of the MRNM because not accounting for trait correlations can lead to inflation in the strength of the interactions (Ni et al.,&#x000a0;<xref rid="gepi22449-bib-0042" ref-type="bibr">2019</xref>). Unlike bivariate&#x02010;GREML, where estimation of the shared additive genetic variation between two traits is the primary motivation, here it is the G&#x02013;C (R&#x02013;C) interaction that is of interest, with correlations viewed as parameters to be controlled for. Within the MRNM, the effect of a G&#x02013;C (R&#x02013;C) interaction on the outcome trait is measured by the proportion of variability in outcome explained by the G&#x02013;C (R&#x02013;C) interaction. Using Equation (<xref rid="gepi22449-disp-0001" ref-type="disp-formula">1</xref>), the marginalised variance for <mml:math id="jats-math-51"><mml:mrow><mml:mrow><mml:msub><mml:mi>Y</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:mrow></mml:math> is:
+<disp-formula id="gepi22449-disp-0002">
+<label>(2)</label>
+<mml:math id="jats-math-52" display="block"><mml:mrow><mml:mrow><mml:mi mathvariant="italic">Var</mml:mi><mml:mrow><mml:mo stretchy="false">[</mml:mo><mml:msub><mml:mi>Y</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo stretchy="false">]</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:msubsup><mml:mi>&#x003c3;</mml:mi><mml:msub><mml:mi>&#x003b1;</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mn>2</mml:mn></mml:msubsup><mml:mo>+</mml:mo><mml:msubsup><mml:mi>&#x003c3;</mml:mi><mml:msub><mml:mi>&#x003b1;</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mn>2</mml:mn></mml:msubsup><mml:mo>+</mml:mo><mml:msubsup><mml:mi>&#x003c3;</mml:mi><mml:msub><mml:mi>&#x003c4;</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mn>2</mml:mn></mml:msubsup><mml:mo>+</mml:mo><mml:msubsup><mml:mi>&#x003c3;</mml:mi><mml:msub><mml:mi>&#x003c4;</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mn>2</mml:mn></mml:msubsup><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:mrow></mml:math>
+</disp-formula>
+</p><p>for all individuals in the population, where the proportion of variability in outcome is attributable to four components: the polygenic components that are invariant to <mml:math id="jats-math-53"><mml:mrow><mml:mrow><mml:mi>C</mml:mi></mml:mrow></mml:mrow></mml:math>, <mml:math id="jats-math-54"><mml:mrow><mml:mrow><mml:msubsup><mml:mi>&#x003c3;</mml:mi><mml:msub><mml:mi>&#x003b1;</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:mrow></mml:math>, and that vary across <mml:math id="jats-math-55"><mml:mrow><mml:mrow><mml:mi>C</mml:mi></mml:mrow></mml:mrow></mml:math>, <mml:math id="jats-math-56"><mml:mrow><mml:mrow><mml:msubsup><mml:mi>&#x003c3;</mml:mi><mml:msub><mml:mi>&#x003b1;</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:mrow></mml:math>, then the residual components that are homogeneous across <mml:math id="jats-math-57"><mml:mrow><mml:mrow><mml:mi>C</mml:mi></mml:mrow></mml:mrow></mml:math>, <mml:math id="jats-math-58"><mml:mrow><mml:mrow><mml:msubsup><mml:mi>&#x003c3;</mml:mi><mml:msub><mml:mi>&#x003c4;</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:mrow></mml:math> and that vary across <mml:math id="jats-math-59"><mml:mrow><mml:mrow><mml:mi>C</mml:mi></mml:mrow></mml:mrow></mml:math>, <mml:math id="jats-math-60"><mml:mrow><mml:mrow><mml:msubsup><mml:mi>&#x003c3;</mml:mi><mml:msub><mml:mi>&#x003c4;</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:mrow></mml:math>. When significant interactions are identified (see Section&#x000a0;<xref rid="gepi22449-sec-0110" ref-type="sec">2.8</xref>), <mml:math id="jats-math-61"><mml:mrow><mml:mrow><mml:msubsup><mml:mi>&#x003c3;</mml:mi><mml:msub><mml:mi>&#x003b1;</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:mrow></mml:math> and <mml:math id="jats-math-62"><mml:mrow><mml:mrow><mml:msubsup><mml:mi>&#x003c3;</mml:mi><mml:msub><mml:mi>&#x003c4;</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:mrow></mml:math> are used as measures of the importance of the G&#x02013;C and R&#x02013;C interaction effects on the outcome trait within the study population.</p></sec><sec id="gepi22449-sec-0100"><label>2.7</label><title>Phenotype adjustment</title><p>Interactions are assessed for each covariate trait in turn. In the first modelling stage of the MRNM, we adjust depSympt and the covariate trait for fixed effects, using a linear model. Fixed effects included demographic variables (such as year of birth, age, sex, and assessment centre) and population structure using the first 15 principal components. We also adjust for stressful and traumatic events in adulthood, due to their likely impact on depressive symptoms. SM section 1.2 details the complete list of fixed effects variables used for each depSympt&#x02010;covariate trait combination.</p><p>Except for principal components, continuous fixed effects variables were allowed to have a nonlinear relationship with depSympt and the covariate traits by using fractional polynomials (FPs) (Royston &#x00026; Altman,&#x000a0;<xref rid="gepi22449-bib-0052" ref-type="bibr">1994</xref>). We used the mfp package (Benner &#x00026; Ambler,&#x000a0;<xref rid="gepi22449-bib-0006" ref-type="bibr">2015</xref>) within a generalised linear model stats::glm (R Core Team,&#x000a0;<xref rid="gepi22449-bib-0015" ref-type="bibr">2020</xref>).</p><p>After fixed effects adjustment, all traits are standardised to allow comparison of their relative importance in explaining the variability in outcome across interaction models. For depSympt, we can recover the size of an interaction effect on the original, rather than residualised, scale and use the MRNMs to provide an estimate of the proportion of variability in depSympt explained by G&#x02013;C and R&#x02013;C interactions (see SM section 1.4.4).</p><p>Covariate traits were analysed in five groups, each with a different sample size based on the missingness of covariate traits (Figure&#x000a0;<xref rid="gepi22449-fig-0001" ref-type="fig">1</xref>). This addressed the trade&#x02010;off between maximising sample size for each depSympt&#x02010;covariate trait interaction analysis and the computational burden of constructing GRMs for each analysis. The fixed effects models are built using all available data within an analysis group, with sample sizes ranging from 61,294 to 91,644.</p></sec><sec id="gepi22449-sec-0110"><label>2.8</label><title>Identifying interactions</title><p>For each (fixed effects adjusted and standardised) covariate trait, we use MRNMs (Ni et al.,&#x000a0;<xref rid="gepi22449-bib-0042" ref-type="bibr">2019</xref>) to evaluate evidence of interactions explaining a nonzero proportion of the variability in depSympt. Following the approach of Xuan et al.&#x000a0;(<xref rid="gepi22449-bib-0062" ref-type="bibr">2020</xref>), we run a full MRNM, with both G&#x02013;C and R&#x02013;C interactions included as random effects, and a null MRNM with no interactions. A likelihood ratio test (LRT) is then used to compare these models, with a significant LRT Bonferroni&#x02010;corrected <italic toggle="yes">p</italic> value (<mml:math id="jats-math-63"><mml:mrow><mml:mrow><mml:mi>p</mml:mi><mml:mo>&#x0003c;</mml:mo><mml:mn>0.05</mml:mn><mml:mo>/</mml:mo><mml:mn>17</mml:mn><mml:mo>&#x02248;</mml:mo><mml:mn>0.003</mml:mn></mml:mrow></mml:mrow></mml:math>) providing evidence that interactions explain a nonzero proportion of outcome variance.</p><p>This approach assesses the evidence for an overall interaction effect. Simulation studies have shown there is low power to disentangle G&#x02013;C and R&#x02013;C interactions in nested MRNM comparisons (Xuan et al.,&#x000a0;<xref rid="gepi22449-bib-0062" ref-type="bibr">2020</xref>), with biased G&#x02013;C interaction estimates to be expected if unmodelled R&#x02013;C interactions are present (Dahl et al.,&#x000a0;<xref rid="gepi22449-bib-0016" ref-type="bibr">2020</xref>). In contrast, the full MRNM produced unbiased estimates of G&#x02013;C and R&#x02013;C variance components (Ni et al.,&#x000a0;<xref rid="gepi22449-bib-0042" ref-type="bibr">2019</xref>; Xuan et al.,&#x000a0;<xref rid="gepi22449-bib-0062" ref-type="bibr">2020</xref>). For significant covariate traits, we can therefore use variance component estimates from the full model (Equation&#x000a0;<xref rid="gepi22449-disp-0002" ref-type="disp-formula">2</xref>), with 95% confidence intervals, to identify which interaction type, polygenic and/or residual, explain the variability in depSympt.</p><p>MRNMs are computationally demanding. Therefore, to perform interaction analysis for a given covariate trait at biobank scale we randomly divided the available UKB participants into three subgroups. MRNMs were run, using the mtg2 package (Lee &#x00026; van der Werf,&#x000a0;<xref rid="gepi22449-bib-0034" ref-type="bibr">2016</xref>), and compared within each subgroup. Results were then meta&#x02010;analysed using Fisher's method (Evangelou &#x00026; Ioannidis,&#x000a0;<xref rid="gepi22449-bib-0021" ref-type="bibr">2013</xref>), as described in SM section 1.4. Fixed effects adjustment and postmodelling analysis, including creating graphics, was performed using R version 4.0.4. A Bonferroni correction was applied to adjust for multiple testing (giving a significance threshold of <mml:math id="jats-math-64"><mml:mrow><mml:mrow><mml:mrow><mml:mrow><mml:mi>p</mml:mi><mml:mo>=</mml:mo><mml:mn>0.05</mml:mn></mml:mrow><mml:mo>/</mml:mo><mml:mn>17</mml:mn></mml:mrow><mml:mo>&#x02248;</mml:mo><mml:mn>0.003</mml:mn></mml:mrow></mml:mrow></mml:math>). A sensitivity analysis was performed by refitting the MRNMs using a rank&#x02010;based inverse normal transformation (RINT) of depSympt. Applying this transformation can control the type I error rate when the assumption of normality is violated (Ni et al.,&#x000a0;<xref rid="gepi22449-bib-0042" ref-type="bibr">2019</xref>) and loss of signal indicates spurious interaction effects in the untransformed model (Xuan et al.,&#x000a0;<xref rid="gepi22449-bib-0062" ref-type="bibr">2020</xref>). Simulations have shown that parameter estimates from the full model, without applying the RINT, remain unbiased when the normality assumption is violated (Xuan et al.,&#x000a0;<xref rid="gepi22449-bib-0062" ref-type="bibr">2020</xref>). The MRNM without transforming depSympt was therefore used for variance component estimation.</p></sec></sec><sec sec-type="results" id="gepi22449-sec-0120"><label>3</label><title>RESULTS</title><p>Before interaction analysis, linear regression models for the outcome trait, depSympt, with each covariate trait in turn were run (Table&#x000a0;<xref rid="gepi22449-suppl-0001" ref-type="supplementary-material">S7</xref>). With the exception of LDL, all covariate traits considered have a statistically significant main effect (<mml:math id="jats-math-65"><mml:mrow><mml:mrow><mml:mi>p</mml:mi><mml:mo>&#x0003c;</mml:mo><mml:mrow><mml:mn>0.05</mml:mn><mml:mo>/</mml:mo><mml:mn>17</mml:mn></mml:mrow><mml:mo>&#x02248;</mml:mo><mml:mn>0.003</mml:mn></mml:mrow></mml:mrow></mml:math>), providing evidence that expected current symptoms of depression vary with these covariate traits. The effect sizes vary widely, ranging from 0.38% of the variability in depSympt explained by the HDL biomarker, to 21.55% of the variability in depSympt explained by neuroticism score. When FPs are considered, which allow covariate traits to have a nonlinear relationship with the expected value of depSympt, the effect of LDL on expected depSympt also becomes statistically significant, although the proportion of variability in depSympt explained is low (0.04%). The proportion of phenotypic variability in depSympt explained by each covariate trait does not greatly change between the main effects and the FP linear models, with average sleep duration having the largest absolute increase from 0.87% in the main effects model, to 2.24% in the FP model (Table&#x000a0;<xref rid="gepi22449-suppl-0001" ref-type="supplementary-material">S8</xref>).</p><p>Distribution plots of the outcome variable summarising depressive symptoms, depSympt, and each covariate trait (before and after fixed effects adjustment) can be found in Figures&#x000a0;<xref rid="gepi22449-suppl-0001" ref-type="supplementary-material">S3</xref>&#x02013;<xref rid="gepi22449-suppl-0001" ref-type="supplementary-material">S19</xref>, with Table&#x000a0;<xref rid="gepi22449-suppl-0001" ref-type="supplementary-material">S6</xref> presenting the distribution characteristics for the unadjusted traits. Before fixed effects adjustment, the distribution of standardised depSympt is not normally distributed, with evidence of some positive skew (skewness&#x02009;=&#x02009;0.47). Some deviations from normality are still present after fixed effects adjustment, with a median skewness of 0.34, however, we note that deviations from normality for depSympt after fixed effects adjustment does not mean that the normality assumption of the MRNM is violated since this applies to the distribution of outcome conditional on the fixed <italic toggle="yes">and</italic> the random effects models. Some covariate traits, for example, MET total, are highly skewed even after fixed effects adjustment, however, our primary focus is on the variance components for the outcome trait, for which we performed a sensitivity analysis, refitting the MRNMs using the RINT for depSympt to control the type I error rate if the assumption of normality is violated.</p><p>For each of the 17 covariate traits considered, MRNMs with and without interactions were run for depSympt, and evidence of G&#x02013;C and/or R&#x02013;C interactions was assessed using LRTs. A total of 11 of the 17 covariate traits had <italic toggle="yes">p</italic> values below the Bonferroni&#x02010;corrected significance level, which are presented in Table&#x000a0;<xref rid="gepi22449-tbl-0001" ref-type="table">1</xref>. These 11 traits remained significant in the RINT&#x02010;based sensitivity analysis (Table&#x000a0;<xref rid="gepi22449-suppl-0001" ref-type="supplementary-material">S12</xref>), used to check significant results were not due to normality violations, providing evidence for an interaction effect between depSympt and the following variables: neuroticism, childhood trauma, average sleep duration, BMI, waist circumference, smoking, waist&#x02010;to&#x02010;hip ratio, TDI, and summed MET minutes for all activities, for walking and for moderate activities. These results show that, even after adjusting for fixed effects, individual&#x02010;level differences in these covariate traits contribute to variation in depSympt.</p><table-wrap position="float" id="gepi22449-tbl-0001" content-type="Table"><label>Table 1</label><caption><p>Percentage of variation in depSympt<sup>a</sup> attributable to the genotype&#x02010;covariate (G&#x02013;C) interaction and the residual&#x02010;covariate (R&#x02013;C) interaction with 95% confidence intervals (CIs), for covariate traits with significant interaction effects, showing the <italic toggle="yes">p</italic> value for the comparison of the full model to null model, with significance set at <italic toggle="yes">&#x003b1;</italic>&#x02009;=&#x02009;0.05/17&#x02009;<mml:math id="jats-math-66"><mml:mrow><mml:mrow><mml:mo>&#x02248;</mml:mo></mml:mrow></mml:mrow></mml:math>&#x02009;0.003</p></caption><table frame="hsides" rules="groups"><col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><col style="border-right:solid 1px #000000; border-bottom:solid 1px #000000" span="1"/><thead><tr><th rowspan="1" colspan="1"/><th rowspan="1" colspan="1"/><th align="left" colspan="4" style="border-bottom:solid 1px #000000" rowspan="1">Proportion of variability in depSympt<xref rid="gepi22449-tbl1-note-0002" ref-type="table-fn">a</xref>&#x000a0;attributable to</th></tr><tr><th rowspan="1" colspan="1"/><th rowspan="1" colspan="1"/><th align="left" colspan="2" style="border-bottom:solid 1px #000000" rowspan="1">G&#x02013;C interaction (%)</th><th align="left" colspan="2" style="border-bottom:solid 1px #000000" rowspan="1">R&#x02013;C interaction (%)</th></tr><tr style="border-bottom:solid 1px #000000" valign="bottom"><th align="left" valign="bottom" rowspan="1" colspan="1">Covariate</th><th align="left" valign="bottom" rowspan="1" colspan="1">
+<italic toggle="yes">p</italic> value</th><th align="left" valign="bottom" rowspan="1" colspan="1">Estimate</th><th align="left" valign="bottom" rowspan="1" colspan="1">95% CI</th><th align="left" valign="bottom" rowspan="1" colspan="1">Estimate</th><th align="left" valign="bottom" rowspan="1" colspan="1">95% CI</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">Neuroticism</td><td align="char" char="." rowspan="1" colspan="1">5.06E&#x02212;139</td><td align="char" char="." rowspan="1" colspan="1">&#x02212;0.15</td><td align="char" char="[" rowspan="1" colspan="1">[&#x02212;0.76, 0.46]</td><td align="char" char="." rowspan="1" colspan="1">2.58</td><td align="char" char="[" rowspan="1" colspan="1">[&#x02008;&#x02008;1.86, 3.30]</td></tr><tr><td align="left" rowspan="1" colspan="1">Childhood trauma</td><td align="char" char="." rowspan="1" colspan="1">2.59E&#x02212;058</td><td align="char" char="." rowspan="1" colspan="1">0.59</td><td align="char" char="[" rowspan="1" colspan="1">[&#x02212;0.14, 1.32]</td><td align="char" char="." rowspan="1" colspan="1">2.98</td><td align="char" char="[" rowspan="1" colspan="1">[&#x02008;&#x02008;2.18, 3.77]</td></tr><tr><td align="left" rowspan="1" colspan="1">Sleep</td><td align="char" char="." rowspan="1" colspan="1">1.97E&#x02212;041</td><td align="char" char="." rowspan="1" colspan="1">1.22</td><td align="char" char="[" rowspan="1" colspan="1">[&#x02008;&#x02008;0.54, 1.89]</td><td align="char" char="." rowspan="1" colspan="1">2.52</td><td align="char" char="[" rowspan="1" colspan="1">[&#x02008;&#x02008;1.78, 3.27]</td></tr><tr><td align="left" rowspan="1" colspan="1">BMI</td><td align="char" char="." rowspan="1" colspan="1">6.36E&#x02212;018</td><td align="char" char="." rowspan="1" colspan="1">&#x02212;0.23</td><td align="char" char="[" rowspan="1" colspan="1">[&#x02212;0.86, 0.41]</td><td align="char" char="." rowspan="1" colspan="1">1.39</td><td align="char" char="[" rowspan="1" colspan="1">[&#x02008;&#x02008;0.68, 2.09]</td></tr><tr><td align="left" rowspan="1" colspan="1">Waist circumference</td><td align="char" char="." rowspan="1" colspan="1">6.15E&#x02212;016</td><td align="char" char="." rowspan="1" colspan="1">&#x02212;0.15</td><td align="char" char="[" rowspan="1" colspan="1">[&#x02212;0.78, 0.48]</td><td align="char" char="." rowspan="1" colspan="1">1.48</td><td align="char" char="[" rowspan="1" colspan="1">[&#x02008;&#x02008;0.78, 2.19]</td></tr><tr><td align="left" rowspan="1" colspan="1">Smoking</td><td align="char" char="." rowspan="1" colspan="1">2.49E&#x02212;010</td><td align="char" char="." rowspan="1" colspan="1">0.47</td><td align="char" char="[" rowspan="1" colspan="1">[&#x02212;0.52, 1.46]</td><td align="char" char="." rowspan="1" colspan="1">1.57</td><td align="char" char="[" rowspan="1" colspan="1">[&#x02008;&#x02008;0.51, 2.63]</td></tr><tr><td align="left" rowspan="1" colspan="1">Waist&#x02010;to&#x02010;hip ratio</td><td align="char" char="." rowspan="1" colspan="1">4.49E&#x02212;009</td><td align="char" char="." rowspan="1" colspan="1">&#x02212;0.33</td><td align="char" char="[" rowspan="1" colspan="1">[&#x02212;0.95, 0.29]</td><td align="char" char="." rowspan="1" colspan="1">1.03</td><td align="char" char="[" rowspan="1" colspan="1">[&#x02008;&#x02008;0.34, 1.73]</td></tr><tr><td align="left" rowspan="1" colspan="1">MET total</td><td align="char" char="." rowspan="1" colspan="1">1.92E&#x02212;007</td><td align="char" char="." rowspan="1" colspan="1">0.23</td><td align="char" char="[" rowspan="1" colspan="1">[&#x02212;0.42, 0.87]</td><td align="char" char="." rowspan="1" colspan="1">0.53</td><td align="char" char="[" rowspan="1" colspan="1">[&#x02212;0.17, 1.24]</td></tr><tr><td align="left" rowspan="1" colspan="1">MET walk</td><td align="char" char="." rowspan="1" colspan="1">1.13E&#x02212;005</td><td align="char" char="." rowspan="1" colspan="1">0.10</td><td align="char" char="[" rowspan="1" colspan="1">[&#x02212;0.55, 0.74]</td><td align="char" char="." rowspan="1" colspan="1">1.18</td><td align="char" char="[" rowspan="1" colspan="1">[&#x02008;&#x02008;0.45, 1.92]</td></tr><tr><td align="left" rowspan="1" colspan="1">MET mod</td><td align="char" char="." rowspan="1" colspan="1">5.73E&#x02212;004</td><td align="char" char="." rowspan="1" colspan="1">&#x02212;0.26</td><td align="char" char="[" rowspan="1" colspan="1">[&#x02212;0.87, 0.35]</td><td align="char" char="." rowspan="1" colspan="1">&#x02212;0.08</td><td align="char" char="[" rowspan="1" colspan="1">[&#x02212;0.78, 0.61]</td></tr><tr><td align="left" rowspan="1" colspan="1">TDI</td><td align="char" char="." rowspan="1" colspan="1">1.96E&#x02212;003</td><td align="char" char="." rowspan="1" colspan="1">&#x02212;0.19</td><td align="char" char="[" rowspan="1" colspan="1">[&#x02212;0.81, 0.42]</td><td align="char" char="." rowspan="1" colspan="1">1.67</td><td align="char" char="[" rowspan="1" colspan="1">[&#x02008;&#x02008;0.97, 2.38]</td></tr></tbody></table><table-wrap-foot><fn id="gepi22449-tbl1-note-0001"><p>
+<italic toggle="yes">Note</italic>: Polygenic and residual variance components for depSympt are functions of a covariate trait under the full MRNM. The percentage of variability in depSympt attributable to the G&#x02013;C (R&#x02013;C) interaction variance component relates to <mml:math id="jats-math-67"><mml:mrow><mml:mrow><mml:msubsup><mml:mi>&#x003c3;</mml:mi><mml:msub><mml:mi>&#x003b1;</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:mrow></mml:math> (<mml:math id="jats-math-68"><mml:mrow><mml:mrow><mml:msubsup><mml:mi>&#x003c3;</mml:mi><mml:msub><mml:mi>&#x003c4;</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mn>2</mml:mn></mml:msubsup></mml:mrow></mml:mrow></mml:math>) in Equation (<xref rid="gepi22449-disp-0002" ref-type="disp-formula">2</xref>). For a G&#x02013;C interaction, a 95% CI that excludes zero shows that the covariate trait modulates polygenic effects on depSympt. For an R&#x02013;C interaction, a 95% CI that excludes zero indicates that the covariate trait has some unmodelled relationship with depSympt.</p></fn><fn id="gepi22449-tbl1-note-0002"><label>
+<sup>a</sup>
+</label><p>Adjusted for age, sex, genetic batch and PCs 1 to 15 (SM section 1.4.4 provides details for producing interaction variance component estimates and standard errors on this scale).</p></fn></table-wrap-foot><permissions><copyright-holder>John Wiley &#x00026; Sons, Ltd.</copyright-holder></permissions></table-wrap><p>To assess if these covariate traits modulate the polygenic component and/or the residual component of depression symptoms (the G&#x02013;C and R&#x02013;C interaction, respectively), we use a measure of interaction strength: the proportion of variability in depSympt explained by an interaction effect (see Equation&#x000a0;<xref rid="gepi22449-disp-0002" ref-type="disp-formula">2</xref>). This measure is plotted as a %, with 95% CIs, for: (a) the G&#x02013;C interaction and (b) the R&#x02013;C interaction in Figure&#x000a0;<xref rid="gepi22449-fig-0002" ref-type="fig">2</xref>. When a 95% CI includes zero, we cannot be certain that the interaction term explains any of the variability in depSympt.</p><fig position="float" fig-type="Figure" id="gepi22449-fig-0002"><label>Figure 2</label><caption><p>The percentage of variation in depSympt<sup>a</sup> attributable to the G&#x02013;C (genotype&#x02010;covariate) interaction (red) and the R&#x02013;C (residual&#x02010;covariate) interaction (blue) with 95% confidence intervals<sup>b</sup>. <sup>a</sup>Adjusted for age, sex, genetic batch and PCs 1 to 15 (SM section 1.4.4 provides details for producing interaction variance component estimates and standard errors on this scale). <sup>b</sup>When the 95% CI for a G&#x02013;C interaction variance component excludes zero, there is evidence that the covariate trait modulates polygenic effects on depSympt. When the 95% CI for an R&#x02013;C interaction variance component excludes zero, there is evidence that the covariate trait can explain further variability in depSympt, in addition to that specified by the full MRNM</p></caption><graphic xlink:href="GEPI-46-219-g001" position="anchor" id="jats-graphic-3"/></fig><p>Nine of the eleven significant covariate traits had 95% CIs for the percentage of variability in depSympt attributable to R&#x02013;C interactions that excluded zero, with point estimates ranging from 1.03% (95% CI: [0.34, 1.73]) for waist to hip ratio, to 2.98% (95% CI: [2.18, 3.77]) for childhood trauma. These results show that a small, but significant, proportion of the residual variability in depSympt is modulated by the following covariate traits: neuroticism, childhood trauma, average sleep duration, BMI, waist circumference, smoking, waist&#x02010;to&#x02010;hip ratio, summed MET minutes per week walking and TDI.</p><p>For the G&#x02013;C interactions, only average sleep duration had a 95% CI that excluded zero (Figure&#x000a0;<xref rid="gepi22449-fig-0002" ref-type="fig">2</xref>). This polygenic&#x02013;sleep interaction is estimated to explain 1.22% of the variability in depSympt (95% CI: [0.54, 1.89]). Figure&#x000a0;<xref rid="gepi22449-fig-0003" ref-type="fig">3</xref> plots the relationship between the variance components (polygenic, residual, and total) for depSympt and fixed effects adjusted average sleep duration, as estimated by the full MRNM. It shows a U&#x02010;shaped relationship between the polygenic variance component and sleep, suggesting a larger polygenic contribution to depression symptoms for individuals getting far more or less sleep than expected compared to those in central sleep duration percentiles (see Figure&#x000a0;<xref rid="gepi22449-suppl-0001" ref-type="supplementary-material">S38</xref>).</p><fig position="float" fig-type="Figure" id="gepi22449-fig-0003"><label>Figure 3</label><caption><p>Variance components for standardised residual depSympt by standardised residual average sleep duration, with 95% confidence intervals (presented as coloured bands). See SM section 1.4.3 for variance component and standard error equations</p></caption><graphic xlink:href="GEPI-46-219-g002" position="anchor" id="jats-graphic-5"/></fig><p>For the 11 covariates with significant interactions, R&#x02013;C and G&#x02013;C interactions account for only a small proportion of the variation in depSympt, and significant results are primarily driven by R&#x02013;C interactions, not G&#x02013;C interactions. These results imply that covariate traits exert more influence on depressive symptoms through the modulation of residual (unmodelled) effects compared to polygenic effects.</p><p>We note the presence of negative variance component estimates, which are possible within random&#x02010;effects models including the MRNM (Ni et al.,&#x000a0;<xref rid="gepi22449-bib-0042" ref-type="bibr">2019</xref>; Xuan et al.,&#x000a0;<xref rid="gepi22449-bib-0062" ref-type="bibr">2020</xref>). These values arise as the algorithm estimates this parameter freely, without any constraint that the variance must be positive. All negative variance component estimates have 95% CIs that cross 0, indicating that they are under&#x02010;estimates of a null interaction effect.</p><p>For 2 of the 11 covariate traits, MET total and MET moderate, where the interaction model provided a better fit to the data compared to the null model, the 95% CIs for the proportion of variance explained overlap with 0 for both the R&#x02013;C and the G&#x02013;C interactions. These results imply that while there is evidence for a trend in the variability of depSympt across these covariate traits, we are unable to confidently disentangle the source of this interaction into genetic or residual components.</p></sec><sec sec-type="discussion" id="gepi22449-sec-0130"><label>4</label><title>DISCUSSION</title><p>G&#x02013;E interactions in depression may give insights into its aetiology, highlighting both the biological mechanism and identifying environmental risk factors whose role in depression is moderated by genetics. The low heritability for depression compared to many other psychiatric disorders, and the prominent role of environmental risk factors through trauma and stress, make depression a natural target for exploring G&#x02013;E interactions. Previous G&#x02013;E interaction studies in depression using genome&#x02010;wide data, performing SNP&#x02010;by&#x02010;environment tests, have identified few significant and replicated results either in European ancestries (Arnau&#x02010;Soler et al.,&#x000a0;<xref rid="gepi22449-bib-0002" ref-type="bibr">2019</xref>) or in Hispanic, African American and Hans Chinese populations (Dunn et al.,&#x000a0;<xref rid="gepi22449-bib-0020" ref-type="bibr">2016</xref>; Peterson et al.,&#x000a0;<xref rid="gepi22449-bib-0045" ref-type="bibr">2018</xref>). Increasing sample sizes may yield more significant SNP&#x02010;by&#x02010;environment interactions, but the highly polygenic nature of depression makes searching for polygenic&#x02010;environment interactions appealing. Investigations of G&#x02013;E interactions using depression PRSs have demonstrated null or conflicting results (Kendall et al.,&#x000a0;<xref rid="gepi22449-bib-0030" ref-type="bibr">2021</xref>), and these PRS&#x02010;environment interaction analyses have not modelled a residual trend in the variability of outcome, which can bias G&#x02013;E interaction estimates (Dahl et al.,&#x000a0;<xref rid="gepi22449-bib-0016" ref-type="bibr">2020</xref>). Additionally, the SNP effects used to construct a PRS are estimated assuming an additive genetic model. PRSs are therefore currently designed with the expectation that they do not vary across an environmental gradient. To assess whether the polygenic component for a trait is modified by the environment, a model which can create a polygenic score allowing for this possibility should be employed.</p><p>Furthermore, for a complex trait like depression, we would expect the genetic space to map to the phenotypic space through the environment, making the outcome a complex interplay between genes and environment (Assary et al.,&#x000a0;<xref rid="gepi22449-bib-0003" ref-type="bibr">2020</xref>). Since environmental traits are often complex traits themselves, part of this interplay may include a genetic correlation between environment and depression, that is, BMI, smoking and exercise measures have a positive genetic correlation with depression (Wray et al.,&#x000a0;<xref rid="gepi22449-bib-0061" ref-type="bibr">2018</xref>). Not accounting for G&#x02013;E correlation while investigating G&#x02013;E interaction can lead to biased variance component estimates (Purcell,&#x000a0;<xref rid="gepi22449-bib-0050" ref-type="bibr">2002</xref>), and have been shown to inflate the significance of interaction results (Ni et al.,&#x000a0;<xref rid="gepi22449-bib-0042" ref-type="bibr">2019</xref>). Interaction analyses using PRSs do adjust for correlation through a main effect, however, they do not allow for residual correlations between traits nor offer the opportunity to investigate G&#x02010;E interactions in the <italic toggle="yes">presence</italic> of G&#x02013;E correlation. In this paper, we have used MRNMs (Ni et al.,&#x000a0;<xref rid="gepi22449-bib-0042" ref-type="bibr">2019</xref>) within the UKB to identify genome&#x02010;wide G&#x02013;C and R&#x02013;C interactions for depressive symptoms whilst controlling for residual trait correlations, including genetic correlation. The G&#x02013;C and R&#x02013;C interactions allow the polygenic variance component and the residual variance component for depressive symptoms, respectively to vary across a continuous covariate trait. The MRNM extends existing polygenic&#x02013;environment interaction approaches from categorical environmental traits to continuous ones, providing a route to avoid the pitfalls associated with the arbitrary categorising of continuous traits (Altman &#x00026; Royston,&#x000a0;<xref rid="gepi22449-bib-0001" ref-type="bibr">2006</xref>; Naggara et al.,&#x000a0;<xref rid="gepi22449-bib-0041" ref-type="bibr">2011</xref>).</p><p>We included 17 continuous covariate traits, which covered childhood trauma, body composition, physical activity and smoking. For each covariate in turn, MRNMs with and without interactions were run and compared using LRTs. These models jointly test the presence of G&#x02013;C and/or R&#x02013;C interaction effects. The contribution of each interaction is then extracted from the variance component estimates, summarised as the proportion of the outcome variability an interaction effect explains.</p><p>MRNMs for 11 of the 17 covariates found evidence for some interaction effect. Across these 11 covariates, the variability in depressive symptoms attributable to the R&#x02013;C interaction effect tended to be substantially larger than that attributable to the G&#x02013;C effect. Only one covariate, average sleep duration, had a G&#x02013;C variance component estimate where the confidence interval excluded zero. The significant <italic toggle="yes">p</italic> values observed in the LRTs between the null and interaction models are therefore likely to be driven by the R&#x02013;C interactions. For nine covariate traits, the proportion of variability in depressive symptoms attributable to the R&#x02013;C interaction had a confidence interval which did not include zero, but the proportion of variance accounted for was small, with the residual&#x02010;&#x02018;childhood trauma&#x02019; interaction explaining the largest percentage of phenotypic variation at 3.0%, decreasing to 1.0% for the residual&#x02010;&#x02018;waist&#x02010;to&#x02010;hip ratio&#x02019; interaction.</p><p>These R&#x02013;C interactions can be interpreted as nonrandom noise, where the covariate traits explain additional variation in depSympt not captured explicitly in the model. Several possible extensions to the model may better explain the role of these covariate traits in depressive symptoms. First, these variables may have a nonlinear relationship with symptoms of depression not captured by FPs; refinement of the nonlinear fixed effects model would resolve this, for example, fitting splines. Second, the covariates may interact with each other, or with additionally unmodelled environmental variables, to influence depressive symptoms. Finally, the covariates may interact with genetic variants not captured by genome&#x02010;wide genotyping and imputation (such as rare variants, repeats, or structural variation), or with other omics&#x02010;type data (such as the transcriptome).</p><p>Individually these R&#x02013;C interactions are small, but cumulatively they could explain a large proportion of the variability in depressive symptoms. Random noise is not useful for prediction and further research to explain the residual heteroscedasticity is warranted. A potential route could be incorporating an environmental similarity matrix into the MRNM and looking for &#x02018;exposome' effects by utilising shared environmental information (Xuan et al.,&#x000a0;<xref rid="gepi22449-bib-0062" ref-type="bibr">2020</xref>).</p><p>A further consideration is that the R&#x02013;C interaction effect can capture deviations from normality in the conditional outcome trait; an effect not necessarily indicative of an interaction, rather driven by the mean&#x02013;variance relationship of nonnormal distributions (Young et al.,&#x000a0;<xref rid="gepi22449-bib-0064" ref-type="bibr">2018</xref>). If this were true, then exploring the significant R&#x02013;C interactions may not yield useful results. However, possible explanations for the significant R&#x02013;C interactions, such as environment&#x02013;environment interactions, have been reported in the depression literature (Hullam et al.,&#x000a0;<xref rid="gepi22449-bib-0024" ref-type="bibr">2019</xref>; Morrissey &#x00026; Kinderman,&#x000a0;<xref rid="gepi22449-bib-0039" ref-type="bibr">2020</xref>), indicating that further exploration via multivariate approaches will improve the accuracy of depression models and reveal sets of relevant risk factors unlikely to be identified via univariate methods.</p><p>Our primary interest in these models was to assess evidence for G&#x02013;C interactions for depressive symptoms. Only average sleep duration had an estimate of the proportion of phenotypic variability explained by a G&#x02013;C interaction with a 95% confidence interval not overlapping with zero. A small, but statistically significant, proportion of the variability in current depressive symptoms is therefore attributable to a genome&#x02010;wide G&#x02013;E interaction with average sleep duration measured at the UKB baseline assessment, 5&#x02013;10 years earlier than the assessment of depSympt. Our results imply that the optimal sleep duration to minimise depressive symptoms can vary by genetic profile, but this modification of the polygenic variation for depSympt using historic sleep patterns is limited, with the estimate of variation attributable to this interaction being low at 1.2%. Other covariate traits that had nonzero estimates for the R&#x02013;C interaction variance component, had much lower G&#x02013;C interaction variance components, ranging from 0.59% (for childhood trauma), to estimates that were below zero (indicating no interaction).</p><p>This is not the first study to identify a significant gene&#x02013;sleep interaction for depression. A twin study by Watson et al. (<xref rid="gepi22449-bib-0060" ref-type="bibr">2014</xref>) found that the genetic contribution to depressive symptoms was significantly higher for both short (&#x0003c;7&#x02009;h per night) and long (&#x02265;9&#x02009;h per night) sleep durations compared to the average (7&#x02013;8.9&#x02009;h per night)&#x02014;a trend that we also observed (Figure&#x000a0;<xref rid="gepi22449-suppl-0001" ref-type="supplementary-material">S38</xref>). Additionally, there is evidence for a complex bidirectional relationship between sleep and depression involving variables/biomarkers such as circadian rhythms (Khan et al.,&#x000a0;<xref rid="gepi22449-bib-0032" ref-type="bibr">2018</xref>; Kronfeld&#x02010;Schor &#x00026; Einat,&#x000a0;<xref rid="gepi22449-bib-0033" ref-type="bibr">2012</xref>), stress (Leggett et al.,&#x000a0;<xref rid="gepi22449-bib-0036" ref-type="bibr">2016</xref>; Palagini et al.,&#x000a0;<xref rid="gepi22449-bib-0044" ref-type="bibr">2019</xref>), melatonin (Rahman et al.,&#x000a0;<xref rid="gepi22449-bib-0051" ref-type="bibr">2010</xref>), serotonin (van Dalfsen &#x00026; Markus,&#x000a0;<xref rid="gepi22449-bib-0017" ref-type="bibr">2019</xref>), dopamine (Boland et al.,&#x000a0;<xref rid="gepi22449-bib-0007" ref-type="bibr">2020</xref>; Finan &#x00026; Smith,&#x000a0;<xref rid="gepi22449-bib-0022" ref-type="bibr">2013</xref>), and their respective genes. Future work investigating gene&#x02013;sleep interactions for depression could utilise these previously highlighted genes within genomic partitioning analysis.</p><p>An initially surprising result is that this MRNM analysis does not support a nonzero G&#x02013;C interaction effect for childhood trauma, despite G&#x02013;C interactions of childhood trauma with depression previously having been identified (Mullins et al.,&#x000a0;<xref rid="gepi22449-bib-0040" ref-type="bibr">2016</xref>; Peyrot et al.,&#x000a0;<xref rid="gepi22449-bib-0047" ref-type="bibr">2014</xref>; Shen et al.,&#x000a0;<xref rid="gepi22449-bib-0055" ref-type="bibr">2020</xref>). In addition to methodological and data set differences, this study used a recently developed, composite measure of childhood trauma (Pitharouli et al.,&#x000a0;<xref rid="gepi22449-bib-0048" ref-type="bibr">2021</xref>). The null G&#x02013;C interaction result here, in contrast with previous significant results for other measures of childhood trauma, may suggest that G&#x02013;C interactions for differing types of childhood trauma should be investigated as separate covariates and not as a continuous weighted aggregate.</p><p>Although estimated interaction effects for symptoms of depression are small, the MRNM has been able to identify strong lifestyle modulation effects on cardiovascular traits. Xuan et al. (<xref rid="gepi22449-bib-0062" ref-type="bibr">2020</xref>) used the MRNM and 22 lifestyle traits to explore interactions for 23 cardiovascular traits, finding evidence of lifestyle modulation for 42% of the outcome&#x02010;covariate trait pairings. Sizeable G&#x02013;C and R&#x02013;C interactions were observed suggesting the need for personalised lifestyle interventions to reduce the risk of cardiovascular disease. The largest G&#x02013;C interaction explained ~10% of (fixed effects adjusted) phenotypic variability and was for the modulation of the polygenic effect on HDL cholesterol level by physical activity. The largest R&#x02013;C interaction effect, explaining ~20% of phenotypic variability, was for the modulation of the nongenetic component for white blood cell count by smoking.</p><p>Our study has limitations. The environmental risk factors analysed here were selected based on a literature review, but no systematic review or meta&#x02010;analysis was performed and other variables with equally compelling rationale for inclusion may not have been considered. Similarly, biomarkers were included that have been widely tested for association with depression (CRP, vitamin D) but we cannot exclude interactions with other biomarkers. Additionally, the modifying effect of covariate traits on depressive symptoms were considered in separate models. A joint model for interactions may provide a better fit, however, the computational burden and the required sample size for robust parameter estimation will increase. All statistical models require assumptions about variables to be analysed. We analysed a continuous measure of depression, as required by the MRNM, and chose to use a composite measure previously constructed and validated as highly correlated with MDD diagnosis. Other options would have been to take raw scores for numbers of depression symptoms reported, or the ordinal measure of presence/absence of the two core depression symptoms (each scored 0, 1, 2), as analysed in other genome&#x02010;wide association studies (Levey et al.,&#x000a0;<xref rid="gepi22449-bib-0037" ref-type="bibr">2021</xref>; Turley et al.,&#x000a0;<xref rid="gepi22449-bib-0057" ref-type="bibr">2018</xref>). The outcome trait depSympt, extracted from a hierarchical model, was chosen as it accounts for correlation between reported depression symptoms, and is continuous. The UKB depressive symptoms, from which the depSympt variable was constructed, represents a snapshot of participants mental health over the 2 weeks before completing the MHQ. This does not account for historical mental health, or capture trends of mental health, and the potential dynamic nature of G&#x02013;E interactions, over time. Our study analysed only European ancestries in UKB and findings may not extend beyond this sample. The MRNM provides a flexible and broad modelling framework, but model fitting is computationally intensive, particularly given the large sample sizes available in UKB. Meta&#x02010;analysis across three subgroups was required to make this computational feasible. Ni et al. (<xref rid="gepi22449-bib-0042" ref-type="bibr">2019</xref>) showed that using meta&#x02010;analysis across subgroups reduced the power to identify nonzero interaction variance components compared to using the complete sample, and analysis with the full available UKB sample might yield more significant G&#x02013;C/R&#x02013;C interactions. The MRNM used here estimates the polygenic&#x02013;covariate interaction and, as an aggregate genome&#x02010;wide measure, does not provide accessible information about the contribution from individual variants, genes, or pathways (Assary et al.,&#x000a0;<xref rid="gepi22449-bib-0003" ref-type="bibr">2020</xref>), although the model could be extended for use within genomic partitioning.</p><p>In summary, the MRNM provides a flexible, if computationally intensive, a framework to comprehensively model genetic and environmental contributions to complex traits. For depression, these models show significant R&#x02013;C interactions, potentially highlighting unmodelled relationships between nongenetic contributions to depressive symptoms. Evidence for a G&#x02013;C interaction was only found at one covariate (average sleep duration), suggesting that any modulation of the polygenic effects on depressive symptoms by the explored environmental variables is limited. Genome&#x02010;wide G&#x02013;C interactions do not play a major role in the aetiology of depressive symptoms, and therefore, personalised lifestyle interventions using SNP profiles are not required.</p></sec><sec sec-type="COI-statement" id="gepi22449-sec-0170"><title>CONFLICTS OF INTEREST</title><p>Cathryn Lewis sits on the Myriad Neuroscience Scientific Advisory Board. The other authors declare no conflicts of interest.</p></sec><sec id="gepi22449-sec-0180"><title>WEB RESOURCES</title><p>LDSC HapMap 3 SNP&#x02010;list: <ext-link xlink:href="https://data.broadinstitute.org/alkesgroup/LDSCORE/w_hm3.snplist.bz2" ext-link-type="uri">https://data.broadinstitute.org/alkesgroup/LDSCORE/w_hm3.snplist.bz2</ext-link>
+</p><p>mtg2 software: <ext-link xlink:href="https://sites.google.com/site/honglee0707/mtg2" ext-link-type="uri">https://sites.google.com/site/honglee0707/mtg2</ext-link>
+</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material id="gepi22449-suppl-0001" position="float" content-type="local-data"><caption><p>Supporting information.</p></caption><media xlink:href="GEPI-46-219-s001.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material></sec></body><back><ack id="gepi22449-sec-0140"><title>ACKNOWLEDGEMENTS</title><p>This paper represents independent research funded by the UK Medical Research Council (MR/N015746/1), and the National Institute for Health Research (NIHR) Biomedical Research Centre at South London and Maudsley NHS Foundation Trust and King's College London. The authors acknowledge use of the research computing facility at King's College London, Rosalind (<ext-link xlink:href="https://rosalind.kcl.ac.uk" ext-link-type="uri">https://rosalind.kcl.ac.uk</ext-link>), which is delivered in partnership with the NIHR Maudsley BRC, and part&#x02010;funded by capital equipment grants from the Maudsley Charity (award 980) and Guy's &#x00026; St. Thomas' Charity (TR130505). The views expressed are those of the authors and not necessarily those of the NHS, the NIHR or the Department of Health and Social Care. Saskia P. Hagenaars was supported by the Medical Research Council (MR/S0151132). David M. Howard is supported by a Sir Henry Wellcome Postdoctoral Fellowship (Reference 213674/Z/18/Z) and a 2018 NARSAD Young Investigator Grant from the Brain &#x00026; Behaviour Research Foundation (Ref: 27404). This study was conducted under UK Biobank application 18177.</p></ack><sec sec-type="data-availability" id="gepi22449-sec-0160"><title>DATA AVAILABILITY STATEMENT</title><p>The individual&#x02010;level data that support the findings of this study are available with the permission of the UK Biobank (<ext-link xlink:href="http://www.ukbiobank.ac.uk" ext-link-type="uri" specific-use="software is-supplemented-by">http://www.ukbiobank.ac.uk</ext-link>). We conducted this study using the UK Biobank resource under an approved data application (ref: 18177).</p></sec><ref-list content-type="cited-references" id="gepi22449-bibl-0001"><title>REFERENCES</title><ref id="gepi22449-bib-0001"><mixed-citation publication-type="journal" id="gepi22449-cit-0001">
+<string-name>
+<surname>Altman</surname>, <given-names>D. G.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Royston</surname>, <given-names>P.</given-names>
+</string-name> (<year>2006</year>). <article-title>The cost of dichotomising continuous variables</article-title>. <source>BMJ</source>, <volume>332</volume>(<issue>7549</issue>), <elocation-id>1080</elocation-id>. <pub-id pub-id-type="doi">10.1136/bmj.332.7549.1080</pub-id>
+<pub-id pub-id-type="pmid">16675816</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0002"><mixed-citation publication-type="journal" id="gepi22449-cit-0002">
+<string-name>
+<surname>Arnau&#x02010;Soler</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Macdonald&#x02010;Dunlop</surname>, <given-names>E.</given-names>
+</string-name>, <string-name>
+<surname>Adams</surname>, <given-names>M. J.</given-names>
+</string-name>, <string-name>
+<surname>Clarke</surname>, <given-names>T.&#x02010;K.</given-names>
+</string-name>, <string-name>
+<surname>MacIntyre</surname>, <given-names>D. J.</given-names>
+</string-name>, <string-name>
+<surname>Milburn</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Navrady</surname>, <given-names>L.</given-names>
+</string-name>, <string-name>
+<surname>Generation</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Major Depressive Disorder Working Group of the Psychiatric Genomics</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Hayward</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>McIntosh</surname>, <given-names>A. M.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Thomson</surname>, <given-names>P. A.</given-names>
+</string-name> (<year>2019</year>). <article-title>Genome&#x02010;wide by environment interaction studies of depressive symptoms and psychosocial stress in UK Biobank and Generation Scotland</article-title>. <source>Translational Psychiatry</source>, <volume>9</volume>(<issue>1</issue>), <fpage>14</fpage>. <pub-id pub-id-type="doi">10.1038/s41398-018-0360-y</pub-id>
+<pub-id pub-id-type="pmid">30718454</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0003"><mixed-citation publication-type="book" id="gepi22449-cit-0003">
+<string-name>
+<surname>Assary</surname>, <given-names>E.</given-names>
+</string-name>, <string-name>
+<surname>Vincent</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Machlitt&#x02010;Northen</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Keers</surname>, <given-names>R.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Pluess</surname>, <given-names>M.</given-names>
+</string-name> (<year>2020</year>). <source>The role of gene&#x02010;environment interaction in mental health and susceptibility to the development of psychiatric disorders</source>. <publisher-name>Springer International Publishing</publisher-name>.</mixed-citation></ref><ref id="gepi22449-bib-0005"><mixed-citation publication-type="journal" id="gepi22449-cit-0005">
+<string-name>
+<surname>Baldwin</surname>, <given-names>J. R.</given-names>
+</string-name>, <string-name>
+<surname>Reuben</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Newbury</surname>, <given-names>J. B.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Danese</surname>, <given-names>A.</given-names>
+</string-name> (<year>2019</year>). <article-title>Agreement between prospective and retrospective measures of childhood maltreatment: A systematic review and meta&#x02010;analysis</article-title>. <source>JAMA Psychiatry</source>, <volume>76</volume>(<issue>6</issue>), <fpage>584</fpage>&#x02013;<lpage>593</lpage>. <pub-id pub-id-type="doi">10.1001/jamapsychiatry.2019.0097</pub-id>
+<pub-id pub-id-type="pmid">30892562</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0006"><mixed-citation publication-type="miscellaneous" id="gepi22449-cit-0006">
+<string-name>
+<surname>Benner</surname>, <given-names>A.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Ambler</surname>, <given-names>G.</given-names>
+</string-name> (<year>2015</year>). mfp: Multivariable Fractional Polynomials. <ext-link xlink:href="https://CRAN.R-project.org/package=mfp" ext-link-type="uri">https://CRAN.R-project.org/package=mfp</ext-link>
+</mixed-citation></ref><ref id="gepi22449-bib-0007"><mixed-citation publication-type="journal" id="gepi22449-cit-0007">
+<string-name>
+<surname>Boland</surname>, <given-names>E. M.</given-names>
+</string-name>, <string-name>
+<surname>Goldschmied</surname>, <given-names>J. R.</given-names>
+</string-name>, <string-name>
+<surname>Wakschal</surname>, <given-names>E.</given-names>
+</string-name>, <string-name>
+<surname>Nusslock</surname>, <given-names>R.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Gehrman</surname>, <given-names>P. R.</given-names>
+</string-name> (<year>2020</year>). <article-title>An integrated sleep and reward processing model of major depressive disorder</article-title>. <source>Behavior Therapy</source>, <volume>51</volume>(<issue>4</issue>), <fpage>572</fpage>&#x02013;<lpage>587</lpage>. <pub-id pub-id-type="doi">10.1016/j.beth.2019.12.005</pub-id>
+<pub-id pub-id-type="pmid">32586431</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0008"><mixed-citation publication-type="journal" id="gepi22449-cit-0008">
+<string-name>
+<surname>Bycroft</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Freeman</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Petkova</surname>, <given-names>D.</given-names>
+</string-name>, <string-name>
+<surname>Band</surname>, <given-names>G.</given-names>
+</string-name>, <string-name>
+<surname>Elliott</surname>, <given-names>L. T.</given-names>
+</string-name>, <string-name>
+<surname>Sharp</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Motyer</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Vukcevic</surname>, <given-names>D.</given-names>
+</string-name>, <string-name>
+<surname>Delaneau</surname>, <given-names>O.</given-names>
+</string-name>, <string-name>
+<surname>O'Connell</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Cortes</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Welsh</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Young</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Effingham</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>McVean</surname>, <given-names>G.</given-names>
+</string-name>, <string-name>
+<surname>Leslie</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Allen</surname>, <given-names>N.</given-names>
+</string-name>, <string-name>
+<surname>Donnelly</surname>, <given-names>P.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Marchini</surname>, <given-names>J.</given-names>
+</string-name> (<year>2018</year>). <article-title>The UK Biobank resource with deep phenotyping and genomic data</article-title>. <source>Nature</source>, <volume>562</volume>(<issue>7726</issue>), <fpage>203</fpage>&#x02013;<lpage>209</lpage>. <pub-id pub-id-type="doi">10.1038/s41586-018-0579-z</pub-id>
+<pub-id pub-id-type="pmid">30305743</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0010"><mixed-citation publication-type="journal" id="gepi22449-cit-0010">
+<string-name>
+<surname>Chang</surname>, <given-names>C. C.</given-names>
+</string-name>, <string-name>
+<surname>Chow</surname>, <given-names>C. C.</given-names>
+</string-name>, <string-name>
+<surname>Tellier</surname>, <given-names>L. C.</given-names>
+</string-name>, <string-name>
+<surname>Vattikuti</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Purcell</surname>, <given-names>S. M.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Lee</surname>, <given-names>J. J.</given-names>
+</string-name> (<year>2015</year>). <article-title>Second&#x02010;generation PLINK: Rising to the challenge of larger and richer datasets</article-title>. <source>GigaScience</source>, <volume>4</volume>(<issue>1</issue>), <fpage>7</fpage>. <pub-id pub-id-type="doi">10.1186/s13742-015-0047-8</pub-id>
+<pub-id pub-id-type="pmid">25722852</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0013"><mixed-citation publication-type="journal" id="gepi22449-cit-0013">
+<string-name>
+<surname>Coleman</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Peyrot</surname>, <given-names>W. J.</given-names>
+</string-name>, <string-name>
+<surname>Purves</surname>, <given-names>K. L.</given-names>
+</string-name>, <string-name>
+<surname>Davis</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Rayner</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Choi</surname>, <given-names>S. W.</given-names>
+</string-name>, <string-name>
+<surname>H&#x000fc;bel</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Gaspar</surname>, <given-names>H. A.</given-names>
+</string-name>, <string-name>
+<surname>Kan</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Van der Auwera</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Adams</surname>, <given-names>M. J.</given-names>
+</string-name>, <string-name>
+<surname>Lyall</surname>, <given-names>D. M.</given-names>
+</string-name>, <string-name>
+<surname>Choi</surname>, <given-names>K. W.</given-names>
+</string-name>, <collab collab-type="authors">on the behalf of Major Depressive Disorder Working Group of the Psychiatric Genomics, C.</collab>
+, <string-name>
+<surname>Dunn</surname>, <given-names>E. C.</given-names>
+</string-name>, <string-name>
+<surname>Vassos</surname>, <given-names>E.</given-names>
+</string-name>, <string-name>
+<surname>Danese</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Maughan</surname>, <given-names>B.</given-names>
+</string-name>, <string-name>
+<surname>Grabe</surname>, <given-names>H. J.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Breen</surname>, <given-names>G.</given-names>
+</string-name> (<year>2020</year>). <article-title>Genome&#x02010;wide gene&#x02010;environment analyses of major depressive disorder and reported lifetime traumatic experiences in UK Biobank</article-title>. <source>Molecular Psychiatry</source>, <volume>25</volume>(<issue>7</issue>), <fpage>1430</fpage>&#x02013;<lpage>1446</lpage>. <pub-id pub-id-type="doi">10.1038/s41380-019-0546-6</pub-id>
+<pub-id pub-id-type="pmid">31969693</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0014"><mixed-citation publication-type="journal" id="gepi22449-cit-0014">
+<string-name>
+<surname>Coleman</surname>, <given-names>J. R.</given-names>
+</string-name>, <string-name>
+<surname>Euesden</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Patel</surname>, <given-names>H.</given-names>
+</string-name>, <string-name>
+<surname>Folarin</surname>, <given-names>A. A.</given-names>
+</string-name>, <string-name>
+<surname>Newhouse</surname>, <given-names>S.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Breen</surname>, <given-names>G.</given-names>
+</string-name> (<year>2016</year>). <article-title>Quality control, imputation and analysis of genome&#x02010;wide genotyping data from the Illumina HumanCoreExome microarray</article-title>. <source>Briefings in Functional Genomics</source>, <volume>15</volume>(<issue>4</issue>), <fpage>298</fpage>&#x02013;<lpage>304</lpage>. <pub-id pub-id-type="doi">10.1093/bfgp/elv037</pub-id>
+<pub-id pub-id-type="pmid">26443613</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0015"><mixed-citation publication-type="miscellaneous" id="gepi22449-cit-0015">
+<string-name>
+<surname>Core Team</surname>, <given-names>R.</given-names>
+</string-name> (<year>2020</year>). R: A Language and Environment for Statistical Computing. (R Foundation for Statistical Computing). <ext-link xlink:href="https://www.R-project.org/" ext-link-type="uri">https://www.R-project.org/</ext-link>
+</mixed-citation></ref><ref id="gepi22449-bib-0016"><mixed-citation publication-type="journal" id="gepi22449-cit-0016">
+<string-name>
+<surname>Dahl</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Nguyen</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Cai</surname>, <given-names>N.</given-names>
+</string-name>, <string-name>
+<surname>Gandal</surname>, <given-names>M. J.</given-names>
+</string-name>, <string-name>
+<surname>Flint</surname>, <given-names>J.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Zaitlen</surname>, <given-names>N.</given-names>
+</string-name> (<year>2020</year>). <article-title>A robust method uncovers significant context&#x02010;specific heritability in diverse complex traits</article-title>. <source>The American Journal of Human Genetics</source>, <volume>106</volume>(<issue>1</issue>), <fpage>71</fpage>&#x02013;<lpage>91</lpage>. <pub-id pub-id-type="doi">10.1016/j.ajhg.2019.11.015</pub-id>
+<pub-id pub-id-type="pmid">31901249</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0017"><mixed-citation publication-type="journal" id="gepi22449-cit-0017">
+<string-name>
+<surname>van Dalfsen</surname>, <given-names>J. H.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Markus</surname>, <given-names>C. R.</given-names>
+</string-name> (<year>2019</year>). <article-title>The involvement of sleep in the relationship between the serotonin transporter gene&#x02010;linked polymorphic region (5&#x02010;HTTLPR) and depression: A systematic review</article-title>. <source>Journal of Affective Disorders</source>, <volume>256</volume>, <fpage>205</fpage>&#x02013;<lpage>212</lpage>. <pub-id pub-id-type="doi">10.1016/j.jad.2019.05.047</pub-id>
+<pub-id pub-id-type="pmid">31181376</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0018"><mixed-citation publication-type="journal" id="gepi22449-cit-0018">
+<string-name>
+<surname>Davis</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Coleman</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Adams</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Allen</surname>, <given-names>N.</given-names>
+</string-name>, <string-name>
+<surname>Breen</surname>, <given-names>G.</given-names>
+</string-name>, <string-name>
+<surname>Cullen</surname>, <given-names>B.</given-names>
+</string-name>, <string-name>
+<surname>Dickens</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Fox</surname>, <given-names>E.</given-names>
+</string-name>, <string-name>
+<surname>Graham</surname>, <given-names>N.</given-names>
+</string-name>, <string-name>
+<surname>Holliday</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Howard</surname>, <given-names>L. M.</given-names>
+</string-name>, <string-name>
+<surname>John</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Lee</surname>, <given-names>W.</given-names>
+</string-name>, <string-name>
+<surname>McCabe</surname>, <given-names>R.</given-names>
+</string-name>, <string-name>
+<surname>McIntosh</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Pearsall</surname>, <given-names>R.</given-names>
+</string-name>, <string-name>
+<surname>Smith</surname>, <given-names>D. J.</given-names>
+</string-name>, <string-name>
+<surname>Sudlow</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Ward</surname>, <given-names>J.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Hotopf</surname>, <given-names>M.</given-names>
+</string-name> (<year>2020</year>). <article-title>Mental health in UK Biobank&#x02014;Development, implementation and results from an online questionnaire completed by 157 366 participants: A reanalysis</article-title>. <source>BJPsych Open</source>, <volume>6</volume>(<issue>2</issue>), <elocation-id>e18</elocation-id>. <pub-id pub-id-type="doi">10.1192/bjo.2019.100</pub-id>
+<pub-id pub-id-type="pmid">32026800</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0020"><mixed-citation publication-type="journal" id="gepi22449-cit-0020">
+<string-name>
+<surname>Dunn</surname>, <given-names>E. C.</given-names>
+</string-name>, <string-name>
+<surname>Wiste</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Radmanesh</surname>, <given-names>F.</given-names>
+</string-name>, <string-name>
+<surname>Almli</surname>, <given-names>L. M.</given-names>
+</string-name>, <string-name>
+<surname>Gogarten</surname>, <given-names>S. M.</given-names>
+</string-name>, <string-name>
+<surname>Sofer</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Faul</surname>, <given-names>J. D.</given-names>
+</string-name>, <string-name>
+<surname>Kardia</surname>, <given-names>S. L.</given-names>
+</string-name>, <string-name>
+<surname>Smith</surname>, <given-names>J. A.</given-names>
+</string-name>, <string-name>
+<surname>Weir</surname>, <given-names>D. R.</given-names>
+</string-name>, <string-name>
+<surname>Zhao</surname>, <given-names>W.</given-names>
+</string-name>, <string-name>
+<surname>Soare</surname>, <given-names>T. W.</given-names>
+</string-name>, <string-name>
+<surname>Mirza</surname>, <given-names>S. S.</given-names>
+</string-name>, <string-name>
+<surname>Hek</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Tiemeier</surname>, <given-names>H.</given-names>
+</string-name>, <string-name>
+<surname>Goveas</surname>, <given-names>J. S.</given-names>
+</string-name>, <string-name>
+<surname>Sarto</surname>, <given-names>G. E.</given-names>
+</string-name>, <string-name>
+<surname>Snively</surname>, <given-names>B. M.</given-names>
+</string-name>, <string-name>
+<surname>Cornelis</surname>, <given-names>M.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Smoller</surname>, <given-names>J. W.</given-names>
+</string-name> (<year>2016</year>). <article-title>Genome&#x02010;wide association study (GWAS) and genome&#x02010;wide by environment interaction study (GWEIS) of depressive symptoms in African American and Hispanic/Latina women</article-title>. <source>Depression and Anxiety</source>, <volume>33</volume>(<issue>4</issue>), <fpage>265</fpage>&#x02013;<lpage>280</lpage>. <pub-id pub-id-type="doi">10.1002/da.22484</pub-id>
+<pub-id pub-id-type="pmid">27038408</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0021"><mixed-citation publication-type="journal" id="gepi22449-cit-0021">
+<string-name>
+<surname>Evangelou</surname>, <given-names>E.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Ioannidis</surname>, <given-names>J. P.</given-names>
+</string-name> (<year>2013</year>). <article-title>Meta&#x02010;analysis methods for genome&#x02010;wide association studies and beyond</article-title>. <source>Nature Reviews Genetics</source>, <volume>14</volume>, <fpage>379</fpage>&#x02013;<lpage>389</lpage>. <pub-id pub-id-type="doi">10.1038/nrg3472</pub-id>
+</mixed-citation></ref><ref id="gepi22449-bib-0022"><mixed-citation publication-type="journal" id="gepi22449-cit-0022">
+<string-name>
+<surname>Finan</surname>, <given-names>P. H.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Smith</surname>, <given-names>M. T.</given-names>
+</string-name> (<year>2013</year>). <article-title>The comorbidity of insomnia, chronic pain, and depression: Dopamine as a putative mechanism</article-title>. <source>Sleep Medicine Reviews</source>, <volume>17</volume>, <fpage>173</fpage>&#x02013;<lpage>183</lpage>. <pub-id pub-id-type="doi">10.1016/j.smrv.2012.03.003</pub-id>
+<pub-id pub-id-type="pmid">22748562</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0023"><mixed-citation publication-type="journal" id="gepi22449-cit-0023">
+<string-name>
+<surname>Gianfredi</surname>, <given-names>V.</given-names>
+</string-name>, <string-name>
+<surname>Blandi</surname>, <given-names>L.</given-names>
+</string-name>, <string-name>
+<surname>Cacitti</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Minelli</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Signorelli</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Amerio</surname>, <given-names>A.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Odone</surname>, <given-names>A.</given-names>
+</string-name> (<year>2020</year>). <article-title>Depression and objectively measured physical activity: A systematic review and meta&#x02010;analysis</article-title>. <source>International Journal of Environmental Research and Public Health</source>, <volume>17</volume>(<issue>10</issue>), <elocation-id>3738</elocation-id>. <pub-id pub-id-type="doi">10.3390/ijerph17103738</pub-id>
+</mixed-citation></ref><ref id="gepi22449-bib-0024"><mixed-citation publication-type="journal" id="gepi22449-cit-0024">
+<string-name>
+<surname>Hullam</surname>, <given-names>G.</given-names>
+</string-name>, <string-name>
+<surname>Antal</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>Petschner</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>Gonda</surname>, <given-names>X.</given-names>
+</string-name>, <string-name>
+<surname>Bagdy</surname>, <given-names>G.</given-names>
+</string-name>, <string-name>
+<surname>Deakin</surname>, <given-names>B.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Juhasz</surname>, <given-names>G.</given-names>
+</string-name> (<year>2019</year>). <article-title>The UKB envirome of depression: From interactions to synergistic effects</article-title>. <source>Scientific Reports</source>, <volume>9</volume>(<issue>1</issue>), <fpage>9723</fpage>. <pub-id pub-id-type="doi">10.1038/s41598-019-46001-5</pub-id>
+<pub-id pub-id-type="pmid">31278308</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0025"><mixed-citation publication-type="journal" id="gepi22449-cit-0025">
+<string-name>
+<surname>Hunter</surname>, <given-names>D. J.</given-names>
+</string-name> (<year>2005</year>). <article-title>Gene&#x02013;environment interactions in human diseases</article-title>. <source>Nature Reviews Genetics</source>, <volume>6</volume>(<issue>4</issue>), <fpage>287</fpage>&#x02013;<lpage>298</lpage>. <pub-id pub-id-type="doi">10.1038/nrg1578</pub-id>
+</mixed-citation></ref><ref id="gepi22449-bib-0027"><mixed-citation publication-type="journal" id="gepi22449-cit-0027">
+<string-name>
+<surname>Jarqu&#x000ed;n</surname>, <given-names>D.</given-names>
+</string-name>, <string-name>
+<surname>Crossa</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Lacaze</surname>, <given-names>X.</given-names>
+</string-name>, <string-name>
+<surname>Du Cheyron</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>Daucourt</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Lorgeou</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Piraux</surname>, <given-names>F.</given-names>
+</string-name>, <string-name>
+<surname>Guerreiro</surname>, <given-names>L.</given-names>
+</string-name>, <string-name>
+<surname>P&#x000e9;rez</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>Calus</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Burgue&#x000f1;o</surname>, <given-names>J.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>de los Campos</surname>, <given-names>G.</given-names>
+</string-name> (<year>2014</year>). <article-title>A reaction norm model for genomic selection using high&#x02010;dimensional genomic and environmental data</article-title>. <source>Theoretical and Applied Genetics</source>, <volume>127</volume>, <fpage>595</fpage>&#x02013;<lpage>607</lpage>. <pub-id pub-id-type="doi">10.1007/s00122-013-2243-1</pub-id>
+<pub-id pub-id-type="pmid">24337101</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0028"><mixed-citation publication-type="journal" id="gepi22449-cit-0028">
+<string-name>
+<surname>Jermy</surname>, <given-names>B. S.</given-names>
+</string-name>, <string-name>
+<surname>Hagenaars</surname>, <given-names>S. P.</given-names>
+</string-name>, <string-name>
+<surname>Glanville</surname>, <given-names>K. P.</given-names>
+</string-name>, <string-name>
+<surname>Coleman</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Howard</surname>, <given-names>D. M.</given-names>
+</string-name>, <string-name>
+<surname>Breen</surname>, <given-names>G.</given-names>
+</string-name>, <string-name>
+<surname>Vassos</surname>, <given-names>E.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Lewis</surname>, <given-names>C. M.</given-names>
+</string-name> (<year>2020</year>). <article-title>Using major depression polygenic risk scores to explore the depressive symptom continuum</article-title>. <source>Psychological Medicine</source>, <volume>52</volume>(<issue>1</issue>), <fpage>149</fpage>&#x02013;<lpage>158</lpage>. <pub-id pub-id-type="doi">10.1017/S0033291720001828</pub-id>
+</mixed-citation></ref><ref id="gepi22449-bib-0030"><mixed-citation publication-type="journal" id="gepi22449-cit-0030">
+<string-name>
+<surname>Kendall</surname>, <given-names>K. M.</given-names>
+</string-name>, <string-name>
+<surname>Van Assche</surname>, <given-names>E.</given-names>
+</string-name>, <string-name>
+<surname>Andlauer</surname>, <given-names>T. F.</given-names>
+</string-name>, <string-name>
+<surname>Choi</surname>, <given-names>K. W.</given-names>
+</string-name>, <string-name>
+<surname>Luykx</surname>, <given-names>J. J.</given-names>
+</string-name>, <string-name>
+<surname>Schulte</surname>, <given-names>E. C.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Lu</surname>, <given-names>Y.</given-names>
+</string-name> (<year>2021</year>). <article-title>The genetic basis of major depression</article-title>. <source>Psychological Medicine</source>, <volume>51</volume>, <fpage>1</fpage>&#x02013;<lpage>14</lpage>. <pub-id pub-id-type="doi">10.1017/S0033291721000441</pub-id>
+<pub-id pub-id-type="pmid">33267920</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0032"><mixed-citation publication-type="journal" id="gepi22449-cit-0032">
+<string-name>
+<surname>Khan</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Nabi</surname>, <given-names>G.</given-names>
+</string-name>, <string-name>
+<surname>Yao</surname>, <given-names>L.</given-names>
+</string-name>, <string-name>
+<surname>Siddique</surname>, <given-names>R.</given-names>
+</string-name>, <string-name>
+<surname>Sajjad</surname>, <given-names>W.</given-names>
+</string-name>, <string-name>
+<surname>Kumar</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Duan</surname>, <given-names>P.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Hou</surname>, <given-names>H.</given-names>
+</string-name> (<year>2018</year>). <article-title>Health risks associated with genetic alterations in internal clock system by external factors</article-title>. <source>International Journal of Biological Sciences</source>, <volume>14</volume>(<issue>7</issue>), <fpage>791</fpage>&#x02013;<lpage>798</lpage>. <pub-id pub-id-type="doi">10.7150/ijbs.23744</pub-id>
+<pub-id pub-id-type="pmid">29910689</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0033"><mixed-citation publication-type="journal" id="gepi22449-cit-0033">
+<string-name>
+<surname>Kronfeld&#x02010;Schor</surname>, <given-names>N.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Einat</surname>, <given-names>H.</given-names>
+</string-name> (<year>2012</year>). <article-title>Circadian rhythms and depression. Human psychopathology and animal models</article-title>. <source>Neuropharmacology</source>, <volume>62</volume>(<issue>1</issue>), <fpage>101</fpage>&#x02013;<lpage>114</lpage>. <pub-id pub-id-type="doi">10.1016/j.neuropharm.2011.08.020</pub-id>
+<pub-id pub-id-type="pmid">21871466</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0034"><mixed-citation publication-type="journal" id="gepi22449-cit-0034">
+<string-name>
+<surname>Lee</surname>, <given-names>S. H.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>van der Werf</surname>, <given-names>J. H.</given-names>
+</string-name> (<year>2016</year>). <article-title>MTG2: An efficient algorithm for multivariate linear mixed model analysis based on genomic information</article-title>. <source>Bioinformatics</source>, <volume>32</volume>(<issue>9</issue>), <fpage>1420</fpage>&#x02013;<lpage>1422</lpage>. <pub-id pub-id-type="doi">10.1093/bioinformatics/btw012</pub-id>
+<pub-id pub-id-type="pmid">26755623</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0035"><mixed-citation publication-type="journal" id="gepi22449-cit-0035">
+<string-name>
+<surname>Lee</surname>, <given-names>S. H.</given-names>
+</string-name>, <string-name>
+<surname>Yang</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Goddard</surname>, <given-names>M. E.</given-names>
+</string-name>, <string-name>
+<surname>Visscher</surname>, <given-names>P. M.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Wray</surname>, <given-names>N. R.</given-names>
+</string-name> (<year>2012</year>). <article-title>Estimation of pleiotropy between complex diseases using single&#x02010;nucleotide polymorphism&#x02010;derived genomic relationships and restricted maximum likelihood</article-title>. <source>Bioinformatics</source>, <volume>28</volume>(<issue>19</issue>), <fpage>2540</fpage>&#x02013;<lpage>2542</lpage>. <pub-id pub-id-type="doi">10.1093/bioinformatics/bts474</pub-id>
+<pub-id pub-id-type="pmid">22843982</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0036"><mixed-citation publication-type="journal" id="gepi22449-cit-0036">
+<string-name>
+<surname>Leggett</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Burgard</surname>, <given-names>S.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Zivin</surname>, <given-names>K.</given-names>
+</string-name> (<year>2016</year>). <article-title>The impact of sleep disturbance on the association between stressful life events and depressive symptoms</article-title>. <source>The Journals of Gerontology: Series B</source>, <volume>71</volume>(<issue>1</issue>), <fpage>118</fpage>&#x02013;<lpage>128</lpage>. <pub-id pub-id-type="doi">10.1093/geronb/gbv072</pub-id>
+</mixed-citation></ref><ref id="gepi22449-bib-0037"><mixed-citation publication-type="journal" id="gepi22449-cit-0037">
+<string-name>
+<surname>Levey</surname>, <given-names>D. F.</given-names>
+</string-name>, <string-name>
+<surname>Stein</surname>, <given-names>M. B.</given-names>
+</string-name>, <string-name>
+<surname>Wendt</surname>, <given-names>F. R.</given-names>
+</string-name>, <string-name>
+<surname>Pathak</surname>, <given-names>G. A.</given-names>
+</string-name>, <string-name>
+<surname>Zhou</surname>, <given-names>H.</given-names>
+</string-name>, <string-name>
+<surname>Aslan</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Quaden</surname>, <given-names>R.</given-names>
+</string-name>, <string-name>
+<surname>Harrington</surname>, <given-names>K. M.</given-names>
+</string-name>, <string-name>
+<surname>Nu&#x000f1;ez</surname>, <given-names>Y. Z.</given-names>
+</string-name>, <string-name>
+<surname>Overstreet</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Radhakrishnan</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Sanacora</surname>, <given-names>G.</given-names>
+</string-name>, <string-name>
+<surname>McIntosh</surname>, <given-names>A. M.</given-names>
+</string-name>, <string-name>
+<surname>Shi</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Shringarpure</surname>, <given-names>S. S.</given-names>
+</string-name>, <string-name>
+<surname>Research</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Million Veteran</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>Concato</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Polimanti</surname>, <given-names>R.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Gelernter</surname>, <given-names>J.</given-names>
+</string-name> (<year>2021</year>). <article-title>Bi&#x02010;ancestral depression GWAS in the Million Veteran Program and meta&#x02010;analysis in &#x0003e;1.2 million individuals highlight new therapeutic directions</article-title>. <source>Nature Neuroscience</source>, <volume>24</volume>(<issue>7</issue>), <fpage>954</fpage>&#x02013;<lpage>963</lpage>. <pub-id pub-id-type="doi">10.1038/s41593-021-00860-2</pub-id>
+<pub-id pub-id-type="pmid">34045744</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0038"><mixed-citation publication-type="journal" id="gepi22449-cit-0038">
+<string-name>
+<surname>Luppino</surname>, <given-names>F. S.</given-names>
+</string-name>, <string-name>
+<surname>de Wit</surname>, <given-names>L. M.</given-names>
+</string-name>, <string-name>
+<surname>Bouvy</surname>, <given-names>P. F.</given-names>
+</string-name>, <string-name>
+<surname>Stijnen</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Cuijpers</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>Penninx</surname>, <given-names>B. W.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Zitman</surname>, <given-names>F. G.</given-names>
+</string-name> (<year>2010</year>). <article-title>Overweight, obesity, and depression: A systematic review and meta&#x02010;analysis of longitudinal studies</article-title>. <source>Archives of General Psychiatry</source>, <volume>67</volume>(<issue>3</issue>), <fpage>220</fpage>&#x02013;<lpage>229</lpage>. <pub-id pub-id-type="doi">10.1001/archgenpsychiatry.2010.2</pub-id>
+<pub-id pub-id-type="pmid">20194822</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0039"><mixed-citation publication-type="journal" id="gepi22449-cit-0039">
+<string-name>
+<surname>Morrissey</surname>, <given-names>K.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Kinderman</surname>, <given-names>P.</given-names>
+</string-name> (<year>2020</year>). <article-title>The impact of childhood socioeconomic status on depression and anxiety in adult life: Testing the accumulation, critical period and social mobility hypotheses</article-title>. <source>SSM&#x02014;Population Health</source>, <volume>11</volume>, <elocation-id>100576</elocation-id>. <pub-id pub-id-type="doi">10.1016/j.ssmph.2020.100576</pub-id>
+<pub-id pub-id-type="pmid">32346597</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0040"><mixed-citation publication-type="journal" id="gepi22449-cit-0040">
+<string-name>
+<surname>Mullins</surname>, <given-names>N.</given-names>
+</string-name>, <string-name>
+<surname>Power</surname>, <given-names>R. A.</given-names>
+</string-name>, <string-name>
+<surname>Fisher</surname>, <given-names>H. L.</given-names>
+</string-name>, <string-name>
+<surname>Hanscombe</surname>, <given-names>K. B.</given-names>
+</string-name>, <string-name>
+<surname>Euesden</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Iniesta</surname>, <given-names>R.</given-names>
+</string-name>, <string-name>
+<surname>Levinson</surname>, <given-names>D. F.</given-names>
+</string-name>, <string-name>
+<surname>Weissman</surname>, <given-names>M. M.</given-names>
+</string-name>, <string-name>
+<surname>Potash</surname>, <given-names>J. B.</given-names>
+</string-name>, <string-name>
+<surname>Shi</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Uher</surname>, <given-names>R.</given-names>
+</string-name>, <string-name>
+<surname>Cohen&#x02010;Woods</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Rivera</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Jones</surname>, <given-names>L.</given-names>
+</string-name>, <string-name>
+<surname>Jones</surname>, <given-names>I.</given-names>
+</string-name>, <string-name>
+<surname>Craddock</surname>, <given-names>N.</given-names>
+</string-name>, <string-name>
+<surname>Owen</surname>, <given-names>M. J.</given-names>
+</string-name>, <string-name>
+<surname>Korszun</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Craig</surname>, <given-names>I. W.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Lewis</surname>, <given-names>C. M.</given-names>
+</string-name> (<year>2016</year>). <article-title>Polygenic interactions with environmental adversity in the aetiology of major depressive disorder</article-title>. <source>Psychological Medicine</source>, <volume>46</volume>(<issue>4</issue>), <fpage>759</fpage>&#x02013;<lpage>770</lpage>. <pub-id pub-id-type="doi">10.1017/S0033291715002172</pub-id>
+<pub-id pub-id-type="pmid">26526099</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0041"><mixed-citation publication-type="journal" id="gepi22449-cit-0041">
+<string-name>
+<surname>Naggara</surname>, <given-names>O.</given-names>
+</string-name>, <string-name>
+<surname>Raymond</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Guilbert</surname>, <given-names>F.</given-names>
+</string-name>, <string-name>
+<surname>Roy</surname>, <given-names>D.</given-names>
+</string-name>, <string-name>
+<surname>Weill</surname>, <given-names>A.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Altman</surname>, <given-names>D. G.</given-names>
+</string-name> (<year>2011</year>). <article-title>Analysis by categorizing or dichotomizing continuous variables is inadvisable: An example from the natural history of unruptured aneurysms</article-title>. <source>American Journal of Neuroradiology</source>, <volume>32</volume>(<issue>3</issue>), <fpage>437</fpage>&#x02013;<lpage>440</lpage>. <pub-id pub-id-type="doi">10.3174/ajnr.A2425</pub-id>
+<pub-id pub-id-type="pmid">21330400</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0042"><mixed-citation publication-type="journal" id="gepi22449-cit-0042">
+<string-name>
+<surname>Ni</surname>, <given-names>G.</given-names>
+</string-name>, <string-name>
+<surname>van der Werf</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Zhou</surname>, <given-names>X.</given-names>
+</string-name>, <string-name>
+<surname>Hypp&#x000f6;nen</surname>, <given-names>E.</given-names>
+</string-name>, <string-name>
+<surname>Wray</surname>, <given-names>N. R.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Lee</surname>, <given-names>S. H.</given-names>
+</string-name> (<year>2019</year>). <article-title>Genotype&#x02010;covariate correlation and interaction disentangled by a whole&#x02010;genome multivariate reaction norm model</article-title>. <source>Nature Communications</source>, <volume>10</volume>(<issue>1</issue>), <fpage>2239</fpage>. <pub-id pub-id-type="doi">10.1038/s41467-019-10128-w</pub-id>
+</mixed-citation></ref><ref id="gepi22449-bib-0044"><mixed-citation publication-type="journal" id="gepi22449-cit-0044">
+<string-name>
+<surname>Palagini</surname>, <given-names>L.</given-names>
+</string-name>, <string-name>
+<surname>Domschke</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Benedetti</surname>, <given-names>F.</given-names>
+</string-name>, <string-name>
+<surname>Foster</surname>, <given-names>R. G.</given-names>
+</string-name>, <string-name>
+<surname>Wulff</surname>, <given-names>K.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Riemann</surname>, <given-names>D.</given-names>
+</string-name> (<year>2019</year>). <article-title>Developmental pathways towards mood disorders in adult life: Is there a role for sleep disturbances?</article-title>
+<source>Journal of Affective Disorders</source>, <volume>243</volume>, <fpage>121</fpage>&#x02013;<lpage>132</lpage>. <pub-id pub-id-type="doi">10.1016/j.jad.2018.09.011</pub-id>
+<pub-id pub-id-type="pmid">30243192</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0045"><mixed-citation publication-type="journal" id="gepi22449-cit-0045">
+<string-name>
+<surname>Peterson</surname>, <given-names>R. E.</given-names>
+</string-name>, <string-name>
+<surname>Cai</surname>, <given-names>N.</given-names>
+</string-name>, <string-name>
+<surname>Dahl</surname>, <given-names>A. W.</given-names>
+</string-name>, <string-name>
+<surname>Bigdeli</surname>, <given-names>T. B.</given-names>
+</string-name>, <string-name>
+<surname>Edwards</surname>, <given-names>A. C.</given-names>
+</string-name>, <string-name>
+<surname>Webb</surname>, <given-names>B. T.</given-names>
+</string-name>, <string-name>
+<surname>Bacanu</surname>, <given-names>S. A.</given-names>
+</string-name>, <string-name>
+<surname>Zaitlen</surname>, <given-names>N.</given-names>
+</string-name>, <string-name>
+<surname>Flint</surname>, <given-names>J.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Kendler</surname>, <given-names>K. S.</given-names>
+</string-name> (<year>2018</year>). <article-title>Molecular genetic analysis subdivided by adversity exposure suggests etiologic heterogeneity in major depression</article-title>. <source>American Journal of Psychiatry</source>, <volume>175</volume>(<issue>6</issue>), <fpage>545</fpage>&#x02013;<lpage>554</lpage>. <pub-id pub-id-type="doi">10.1176/appi.ajp.2017.17060621</pub-id>
+<pub-id pub-id-type="pmid">29495898</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0046"><mixed-citation publication-type="journal" id="gepi22449-cit-0046">
+<string-name>
+<surname>Peyrot</surname>, <given-names>W. J.</given-names>
+</string-name>, <string-name>
+<surname>Van der Auwera</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Milaneschi</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Dolan</surname>, <given-names>C. V.</given-names>
+</string-name>, <string-name>
+<surname>Madden</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>Sullivan</surname>, <given-names>P. F.</given-names>
+</string-name>, <string-name>
+<surname>Strohmaier</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Ripke</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Rietschel</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Nivard</surname>, <given-names>M. G.</given-names>
+</string-name>, <string-name>
+<surname>Mullins</surname>, <given-names>N.</given-names>
+</string-name>, <string-name>
+<surname>Montgomery</surname>, <given-names>G. W.</given-names>
+</string-name>, <string-name>
+<surname>Henders</surname>, <given-names>A. K.</given-names>
+</string-name>, <string-name>
+<surname>Heat</surname>, <given-names>A. C.</given-names>
+</string-name>, <string-name>
+<surname>Fisher</surname>, <given-names>H. L.</given-names>
+</string-name>, <string-name>
+<surname>Dunn</surname>, <given-names>E. C.</given-names>
+</string-name>, <string-name>
+<surname>Byrne</surname>, <given-names>E. M.</given-names>
+</string-name>, <string-name>
+<surname>Air</surname>, <given-names>T. A.</given-names>
+</string-name>, <string-name>
+<surname>Major Depressive Disorder Working Group of the Psychiatric Genomics</surname>, <given-names>C.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Penninx</surname>, <given-names>B.</given-names>
+</string-name> (<year>2018</year>). <article-title>Does childhood trauma moderate polygenic risk for depression? A meta&#x02010;analysis of 5765 subjects from the Psychiatric Genomics Consortium</article-title>. <source>Biological Psychiatry</source>, <volume>84</volume>(<issue>2</issue>), <fpage>138</fpage>&#x02013;<lpage>147</lpage>. <pub-id pub-id-type="doi">10.1016/j.biopsych.2017.09.009</pub-id>
+<pub-id pub-id-type="pmid">29129318</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0047"><mixed-citation publication-type="journal" id="gepi22449-cit-0047">
+<string-name>
+<surname>Peyrot</surname>, <given-names>W. J.</given-names>
+</string-name>, <string-name>
+<surname>Milaneschi</surname>, <given-names>Y.</given-names>
+</string-name>, <string-name>
+<surname>Abdellaoui</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Sullivan</surname>, <given-names>P. F.</given-names>
+</string-name>, <string-name>
+<surname>Hottenga</surname>, <given-names>J. J.</given-names>
+</string-name>, <string-name>
+<surname>Boomsma</surname>, <given-names>D. I.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Penninx</surname>, <given-names>B. W.</given-names>
+</string-name> (<year>2014</year>). <article-title>Effect of polygenic risk scores on depression in childhood trauma</article-title>. <source>The British Journal of Psychiatry: The Journal of Mental Science</source>, <volume>2</volume>(<issue>5</issue>), <fpage>113</fpage>&#x02013;<lpage>119</lpage>. <pub-id pub-id-type="doi">10.1192/bjp.bp.113.143081</pub-id>
+</mixed-citation></ref><ref id="gepi22449-bib-0048"><mixed-citation publication-type="journal" id="gepi22449-cit-0048">
+<string-name>
+<surname>Pitharouli</surname>, <given-names>M. C.</given-names>
+</string-name>, <string-name>
+<surname>Hagenaars</surname>, <given-names>S. P.</given-names>
+</string-name>, <string-name>
+<surname>Glanville</surname>, <given-names>K. P.</given-names>
+</string-name>, <string-name>
+<surname>Coleman</surname>, <given-names>J. R.</given-names>
+</string-name>, <string-name>
+<surname>Hotopf</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Lewis</surname>, <given-names>C. M.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Pariante</surname>, <given-names>C. M.</given-names>
+</string-name> (<year>2021</year>). <article-title>Depressed patients have elevated C&#x02010;reactive protein independently of genetic, health and psychosocial factors, in the UK Biobank</article-title>. <source>American Journal of Psychiatry</source>, <volume>178</volume>(<issue>6</issue>), <fpage>522</fpage>&#x02013;<lpage>529</lpage>. <pub-id pub-id-type="doi">10.1176/appi.ajp.2020.20060947</pub-id>
+<pub-id pub-id-type="pmid">33985349</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0050"><mixed-citation publication-type="journal" id="gepi22449-cit-0050">
+<string-name>
+<surname>Purcell</surname>, <given-names>S.</given-names>
+</string-name> (<year>2002</year>). <article-title>Variance components models for gene&#x02013;environment interaction in twin analysis</article-title>. <source>Twin Research</source>, <volume>5</volume>(<issue>6</issue>), <fpage>554</fpage>&#x02013;<lpage>571</lpage>. <pub-id pub-id-type="doi">10.1375/136905202762342026</pub-id>
+<pub-id pub-id-type="pmid">12573187</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0051"><mixed-citation publication-type="journal" id="gepi22449-cit-0051">
+<string-name>
+<surname>Rahman</surname>, <given-names>S. A.</given-names>
+</string-name>, <string-name>
+<surname>Marcu</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Kayumov</surname>, <given-names>L.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Shapiro</surname>, <given-names>C. M.</given-names>
+</string-name> (<year>2010</year>). <article-title>Altered sleep architecture and higher incidence of subsyndromal depression in low endogenous melatonin secretors</article-title>. <source>European Archives of Psychiatry and Clinical Neuroscience</source>, <volume>260</volume>(<issue>4</issue>), <fpage>327</fpage>&#x02013;<lpage>335</lpage>. <pub-id pub-id-type="doi">10.1007/s00406-009-0080-7</pub-id>
+<pub-id pub-id-type="pmid">20016908</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0052"><mixed-citation publication-type="journal" id="gepi22449-cit-0052">
+<string-name>
+<surname>Royston</surname>, <given-names>P.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Altman</surname>, <given-names>D. G.</given-names>
+</string-name> (<year>1994</year>). <article-title>Regression using fractional polynomials of continuous covariates: Parsimonious parametric modelling (with discussion)</article-title>. <source>Applied Statistics</source>, <volume>43</volume>(<issue>3</issue>), <fpage>429</fpage>&#x02013;<lpage>467</lpage>. <pub-id pub-id-type="doi">10.2307/2986270</pub-id>
+</mixed-citation></ref><ref id="gepi22449-bib-0053"><mixed-citation publication-type="journal" id="gepi22449-cit-0053">
+<string-name>
+<surname>Schaeffer</surname>, <given-names>L. R.</given-names>
+</string-name> (<year>2004</year>). <article-title>Application of random regression models in animal breeding</article-title>. <source>Livestock Production Science</source>, <volume>86</volume>(<issue>1</issue>), <fpage>35</fpage>&#x02013;<lpage>45</lpage>. <pub-id pub-id-type="doi">10.1016/S0301-6226(03)00151-9</pub-id>
+</mixed-citation></ref><ref id="gepi22449-bib-0055"><mixed-citation publication-type="journal" id="gepi22449-cit-0055">
+<string-name>
+<surname>Shen</surname>, <given-names>X.</given-names>
+</string-name>, <string-name>
+<surname>Howard</surname>, <given-names>D. M.</given-names>
+</string-name>, <string-name>
+<surname>Adams</surname>, <given-names>M. J.</given-names>
+</string-name>, <string-name>
+<surname>Hill</surname>, <given-names>W. D.</given-names>
+</string-name>, <string-name>
+<surname>Clarke</surname>, <given-names>T.&#x02010;K.</given-names>
+</string-name>, <string-name>
+<surname>Major Depressive Disorder Working Group of the Psychiatric Genomics</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Deary</surname>, <given-names>I. J.</given-names>
+</string-name>, <string-name>
+<surname>Whalley</surname>, <given-names>H. C.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>McIntosh</surname>, <given-names>A. M.</given-names>
+</string-name> (<year>2020</year>). <article-title>A phenome&#x02010;wide association and Mendelian Randomisation study of polygenic risk for depression in UK Biobank</article-title>. <source>Nature Communications</source>, <volume>11</volume>(<issue>1</issue>), <fpage>2301</fpage>. <pub-id pub-id-type="doi">10.1038/s41467-020-16022-0</pub-id>
+</mixed-citation></ref><ref id="gepi22449-bib-0056"><mixed-citation publication-type="journal" id="gepi22449-cit-0056">
+<string-name>
+<surname>Sudlow</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Gallacher</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Allen</surname>, <given-names>N.</given-names>
+</string-name>, <string-name>
+<surname>Beral</surname>, <given-names>V.</given-names>
+</string-name>, <string-name>
+<surname>Burton</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>Danesh</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Downey</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>Elliott</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>Green</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Landray</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Liu</surname>, <given-names>B.</given-names>
+</string-name>, <string-name>
+<surname>Matthews</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>Ong</surname>, <given-names>G.</given-names>
+</string-name>, <string-name>
+<surname>Pell</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Silman</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Young</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Sprosen</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Peakman</surname>, <given-names>T.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Collins</surname>, <given-names>R.</given-names>
+</string-name> (<year>2015</year>). <article-title>UK Biobank: An open access resource for identifying the causes of a wide range of complex diseases of middle and old age</article-title>. <source>PLoS Medicine</source>, <volume>12</volume>(<issue>3</issue>), <elocation-id>e1001779</elocation-id>. <pub-id pub-id-type="doi">10.1371/journal.pmed.1001779</pub-id>
+<pub-id pub-id-type="pmid">25826379</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0057"><mixed-citation publication-type="journal" id="gepi22449-cit-0057">
+<string-name>
+<surname>Turley</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>Walters</surname>, <given-names>R. K.</given-names>
+</string-name>, <string-name>
+<surname>Maghzian</surname>, <given-names>O.</given-names>
+</string-name>, <string-name>
+<surname>Okbay</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Lee</surname>, <given-names>J. J.</given-names>
+</string-name>, <string-name>
+<surname>Fontana</surname>, <given-names>M. A.</given-names>
+</string-name>, <string-name>
+<surname>Nguyen&#x02010;Viet</surname>, <given-names>T. A.</given-names>
+</string-name>, <string-name>
+<surname>Wedow</surname>, <given-names>R.</given-names>
+</string-name>, <string-name>
+<surname>Zacher</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Furlotte</surname>, <given-names>N. A.</given-names>
+</string-name>, <string-name>
+<surname>Research</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Social Science Genetic Association</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Magnusson</surname>, <given-names>P.</given-names>
+</string-name>, <string-name>
+<surname>Oskarsson</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Johannesson</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Visscher</surname>, <given-names>P. M.</given-names>
+</string-name>, <string-name>
+<surname>Laibson</surname>, <given-names>D.</given-names>
+</string-name>, <string-name>
+<surname>Cesarini</surname>, <given-names>D.</given-names>
+</string-name>, <string-name>
+<surname>Neale</surname>, <given-names>B. M.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Benjamin</surname>, <given-names>D. J.</given-names>
+</string-name> (<year>2018</year>). <article-title>Multi&#x02010;trait analysis of genome&#x02010;wide association summary statistics using MTAG</article-title>. <source>Nature Genetics</source>, <volume>50</volume>(<issue>2</issue>), <fpage>229</fpage>&#x02013;<lpage>237</lpage>. <pub-id pub-id-type="doi">10.1038/s41588-017-0009-4</pub-id>
+<pub-id pub-id-type="pmid">29292387</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0012"><mixed-citation publication-type="journal" id="gepi22449-cit-0012">
+<string-name>
+<surname>Vos</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Lim</surname>, <given-names>S. S</given-names>
+</string-name>, <string-name>
+<surname>Abbafati</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Abbas</surname>, <given-names>K. M.</given-names>
+</string-name>, <string-name>
+<surname>Abbasi</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Abbasifard</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Abbasi&#x02010;Kangevari</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Abbastabar</surname>, <given-names>H.</given-names>
+</string-name>, <string-name>
+<surname>Abd&#x02010;Allah</surname>, <given-names>F.</given-names>
+</string-name>, <string-name>
+<surname>Abdelalim</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Abdollahi</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Abdollahpour</surname>, <given-names>I.</given-names>
+</string-name>, <string-name>
+<surname>Abolhassani</surname>, <given-names>H.</given-names>
+</string-name>, <string-name>
+<surname>Aboyans</surname>, <given-names>V.</given-names>
+</string-name>, <string-name>
+<surname>Abrams</surname>, <given-names>E. M.</given-names>
+</string-name>, <string-name>
+<surname>Abreu</surname>, <given-names>L. G.</given-names>
+</string-name>, <string-name>
+<surname>Abrigo</surname>, <given-names>M. R. M.</given-names>
+</string-name>, <string-name>
+<surname>Abu&#x02010;Raddad</surname>, <given-names>L. J.</given-names>
+</string-name>, <string-name>
+<surname>Abushouk</surname>, <given-names>A. I.</given-names>
+</string-name>, &#x02026; <string-name>
+<surname>Murray</surname>, <given-names>C. J. L.</given-names>
+</string-name> (<year>2020</year>). <article-title>Global burden of 369 diseases and injuries in 204 countries and territories, 1990&#x02010;2019: A systematic analysis for the Global Burden of Disease Study 2019</article-title>. <source>The Lancet</source>, <volume>396</volume>(<issue>10258</issue>), <fpage>1204</fpage>&#x02013;<lpage>1222</lpage>. <pub-id pub-id-type="doi">10.1016/S0140-6736(20)30925-9</pub-id>
+</mixed-citation></ref><ref id="gepi22449-bib-0058"><mixed-citation publication-type="journal" id="gepi22449-cit-0058">
+<string-name>
+<surname>Vos</surname>, <given-names>T.</given-names>
+</string-name>, <string-name>
+<surname>Allen</surname>, <given-names>C.</given-names>
+</string-name>, <string-name>
+<surname>Arora</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Barber</surname>, <given-names>R. M.</given-names>
+</string-name>, <string-name>
+<surname>Bhutta</surname>, <given-names>Z. A.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Murray</surname>, <given-names>C. J.</given-names>
+</string-name> (<year>2016</year>). <article-title>Global, regional, and national incidence, prevalence, and years lived with disability for 310 diseases and injuries, 1990&#x02010;2015: A systematic analysis for the Global Burden of Disease Study 2015</article-title>. <source>Lancet</source>, <volume>388</volume>(<issue>10</issue>), <fpage>1545</fpage>&#x02013;<lpage>1602</lpage>. <pub-id pub-id-type="doi">10.1016/S0140-6736(16)31678-6</pub-id>
+<pub-id pub-id-type="pmid">27733282</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0060"><mixed-citation publication-type="journal" id="gepi22449-cit-0060">
+<string-name>
+<surname>Watson</surname>, <given-names>N. F.</given-names>
+</string-name>, <string-name>
+<surname>Harden</surname>, <given-names>K. P.</given-names>
+</string-name>, <string-name>
+<surname>Buchwald</surname>, <given-names>D.</given-names>
+</string-name>, <string-name>
+<surname>Vitiello</surname>, <given-names>M. V.</given-names>
+</string-name>, <string-name>
+<surname>Pack</surname>, <given-names>A.</given-names>
+</string-name>, <string-name>
+<surname>Strachan</surname>, <given-names>E.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Goldberg</surname>, <given-names>J.</given-names>
+</string-name> (<year>2014</year>). <article-title>Sleep duration and depressive symptoms: A gene-environment interaction</article-title>. <source>Sleep</source>, <volume>37</volume>(<issue>2</issue>), <fpage>351</fpage>&#x02013;<lpage>358</lpage>. <pub-id pub-id-type="doi">10.5665/sleep.3412</pub-id>
+<pub-id pub-id-type="pmid">24497663</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0061"><mixed-citation publication-type="journal" id="gepi22449-cit-0061">
+<string-name>
+<surname>Wray</surname>, <given-names>N. R.</given-names>
+</string-name>, <string-name>
+<surname>Ripke</surname>, <given-names>S.</given-names>
+</string-name>, <string-name>
+<surname>Mattheisen</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Trzaskowski</surname>, <given-names>M.</given-names>
+</string-name>, <string-name>
+<surname>Byrne</surname>, <given-names>E. M.</given-names>
+</string-name>, <string-name>
+<surname>Abdellaoui</surname>, <given-names>A.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Sullivan</surname>, <given-names>P. F.</given-names>
+</string-name> (<year>2018</year>). <article-title>Genome&#x02010;wide association analyses identify 44 risk variants and refine the genetic architecture of major depression</article-title>. <source>Nature Genetics</source>, <volume>50</volume>(<issue>5</issue>), <fpage>668</fpage>&#x02013;<lpage>681</lpage>. <pub-id pub-id-type="doi">10.1038/s41588-018-0090-3</pub-id>
+<pub-id pub-id-type="pmid">29700475</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0062"><mixed-citation publication-type="journal" id="gepi22449-cit-0062">
+<string-name>
+<surname>Xuan</surname>, <given-names>Z.</given-names>
+</string-name>, <string-name>
+<surname>Julius</surname>, <given-names>K.</given-names>
+</string-name>, <string-name>
+<surname>Guiyan</surname>, <given-names>C.&#x02010;C.</given-names>
+</string-name>, <string-name>
+<surname>John</surname>, <given-names>N.</given-names>
+</string-name>, <string-name>
+<surname>Elina</surname>, <given-names>M.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>H. Hong</surname>, <given-names>L. S.</given-names>
+</string-name> (<year>2020</year>). <article-title>Whole&#x02010;genome approach discovers novel genetic and nongenetic variance components modulated by lifestyle for cardiovascular health</article-title>. <source>Journal of the American Heart Association</source>, <volume>9</volume>(<issue>8</issue>):<elocation-id>e015661</elocation-id>. <pub-id pub-id-type="doi">10.1161/JAHA.119.015661</pub-id>
+<pub-id pub-id-type="pmid">32308100</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0063"><mixed-citation publication-type="journal" id="gepi22449-cit-0063">
+<string-name>
+<surname>Yang</surname>, <given-names>J.</given-names>
+</string-name>, <string-name>
+<surname>Lee</surname>, <given-names>S. H.</given-names>
+</string-name>, <string-name>
+<surname>Goddard</surname>, <given-names>M. E.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Visscher</surname>, <given-names>P. M.</given-names>
+</string-name> (<year>2011</year>). <article-title>GCTA: a tool for genome&#x02010;wide complex trait analysis</article-title>. <source>American Journal of Human Genetics</source>, <volume>88</volume>(<issue>1</issue>), <fpage>76</fpage>&#x02013;<lpage>82</lpage>. <pub-id pub-id-type="doi">10.1016/j.ajhg.2010.11.011</pub-id>
+<pub-id pub-id-type="pmid">21167468</pub-id></mixed-citation></ref><ref id="gepi22449-bib-0064"><mixed-citation publication-type="journal" id="gepi22449-cit-0064">
+<string-name>
+<surname>Young</surname>, <given-names>A. I.</given-names>
+</string-name>, <string-name>
+<surname>Wauthier</surname>, <given-names>F. L.</given-names>
+</string-name>, &#x00026; <string-name>
+<surname>Donnelly</surname>, <given-names>P.</given-names>
+</string-name> (<year>2018</year>). <article-title>Identifying loci affecting trait variability and detecting interactions in genome&#x02010;wide association studies</article-title>. <source>Nature Genetics</source>, <volume>50</volume>(<issue>11</issue>), <fpage>1608</fpage>&#x02013;<lpage>1614</lpage>. <pub-id pub-id-type="doi">10.1038/s41588-018-0225-6</pub-id>
+<pub-id pub-id-type="pmid">30323177</pub-id></mixed-citation></ref></ref-list></back></article>

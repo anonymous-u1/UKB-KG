@@ -1,0 +1,578 @@
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD v1.0 20120330//EN" "JATS-archivearticle1.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" article-type="research-article"><?properties open_access?><front><journal-meta><journal-id journal-id-type="nlm-ta">Wellcome Open Res</journal-id><journal-id journal-id-type="iso-abbrev">Wellcome Open Res</journal-id><journal-id journal-id-type="pmc">Wellcome Open Res</journal-id><journal-title-group><journal-title>Wellcome Open Research</journal-title></journal-title-group><issn pub-type="epub">2398-502X</issn><publisher><publisher-name>F1000Research</publisher-name><publisher-loc>London, UK</publisher-loc></publisher></journal-meta><article-meta><article-id pub-id-type="pmid">28989980</article-id><article-id pub-id-type="pmc">PMC5606062</article-id><article-id pub-id-type="doi">10.12688/wellcomeopenres.12288.1</article-id><article-categories><subj-group subj-group-type="heading"><subject>Research Article</subject></subj-group><subj-group><subject>Articles</subject><subj-group><subject>Bone Biology, Osteoporosis &#x00026; Other Diseases of Bone</subject></subj-group><subj-group><subject>Coronary Artery Disease</subject></subj-group><subj-group><subject>Pancreas</subject></subj-group></subj-group></article-categories><title-group><article-title>Bone mineral density and risk of type 2 diabetes and coronary heart disease: A Mendelian randomization study</article-title><fn-group content-type="pub-status"><fn><p>[version 1; referees: 2 approved, 1 approved with reservations]</p></fn></fn-group></title-group><contrib-group><contrib contrib-type="author"><name><surname>Gan</surname><given-names>Wei</given-names></name><role content-type="http://credit.casrai.org/">Conceptualization</role><role content-type="http://credit.casrai.org/">Formal Analysis</role><role content-type="http://credit.casrai.org/">Investigation</role><role content-type="http://credit.casrai.org/">Methodology</role><role content-type="http://credit.casrai.org/">Software</role><role content-type="http://credit.casrai.org/">Visualization</role><role content-type="http://credit.casrai.org/">Writing &#x02013; Original Draft Preparation</role><role content-type="http://credit.casrai.org/">Writing &#x02013; Review &#x00026; Editing</role><contrib-id contrib-id-type="orcid">https://orcid.org/0000-0002-1270-6495</contrib-id><xref ref-type="aff" rid="a1">1</xref><xref ref-type="aff" rid="a2">2</xref></contrib><contrib contrib-type="author"><name><surname>Clarke</surname><given-names>Robert J.</given-names></name><role content-type="http://credit.casrai.org/">Project Administration</role><role content-type="http://credit.casrai.org/">Supervision</role><role content-type="http://credit.casrai.org/">Writing &#x02013; Review &#x00026; Editing</role><xref ref-type="aff" rid="a3">3</xref><xref ref-type="aff" rid="a4">4</xref></contrib><contrib contrib-type="author"><name><surname>Mahajan</surname><given-names>Anubha</given-names></name><role content-type="http://credit.casrai.org/">Supervision</role><role content-type="http://credit.casrai.org/">Writing &#x02013; Review &#x00026; Editing</role><xref ref-type="aff" rid="a1">1</xref><xref ref-type="aff" rid="a2">2</xref></contrib><contrib contrib-type="author"><name><surname>Kulohoma</surname><given-names>Benard</given-names></name><role content-type="http://credit.casrai.org/">Software</role><role content-type="http://credit.casrai.org/">Writing &#x02013; Review &#x00026; Editing</role><contrib-id contrib-id-type="orcid">https://orcid.org/0000-0001-6825-1832</contrib-id><xref ref-type="aff" rid="a1">1</xref><xref ref-type="aff" rid="a5">5</xref></contrib><contrib contrib-type="author"><name><surname>Kitajima</surname><given-names>Hidetoshi</given-names></name><role content-type="http://credit.casrai.org/">Software</role><role content-type="http://credit.casrai.org/">Writing &#x02013; Review &#x00026; Editing</role><xref ref-type="aff" rid="a1">1</xref></contrib><contrib contrib-type="author"><name><surname>Robertson</surname><given-names>Neil R.</given-names></name><role content-type="http://credit.casrai.org/">Data Curation</role><role content-type="http://credit.casrai.org/">Software</role><role content-type="http://credit.casrai.org/">Writing &#x02013; Review &#x00026; Editing</role><xref ref-type="aff" rid="a1">1</xref><xref ref-type="aff" rid="a2">2</xref></contrib><contrib contrib-type="author"><name><surname>Rayner</surname><given-names>N. William</given-names></name><role content-type="http://credit.casrai.org/">Data Curation</role><role content-type="http://credit.casrai.org/">Software</role><role content-type="http://credit.casrai.org/">Writing &#x02013; Review &#x00026; Editing</role><xref ref-type="aff" rid="a1">1</xref><xref ref-type="aff" rid="a2">2</xref></contrib><contrib contrib-type="author"><name><surname>Walters</surname><given-names>Robin G.</given-names></name><role content-type="http://credit.casrai.org/">Methodology</role><role content-type="http://credit.casrai.org/">Writing &#x02013; Review &#x00026; Editing</role><contrib-id contrib-id-type="orcid">https://orcid.org/0000-0002-9179-0321</contrib-id><xref ref-type="aff" rid="a3">3</xref><xref ref-type="aff" rid="a4">4</xref></contrib><contrib contrib-type="author"><name><surname>Holmes</surname><given-names>Michael V.</given-names></name><role content-type="http://credit.casrai.org/">Funding Acquisition</role><role content-type="http://credit.casrai.org/">Methodology</role><role content-type="http://credit.casrai.org/">Validation</role><role content-type="http://credit.casrai.org/">Visualization</role><role content-type="http://credit.casrai.org/">Writing &#x02013; Review &#x00026; Editing</role><contrib-id contrib-id-type="orcid">https://orcid.org/0000-0001-6617-0879</contrib-id><xref ref-type="aff" rid="a3">3</xref><xref ref-type="aff" rid="a4">4</xref><xref ref-type="aff" rid="a6">6</xref><xref ref-type="aff" rid="a7">7</xref></contrib><contrib contrib-type="author"><name><surname>Chen</surname><given-names>Zhengming</given-names></name><role content-type="http://credit.casrai.org/">Project Administration</role><role content-type="http://credit.casrai.org/">Writing &#x02013; Review &#x00026; Editing</role><xref ref-type="aff" rid="a3">3</xref><xref ref-type="aff" rid="a4">4</xref></contrib><contrib contrib-type="author"><name><surname>McCarthy</surname><given-names>Mark I.</given-names></name><role content-type="http://credit.casrai.org/">Conceptualization</role><role content-type="http://credit.casrai.org/">Funding Acquisition</role><role content-type="http://credit.casrai.org/">Project Administration</role><role content-type="http://credit.casrai.org/">Resources</role><role content-type="http://credit.casrai.org/">Supervision</role><role content-type="http://credit.casrai.org/">Writing &#x02013; Review &#x00026; Editing</role><xref ref-type="corresp" rid="c1">a</xref><xref ref-type="aff" rid="a1">1</xref><xref ref-type="aff" rid="a2">2</xref><xref ref-type="aff" rid="a6">6</xref></contrib><aff id="a1">
+<label>1</label>Wellcome Trust Centre for Human Genetics, University of Oxford, Oxford, OX3 7BN, UK</aff><aff id="a2">
+<label>2</label>Oxford Centre for Diabetes, Endocrinology, and Metabolism, University of Oxford, Oxford, OX3 7LE, UK</aff><aff id="a3">
+<label>3</label>Big Data Institute, University of Oxford, Oxford, OX3 7FZ, UK</aff><aff id="a4">
+<label>4</label>Clinical Trial Service Unit and Epidemiological Studies Unit, Nuffield Department of Population Health, University of Oxford, Oxford, OX3 7LF, UK</aff><aff id="a5">
+<label>5</label>Centre for Biotechnology and Bioinformatics, University of Nairobi, Nairobi, Kenya</aff><aff id="a6">
+<label>6</label>National Institute of Health Research Oxford Biomedical Research Centre, Oxford, OX3 7LE, UK</aff><aff id="a7">
+<label>7</label>Medical Research Council Population Health Research Unit, University of Oxford, Oxford, OX3 7LF, UK</aff></contrib-group><author-notes><corresp id="c1"><label>a</label><email xlink:href="mailto:mark.mccarthy@drl.ox.ac.uk">mark.mccarthy@drl.ox.ac.uk</email></corresp><fn fn-type="COI-statement"><p>
+<bold>Competing interests: </bold>No competing interests were declared.</p></fn></author-notes><pub-date pub-type="epub"><day>22</day><month>8</month><year>2017</year></pub-date><pub-date pub-type="collection"><year>2017</year></pub-date><volume>2</volume><elocation-id>68</elocation-id><history><date date-type="accepted"><day>21</day><month>8</month><year>2017</year></date></history><permissions><copyright-statement>Copyright: &#x000a9; 2017 Gan W et al.</copyright-statement><copyright-year>2017</copyright-year><license xlink:href="http://creativecommons.org/licenses/by/4.0/"><license-p>This is an open access article distributed under the terms of the Creative Commons Attribution Licence, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri content-type="pdf" xlink:type="simple" xlink:href="wellcomeopenres-2-13302.pdf"/><abstract><p>
+<bold>Background:</bold> Observational studies have demonstrated that increased bone mineral density is associated with a higher risk of type 2 diabetes (T2D), but the relationship with risk of coronary heart disease (CHD) is less clear. Moreover, substantial uncertainty remains about the causal relevance of increased bone mineral density for T2D and CHD, which can be assessed by Mendelian randomisation studies.&#x000a0;</p><p>
+<bold>Methods:</bold> We identified 235 independent single nucleotide polymorphisms (SNPs) associated at
+<italic>p</italic>&#x0003c;5&#x000d7;10
+<sup>-8</sup> with estimated heel bone mineral density (eBMD) in 116,501 individuals from the UK Biobank study, accounting for 13.9% of eBMD variance. For each eBMD-associated SNP, we extracted effect estimates from the largest available GWAS studies for T2D (DIAGRAM: n=26,676 T2D cases and 132,532 controls) and CHD (CARDIoGRAMplusC4D: n=60,801 CHD cases and 123,504 controls). A two-sample design using several Mendelian randomization approaches was used to investigate the causal relevance of eBMD for risk of T2D and CHD. In addition, we explored the relationship of eBMD, instrumented by the 235 SNPs, on 12 cardiovascular and metabolic risk factors. Finally, we conducted Mendelian randomization analysis in the reverse direction to investigate reverse causality.</p><p>
+<bold>Results:</bold> Each one standard deviation increase in genetically instrumented eBMD (equivalent to 0.14 g/cm
+<sup>2</sup>) was associated with an 8% higher risk of T2D (odds ratio [OR] 1.08; 95% confidence interval [CI]: 1.02 to 1.14;
+<italic>p</italic>=0.012) and 5% higher risk of CHD (OR 1.05; 95%CI: 1.00 to 1.10;
+<italic>p</italic>=0.034). Consistent results were obtained in sensitivity analyses using several different Mendelian randomization approaches. Equivalent increases in eBMD were also associated with lower plasma levels of HDL-cholesterol and increased insulin resistance. Mendelian randomization in the reverse direction using 94 T2D SNPs or 52 CHD SNPs showed no evidence of reverse causality with eBMD.</p><p>
+<bold>Conclusions: </bold>These findings suggest a causal relationship between elevated bone mineral density with risks of both T2D and CHD.</p></abstract><kwd-group kwd-group-type="author"><kwd>Bone mineral density</kwd><kwd>Type 2 diabetes</kwd><kwd>Cardiovascular disease</kwd><kwd>Coronary artery disease</kwd><kwd>insulin resistance</kwd><kwd>Mendelian randomization</kwd><kwd>UK biobank</kwd><kwd>Causality</kwd></kwd-group><funding-group><award-group id="fund-1" xlink:href="http://dx.doi.org/10.13039/100004440"><funding-source>Wellcome Trust</funding-source><award-id>098381</award-id><award-id>090532</award-id></award-group><award-group id="fund-2" xlink:href="http://dx.doi.org/10.13039/501100000272"><funding-source>National Institute for Health Research</funding-source></award-group><award-group id="fund-3" xlink:href="http://dx.doi.org/10.13039/100000062"><funding-source>National Institute of Diabetes and Digestive and Kidney Diseases</funding-source><award-id>U01-DK085545</award-id></award-group><award-group id="fund-4" xlink:href="http://dx.doi.org/10.13039/501100000265"><funding-source>Medical Research Council</funding-source></award-group><funding-statement>This work was supported by the Wellcome Trust [098381] and [090532] to MM; National Institute of Diabetes and Digestive and Kidney Diseases [U01-DK085545]; National Institute for Health Research (NIHR) Oxford Biomedical Research Centre (BRC); Medical Research Council (MRC). </funding-statement><funding-statement><italic>The funders had no role in study design, data collection and analysis, decision to publish, or preparation of the manuscript.</italic></funding-statement></funding-group></article-meta></front><body><sec sec-type="intro"><title>Introduction</title><p>The worldwide prevalence of type 2 diabetes (T2D) has increased dramatically over the last few decades, with an estimated 400 million affected individuals in 2015
+<sup><xref rid="ref-1" ref-type="bibr">1</xref></sup>. The long-term consequences of T2D account for a substantial proportion of premature death and disability. Increased adiposity, sedentary lifestyle and poor diet are the chief determinants of the global epidemic of T2D and coronary heart disease (CHD), but other risk factors that are amenable to lifestyle changes or drug treatment remain to be identified
+<sup><xref rid="ref-2" ref-type="bibr">2</xref>&#x02013;
+<xref rid="ref-6" ref-type="bibr">6</xref></sup>.</p><p>Observational studies have reported associations between bone mineral density (BMD) and risk of T2D, with studies showing that BMD is higher in individuals with diabetes than in individuals free from diabetes
+<sup><xref rid="ref-7" ref-type="bibr">7</xref>&#x02013;
+<xref rid="ref-11" ref-type="bibr">11</xref></sup>. Paradoxically, while individuals with T2D have higher BMD, as measured by dual energy X-ray absorptiometry (DXA), they also have higher risk of fracture, compared with non-diabetic individuals
+<sup><xref rid="ref-9" ref-type="bibr">9</xref>,
+<xref rid="ref-12" ref-type="bibr">12</xref></sup>. However, the results of previous studies of the associations of BMD and risk of CHD have been conflicting, with some reporting positive, negative or null associations
+<sup><xref rid="ref-13" ref-type="bibr">13</xref>&#x02013;
+<xref rid="ref-16" ref-type="bibr">16</xref></sup>. Moreover, the causal relevance of BMD for both T2D and CHD cannot be fully addressed by traditional observational studies, which are typically constrained by residual confounding and reverse causality bias.</p><p>Bone not only serves as a scaffold for other organs, but is also an endocrine organ involved in the regulation of glucose and energy metabolism
+<sup><xref rid="ref-17" ref-type="bibr">17</xref></sup>. The biological process of bone remodelling, by which bone tissue is constantly broken down by osteoclasts and regenerated by osteoblasts, is regulated by several hormones including leptin, adiponectin, glucagon-like peptides 1 and 2, and osteoblast-derived osteocalcin
+<sup><xref rid="ref-18" ref-type="bibr">18</xref></sup>. Such hormones may also influence risk of cardiometabolic diseases, prompting interest in assessing associations of bone density with T2D and CHD.</p><p>Bone structure
+<italic>in vivo</italic> has largely been assessed using DXA method to measure BMD. Over the past decade, quantitative ultrasound (QUS) methods have been widely used to assess bone quality in large-scale studies, such as the UK Biobank study
+<sup><xref rid="ref-19" ref-type="bibr">19</xref></sup>, as QUS measurement is quick, easy to use, portable and less expensive than DXA. QUS provides information not only on bone density (correlation coefficients with central DXA BMD [i.e. lumbar spine and hip BMD]: 0.4&#x02013;0.8), but also provides information on the structure and elastic properties of bone
+<sup><xref rid="ref-20" ref-type="bibr">20</xref></sup>. Previous genetic studies of heel bone density assessed by QUS reported evidence for some genetic loci common to heel QUS measures and central DXA BMD, but also identified additional genetic variants associated with bone structure that had not previously shown association with central DXA
+<sup><xref rid="ref-21" ref-type="bibr">21</xref></sup>.</p><p>The causal relationship between estimated heel BMD (eBMD) and cardiometabolic traits (particularly T2D and CHD) can be assessed using Mendelian randomisation (MR) approaches. In contrast to conventional epidemiological methods, MR can facilitate robust causal inference by using genetic variants as instruments
+<sup><xref rid="ref-22" ref-type="bibr">22</xref></sup>. Since genetic variants are randomly allocated at conception, their associations with exposures of interest are not susceptible to reverse causation and should be unaffected by confounding. Recent developments of MR (including two-sample approaches, such as inverse-variance weighted [IVW] MR, MR-Egger, weighted-median MR, weighted mode MR and MR-PRESSO), together with increasing availability of summary GWAS data facilitate investigations of causality and permit a detailed assessment of reliability by testing potential unbalanced horizontal pleiotropic (i.e. when a genetic association with the outcome is mediated via different pathways than the exposure of interest; for further details see Box 1 in Holmes
+<italic>et al.</italic>
+<sup><xref rid="ref-6" ref-type="bibr">6</xref></sup>).</p><p>The aims of the present study were: (i) to conduct a GWAS of eBMD in UK Biobank, in which &#x0003e;97% of the participants have eBMD; and (ii) to examine the relationships of eBMD-associated SNPs with T2D and CHD through MR analyses using data from large GWAS consortia in order to ascertain whether there is genetic support for the hypothesis that higher eBMD causes higher risk of T2D and CHD (
+<xref ref-type="fig" rid="f1">Figure 1</xref>).</p><fig fig-type="figure" id="f1" orientation="portrait" position="anchor"><label>Figure 1. </label><caption><title>Framework for the Mendelian randomization analysis of estimated heel bone mineral density with risk of type 2 diabetes and coronary heart disease.</title><p>We used 235 SNPs identified from the GWAS of estimated bone mineral density (eBMD) in UKB as genetic instruments for eBMD and applied them to data from DIAGRAM (T2D) and CARDIoGRAM (CHD) in order to characterise the causal relationships of eBMD with these diseases. We additionally analysed the association of the 235 SNP instrument with 12 cardiometabolic risk factors which may be potential confounders and/or mediators of the eBMD to disease relationship. To assess whether T2D or CHD impact on eBMD, we conducted reverse MR using 94 SNPs identified in published GWAS for T2D, and 52 SNPs identified in published GWAS for CHD. Details of the datasets used are provided in
+<xref ref-type="table" rid="T1">Table 1</xref>.</p></caption><graphic xlink:href="wellcomeopenres-2-13302-g0000"/></fig><table-wrap id="T1" orientation="portrait" position="anchor"><label>Table 1. </label><caption><title>Characteristics of the study population in UK Biobank and other publically available datasets.</title></caption><table frame="hsides" rules="groups" content-type="article-table"><thead><tr><th align="left" valign="top" rowspan="1" colspan="1">Study</th><th align="left" valign="top" rowspan="1" colspan="1">Variable</th><th align="left" valign="top" rowspan="1" colspan="1">Descriptive
+<break/>statistics</th><th align="left" valign="top" rowspan="1" colspan="1">Web source</th></tr></thead><tbody><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>UK Biobank</bold>
+</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">
+<ext-link ext-link-type="uri" xlink:href="http://www.ukbiobank.ac.uk">www.ukbiobank.ac.uk</ext-link>
+</td></tr><tr><td rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">Self-reported European
+<break/>participants, n (female %)</td><td align="left" valign="top" rowspan="1" colspan="1">457,395 (54.1%)</td><td rowspan="1" colspan="1"/></tr><tr><td rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">Age (years), Mean (SD)</td><td align="left" valign="top" rowspan="1" colspan="1">56.8 (8.0)</td><td rowspan="1" colspan="1"/></tr><tr><td rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">Weight (kg), Mean (SD)</td><td align="left" valign="top" rowspan="1" colspan="1">78.2 (16.0)</td><td rowspan="1" colspan="1"/></tr><tr><td rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">Height (cm), Mean (SD)</td><td align="left" valign="top" rowspan="1" colspan="1">168.6 (9.3)</td><td rowspan="1" colspan="1"/></tr><tr><td rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">Systolic blood pressure
+<break/>(mmHg), Mean (SD)</td><td align="left" valign="top" rowspan="1" colspan="1">141.9 (20.9)</td><td rowspan="1" colspan="1"/></tr><tr><td rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">Diastolic blood pressure
+<break/>(mmHg), Mean (SD)</td><td align="left" valign="top" rowspan="1" colspan="1">83.4 (11.5)</td><td rowspan="1" colspan="1"/></tr><tr><td rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">eBMD (g/cm
+<sup>2</sup>) , Mean (SD)</td><td align="left" valign="top" rowspan="1" colspan="1">0.54 (0.14)</td><td rowspan="1" colspan="1"/></tr><tr><td rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">Self-reported diabetes, n</td><td align="left" valign="top" rowspan="1" colspan="1">22,186</td><td rowspan="1" colspan="1"/></tr><tr><td rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">Self-reported coronary heart
+<break/>disease, n</td><td align="left" valign="top" rowspan="1" colspan="1">26,503</td><td rowspan="1" colspan="1"/></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>CARDIoGRAMplusC4D</bold>
+<break/>
+<bold>Consortium</bold>
+</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">
+<ext-link ext-link-type="uri" xlink:href="http://www.cardiogramplusc4d.org">www.cardiogramplusc4d.org</ext-link>
+</td></tr><tr><td rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">CHD cases/controls, n</td><td align="left" valign="top" rowspan="1" colspan="1">60,801/123,504</td><td rowspan="1" colspan="1"/></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>DIAGRAM Consortium</bold>
+</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">
+<ext-link ext-link-type="uri" xlink:href="http://www.diagram-consortium.org">www.diagram-consortium.org</ext-link>
+</td></tr><tr><td rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">T2D cases/controls, n</td><td align="left" valign="top" rowspan="1" colspan="1">26,676/132,532</td><td rowspan="1" colspan="1"/></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>GIANT Consortium</bold>
+</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">
+<ext-link ext-link-type="uri" xlink:href="http://portals.broadinstitute.org/collaboration/giant/index.php/Main_Page">http://portals.broadinstitute.org/</ext-link>
+<break/>
+<ext-link ext-link-type="uri" xlink:href="http://portals.broadinstitute.org/collaboration/giant/index.php/Main_Page">collaboration/giant/index.php/</ext-link>
+<break/>
+<ext-link ext-link-type="uri" xlink:href="http://portals.broadinstitute.org/collaboration/giant/index.php/Main_Page">Main_Page</ext-link>
+</td></tr><tr><td rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">Body mass index (kg/m
+<sup>2</sup>), n</td><td align="left" valign="top" rowspan="1" colspan="1">322,154</td><td rowspan="1" colspan="1"/></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>GLGC Consortium</bold>
+</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">
+<ext-link ext-link-type="uri" xlink:href="http://www.lipidgenetics.org">www.lipidgenetics.org</ext-link>
+</td></tr><tr><td rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">LDL-cholesterol (mmol/L), n</td><td align="left" valign="top" rowspan="1" colspan="1">173,058</td><td rowspan="1" colspan="1"/></tr><tr><td rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">HDL-cholesterol (mmol/L), n</td><td align="left" valign="top" rowspan="1" colspan="1">187,137</td><td rowspan="1" colspan="1"/></tr><tr><td rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">Triglycerides (mmol/L), n</td><td align="left" valign="top" rowspan="1" colspan="1">177,827</td><td rowspan="1" colspan="1"/></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>MAGIC Consortium</bold>
+</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">
+<ext-link ext-link-type="uri" xlink:href="http://www.magicinvestigators.org">www.magicinvestigators.org</ext-link>
+</td></tr><tr><td rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">ln-Fasting insulin (pmol/L), n</td><td align="left" valign="top" rowspan="1" colspan="1">108,557</td><td rowspan="1" colspan="1"/></tr><tr><td rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">Fasting glucose (mmol/L), n</td><td align="left" valign="top" rowspan="1" colspan="1">133,010</td><td rowspan="1" colspan="1"/></tr><tr><td rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">HOMA-B, n</td><td align="left" valign="top" rowspan="1" colspan="1">46,186</td><td rowspan="1" colspan="1"/></tr><tr><td rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">HOMA-IR, n</td><td align="left" valign="top" rowspan="1" colspan="1">46,186</td><td rowspan="1" colspan="1"/></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">
+<bold>Tobacco and Genetics</bold>
+<break/>
+<bold>Consortium</bold>
+</td><td rowspan="1" colspan="1"/><td rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">
+<ext-link ext-link-type="uri" xlink:href="http://www.med.unc.edu/pgc">www.med.unc.edu/pgc</ext-link>
+</td></tr><tr><td rowspan="1" colspan="1"/><td align="left" valign="top" rowspan="1" colspan="1">Smoking status (ever vs.
+<break/>never users)</td><td align="left" valign="top" rowspan="1" colspan="1">74,053</td><td rowspan="1" colspan="1"/></tr></tbody></table></table-wrap></sec><sec sec-type="methods"><title>Methods</title><sec><title>Study population</title><p>The study design consisted of two components. First, a genome wide association study (GWAS) for eBMD was performed to identify SNPs associated with estimated heel bone mineral density (eBMD) in European populations, using data from the interim release of ~150,000 UK biobank participants (
+<ext-link ext-link-type="uri" xlink:href="http://www.ukbiobank.ac.uk">http://www.ukbiobank.ac.uk</ext-link>), described in detail elsewhere
+<sup><xref rid="ref-19" ref-type="bibr">19</xref></sup>. The UK biobank is a prospective study of 502,655 community-dwelling people aged between 37 and 73 years recruited in the United Kingdom between 2006 and 2010. Self-reported baseline data were collected by questionnaire, and anthropometric assessments were performed. At baseline, 457,395 participants self-reported that they were European, and among these, there were 22,186 self-reported diabetes cases and 26,503 self-reported CHD cases. Over 97% of the participants had at least one foot measured for BMD based on an ultrasound measurement of the calcaneus, using a Sahara Clinical Bone Sonometer (Hologic, Inc., Bedford, USA). For the present study, 116,501 individuals of European ancestry with GWAS data and heel ultrasound measurements were available after quality control. Genotyping, imputation and quality control procedures are provided by UK Biobank (
+<ext-link ext-link-type="uri" xlink:href="http://biobank.ctsu.ox.ac.uk/">http://biobank.ctsu.ox.ac.uk/</ext-link>). For this study, we included only variants with an imputation r
+<sup>2</sup> &#x02265; 0.4, MAF &#x02265; 0.001, missingness &#x0003c;0.1 and with a Hardy&#x02013;Weinberg equilibrium
+<italic>p</italic>&#x0003e;1&#x000d7;10
+<sup>-6</sup>. The GWAS study of eBMD in the present study identified 235 independent SNPs at 197 separate loci (defined as r
+<sup>2</sup> &#x0003c; 0.05 and +/-500 KB) associated with eBMD at
+<italic>p</italic>&#x0003c; 5&#x000d7;10
+<sup>-8 </sup> (
+<xref ref-type="other" rid="SM1">Supplementary Table 1</xref> and
+<xref ref-type="other" rid="SM1">Supplementary Table 2</xref>). The estimates of the association of the 235 SNPs with eBMD were used to construct a weighted eBMD allele score for two-sample MR analysis (
+<xref ref-type="other" rid="SM1">Supplementary Table 3</xref>).</p><p>For each eBMD-associated SNP, we retrieved GWAS summary statistics from the largest 1000 Genomes-based GWAS studies to date of both T2D (DIAGRAM: 26,676 T2D cases and 132,532 controls)
+<sup><xref rid="ref-23" ref-type="bibr">23</xref></sup> and CHD (CARDIoGRAMplusC4D: 60,801 CHD cases and 123,504 controls)
+<sup><xref rid="ref-24" ref-type="bibr">24</xref></sup>, and other conventional cardiovascular risk factors, in populations of Europeans ancestry. Of the 235 eBMD-associated SNPs, three were not present in the T2D (DIAGRAM) or CHD (CARDIoGRAMplusC4D) GWAS consortia. Data on CHD were contributed by CARDIoGRAMplusC4D investigators and downloaded from
+<ext-link ext-link-type="uri" xlink:href="http://www.cardiogramplusc4d.org/">www.cardiogramplusc4d.org</ext-link>. Details of the study populations included in the analysis are provided in
+<xref ref-type="table" rid="T1">Table 1</xref>.</p></sec><sec><title>Statistical analysis</title><p>Logistic regression was used to estimate the traditional observational estimates of eBMD with prevalent diabetes and CHD using cross-sectional data from the UK Biobank with adjustment for age, age squared, sex, weight, height, research centre and smoking status. For genome-wide association, we used BOLT-LMM (Version 2.2) to perform linear mixed models, which adjusted for population structure and relatedness between individuals
+<sup><xref rid="ref-25" ref-type="bibr">25</xref></sup>. For men and women separately, eBMD was regressed on age, age-squared, height, weight, genotyping array version and assessment centre, and the residuals were transformed by the rank-inverse standard normal function. The normalized residuals were subsequently pooled together (between men and women) for genome-wide association analyses. Conditional analyses were performed to identify the presence of multiple signals within the locus from the genotype-phenotype analyses.</p><p>Inverse-variance weighted (IVW) MR analyses were performed by regression of the SNP-outcome (T2D or CHD) associations on the SNP-eBMD associations. Sensitivity analyses were used to investigate the potential presence of directional (unbalanced horizontal) pleiotropic effects: (i) MR-Egger provides a statistical test for presence of pleiotropic effects due to aggregation of invalid genetic instruments, assuming absence of dose-response confounding of SNPs through pleiotropic pathways
+<sup><xref rid="ref-26" ref-type="bibr">26</xref></sup>; (ii) weighted median MR should provide a valid causal effect estimate if more than 50% of the information arises from valid genetic instrumental variables
+<sup><xref rid="ref-27" ref-type="bibr">27</xref></sup>; (iii) weighted mode MR produces robust causal effects when the largest number of similar individual-instrument causal effect estimates arise from valid instruments, even if the majority of instruments are invalid
+<sup><xref rid="ref-28" ref-type="bibr">28</xref></sup>; (iv) MR-PRESSO detects the presence of variant effect sizes that are outliers and corrects pleiotropy via outlier removal
+<sup><xref rid="ref-29" ref-type="bibr">29</xref></sup>. MR analysis was further applied to investigate the causal associations of eBMD on 12 established cardiovascular and metabolic risk factors (i.e. smoking status, LDL-cholesterol, HDL-cholesterol, triglycerides, systolic blood pressure, diastolic blood pressure, pulse pressure, body mass index, fasting glucose, fasting insulin, HOMA-B, HOMA-IR). As a positive control, one sample MR was employed to investigate the causal association of eBMD and risk of any fracture within the past 5 years using the individual-level data from UK Biobank after using 20-fold cross-validation to generate valid weights
+<sup><xref rid="ref-30" ref-type="bibr">30</xref></sup>. Finally, to test whether genetic liability to T2D or CHD might be causally related to eBMD, we performed MR in the opposite direction (i.e., bidirectional MR), testing the effects of 94 T2D-associated and 52 CHD-associated SNPs on eBMD. MR analysis was performed using the
+<ext-link ext-link-type="uri" xlink:href="https://github.com/MRCIEU/TwoSampleMR">TwoSampleMR package</ext-link> for R (version 3.2.2).</p></sec></sec><sec sec-type="results"><title>Results</title><sec><title>Observational associations of eBMD with risk of T2D and CHD</title><p>Analysis of the observational association of eBMD and risks of diabetes in UK Biobank indicated that a one-SD higher eBMD (equivalent to 0.14 g/cm
+<sup>2</sup>) was associated with a 4% higher risk of diabetes (odds ratio [OR] 1.04; 95% confidence interval [CI]: 1.02 to 1.05,
+<italic>p</italic>&#x0003c;0.001,
+<xref ref-type="fig" rid="f2">Figure 2</xref>) and a 3% lower risk of CHD (OR 0.97; 95% CI: 0.96 to 0.99,
+<italic>p</italic>&#x0003c;0.001) after adjusting for age, age squared, sex, weight, height and research centre.</p><fig fig-type="figure" id="f2" orientation="portrait" position="anchor"><label>Figure 2. </label><caption><title>Comparison of observational (blue) and causal (derived from Mendelian randomization using 232 SNPs as genetic instruments; red) estimates for risk of type 2 diabetes and coronary heart disease, per 1-SD (equivalent to 0.14 g/cm
+<sup>2</sup>) higher eBMD.</title><p>Observational analyses are adjusted for age, age squared, sex, weight, height, research centre and smoking status. Mendelian randomization estimates are derived from two-sample analyses. IVW: inverse variance weighted.</p></caption><graphic xlink:href="wellcomeopenres-2-13302-g0001"/></fig></sec><sec><title>Identification of SNPs associated with eBMD</title><p>The GWAS of eBMD in 116,501 individuals of European ancestry from UK Biobank in this study identified 235 conditionally independent association signals that reached genome-wide significance (
+<italic>p</italic>&#x0003c; 5&#x000d7;10
+<sup>-8</sup>) at 197 loci with effect sizes ranging from 0.02 to 0.41 SDs per eBMD increasing allele (
+<xref ref-type="fig" rid="f3">Figure 3</xref>,
+<xref ref-type="other" rid="SM1">Supplementary Table 1</xref> and
+<xref ref-type="other" rid="SM1">Supplementary Table 2</xref>,
+<xref ref-type="other" rid="SM1">Supplementary Figure 1</xref>). For those 80 lead SNPs reported by previous GWAS studies of BMD in multiple skeletal sites measured by different methods (including DXA and QUS), 60 SNPs were replicated at
+<italic>p</italic>&#x0003c;0.05 and 40 SNPs reached genome-wide significance (
+<xref ref-type="other" rid="SM1">Supplementary Table 4</xref>). The proportion of variance of eBMD explained by all of the 235 SNPs was 15.9% using the method described by Shim
+<italic>et al.</italic>
+<sup><xref rid="ref-31" ref-type="bibr">31</xref></sup>. The equivalent figure obtained using the weighted genetic risk score with 20-fold cross was 13.9%. The effect estimates of 30 DXA BMD (i.e. lumbar spine BMD and femoral neck BMD) related SNPs were highly correlated with the estimates on eBMD (
+<xref ref-type="other" rid="SM1">Supplementary Figure 2</xref>). There was no evidence of heterogeneity of the effect estimates for these SNPs after stratification by smoking status or array subtype, diminishing the possibility of confounding arising from the smoking-enriched subset of UKBB that was genotyped on a slightly earlier version of the UKBB axiom array (
+<xref ref-type="other" rid="SM1">Supplementary Table 5</xref>). The eBMD genetic risk score (GRS) was constructed using 235 SNPs by summing up the number of eBMD-increasing alleles for each SNP multiplied by their effect sizes derived from 20-fold cross validation analysis. The GRS was strongly associated with BMD measured by the DXA method in multiple skeletal sites, with the same direction of effect (
+<italic>p</italic>&#x0003c;2.0&#x000d7;10
+<sup>-7</sup>) (
+<xref ref-type="other" rid="SM1">Supplementary Table 6</xref>).</p><fig fig-type="figure" id="f3" orientation="portrait" position="anchor"><label>Figure 3. </label><caption><title>Manhattan plot of the results of GWAS of eBMD (Scale of -log10 (
+<italic>P</italic> value) range from 0&#x02013;70 only).</title><p>Novel loci are highlighted in blue and known loci are in black and labelled with gene name.</p></caption><graphic xlink:href="wellcomeopenres-2-13302-g0002"/></fig></sec><sec><title>Associations with fracture</title><p>Analysis using the GRS of 235 SNPs as a genetic instrument for eBMD with risk of fracture identified that a 1-SD higher eBMD was associated with over a 30% lower risk of fracture, which was consistent with the estimates derived from observational analyses (observational estimate: OR 0.74; 95% CI: 0.73 to 0.75,
+<italic>p</italic>=4.2&#x000d7;10
+<sup>-236</sup> vs. genetic estimate: OR 0.65; 95% CI: 0.62 to 0.68
+<italic>p</italic>=2.1&#x000d7;10
+<sup>-69</sup>) (
+<xref ref-type="fig" rid="f4">Figure 4</xref>).</p><fig fig-type="figure" id="f4" orientation="portrait" position="anchor"><label>Figure 4. </label><caption><title>Comparison of observational (blue) and causal (derived from Mendelian randomization, red) estimates for fracture per 1-SD (equivalent to 0.14 g/cm
+<sup>2</sup>) higher eBMD.</title><p>Observational analyses are adjusted for age, age squared, sex, weight, height, research centre and smoking status. Mendelian randomization estimates are derived from one-sample analysis in the UK biobank with weights obtained from 20-fold cross-validation. IVW: inverse variance weighted.</p></caption><graphic xlink:href="wellcomeopenres-2-13302-g0003"/></fig></sec><sec><title>Associations with T2D and CHD</title><p>Using conventional IVW MR in 26,676 T2D cases and 132,532 controls in DIAGRAM consortium, a one-SD higher eBMD (equivalent to 0.14 g/cm
+<sup>2</sup>) instrumented by 232 SNPs present in both of DIAGRAM and CARDIoGRAMplusC4D GWAS consortia was associated with an 8% (95%CI: 2% to 14%,
+<italic>p</italic>=0.012) higher risk of T2D and 5% (95%CI: 0% to 10%,
+<italic>p</italic>=0.034) higher risk of CHD (
+<xref ref-type="fig" rid="f2">Figure 2</xref>,
+<xref ref-type="other" rid="SM1">Supplementary Figure 3</xref> and
+<xref ref-type="other" rid="SM1">Supplementary Figure 4</xref>). Sensitivity analyses using weighted median MR, MR-Egger, weighted mode MR and MR-PRESSO demonstrated consistent directions and similar effect estimates to IVW, and provided no evidence of unbalanced pleiotropy (
+<italic>p</italic> for pleiotropy from MR-Egger &#x02265;0.62) (
+<xref ref-type="fig" rid="f2">Figure 2</xref>,
+<xref ref-type="other" rid="SM1">Supplementary Table 7</xref>). Restricting the SNPs included in the eBMD genetic instrument to those with more extreme
+<italic>P</italic>-values (i.e. choosing cut-offs for inclusion that were more extreme than the genome wide significance threshold), or those previously identified in prior BMD GWAS studies, produced consistent MR estimates for both T2D and CHD (
+<xref ref-type="other" rid="SM1">Supplementary Table 8</xref>&#x02013;
+<xref ref-type="other" rid="SM1">Supplementary Table 10</xref>). For example, using 53 SNPs associated with eBMD at p&#x0003c;5&#x000d7;10
+<sup>-20</sup>, explaining 9% of eBMD variance, a 1-SD genetically instrumented higher eBMD associated with higher risks of both T2D (OR 1.09; 95%CI: 1.02 to 1.17,
+<italic>p</italic>=0.020) and CHD (OR 1.08; 95%CI: 1.02 to 1.15,
+<italic>p</italic>=0.013).</p><p>For T2D, the MR effect size estimates were consistent with the estimates derived from traditional observational analyses (
+<italic>p</italic> for heterogeneity between IVW MR and observational estimate=0.14). For CHD, the MR estimates were directionally opposite to those derived from the observational analysis (
+<italic>p</italic> for heterogeneity between IVW MR and observational estimate =0.001 (
+<xref ref-type="fig" rid="f2">Figure 2</xref>).</p></sec><sec><title>Associations with cardiovascular and metabolic risk factors</title><p>The 235 SNP eBMD genetic instrument was also used to assess the associations of eBMD with 12 established cardiovascular and metabolic risk factors. Genetically-instrumented higher eBMD was nominally associated with insulin resistance phenotypes, including higher levels of HOMA-IR (&#x003b2;= 0.02, 95% CI: 0.00 to 0.04,
+<italic>p</italic>=0.029) and lower plasma levels of HDL-cholesterol (&#x003b2;= -0.04, 95% CI: -0.07 to -0.01,
+<italic>p</italic>=0.008), but not with any of the other CHD risk factors (
+<xref ref-type="table" rid="T2">Table 2</xref>). </p><table-wrap id="T2" orientation="portrait" position="anchor"><label>Table 2. </label><caption><title>Genetic associations for a 1-standard deviation higher eBMD with selected cardiovascular and metabolic risk factors.</title></caption><table frame="hsides" rules="groups" content-type="article-table"><thead><tr><th align="left" rowspan="1" colspan="1">Outcome</th><th align="center" rowspan="1" colspan="1">Estimate (95% CI)
+<break/>per 1-SD higher
+<break/>eBMD</th><th align="center" rowspan="1" colspan="1">
+<italic>P</italic>
+</th></tr><tr><th align="left" rowspan="1" colspan="1">Traits recognised to contribute
+<break/>to insulin resistance (units)</th><th align="center" rowspan="1" colspan="1">(odds ratio
+<sup>a</sup> or &#x003b2;
+<sup>b</sup>)</th><th rowspan="1" colspan="1"/></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">HDL-cholesterol (mmol/L)</td><td align="center" rowspan="1" colspan="1">-0.04 (-0.07, -0.01)
+<sup>b</sup>
+</td><td align="center" rowspan="1" colspan="1">0.008</td></tr><tr><td align="left" rowspan="1" colspan="1">Triglycerides (mmol/L)</td><td align="center" rowspan="1" colspan="1">0.01 (-0.02, 0.04)
+<sup>b</sup>
+</td><td align="center" rowspan="1" colspan="1">0.431</td></tr><tr><td align="left" rowspan="1" colspan="1">ln-Fasting insulin adjusted for
+<break/>BMI (pmol/L)</td><td align="center" rowspan="1" colspan="1">0.02 (-0.01, 0.05)
+<sup>b</sup>
+</td><td align="center" rowspan="1" colspan="1">0.234</td></tr><tr><td align="left" rowspan="1" colspan="1">HOMA-IR</td><td align="center" rowspan="1" colspan="1">0.02 (0.00, 0.04)
+<sup>b</sup>
+</td><td align="center" rowspan="1" colspan="1">0.029</td></tr><tr><th align="left" rowspan="1" colspan="1">Other traits (units)</th><th rowspan="1" colspan="1"/><th rowspan="1" colspan="1"/></tr><tr><td align="left" rowspan="1" colspan="1">Smoking status (ever vs. never
+<break/>users)</td><td align="center" rowspan="1" colspan="1">0.99 (0.92, 1.06)
+<sup>a</sup>
+</td><td align="center" rowspan="1" colspan="1">0.786</td></tr><tr><td align="left" rowspan="1" colspan="1">LDL-cholesterol (mmol/L) </td><td align="center" rowspan="1" colspan="1">-0.02 (-0.06, 0.02)
+<sup>b</sup>
+</td><td align="center" rowspan="1" colspan="1">0.247</td></tr><tr><td align="left" rowspan="1" colspan="1">Systolic blood pressure (mmHg)</td><td align="center" rowspan="1" colspan="1">-0.54 (-2.97, 1.89)
+<sup>b</sup>
+</td><td align="center" rowspan="1" colspan="1">0.662</td></tr><tr><td align="left" rowspan="1" colspan="1">Diastolic blood pressure (mmHg)</td><td align="center" rowspan="1" colspan="1">-0.96 (-2.33, 0.42)
+<sup>b</sup>
+</td><td align="center" rowspan="1" colspan="1">0.172</td></tr><tr><td align="left" rowspan="1" colspan="1">Pulse pressure (mmHg)</td><td align="center" rowspan="1" colspan="1">0.42 (-1.33, 2.17)
+<sup>b</sup>
+</td><td align="center" rowspan="1" colspan="1">0.635</td></tr><tr><td align="left" rowspan="1" colspan="1">Body Mass Index (kg/m2)</td><td align="center" rowspan="1" colspan="1">0.01 (-0.01,0.03)
+<sup>b</sup>
+</td><td align="center" rowspan="1" colspan="1">0.441</td></tr><tr><td align="left" rowspan="1" colspan="1">Fasting glucose (mmol/L)</td><td align="center" rowspan="1" colspan="1">0.01 (-0.01, 0.02)
+<sup>b</sup>
+</td><td align="center" rowspan="1" colspan="1">0.511</td></tr><tr><td align="left" rowspan="1" colspan="1">HOMA-B </td><td align="center" rowspan="1" colspan="1">0.01 (0.00, 0.03)
+<sup>b</sup>
+</td><td align="center" rowspan="1" colspan="1">0.070</td></tr></tbody></table></table-wrap></sec><sec><title>Reverse associations of genetic liability to T2D and CHD with eBMD</title><p>Using genetic variants previously identified for T2D (94 SNPs) and CHD (52 SNPs) as instrumental variables, we found no convincing evidence of a causal relationship with eBMD, providing no support for reverse causality of T2D or CHD with eBMD (
+<xref ref-type="other" rid="SM1">Supplementary Table 11</xref> and
+<xref ref-type="other" rid="SM1">Supplementary Table 12</xref>).</p></sec></sec><sec sec-type="discussion"><title>Discussion</title><p>The present study investigated a potential causal role of eBMD, assessed by quantitative ultrasound, in the development of T2D and CHD, using several complementary MR methods based on 235 eBMD-associated SNPs identified through GWAS in the UK Biobank. Conventional (IVW) MR analyses suggested causal effects of eBMD on risk of both T2D and CHD. These results were supported by several sensitivity analyses (MR-Egger, weighted median MR, weighted mode MR and MR-PRESSO) that make it unlikely that gross pleiotropic bias accounts for the associations we report. While the results of the observational and genetic estimates of eBMD with risk of T2D were consistent with each other, the genetic estimates with CHD differed from those in the observational analysis with CHD. The reasons for the discrepant results between the genetic and observational associations for CHD are unclear and warrant further investigation; scrutiny of the data suggests that there is an underlying causal relationship between eBMD and CHD, which is likely to be positive (i.e. higher eBMD causes higher risk of CHD). Taken together, the results of the present study suggest that estimated heel bone density has a modest causal association with risks of both T2D and CHD.</p><p>The findings of the present study are supported by biological and epidemiological studies that show associations of bone metabolism with insulin resistance, which may mediate risks of T2D and CHD
+<sup><xref rid="ref-17" ref-type="bibr">17</xref>,
+<xref rid="ref-32" ref-type="bibr">32</xref>&#x02013;
+<xref rid="ref-19" ref-type="bibr">35</xref></sup> . In the past decade, bone tissue has emerged as an endocrine organ regulating a growing number of physiological processes including glucose homeostasis
+<sup><xref rid="ref-11" ref-type="bibr">11</xref>,
+<xref rid="ref-34" ref-type="bibr">34</xref>,
+<xref rid="ref-36" ref-type="bibr">36</xref>&#x02013;
+<xref rid="ref-38" ref-type="bibr">38</xref></sup>, which is achieved through the secretion of osteocalcin, an osteoblast-derived hormone synthesized during bone formation
+<sup><xref rid="ref-18" ref-type="bibr">18</xref></sup>. Observational studies have shown that lower circulating osteocalcin levels are associated with higher bone mineral density, impaired glucose tolerance and insulin resistance
+<sup><xref rid="ref-32" ref-type="bibr">32</xref>,
+<xref rid="ref-39" ref-type="bibr">39</xref>&#x02013;
+<xref rid="ref-43" ref-type="bibr">43</xref></sup>. Consistent with these results, we found that genetic elevation of eBMD was associated with insulin resistance phenotypes (e.g. HDL-cholesterol and HOMA-IR). Studies have found that genetic predisposition to insulin resistance confers higher risk of cardiovascular and metabolic disease, including T2D and CHD
+<sup><xref rid="ref-35" ref-type="bibr">35</xref></sup>. Taken together, these studies and the present study suggest that the mechanism through which elevated eBMD is associated with higher risk of T2D and CHD may, at least in part, be mediated by increased insulin resistance.</p><p>The present study has several strengths. The discovery GWAS provided an abundant number of SNPs with which to generate a genetic instrument for eBMD, explaining a high (13.9%) proportion of variance of eBMD. The two-sample MR design allowed us then to apply these 235 SNPs to very large numbers of cases of CHD and T2D (from the largest GWAS studies conducted to date), maximising the statistical power and precision of estimates that we report. We tested the causal relationship between estimated heel bone mineral density with both T2D and CHD using recent state-of-the-art Mendelian randomization approaches yielding consistent effect estimates. Moreover, similar estimates were obtained using more stringent
+<italic>p</italic>-value thresholds to select SNPs entering our genetic instrument for eBMD and use of SNPs based solely on previously published studies. We found no evidence to support the presence of unbalanced horizontal pleiotropy, which can lead to violations of the instrumental variable assumptions
+<sup><xref rid="ref-6" ref-type="bibr">6</xref></sup>. In addition, the SNP-exposure and SNP-outcome estimates were obtained from mostly European studies; therefore, population stratification bias is unlikely to affect the results of the present study. Furthermore, we used a bi-directional MR approach to investigate the causal directions eBMD and T2D and CHD, observing evidence for eBMD increasing the risk of T2D and CHD but not vice versa.</p><p>However, the present study also had several limitations. For observational analyses, we used cross-sectional data from the UKB, which is likely to be subject to various biases. In the cross-sectional study, individuals with CHD are likely to have lower physical activity resulting in lower eBMD
+<sup><xref rid="ref-44" ref-type="bibr">44</xref></sup>, which would bias (through reverse causality) the association of eBMD with CHD and might explain the inverse association. However, the lack of a negative association of CHD SNPs with eBMD argues against the presence of CHD causally impacting on eBMD, and thus the discrepancy between the observational analysis and MR findings warrants further investigation. The causal estimates in this study could be susceptible to "winner's curse" as our SNP-eBMD associations were obtained from a discovery GWAS, with no replication cohort available. However, in the setting of two-sample MR where the SNP-exposure and SNP-outcome datasets do not overlap, the impact of "winner's curse" (leading to inflated estimates of SNP-eBMD and inclusion of potential false positive SNPs in the genetic instrument) would have a net effect to diminish the magnitude of MR estimate (i.e. any winner&#x02019;s curse in our MR analysis would result in a more conservative causal estimate). More reliable estimates of SNP-eBMD associations derived from replication of our findings in other large-scale general population cohorts with measures of heel eBMD would enable us to rectify these issues. However, using different sets of SNPs based on various GWAS significance threshold (ranging from 5&#x000d7;10
+<sup>-8</sup> to 5&#x000d7;10
+<sup>-20</sup>) showed consistent results arguing against potential winner&#x02019;s curse leading to a major bias in the causal estimates (
+<xref ref-type="other" rid="SM1">Supplementary Table 9</xref>). With our genetic instrument explaining 13.9% of the variance of eBMD, weak instrument bias is very unlikely to affect our results; despite this, a major advantage of the two-sample MR design (where the SNP to exposure and SNP to outcome datasets are non-overlapping) is that any bias derived from potential weak instruments should lead to an attenuation of the effect estimate towards the null
+<sup><xref rid="ref-45" ref-type="bibr">45</xref></sup>. Finally, as BMD is a quantification of multiple physiological pathways (an analogy might be made, for example, to height
+<sup><xref rid="ref-46" ref-type="bibr">46</xref></sup>), it is unclear which one or more of these pathways is responsible for the causal associations with CHD and T2D that we report. Further studies could investigate individual traits (e.g. osteocalcin, glucagon-like peptides) that regulate BMD to gain a more comprehensive understanding of the underlying mechanisms underpinning these relationships.</p><p>It needs to be borne in mind in interpreting these results that the precise underlying physical determinants of eBMD are unclear. Previous studies have reported modest correlation coefficients between eBMD and BMD measured by DXA, ranging from 0.4&#x02013;0.8
+<sup><xref rid="ref-20" ref-type="bibr">20</xref></sup>. As a positive control, we observed a strong casual association of eBMD with risk of fracture, which helps to validate eBMD as a reliable marker of bone health. The replication of SNPs reported by previous GWAS study of BMD in multiple skeletal sites measured by DXA suggests that the eBMD only partially reflects the same bone properties as BMD does. In addition to bone density, measures of eBMD may also reflect other properties of bone, such as the structural and elastic properties, which cannot be assessed by DXA
+<sup><xref rid="ref-20" ref-type="bibr">20</xref></sup>. Recently, MR studies of the effect of calcium on coronary artery disease have reported positive associations of higher serum calcium and increased risk of CHD
+<sup><xref rid="ref-47" ref-type="bibr">47</xref>,
+<xref rid="ref-48" ref-type="bibr">48</xref></sup>, and a meta-analysis of randomized controlled trials suggest that increasing calcium intake results in modest increases in BMD
+<sup><xref rid="ref-49" ref-type="bibr">49</xref></sup>. Taken together, this suggests that the causal relationship between higher serum calcium levels and increased risk of CHD may be mediated, at least in part, by elevated BMD. Alternatively, there may be causal pathways to CHD and T2D that result in higher eBMD, meaning that our findings are a marker of such a pathway (as opposed to being a causal mediator in the development of cardiometabolic disease). Dissecting which of the scenarios is present is challenging with existing methodologies. That said, the general consistency of our findings to: (i) various MR sensitivity analyses, (ii) using very strict GWAS
+<italic>p</italic>-value thresholds (up to
+<italic>p</italic>&#x0003c;5&#x000d7;10
+<sup>-20</sup>), (iii) using genetic instruments for alternative measures of BMD identified from prior studies, and (iv) the lack of reverse causality from bidirectional MR provides a framework in which, on balance, it is likely that a positive causal relationship exists between eBMD and cardiometabolic disease.</p><p>The findings of the present study suggest that higher bone density, measured by eBMD, may have an adverse effect on risk of cardiometabolic diseases, which may well have implications for patient care. Current drugs that are widely used to treat osteopaenia include bisphosphonates, which inhibit osteoclasts, reduce bone turnover and mildly increase BMD
+<sup><xref rid="ref-50" ref-type="bibr">50</xref></sup>. A meta-analysis of 58 randomized trials of bisphosphates, reported that bisphosphates administered for 2&#x02013;3 years had no effects on cardiovascular disease
+<sup><xref rid="ref-51" ref-type="bibr">51</xref></sup>. While we recognise that our MR of the eBMD phenotype does not have direct relevance to any individual drug target (indeed, alternative frameworks are used for MRs of drug-targets)
+<sup><xref rid="ref-52" ref-type="bibr">52</xref></sup>, the present study raises questions about the need for vigilance of the long-term cardiovascular consequences of drugs that alter bone density.</p></sec><sec sec-type="conclusions"><title>Conclusions</title><p>In conclusion, Mendelian randomization provides evidence of a modest casual effect of elevated bone mineral density (assessed by quantitative ultrasound of heel) on risk of both T2D and CHD, which may be partially mediated by insulin resistance. The findings of this study add to the growing evidence-base suggesting a possible role of bone endocrine function in the pathogenesis of both type 2 diabetes and coronary heart disease.</p></sec><sec><title>Data availability</title><p>The data referenced by this article are under copyright with the following copyright statement: Copyright: &#x000a9; 2017 Gan W et al.</p><p>The genetic and phenotypic UK Biobank data are available upon application to the UK Biobank (
+<ext-link ext-link-type="uri" xlink:href="https://protect-eu.mimecast.com/s/d0YhBnrR8CE">https://www.ukbiobank.ac.uk/</ext-link>) to all
+<italic>bona fide</italic> researchers. The genome-wide association summary statistics for eBMD in 116,501 individuals from the UK Biobank study are available online (
+<ext-link ext-link-type="uri" xlink:href="http://mccarthy.well.ox.ac.uk/publications/2017/Gan_UKBB_INTERIM_eBMD_GWAS/">http://mccarthy.well.ox.ac.uk/publications/2017/Gan_UKBB_INTERIM_eBMD_GWAS/</ext-link>) or via the UK Biobank&#x02019;s Data Showcase (
+<ext-link ext-link-type="uri" xlink:href="http://biobank.ctsu.ox.ac.uk/crystal/">http://biobank.ctsu.ox.ac.uk/crystal/</ext-link>), which can be accessed by researchers upon application.</p></sec></body><back><ack><title>Acknowledgments</title><p>The chief acknowledgment is to the participants and research teams of UK Biobank. This research has been conducted using the UK Biobank Resource: application number 9161. We are grateful to large consortia (DIAGRAM, CARDIoGRAMplusC4D, GIANT, GLGC, MAGIC and TAG) for publically sharing the genetic data we used in our causal analysis. We are very grateful to, and thank participants that have contributed towards the UK Biobank resource.</p></ack><sec id="SM1" sec-type="supplementary-material"><title>Supplementary material</title><p>Supplementary File 1: Association results for eBMD GWAS study, and results of sensitivity analyses using multiple Mendelian randomization approaches.</p><p>
+<supplementary-material content-type="local-data" id="S0"><media xlink:href="wellcomeopenres-2-13302-s0000.tgz"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material>
+</p></sec><ref-list><ref id="ref-1"><label>1</label><mixed-citation publication-type="book">
+<article-title>IDF diabetes atlas</article-title>. (7th ed.). Brussels: International Diabetes Federation.<year>2015</year>
+<ext-link ext-link-type="uri" xlink:href="http://www.dmthai.org/sites/default/files/idf_atlas_2015_uk_0.pdf">Reference Source</ext-link>
+</mixed-citation></ref><ref id="ref-2"><label>2</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Corbin</surname><given-names>LJ</given-names></name><name><surname>Richmond</surname><given-names>RC</given-names></name><name><surname>Wade</surname><given-names>KH</given-names></name><etal/></person-group>:
+<article-title>BMI as a Modifiable Risk Factor for Type 2 Diabetes: Refining and Understanding Causal Estimates Using Mendelian Randomization.</article-title>
+<source><italic>Diabetes.</italic></source>
+<year>2016</year>;<volume>65</volume>(<issue>10</issue>):<fpage>3002</fpage>&#x02013;<lpage>7</lpage>.
+<pub-id pub-id-type="doi">10.2337/db16-0418</pub-id>
+<!--<pub-id pub-id-type="pmcid">5279886</pub-id>-->
+<pub-id pub-id-type="pmid">27402723</pub-id></mixed-citation></ref><ref id="ref-3"><label>3</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Swerdlow</surname><given-names>DI</given-names></name></person-group>:
+<article-title>Mendelian Randomization and Type 2 Diabetes.</article-title>
+<source><italic>Cardiovasc Drugs Ther.</italic></source>
+<year>2016</year>;<volume>30</volume>(<issue>1</issue>):<fpage>51</fpage>&#x02013;<lpage>7</lpage>.
+<pub-id pub-id-type="doi">10.1007/s10557-016-6638-5</pub-id>
+<!--<pub-id pub-id-type="pmcid">4789194</pub-id>-->
+<pub-id pub-id-type="pmid">26809778</pub-id></mixed-citation></ref><ref id="ref-4"><label>4</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wang</surname><given-names>T</given-names></name><name><surname>Huang</surname><given-names>T</given-names></name><name><surname>Li</surname><given-names>Y</given-names></name><etal/></person-group>:
+<article-title>Low birthweight and risk of type 2 diabetes: a Mendelian randomisation study.</article-title>
+<source><italic>Diabetologia.</italic></source>
+<year>2016</year>;<volume>59</volume>(<issue>9</issue>):<fpage>1920</fpage>&#x02013;<lpage>7</lpage>.
+<pub-id pub-id-type="doi">10.1007/s00125-016-4019-z</pub-id>
+<!--<pub-id pub-id-type="pmcid">4970938</pub-id>-->
+<pub-id pub-id-type="pmid">27333884</pub-id></mixed-citation></ref><ref id="ref-5"><label>5</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Aikens</surname><given-names>RC</given-names></name><name><surname>Zhao</surname><given-names>W</given-names></name><name><surname>Saleheen</surname><given-names>D</given-names></name><etal/></person-group>:
+<article-title>Systolic Blood Pressure and Risk of Type 2 Diabetes: A Mendelian Randomization Study.</article-title>
+<source><italic>Diabetes.</italic></source>
+<year>2017</year>;<volume>66</volume>(<issue>2</issue>):<fpage>543</fpage>&#x02013;<lpage>50</lpage>.
+<pub-id pub-id-type="doi">10.2337/db16-0868</pub-id>
+<!--<pub-id pub-id-type="pmcid">5248987</pub-id>-->
+<pub-id pub-id-type="pmid">27702834</pub-id></mixed-citation></ref><ref id="ref-6"><label>6</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Holmes</surname><given-names>MV</given-names></name><name><surname>Ala-Korpela</surname><given-names>M</given-names></name><name><surname>Smith</surname><given-names>GD</given-names></name></person-group>:
+<article-title>Mendelian randomization in cardiometabolic disease: challenges in evaluating causality.</article-title>
+<source><italic>Nat Rev Cardiol.</italic></source>
+<year>2017</year>.
+<pub-id pub-id-type="doi">10.1038/nrcardio.2017.78</pub-id>
+<pub-id pub-id-type="pmid">28569269</pub-id></mixed-citation></ref><ref id="ref-7"><label>7</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Vestergaard</surname><given-names>P</given-names></name></person-group>:
+<article-title>Discrepancies in bone mineral density and fracture risk in patients with type 1 and type 2 diabetes--a meta-analysis.</article-title>
+<source><italic>Osteoporos Int.</italic></source>
+<year>2007</year>;<volume>18</volume>(<issue>4</issue>):<fpage>427</fpage>&#x02013;<lpage>44</lpage>.
+<pub-id pub-id-type="doi">10.1007/s00198-006-0253-4</pub-id>
+<pub-id pub-id-type="pmid">17068657</pub-id></mixed-citation></ref><ref id="ref-8"><label>8</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Schwartz</surname><given-names>AV</given-names></name><name><surname>Vittinghoff</surname><given-names>E</given-names></name><name><surname>Bauer</surname><given-names>DC</given-names></name><etal/></person-group>:
+<article-title>Association of BMD and FRAX score with risk of fracture in older adults with type 2 diabetes.</article-title>
+<source><italic>JAMA.</italic></source>
+<year>2011</year>;<volume>305</volume>(<issue>21</issue>):<fpage>2184</fpage>&#x02013;<lpage>92</lpage>.
+<pub-id pub-id-type="doi">10.1001/jama.2011.715</pub-id>
+<!--<pub-id pub-id-type="pmcid">3287389</pub-id>-->
+<pub-id pub-id-type="pmid">21632482</pub-id></mixed-citation></ref><ref id="ref-9"><label>9</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Ma</surname><given-names>L</given-names></name><name><surname>Oei</surname><given-names>L</given-names></name><name><surname>Jiang</surname><given-names>L</given-names></name><etal/></person-group>:
+<article-title>Association between bone mineral density and type 2 diabetes mellitus: a meta-analysis of observational studies.</article-title>
+<source><italic>Eur J Epidemiol.</italic></source>
+<year>2012</year>;<volume>27</volume>(<issue>5</issue>):<fpage>319</fpage>&#x02013;<lpage>32</lpage>.
+<pub-id pub-id-type="doi">10.1007/s10654-012-9674-x</pub-id>
+<!--<pub-id pub-id-type="pmcid">3374119</pub-id>-->
+<pub-id pub-id-type="pmid">22451239</pub-id></mixed-citation></ref><ref id="ref-10"><label>10</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Starup-Linde</surname><given-names>J</given-names></name></person-group>:
+<article-title>Diabetes, biochemical markers of bone turnover, diabetes control, and bone.</article-title>
+<source><italic>Front Endocrinol (Lausanne).</italic></source>
+<year>2013</year>;<volume>4</volume>:<fpage>21</fpage>.
+<pub-id pub-id-type="doi">10.3389/fendo.2013.00021</pub-id>
+<!--<pub-id pub-id-type="pmcid">3591742</pub-id>-->
+<pub-id pub-id-type="pmid">23482417</pub-id></mixed-citation></ref><ref id="ref-11"><label>11</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lecka-Czernik</surname><given-names>B</given-names></name></person-group>:
+<article-title>Diabetes, bone and glucose-lowering agents: basic biology.</article-title>
+<source><italic>Diabetologia.</italic></source>
+<year>2017</year>;<volume>60</volume>(<issue>7</issue>):<fpage>1163</fpage>&#x02013;<lpage>9</lpage>.
+<pub-id pub-id-type="doi">10.1007/s00125-017-4269-4</pub-id>
+<!--<pub-id pub-id-type="pmcid">5487688</pub-id>-->
+<pub-id pub-id-type="pmid">28434032</pub-id></mixed-citation></ref><ref id="ref-12"><label>12</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Strotmeyer</surname><given-names>ES</given-names></name><name><surname>Cauley</surname><given-names>JA</given-names></name><name><surname>Schwartz</surname><given-names>AV</given-names></name><etal/></person-group>:
+<article-title>Diabetes is associated independently of body composition with BMD and bone volume in older white and black men and women: The health, aging, and body composition study.</article-title>
+<source><italic>J Bone Miner Res.</italic></source>
+<year>2004</year>;<volume>19</volume>(<issue>7</issue>):<fpage>1084</fpage>&#x02013;<lpage>91</lpage>.
+<pub-id pub-id-type="doi">10.1359/JBMR.040311</pub-id>
+<pub-id pub-id-type="pmid">15176990</pub-id></mixed-citation></ref><ref id="ref-13"><label>13</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mussolino</surname><given-names>ME</given-names></name><name><surname>Armenian</surname><given-names>HK</given-names></name></person-group>:
+<article-title>Low bone mineral density, coronary heart disease, and stroke mortality in men and women: the Third National Health and Nutrition Examination Survey.</article-title>
+<source><italic>Ann Epidemiol.</italic></source>
+<year>2007</year>;<volume>17</volume>(<issue>11</issue>):<fpage>841</fpage>&#x02013;<lpage>6</lpage>.
+<pub-id pub-id-type="doi">10.1016/j.annepidem.2007.06.005</pub-id>
+<pub-id pub-id-type="pmid">17728148</pub-id></mixed-citation></ref><ref id="ref-14"><label>14</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Broussard</surname><given-names>DL</given-names></name><name><surname>Magnus</surname><given-names>JH</given-names></name></person-group>:
+<article-title>Coronary heart disease risk and bone mineral density among U.S. women and men.</article-title>
+<source><italic>J Womens Health (Larchmt).</italic></source>
+<year>2008</year>;<volume>17</volume>(<issue>3</issue>):<fpage>479</fpage>&#x02013;<lpage>90</lpage>.
+<pub-id pub-id-type="doi">10.1089/jwh.2007.0593</pub-id>
+<pub-id pub-id-type="pmid">18345994</pub-id></mixed-citation></ref><ref id="ref-15"><label>15</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Gonz&#x000e1;lez-Mac&#x000ed;as</surname><given-names>J</given-names></name><name><surname>Marin</surname><given-names>F</given-names></name><name><surname>Vila</surname><given-names>J</given-names></name><etal/></person-group>:
+<article-title>Relationship between bone quantitative ultrasound and mortality: a prospective study.</article-title>
+<source><italic>Osteoporos Int.</italic></source>
+<year>2009</year>;<volume>20</volume>(<issue>2</issue>):<fpage>257</fpage>&#x02013;<lpage>64</lpage>.
+<pub-id pub-id-type="doi">10.1007/s00198-008-0645-8</pub-id>
+<pub-id pub-id-type="pmid">18512114</pub-id></mixed-citation></ref><ref id="ref-16"><label>16</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Alissa</surname><given-names>EM</given-names></name><name><surname>Alnahdi</surname><given-names>WA</given-names></name><name><surname>Alama</surname><given-names>N</given-names></name><etal/></person-group>:
+<article-title>Bone mineral density and cardiovascular risk factors in postmenopausal women with coronary artery disease.</article-title>
+<source><italic>Bonekey Rep.</italic></source>
+<year>2015</year>;<volume>4</volume>:<fpage>758</fpage>.
+<pub-id pub-id-type="doi">10.1038/bonekey.2015.127</pub-id>
+<!--<pub-id pub-id-type="pmcid">4644069</pub-id>-->
+<pub-id pub-id-type="pmid">26587227</pub-id></mixed-citation></ref><ref id="ref-17"><label>17</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lee</surname><given-names>NK</given-names></name><name><surname>Sowa</surname><given-names>H</given-names></name><name><surname>Hinoi</surname><given-names>E</given-names></name><etal/></person-group>:
+<article-title>Endocrine regulation of energy metabolism by the skeleton.</article-title>
+<source><italic>Cell.</italic></source>
+<year>2007</year>;<volume>130</volume>(<issue>3</issue>):<fpage>456</fpage>&#x02013;<lpage>69</lpage>.
+<pub-id pub-id-type="doi">10.1016/j.cell.2007.05.047</pub-id>
+<!--<pub-id pub-id-type="pmcid">2013746</pub-id>-->
+<pub-id pub-id-type="pmid">17693256</pub-id></mixed-citation></ref><ref id="ref-18"><label>18</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Shanbhogue</surname><given-names>VV</given-names></name><name><surname>Mitchell</surname><given-names>DM</given-names></name><name><surname>Rosen</surname><given-names>CJ</given-names></name><etal/></person-group>:
+<article-title>Type 2 diabetes and the skeleton: new insights into sweet bones.</article-title>
+<source><italic>Lancet Diabetes Endocrinol.</italic></source>
+<year>2016</year>;<volume>4</volume>(<issue>2</issue>):<fpage>159</fpage>&#x02013;<lpage>73</lpage>.
+<pub-id pub-id-type="doi">10.1016/S2213-8587(15)00283-1</pub-id>
+<pub-id pub-id-type="pmid">26365605</pub-id></mixed-citation></ref><ref id="ref-19"><label>19</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Sudlow</surname><given-names>C</given-names></name><name><surname>Gallacher</surname><given-names>J</given-names></name><name><surname>Allen</surname><given-names>N</given-names></name><etal/></person-group>:
+<article-title>UK Biobank: An Open Access Resource for Identifying the Causes of a Wide Range of Complex Diseases of Middle and Old Age.</article-title>
+<source><italic>PLoS Med.</italic></source>
+<year>2015</year>;<volume>12</volume>(<issue>3</issue>):<fpage>e1001779</fpage>.
+<pub-id pub-id-type="doi">10.1371/journal.pmed.1001779</pub-id>
+<!--<pub-id pub-id-type="pmcid">4380465</pub-id>-->
+<pub-id pub-id-type="pmid">25826379</pub-id></mixed-citation></ref><ref id="ref-20"><label>20</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Chin</surname><given-names>KY</given-names></name><name><surname>Ima-Nirwana</surname><given-names>S</given-names></name></person-group>:
+<article-title>Calcaneal quantitative ultrasound as a determinant of bone health status: what properties of bone does it reflect?</article-title>
+<source><italic>Int J Med Sci.</italic></source>
+<year>2013</year>;<volume>10</volume>(<issue>12</issue>):<fpage>1778</fpage>&#x02013;<lpage>83</lpage>.
+<pub-id pub-id-type="doi">10.7150/ijms.6765</pub-id>
+<!--<pub-id pub-id-type="pmcid">3837236</pub-id>-->
+<pub-id pub-id-type="pmid">24273451</pub-id></mixed-citation></ref><ref id="ref-21"><label>21</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Moayyeri</surname><given-names>A</given-names></name><name><surname>Hsu</surname><given-names>YH</given-names></name><name><surname>Karasik</surname><given-names>D</given-names></name><etal/></person-group>:
+<article-title>Genetic determinants of heel bone properties: genome-wide association meta-analysis and replication in the GEFOS/GENOMOS consortium.</article-title>
+<source><italic>Hum Mol Genet.</italic></source>
+<year>2014</year>;<volume>23</volume>(<issue>11</issue>):<fpage>3054</fpage>&#x02013;<lpage>68</lpage>.
+<pub-id pub-id-type="doi">10.1093/hmg/ddt675</pub-id>
+<!--<pub-id pub-id-type="pmcid">4038791</pub-id>-->
+<pub-id pub-id-type="pmid">24430505</pub-id></mixed-citation></ref><ref id="ref-22"><label>22</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Smith</surname><given-names>GD</given-names></name><name><surname>Ebrahim</surname><given-names>S</given-names></name></person-group>:
+<article-title>'Mendelian randomization': can genetic epidemiology contribute to understanding environmental determinants of disease?</article-title>
+<source><italic>Int J Epidemiol.</italic></source>
+<year>2003</year>;<volume>32</volume>(<issue>1</issue>):<fpage>1</fpage>&#x02013;<lpage>22</lpage>.
+<pub-id pub-id-type="doi">10.1093/ije/dyg070</pub-id>
+<pub-id pub-id-type="pmid">12689998</pub-id></mixed-citation></ref><ref id="ref-23"><label>23</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Scott</surname><given-names>RA</given-names></name><name><surname>Scott</surname><given-names>LJ</given-names></name><name><surname>M&#x000e4;gi</surname><given-names>R</given-names></name><etal/></person-group>:
+<article-title>An Expanded Genome-Wide Association Study of Type 2 Diabetes in Europeans.</article-title>
+<source><italic>Diabetes.</italic></source>
+<year>2017</year>; pii: db161253.
+<pub-id pub-id-type="doi">10.2337/db16-1253</pub-id>
+<pub-id pub-id-type="pmid">28566273</pub-id></mixed-citation></ref><ref id="ref-24"><label>24</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Nikpay</surname><given-names>M</given-names></name><name><surname>Goel</surname><given-names>A</given-names></name><name><surname>Won</surname><given-names>HH</given-names></name><etal/></person-group>:
+<article-title>A comprehensive 1,000 Genomes-based genome-wide association meta-analysis of coronary artery disease.</article-title>
+<source><italic>Nat Genet.</italic></source>
+<year>2015</year>;<volume>47</volume>(<issue>10</issue>):<fpage>1121</fpage>&#x02013;<lpage>1130</lpage>.
+<pub-id pub-id-type="doi">10.1038/ng.3396</pub-id>
+<!--<pub-id pub-id-type="pmcid">4589895</pub-id>-->
+<pub-id pub-id-type="pmid">26343387</pub-id></mixed-citation></ref><ref id="ref-25"><label>25</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Loh</surname><given-names>PR</given-names></name><name><surname>Tucker</surname><given-names>G</given-names></name><name><surname>Bulik-Sullivan</surname><given-names>BK</given-names></name><etal/></person-group>:
+<article-title>Efficient Bayesian mixed-model analysis increases association power in large cohorts.</article-title>
+<source><italic>Nat Genet.</italic></source>
+<year>2015</year>;<volume>47</volume>(<issue>3</issue>):<fpage>284</fpage>&#x02013;<lpage>90</lpage>.
+<pub-id pub-id-type="doi">10.1038/ng.3190</pub-id>
+<!--<pub-id pub-id-type="pmcid">4342297</pub-id>-->
+<pub-id pub-id-type="pmid">25642633</pub-id></mixed-citation></ref><ref id="ref-26"><label>26</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bowden</surname><given-names>J</given-names></name><name><surname>Davey Smith</surname><given-names>G</given-names></name><name><surname>Burgess</surname><given-names>S</given-names></name></person-group>:
+<article-title>Mendelian randomization with invalid instruments: effect estimation and bias detection through Egger regression.</article-title>
+<source><italic>Int J Epidemiol.</italic></source>
+<year>2015</year>;<volume>44</volume>(<issue>2</issue>):<fpage>512</fpage>&#x02013;<lpage>25</lpage>.
+<pub-id pub-id-type="doi">10.1093/ije/dyv080</pub-id>
+<!--<pub-id pub-id-type="pmcid">4469799</pub-id>-->
+<pub-id pub-id-type="pmid">26050253</pub-id></mixed-citation></ref><ref id="ref-27"><label>27</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Bowden</surname><given-names>J</given-names></name><name><surname>Davey Smith</surname><given-names>G</given-names></name><name><surname>Haycock</surname><given-names>PC</given-names></name><etal/></person-group>:
+<article-title>Consistent Estimation in Mendelian Randomization with Some Invalid Instruments Using a Weighted Median Estimator.</article-title>
+<source><italic>Genet Epidemiol.</italic></source>
+<year>2016</year>;<volume>40</volume>(<issue>4</issue>):<fpage>304</fpage>&#x02013;<lpage>14</lpage>.
+<pub-id pub-id-type="doi">10.1002/gepi.21965</pub-id>
+<!--<pub-id pub-id-type="pmcid">4849733</pub-id>-->
+<pub-id pub-id-type="pmid">27061298</pub-id></mixed-citation></ref><ref id="ref-28"><label>28</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hartwig</surname><given-names>FP</given-names></name><name><surname>Davey Smith</surname><given-names>G</given-names></name><name><surname>Bowden</surname><given-names>J</given-names></name></person-group>:
+<article-title>Robust inference in summary data Mendelian randomisation via the zero modal pleiotropy assumption.</article-title>
+<source><italic>bioRxiv.</italic></source>
+<year>2017</year>
+<pub-id pub-id-type="doi">10.1101/126102</pub-id>
+</mixed-citation></ref><ref id="ref-29"><label>29</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Verbanck</surname><given-names>M</given-names></name><name><surname>Chen</surname><given-names>CY</given-names></name><name><surname>Neale</surname><given-names>B</given-names></name><etal/></person-group>:
+<article-title>Widespread pleiotropy confounds causal relationships between complex traits and diseases inferred from Mendelian randomization.</article-title>
+<source><italic>bioRxiv.</italic></source>
+<year>2017</year>
+<pub-id pub-id-type="doi">10.1101/157552</pub-id>
+</mixed-citation></ref><ref id="ref-30"><label>30</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Burgess</surname><given-names>S</given-names></name><name><surname>Thompson</surname><given-names>SG</given-names></name></person-group>:
+<article-title>Use of allele scores as instrumental variables for Mendelian randomization.</article-title>
+<source><italic>Int J Epidemiol.</italic></source>
+<year>2013</year>;<volume>42</volume>(<issue>4</issue>):<fpage>1134</fpage>&#x02013;<lpage>44</lpage>.
+<pub-id pub-id-type="doi">10.1093/ije/dyt093</pub-id>
+<!--<pub-id pub-id-type="pmcid">3780999</pub-id>-->
+<pub-id pub-id-type="pmid">24062299</pub-id></mixed-citation></ref><ref id="ref-31"><label>31</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Shim</surname><given-names>H</given-names></name><name><surname>Chasman</surname><given-names>DI</given-names></name><name><surname>Smith</surname><given-names>JD</given-names></name><etal/></person-group>:
+<article-title>A multivariate genome-wide association analysis of 10 LDL subfractions, and their response to statin treatment, in 1868 Caucasians.</article-title>
+<source><italic>PLoS One.</italic></source>
+<year>2015</year>;<volume>10</volume>(<issue>4</issue>):<fpage>e0120758</fpage>.
+<pub-id pub-id-type="doi">10.1371/journal.pone.0120758</pub-id>
+<!--<pub-id pub-id-type="pmcid">4405269</pub-id>-->
+<pub-id pub-id-type="pmid">25898129</pub-id></mixed-citation></ref><ref id="ref-32"><label>32</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Fern&#x000e1;ndez-Real</surname><given-names>JM</given-names></name><name><surname>Izquierdo</surname><given-names>M</given-names></name><name><surname>Ortega</surname><given-names>F</given-names></name><etal/></person-group>:
+<article-title>The relationship of serum osteocalcin concentration to insulin secretion, sensitivity, and disposal with hypocaloric diet and resistance training.</article-title>
+<source><italic>J Clin Endocrinol Metab.</italic></source>
+<year>2009</year>;<volume>94</volume>(<issue>1</issue>):<fpage>237</fpage>&#x02013;<lpage>45</lpage>.
+<pub-id pub-id-type="doi">10.1210/jc.2008-0270</pub-id>
+<pub-id pub-id-type="pmid">18854399</pub-id></mixed-citation></ref><ref id="ref-33"><label>33</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Shin</surname><given-names>D</given-names></name><name><surname>Kim</surname><given-names>S</given-names></name><name><surname>Kim</surname><given-names>KH</given-names></name><etal/></person-group>:
+<article-title>Association between insulin resistance and bone mass in men.</article-title>
+<source><italic>J Clin Endocrinol Metab.</italic></source>
+<year>2014</year>;<volume>99</volume>(<issue>3</issue>):<fpage>988</fpage>&#x02013;<lpage>95</lpage>.
+<pub-id pub-id-type="doi">10.1210/jc.2013-3338</pub-id>
+<pub-id pub-id-type="pmid">24423302</pub-id></mixed-citation></ref><ref id="ref-34"><label>34</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Guo</surname><given-names>Q</given-names></name><name><surname>Li</surname><given-names>H</given-names></name><name><surname>Xu</surname><given-names>L</given-names></name><etal/></person-group>:
+<article-title>Undercarboxylated osteocalcin reverts insulin resistance induced by endoplasmic reticulum stress in human umbilical vein endothelial cells.</article-title>
+<source><italic>Sci Rep.</italic></source>
+<year>2017</year>;<volume>7</volume>(<issue>1</issue>): 46.
+<pub-id pub-id-type="doi">10.1038/s41598-017-00163-2</pub-id>
+<!--<pub-id pub-id-type="pmcid">5427815</pub-id>-->
+<pub-id pub-id-type="pmid">28246389</pub-id></mixed-citation></ref><ref id="ref-35"><label>35</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Lotta</surname><given-names>LA</given-names></name><name><surname>Gulati</surname><given-names>P</given-names></name><name><surname>Day</surname><given-names>FR</given-names></name><etal/></person-group>:
+<article-title>Integrative genomic analysis implicates limited peripheral adipose storage capacity in the pathogenesis of human insulin resistance.</article-title>
+<source><italic>Nat Genet.</italic></source>
+<year>2017</year>;<volume>49</volume>(<issue>1</issue>):<fpage>17</fpage>&#x02013;<lpage>26</lpage>.
+<pub-id pub-id-type="doi">10.1038/ng.3714</pub-id>
+<pub-id pub-id-type="pmid">27841877</pub-id></mixed-citation></ref><ref id="ref-36"><label>36</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Wei</surname><given-names>J</given-names></name><name><surname>Karsenty</surname><given-names>G</given-names></name></person-group>:
+<article-title>An overview of the metabolic functions of osteocalcin.</article-title>
+<source><italic>Rev Endocr Metab Disord.</italic></source>
+<year>2015</year>;<volume>16</volume>(<issue>2</issue>):<fpage>93</fpage>&#x02013;<lpage>8</lpage>.
+<pub-id pub-id-type="doi">10.1007/s11154-014-9307-7</pub-id>
+<!--<pub-id pub-id-type="pmcid">4499327</pub-id>-->
+<pub-id pub-id-type="pmid">25577163</pub-id></mixed-citation></ref><ref id="ref-37"><label>37</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Mosialou</surname><given-names>I</given-names></name><name><surname>Shikhel</surname><given-names>S</given-names></name><name><surname>Liu</surname><given-names>JM</given-names></name><etal/></person-group>:
+<article-title>MC4R-dependent suppression of appetite by bone-derived lipocalin 2.</article-title>
+<source><italic>Nature.</italic></source>
+<year>2017</year>;<volume>543</volume>(<issue>7645</issue>):<fpage>385</fpage>&#x02013;<lpage>90</lpage>.
+<pub-id pub-id-type="doi">10.1038/nature21697</pub-id>
+<pub-id pub-id-type="pmid">28273060</pub-id></mixed-citation></ref><ref id="ref-38"><label>38</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Yu</surname><given-names>OH</given-names></name><name><surname>Richards</surname><given-names>B</given-names></name><name><surname>Berger</surname><given-names>C</given-names></name><etal/></person-group>:
+<article-title>The association between sclerostin and incident type 2 diabetes risk: a cohort study.</article-title>
+<source><italic>Clin Endocrinol (Oxf).</italic></source>
+<year>2017</year>;<volume>86</volume>(<issue>4</issue>):<fpage>520</fpage>&#x02013;<lpage>5</lpage>.
+<pub-id pub-id-type="doi">10.1111/cen.13300</pub-id>
+<pub-id pub-id-type="pmid">28090669</pub-id></mixed-citation></ref><ref id="ref-39"><label>39</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Indridason</surname><given-names>OS</given-names></name><name><surname>Franzson</surname><given-names>L</given-names></name><name><surname>Sigurdsson</surname><given-names>G</given-names></name></person-group>:
+<article-title>Serum osteoprotegerin and its relationship with bone mineral density and markers of bone turnover.</article-title>
+<source><italic>Osteoporos Int.</italic></source>
+<year>2005</year>;<volume>16</volume>(<issue>4</issue>):<fpage>417</fpage>&#x02013;<lpage>23</lpage>.
+<pub-id pub-id-type="doi">10.1007/s00198-004-1699-x</pub-id>
+<pub-id pub-id-type="pmid">15776220</pub-id></mixed-citation></ref><ref id="ref-40"><label>40</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hari Kumar</surname><given-names>KV</given-names></name><name><surname>Muthukrishnan</surname><given-names>J</given-names></name><name><surname>Verma</surname><given-names>A</given-names></name><etal/></person-group>:
+<article-title>Correlation between bone markers and bone mineral density in postmenopausal women with osteoporosis.</article-title>
+<source><italic>Endocr Pract.</italic></source>
+<year>2008</year>;<volume>14</volume>(<issue>9</issue>):<fpage>1102</fpage>&#x02013;<lpage>7</lpage>.
+<pub-id pub-id-type="doi">10.4158/EP.14.9.1102</pub-id>
+<pub-id pub-id-type="pmid">19158049</pub-id></mixed-citation></ref><ref id="ref-41"><label>41</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Pittas</surname><given-names>AG</given-names></name><name><surname>Harris</surname><given-names>SS</given-names></name><name><surname>Eliades</surname><given-names>M</given-names></name><etal/></person-group>:
+<article-title>Association between serum osteocalcin and markers of metabolic phenotype.</article-title>
+<source><italic>J Clin Endocrinol Metab.</italic></source>
+<year>2009</year>;<volume>94</volume>(<issue>3</issue>):<fpage>827</fpage>&#x02013;<lpage>32</lpage>.
+<pub-id pub-id-type="doi">10.1210/jc.2008-1422</pub-id>
+<!--<pub-id pub-id-type="pmcid">2681283</pub-id>-->
+<pub-id pub-id-type="pmid">19088165</pub-id></mixed-citation></ref><ref id="ref-42"><label>42</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Hwang</surname><given-names>YC</given-names></name><name><surname>Jeong</surname><given-names>IK</given-names></name><name><surname>Ahn</surname><given-names>KJ</given-names></name><etal/></person-group>:
+<article-title>Circulating osteocalcin level is associated with improved glucose tolerance, insulin secretion and sensitivity independent of the plasma adiponectin level.</article-title>
+<source><italic>Osteoporos Int.</italic></source>
+<year>2012</year>;<volume>23</volume>(<issue>4</issue>):<fpage>1337</fpage>&#x02013;<lpage>42</lpage>.
+<pub-id pub-id-type="doi">10.1007/s00198-011-1679-x</pub-id>
+<!--<pub-id pub-id-type="pmcid">3304051</pub-id>-->
+<pub-id pub-id-type="pmid">21656264</pub-id></mixed-citation></ref><ref id="ref-43"><label>43</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Vs</surname><given-names>K</given-names></name><name><surname>K</surname><given-names>P</given-names></name><name><surname>Ramesh</surname><given-names>M</given-names></name><etal/></person-group>:
+<article-title>The association of serum osteocalcin with the bone mineral density in post menopausal women.</article-title>
+<source><italic>J Clin Diagn Res.</italic></source>
+<year>2013</year>;<volume>7</volume>(<issue>5</issue>):<fpage>814</fpage>&#x02013;<lpage>6</lpage>.
+<pub-id pub-id-type="doi">10.7860/JCDR/2013/5370.2946</pub-id>
+<!--<pub-id pub-id-type="pmcid">3681044</pub-id>-->
+<pub-id pub-id-type="pmid">23814717</pub-id></mixed-citation></ref><ref id="ref-44"><label>44</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kim</surname><given-names>Y</given-names></name><name><surname>White</surname><given-names>T</given-names></name><name><surname>Wijndaele</surname><given-names>K</given-names></name><etal/></person-group>:
+<article-title>Adiposity and grip strength as long-term predictors of objectively measured physical activity in 93&#x02009;015 adults: the UK Biobank study.</article-title>
+<source><italic>Int J Obes (Lond).</italic></source>
+<year>2017</year>.
+<pub-id pub-id-type="doi">10.1038/ijo.2017.122</pub-id>
+<pub-id pub-id-type="pmid">28529332</pub-id></mixed-citation></ref><ref id="ref-45"><label>45</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Burgess</surname><given-names>S</given-names></name><name><surname>Davies</surname><given-names>NM</given-names></name><name><surname>Thompson</surname><given-names>SG</given-names></name></person-group>:
+<article-title>Bias due to participant overlap in two-sample Mendelian randomization.</article-title>
+<source><italic>Genet Epidemiol.</italic></source>
+<year>2016</year>;<volume>40</volume>(<issue>7</issue>):<fpage>597</fpage>&#x02013;<lpage>608</lpage>.
+<pub-id pub-id-type="doi">10.1002/gepi.21998</pub-id>
+<!--<pub-id pub-id-type="pmcid">5082560</pub-id>-->
+<pub-id pub-id-type="pmid">27625185</pub-id></mixed-citation></ref><ref id="ref-46"><label>46</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>N&#x000fc;esch</surname><given-names>E</given-names></name><name><surname>Dale</surname><given-names>C</given-names></name><name><surname>Palmer</surname><given-names>TM</given-names></name><etal/></person-group>:
+<article-title>Adult height, coronary heart disease and stroke: a multi-locus Mendelian randomization meta-analysis.</article-title>
+<source><italic>Int J Epidemiol.</italic></source>
+<year>2016</year>;<volume>45</volume>(<issue>6</issue>):<fpage>1927</fpage>&#x02013;<lpage>37</lpage>.
+<pub-id pub-id-type="doi">10.1093/ije/dyv074</pub-id>
+<pub-id pub-id-type="pmid">25979724</pub-id></mixed-citation></ref><ref id="ref-47"><label>47</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Larsson</surname><given-names>SC</given-names></name><name><surname>Burgess</surname><given-names>S</given-names></name><name><surname> Micha&#x000eb;lsson</surname><given-names>K</given-names></name></person-group>:
+<article-title>Association of Genetic Variants Related to Serum Calcium Levels With Coronary Artery Disease and Myocardial Infarction.</article-title>
+<source><italic>JAMA.</italic></source>
+<year>2017</year>;<volume>318</volume>(<issue>4</issue>):<fpage>371</fpage>&#x02013;<lpage>80</lpage>.
+<pub-id pub-id-type="doi">10.1001/jama.2017.8981</pub-id>
+<pub-id pub-id-type="pmid">28742912</pub-id></mixed-citation></ref><ref id="ref-48"><label>48</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Xu</surname><given-names>L</given-names></name><name><surname>Lin</surname><given-names>SL</given-names></name><name><surname>Schooling</surname><given-names>CM</given-names></name></person-group>:
+<article-title>A Mendelian randomization study of the effect of calcium on coronary artery disease, myocardial infarction and their risk factors.</article-title>
+<source><italic>Sci Rep.</italic></source>
+<year>2017</year>;<volume>7</volume>: 42691.
+<pub-id pub-id-type="doi">10.1038/srep42691</pub-id>
+<!--<pub-id pub-id-type="pmcid">5307362</pub-id>-->
+<pub-id pub-id-type="pmid">28195141</pub-id></mixed-citation></ref><ref id="ref-49"><label>49</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Tai</surname><given-names>V</given-names></name><name><surname>Leung</surname><given-names>W</given-names></name><name><surname>Grey</surname><given-names>A</given-names></name><etal/></person-group>:
+<article-title>Calcium intake and bone mineral density: systematic review and meta-analysis.</article-title>
+<source><italic>BMJ.</italic></source>
+<year>2015</year>;<volume>351</volume>:<fpage>h4183</fpage>.
+<pub-id pub-id-type="doi">10.1136/bmj.h4183</pub-id>
+<!--<pub-id pub-id-type="pmcid">4784773</pub-id>-->
+<pub-id pub-id-type="pmid">26420598</pub-id></mixed-citation></ref><ref id="ref-50"><label>50</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Pazianas</surname><given-names>M</given-names></name><name><surname>Cooper</surname><given-names>C</given-names></name><name><surname>Ebetino</surname><given-names>FH</given-names></name><etal/></person-group>:
+<article-title>Long-term treatment with bisphosphonates and their safety in postmenopausal osteoporosis.</article-title>
+<source><italic>Ther Clin Risk Manag.</italic></source>
+<year>2010</year>;<volume>6</volume>:<fpage>325</fpage>&#x02013;<lpage>43</lpage>.
+<pub-id pub-id-type="doi">10.2147/TCRM.S8054</pub-id>
+<!--<pub-id pub-id-type="pmcid">2909499</pub-id>-->
+<pub-id pub-id-type="pmid">20668715</pub-id></mixed-citation></ref><ref id="ref-51"><label>51</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Kim</surname><given-names>DH</given-names></name><name><surname>Rogers</surname><given-names>JR</given-names></name><name><surname>Fulchino</surname><given-names>LA</given-names></name><etal/></person-group>:
+<article-title>Bisphosphonates and risk of cardiovascular events: a meta-analysis.</article-title>
+<source><italic>PLoS One.</italic></source>
+<year>2015</year>;<volume>10</volume>(<issue>4</issue>):<fpage>e0122646</fpage>.
+<pub-id pub-id-type="doi">10.1371/journal.pone.0122646</pub-id>
+<!--<pub-id pub-id-type="pmcid">4401508</pub-id>-->
+<pub-id pub-id-type="pmid">25884398</pub-id></mixed-citation></ref><ref id="ref-52"><label>52</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author"><name><surname>Walker</surname><given-names>VM</given-names></name><name><surname>Davey Smith</surname><given-names>G</given-names></name><name><surname>Davies</surname><given-names>NM</given-names></name><etal/></person-group>:
+<article-title>Mendelian randomization: a novel approach for the prediction of adverse drug events and drug repurposing opportunities.</article-title>
+<source><italic>bioRxiv.</italic></source>
+<year>2017</year>
+<pub-id pub-id-type="doi">10.1101/105338</pub-id>
+</mixed-citation></ref></ref-list></back><sub-article id="report25236" article-type="peer-review"><front-stub><article-id pub-id-type="doi">10.21956/wellcomeopenres.13302.r25236</article-id><title-group><article-title>Referee response for version 1</article-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Par&#x000e9;</surname><given-names>Guillaume</given-names></name><xref ref-type="aff" rid="r25236a1">1</xref><role>Referee</role></contrib><contrib contrib-type="author"><name><surname>Th&#x000e9;riault</surname><given-names>S&#x000e9;bastien</given-names></name><xref ref-type="aff" rid="r25236a2">2</xref><role>Co-referee</role></contrib><aff id="r25236a1">
+<label>1</label>Department of Pathology and Molecular Medicine, McMaster University, Hamilton, ON, Canada</aff><aff id="r25236a2">
+<label>2</label>Department of Molecular Biology, Medical Biochemistry and Pathology, Laval University, Quebec City, QC, Canada</aff></contrib-group><author-notes><fn fn-type="COI-statement"><p>
+<bold>Competing interests: </bold>No competing interests were disclosed.</p></fn></author-notes><pub-date pub-type="epub"><day>18</day><month>9</month><year>2017</year></pub-date><related-article id="d35e4028" related-article-type="peer-reviewed-article" ext-link-type="doi" xlink:href="10.12688/wellcomeopenres.12288.1">Version 1</related-article><custom-meta-group><custom-meta><meta-name>recommendation</meta-name><meta-value>approve</meta-value></custom-meta></custom-meta-group></front-stub><body><p>The authors report an extensive genetic analysis looking at the relationship between bone mineral density (BMD), type 2 diabetes (T2D) and coronary heart disease (CHD). A genome-wide association study using the UK Biobank first release allowed the identification of 235 SNPs associated with estimated heel BMD (eBMD) using quantitative ultrasound. These SNPs were then used as instrumental variables in Mendelian randomization (MR) analyses which led the authors to conclude that an elevated eBMD is causally associated with higher risk of T2D and CHD.</p><p> The article helps to answer an interesting question using the latest Mendelian randomization methods and recent sources of publicly available genetic data. The article is well organized and clearly written. The authors performed several analyses to ensure the robustness of the findings.</p><p> In the conclusions, the authors suggest that BMD is directly causal for T2D and CHD, which is a simplified interpretation of the findings. It is plausible that variants affecting bone mineral density do so through biological pathways themselves responsible for the effect on T2D and CHD risk (i.e. osteocalcin leading to insulin resistance, as mentioned by the authors in the discussion). In other words, factors leading to elevated BMD could be causing T2D and CHD rather than BMD itself. Only certain pathways might be involved, especially considering that the overall effect is weak and in the opposite direction for an important proportion of the 235 variants. As noted by the authors, a parallel can be made with the decreased risk of CAD with increasing height. In that case, it seems even more plausible that factors leading to increase height are responsible for the association rather than height itself. For these reasons, we believe that the conclusions should be revised to take into account this interpretation.&#x000a0;</p><p> MR associations remain weakly significant and many hypotheses have been tested, the authors should also take this into account in their conclusion.</p><p> We suggest also testing height and waist-to-hip ratio as potential risk factors associated with the eBMD genetic instrument (i.e. in Table 2).</p><p> This statement in the Discussion should be revised: &#x0201c;However, the lack of a negative association of CHD SNPs with eBMD argues against the presence of CHD causally impacting on eBMD, and thus the discrepancy between the observational analysis and MR findings warrants further investigation.&#x0201d; This does not take into account the possibility that it is the CHD event that leads participants to decrease activity, such that no genetic association would be observed in individuals free of CHD, even if genetically predisposed.</p><p> We also have a few minor suggestions:
+<list list-type="bullet"><list-item><p>Characteristics of the UK Biobank participants included in the analysis (first genotyping release) should be described in Table 1 (n=116,501) in addition to the whole UK Biobank European population (n=457,395).</p></list-item><list-item><p>In the Results section, it would be more logical to present the eBMD GWAS results before the results of the association between eBMD and T2D/CHD, and invert Figure 2 and 3.</p></list-item><list-item><p>We suggest replacing the term "contribute" by "associated" in the header of Table 2.</p></list-item><list-item><p>A figure showing the association in terms of loci (instead of rs numbers only) would be interesting to get a better idea of the pathways involved. We suggest for example using only the stronger SNPs (p-value &#x0003c; 5X10
+<sup>-20</sup>) and plotting the effect on eBMD vs the effect on T2D and CHD.</p></list-item><list-item><p>It should be mentioned in the limitations that applicability to non-European ethnic groups remains uncertain as mostly European studies were used in the analysis.</p></list-item><list-item><p>In the Conclusions section, the word &#x0201c;casual&#x0201d; should read &#x0201c;causal&#x0201d;.</p></list-item></list> &#x000a0;</p><p> In the Supplementary Material:
+<list list-type="bullet"><list-item><p>The font of axes labels in Supplementary Figures 1, 2 and 4 should be increased to facilitate reading.</p></list-item><list-item><p>The axes should be added to Supplementary Figure 2 to help visualize which loci have a consistent direction of effect.</p></list-item><list-item><p>In Supplementary Figure 3, &#x0201c;Overll&#x0201d; should read &#x0201c;Overall&#x0201d;.</p></list-item></list>
+</p><p>We have read this submission. We believe that we have an appropriate level of expertise to confirm that it is of an acceptable scientific standard.</p></body></sub-article><sub-article id="report25703" article-type="peer-review"><front-stub><article-id pub-id-type="doi">10.21956/wellcomeopenres.13302.r25703</article-id><title-group><article-title>Referee response for version 1</article-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Ellervik</surname><given-names>Christina</given-names></name><xref ref-type="aff" rid="r25703a1">1</xref><role>Referee</role><contrib-id contrib-id-type="orcid">https://orcid.org/0000-0002-3088-4375</contrib-id></contrib><aff id="r25703a1">
+<label>1</label>Faculty of Health and Medical Sciences, &#x000a0;University of Copenhagen, Copenhagen, Denmark</aff></contrib-group><author-notes><fn fn-type="COI-statement"><p>
+<bold>Competing interests: </bold>No competing interests were disclosed.</p></fn></author-notes><pub-date pub-type="epub"><day>15</day><month>9</month><year>2017</year></pub-date><related-article id="d35e4136" related-article-type="peer-reviewed-article" ext-link-type="doi" xlink:href="10.12688/wellcomeopenres.12288.1">Version 1</related-article><custom-meta-group><custom-meta><meta-name>recommendation</meta-name><meta-value>approve</meta-value></custom-meta></custom-meta-group></front-stub><body><p>The authors have undertaken a GWAS and bidirectional Mendelian Randomization study of the relationship between eBMD and CVD to identify potential new pathways, to estimate causality, to investigate direction of the estimated causality, and to address potential pleiotropy. The authors have used current technology, current software and current statistical methods to address these questions. The article is precise and concise, well presented, and the authors justify their arguments.</p><p> Could the authors please comment on why this study was relevant to undertake in text, discussion, and if space allows also in the abstract? Which potential clinical implications could this have? Does the study open up for any potential drug targets? What would be the equivalent target randomized trial that this MR study mimicks?</p><p>I have read this submission. I believe that I have an appropriate level of expertise to confirm that it is of an acceptable scientific standard.</p></body></sub-article><sub-article id="report25235" article-type="peer-review"><front-stub><article-id pub-id-type="doi">10.21956/wellcomeopenres.13302.r25235</article-id><title-group><article-title>Referee response for version 1</article-title></title-group><contrib-group><contrib contrib-type="author"><name><surname>Richards</surname><given-names>J. Brent</given-names></name><xref ref-type="aff" rid="r25235a1">1</xref><role>Referee</role><contrib-id contrib-id-type="orcid">https://orcid.org/0000-0002-3746-9086</contrib-id></contrib><aff id="r25235a1">
+<label>1</label>Department of Human Genetics, Lady Davis Institute for Medical Research, Jewish General Hospital, McGill University, Montreal, QC, Canada</aff></contrib-group><author-notes><fn fn-type="COI-statement"><p>
+<bold>Competing interests: </bold>No competing interests were disclosed.</p></fn></author-notes><pub-date pub-type="epub"><day>1</day><month>9</month><year>2017</year></pub-date><related-article id="d35e4191" related-article-type="peer-reviewed-article" ext-link-type="doi" xlink:href="10.12688/wellcomeopenres.12288.1">Version 1</related-article><custom-meta-group><custom-meta><meta-name>recommendation</meta-name><meta-value>approve-with-reservations</meta-value></custom-meta></custom-meta-group></front-stub><body><p>Gan
+<italic>et al.&#x000a0;</italic>have undertaken a two-sample MR study using 235 independent SNPs for eBMD in UKbiobank and tested them for T2D and CHD risk in DIAGRAM and CARDIOGRAMplusC4D. They found a small increase in T2D and CHD risk, whose confidence intervals overlapped, or nearly overlapped the null.</p><p> This is a well-done study, addressing an important problem using modern Mendelian randomization techniques.</p><p> Major Comments:
+<list list-type="order"><list-item><p>The authors have tested 12 traits and two diseases. They have made no attempt to correct for multiple testing. Given that the effects on T2D and CHD have p-values very near to 0.05, should they not make the reader aware that these results may have arisen by chance? I acknowledge that many of the traits are correlated, but given the number of hypothesis tested, it would be quite helpful to discuss the role that multiple testing may have had in their results.</p></list-item><list-item><p>A standard deviation change in BMD is a very large change. The resultant changes in risk of T2D and CHD were correspondingly small. In my opinion, it would be helpful to emphasize this to the reader in the abstract, the results and conclusions.</p></list-item><list-item><p>It would be helpful to know how population stratification was handled in the GWAS for eBMD.</p></list-item><list-item><p>The authors should state that MR-Egger tests for unbalanced horizontal pleiotropy, rather than &#x0201c;pleiotropy&#x0201d;.</p></list-item><list-item><p>It is not clear how the genetic associations with the 12 established metabolic risk factors were identified. It appears they were mostly from UKB? If so, they would be biased towards the observational effect.</p></list-item><list-item><p>The authors should be applauded for bringing up the clinically relevant point that bisphosphonate use is not at all associated with an increased risk of CHD in studies available to date. Even if they were, the effects of these medications on BMD are far lower than one standard deviation and thus the effects on CHD risk would be anticipated to be even closer to the null than the results presented by the authors.</p></list-item></list>
+</p><p>I have read this submission. I believe that I have an appropriate level of expertise to confirm that it is of an acceptable scientific standard, however I have significant reservations, as outlined above.</p></body></sub-article></article>

@@ -1,0 +1,2022 @@
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" id="jah38861" xml:lang="en" article-type="research-article"><?properties open_access?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">J Am Heart Assoc</journal-id><journal-id journal-id-type="iso-abbrev">J Am Heart Assoc</journal-id><journal-id journal-id-type="doi">10.1002/(ISSN)2047-9980</journal-id><journal-id journal-id-type="publisher-id">JAH3</journal-id><journal-id journal-id-type="hwp">ahaoa</journal-id><journal-title-group><journal-title>Journal of the American Heart Association: Cardiovascular and Cerebrovascular Disease</journal-title></journal-title-group><issn pub-type="epub">2047-9980</issn><publisher><publisher-name>John Wiley and Sons Inc.</publisher-name><publisher-loc>Hoboken</publisher-loc></publisher></journal-meta>
+<article-meta><article-id pub-id-type="pmid">37889180</article-id><article-id pub-id-type="pmc">PMC10727393</article-id>
+<article-id pub-id-type="doi">10.1161/JAHA.123.030661</article-id><article-id pub-id-type="publisher-id">JAH38861</article-id><article-id pub-id-type="other">JAHA/2023/030661-T</article-id><article-categories><subj-group subj-group-type="overline"><subject>Original Research</subject></subj-group><subj-group subj-group-type="heading"><subject>Original Research</subject><subj-group subj-group-type="heading"><subject>Pericardial Disease</subject></subj-group></subj-group></article-categories><title-group><article-title>Genome&#x02010;Wide Association Study of Pericardial Fat Area in 28&#x02009;161 <styled-content style="fixed-case" toggle="no">UK</styled-content> Biobank Participants</article-title><alt-title alt-title-type="right-running-head">Genome&#x02010;Wide Association Study of Pericardial Fat</alt-title><alt-title alt-title-type="left-running-head">Salih et&#x000a0;al</alt-title></title-group><contrib-group><contrib id="jah38861-cr-0001" contrib-type="author" corresp="yes"><name><surname>Salih</surname><given-names>Ahmed</given-names></name><degrees>PhD</degrees><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-0871-8282</contrib-id><xref rid="jah38861-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="jah38861-note-0001" ref-type="author-notes">
+<sup>*</sup>
+</xref><address><email>a.salih@qmul.ac.uk</email></address></contrib><contrib id="jah38861-cr-0002" contrib-type="author"><name><surname>Ardissino</surname><given-names>Maddalena</given-names></name><degrees>MSc</degrees><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-2654-8117</contrib-id><xref rid="jah38861-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref><xref rid="jah38861-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref><xref rid="jah38861-note-0001" ref-type="author-notes">
+<sup>*</sup>
+</xref></contrib><contrib id="jah38861-cr-0003" contrib-type="author"><name><surname>Wagen</surname><given-names>Aaron Z.</given-names></name><degrees>MBBS</degrees><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-7747-6870</contrib-id><xref rid="jah38861-aff-0004" ref-type="aff">
+<sup>4</sup>
+</xref><xref rid="jah38861-aff-0005" ref-type="aff">
+<sup>5</sup>
+</xref><xref rid="jah38861-aff-0006" ref-type="aff">
+<sup>6</sup>
+</xref></contrib><contrib id="jah38861-cr-0004" contrib-type="author"><name><surname>Bard</surname><given-names>Andrew</given-names></name><degrees>PhD</degrees><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-5553-8487</contrib-id><xref rid="jah38861-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="jah38861-cr-0005" contrib-type="author"><name><surname>Szabo</surname><given-names>Liliana</given-names></name><degrees>PhD</degrees><xref rid="jah38861-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="jah38861-aff-0007" ref-type="aff">
+<sup>7</sup>
+</xref><xref rid="jah38861-aff-0008" ref-type="aff">
+<sup>8</sup>
+</xref></contrib><contrib id="jah38861-cr-0006" contrib-type="author"><name><surname>Ryten</surname><given-names>Mina</given-names></name><degrees>PhD</degrees><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0001-9520-6957</contrib-id><xref rid="jah38861-aff-0004" ref-type="aff">
+<sup>4</sup>
+</xref><xref rid="jah38861-aff-0009" ref-type="aff">
+<sup>9</sup>
+</xref></contrib><contrib id="jah38861-cr-0007" contrib-type="author"><name><surname>Petersen</surname><given-names>Steffen E.</given-names></name><degrees>DPHIL</degrees><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0003-4622-5160</contrib-id><xref rid="jah38861-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="jah38861-aff-0007" ref-type="aff">
+<sup>7</sup>
+</xref><xref rid="jah38861-aff-0010" ref-type="aff">
+<sup>10</sup>
+</xref><xref rid="jah38861-aff-0011" ref-type="aff">
+<sup>11</sup>
+</xref></contrib><contrib id="jah38861-cr-0008" contrib-type="author"><name><surname>Altmann</surname><given-names>Andr&#x000e9;</given-names></name><degrees>PhD</degrees><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-9265-2393</contrib-id><xref rid="jah38861-aff-0012" ref-type="aff">
+<sup>12</sup>
+</xref><xref rid="jah38861-note-0002" ref-type="author-notes">
+<sup>
+<sup>&#x02020;</sup>
+</sup>
+</xref></contrib><contrib id="jah38861-cr-0009" contrib-type="author"><name><surname>Raisi&#x02010;Estabragh</surname><given-names>Zahra</given-names></name><degrees>PhD</degrees><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-7757-5465</contrib-id><xref rid="jah38861-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><xref rid="jah38861-aff-0007" ref-type="aff">
+<sup>7</sup>
+</xref><xref rid="jah38861-note-0002" ref-type="author-notes">
+<sup>
+<sup>&#x02020;</sup>
+</sup>
+</xref></contrib></contrib-group><aff id="jah38861-aff-0001">
+<label>
+<sup>1</sup>
+</label>
+<named-content content-type="organisation-division">William Harvey Research Institute, National Institute for Health and Care Research (NIHR) Barts Biomedical Research Centre</named-content>
+<institution>Queen Mary University of London, Charterhouse Square</institution>
+<city>London</city>
+<country country="GB">United Kingdom</country>
+</aff><aff id="jah38861-aff-0002">
+<label>
+<sup>2</sup>
+</label>
+<institution>National Heart and Lung Institute, Imperial College London</institution>
+<city>London</city>
+<country country="GB">United Kingdom</country>
+</aff><aff id="jah38861-aff-0003">
+<label>
+<sup>3</sup>
+</label>
+<institution>Heart and Lung Research Institute, University of Cambridge</institution>
+<city>Cambridge</city>
+<country country="GB">United Kingdom</country>
+</aff><aff id="jah38861-aff-0004">
+<label>
+<sup>4</sup>
+</label>
+<named-content content-type="organisation-division">Genetics and Genomic Medicine, Great Ormond Street Institute of Child Health</named-content>
+<institution>University College London</institution>
+<city>London</city>
+<country country="GB">United Kingdom</country>
+</aff><aff id="jah38861-aff-0005">
+<label>
+<sup>5</sup>
+</label>
+<named-content content-type="organisation-division">Department of Clinical and Movement Neurosciences</named-content>
+<institution>Queen Square Institute of Neurology</institution>
+<city>London</city>
+<country country="GB">United Kingdom</country>
+</aff><aff id="jah38861-aff-0006">
+<label>
+<sup>6</sup>
+</label>
+<named-content content-type="organisation-division">Neurodegeneration Biology Laboratory</named-content>
+<institution>The Francis Crick Institute</institution>
+<city>London</city>
+<country country="GB">United Kingdom</country>
+</aff><aff id="jah38861-aff-0007">
+<label>
+<sup>7</sup>
+</label>
+<institution>Barts Heart Centre, St Bartholomew&#x02019;s Hospital, Barts Health National Health Service (NHS) Trust, West Smithfield</institution>
+<city>London</city>
+<country country="GB">United Kingdom</country>
+</aff><aff id="jah38861-aff-0008">
+<label>
+<sup>8</sup>
+</label>
+<institution>Semmelweis University, Heart and Vascular Center</institution>
+<city>Budapest</city>
+<country country="HU">Hungary</country>
+</aff><aff id="jah38861-aff-0009">
+<label>
+<sup>9</sup>
+</label>
+<named-content content-type="organisation-division">NIHR Great Ormond Street Hospital Biomedical Research Centre</named-content>
+<institution>University College London</institution>
+<city>London</city>
+<country country="GB">United Kingdom</country>
+</aff><aff id="jah38861-aff-0010">
+<label>
+<sup>10</sup>
+</label>
+<institution>Health Data Research UK</institution>
+<city>London</city>
+<country country="GB">United Kingdom</country>
+</aff><aff id="jah38861-aff-0011">
+<label>
+<sup>11</sup>
+</label>
+<institution>Alan Turing Institute</institution>
+<city>London</city>
+<country country="GB">United Kingdom</country>
+</aff><aff id="jah38861-aff-0012">
+<label>
+<sup>12</sup>
+</label>
+<named-content content-type="organisation-division">Centre for Medical Image Computing, Department of Medical Physics and Biomedical Engineering</named-content>
+<institution>University College London</institution>
+<city>London</city>
+<country country="GB">United Kingdom</country>
+</aff><author-notes><corresp id="correspondenceTo">
+<label>*</label>
+Correspondence to: Ahmed Salih, PhD, William Harvey Research Institute, NIHR Barts Biomedical Research Centre, Queen Mary University of London, Charterhouse Square, London EC1M 6BQ, United Kingdom. Email: <email>a.salih@qmul.ac.uk</email>
+<break/>
+</corresp><fn fn-type="equal" id="jah38861-note-0001"><label>*</label><p>A. Salih and M. Ardissino contributed equally as co&#x02010;first authors.</p></fn><fn fn-type="equal" id="jah38861-note-0002"><label>
+<sup>&#x02020;</sup>
+</label><p>A. Altmann and Z. Raisi&#x02010;Estabragh contributed equally as co&#x02010;senior authors.</p></fn></author-notes><pub-date pub-type="epub"><day>27</day><month>10</month><year>2023</year></pub-date><pub-date pub-type="collection"><day>07</day><month>11</month><year>2023</year></pub-date><volume>12</volume><issue seq="360">21</issue><issue-id pub-id-type="doi">10.1002/jah3.v12.21</issue-id><elocation-id>e030661</elocation-id><history>
+<date date-type="received"><day>19</day><month>4</month><year>2023</year></date>
+<date date-type="accepted"><day>06</day><month>9</month><year>2023</year></date>
+</history><permissions><!--Copyright &#x000a9; 2023 The Authors. Published on behalf of the American Heart Association, Inc., by Wiley Blackwell--><copyright-statement content-type="article-copyright">&#x000a9; 2023 The Authors. Published on behalf of the American Heart Association, Inc., by Wiley.</copyright-statement><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article under the terms of the <ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri content-type="pdf" xlink:href="file:JAH3-12-e030661.pdf"/><abstract><sec id="jah38861-sec-0001"><title>BACKGROUND</title><p>Pericardial adipose tissue (PAT) is the visceral adipose tissue compartment surrounding the heart. Experimental and observational research has suggested that greater PAT deposition might mediate cardiovascular disease, independent of general or subcutaneous adiposity. We characterize the genetic architecture of adiposity&#x02010;adjusted PAT and identify causal associations between PAT and adverse cardiac magnetic resonance imaging measures of cardiac structure and function in 28&#x02009;161 UK Biobank participants.</p></sec><sec id="jah38861-sec-0002"><title>METHODS AND RESULTS</title><p>The PAT phenotype was extracted from cardiac magnetic resonance images using an automated image analysis tool previously developed and validated in this cohort. A genome&#x02010;wide association study was performed with PAT area set as the phenotype, adjusting for age, sex, and other measures of obesity. Functional mapping and Bayesian colocalization were used to understand the biologic role of identified variants. Mendelian randomization analysis was used to examine potential causal links between genetically determined PAT and cardiac magnetic resonance&#x02013;derived measures of left ventricular structure and function. We discovered 12 genome&#x02010;wide significant variants, with 2 independent sentinel variants (rs6428792, <italic toggle="no">P</italic>=4.20&#x000d7;10<sup>&#x02212;9</sup> and rs11992444, <italic toggle="no">P</italic>=1.30&#x000d7;10<sup>&#x02212;12</sup>) at 2 distinct genomic loci, that were mapped to 3 potentially causal genes: T&#x02010;box transcription factor 15 (<italic toggle="no">TBX15</italic>), tryptophanyl tRNA synthetase 2, mitochondrial (<italic toggle="no">WARS2</italic>) and early B&#x02010;cell factor&#x02010;2 (<italic toggle="no">EBF2</italic>) through functional annotation. Bayesian colocalization additionally suggested a role of RP4&#x02010;712E4.1. Genetically predicted differences in adiposity&#x02010;adjusted PAT were causally associated with adverse left ventricular remodeling.</p></sec><sec id="jah38861-sec-0003"><title>CONCLUSIONS</title><p>This study provides insights into the genetic architecture determining differential PAT deposition, identifies causal links with left structural and functional parameters, and provides novel data about the pathophysiological importance of adiposity distribution.</p></sec></abstract><kwd-group kwd-group-type="author-generated"><kwd id="jah38861-kwd-0001">cardiovascular disease</kwd><kwd id="jah38861-kwd-0002">genome&#x02010;wide association study</kwd><kwd id="jah38861-kwd-0003">pericardial adipose tissue</kwd></kwd-group><kwd-group kwd-group-type="subject-categories"><title>Subject Categories</title><kwd>Genetics</kwd></kwd-group><funding-group><award-group id="funding-0001"><funding-source><institution-wrap><institution>British Heart Foundation
+</institution><institution-id institution-id-type="doi">10.13039/501100000274</institution-id></institution-wrap></funding-source><award-id>PG/21/10619</award-id></award-group><award-group id="funding-0002"><funding-source>National Institute for Health and Care Research</funding-source></award-group><award-group id="funding-0003"><funding-source><institution-wrap><institution>Barts Charity
+</institution><institution-id institution-id-type="doi">10.13039/100015652</institution-id></institution-wrap></funding-source></award-group></funding-group><counts><fig-count count="6"/><table-count count="3"/><page-count count="15"/><word-count count="9172"/></counts><custom-meta-group><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>07 November 2023</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_JATSPMC version:6.3.5 mode:remove_FC converted:20.11.2023</meta-value></custom-meta></custom-meta-group></article-meta><notes><fn-group id="jah38861-ntgp-0001"><fn id="jah38861-note-0003"><p>This manuscript was sent to Erik B. Schelbert, MD, MS, Associate Editor, for review by expert referees, editorial decision, and final disposition.</p></fn><fn id="jah38861-note-0004"><p>Supplemental Material is available at <ext-link xlink:href="https://www.ahajournals.org/doi/suppl/10.1161/JAHA.123.030661" ext-link-type="uri">https://www.ahajournals.org/doi/suppl/10.1161/JAHA.123.030661</ext-link>
+</p></fn><fn id="jah38861-note-0005"><p>For Sources of Funding and Disclosures, see page 13.</p></fn></fn-group></notes></front><body id="jah38861-body-0001"><def-list list-content="abbreviations" id="jah38861-lp-0001"><title>Nonstandard Abbreviations and Acronyms</title><def-item><term id="jah38861-li-0001">CADD</term><def id="jah38861-li-0002"><p>combined annotation dependent depletion</p></def></def-item><def-item><term id="jah38861-li-0003">MR</term><def id="jah38861-li-0004"><p>Mendelian randomization</p></def></def-item><def-item><term id="jah38861-li-0005">PAT</term><def id="jah38861-li-0006"><p>pericardial adipose tissue</p></def></def-item><def-item><term id="jah38861-li-0007">PC</term><def id="jah38861-li-0008"><p>principal component</p></def></def-item><def-item><term id="jah38861-li-0009">PPH</term><def id="jah38861-li-0010"><p>posterior probability of hypothesis</p></def></def-item><def-item><term id="jah38861-li-0011">WHR</term><def id="jah38861-li-0012"><p>waist:hip ratio</p></def></def-item></def-list><p>
+<boxed-text position="anchor" content-type="box" id="jah38861-blkfxd-0001"><caption><title>CLINICAL PERSPECTIVE</title></caption><sec id="jah38861-sec-0006"><title>What Is New?</title><p>
+<list list-type="bullet" id="jah38861-list-0001"><list-item id="jah38861-li-0013"><p>This study identifies multiple distinct genetic loci associated with pericardial fat area after accounting for multiple measures of whole&#x02010;body adiposity.</p></list-item><list-item id="jah38861-li-0014"><p>Mendelian randomization analyses identified an association of likely causal relevance of genetically predicted pericardial fat with adverse cardiac structural and functional parameters.</p></list-item></list>
+</p></sec><sec id="jah38861-sec-0007"><title>What Are the Clinical Implications?</title><p>
+<list list-type="bullet" id="jah38861-list-0002"><list-item id="jah38861-li-0015"><p>In addition to being determined by whole&#x02010;body adiposity, this study suggests that the proportional deposition of pericardial adipose tissue is, to an extent, genetically determined.</p></list-item><list-item id="jah38861-li-0016"><p>Greater genetically predicted pericardial adipose tissue is linked with markers of adverse left cardiac structure and function, suggesting a role in determining adverse left ventricular remodeling.</p></list-item></list>
+</p></sec></boxed-text>
+</p><p>Pericardial adipose tissue (PAT) is the visceral adipose tissue compartment surrounding the heart. Experimental research has suggested that a proportionally greater deposition of PAT might mediate the risk of cardiovascular disease in addition to that conferred by general adiposity through paracrine proinflammatory effects of the fat tissue on adjacent myocardium and coronary arteries.<xref rid="jah38861-bib-0001" ref-type="bibr">
+<sup>1</sup>
+</xref>, <xref rid="jah38861-bib-0002" ref-type="bibr">
+<sup>2</sup>
+</xref>, <xref rid="jah38861-bib-0003" ref-type="bibr">
+<sup>3</sup>
+</xref>, <xref rid="jah38861-bib-0004" ref-type="bibr">
+<sup>4</sup>
+</xref> In line with this, observational studies have reported associations between PAT and the risk of coronary artery disease,<xref rid="jah38861-bib-0005" ref-type="bibr">
+<sup>5</sup>
+</xref> heart failure<xref rid="jah38861-bib-0006" ref-type="bibr">,<sup>6</sup>
+</xref> atrial fibrillation<xref rid="jah38861-bib-0007" ref-type="bibr">
+<sup>7</sup>
+</xref>, <xref rid="jah38861-bib-0008" ref-type="bibr">
+<sup>8</sup>
+</xref> and adverse imaging markers of cardiac structure and function<xref rid="jah38861-bib-0009" ref-type="bibr">
+<sup>9</sup>
+</xref>, <xref rid="jah38861-bib-0010" ref-type="bibr">
+<sup>10</sup>
+</xref> even after an adjustment for multiple measures of general adiposity and its visceral and subcutaneous tissue distribution.</p><p>Body fat distribution is a highly heritable trait, with twin&#x02010;based estimates for body mass index (BMI)&#x02013;adjusted waist:hip ratio (WHR) estimated between 30% and 60%,<xref rid="jah38861-bib-0011" ref-type="bibr">
+<sup>11</sup>
+</xref> and single nucleotide polymorphisms (SNP)&#x02013;based heritability in the region of 20% to 50%.<xref rid="jah38861-bib-0012" ref-type="bibr">
+<sup>12</sup>
+</xref> So far, BMI&#x02010;adjusted WHR<xref rid="jah38861-bib-0013" ref-type="bibr">
+<sup>13</sup>
+</xref> has been the main focus of large&#x02010;scale studies exploring the genetic determinants of fat distribution. Consequently, the genetic architecture and disease consequences of this trait have been thoroughly explored.<xref rid="jah38861-bib-0014" ref-type="bibr">
+<sup>14</sup>
+</xref>, <xref rid="jah38861-bib-0015" ref-type="bibr">
+<sup>15</sup>
+</xref>, <xref rid="jah38861-bib-0016" ref-type="bibr">
+<sup>16</sup>
+</xref>, <xref rid="jah38861-bib-0017" ref-type="bibr">
+<sup>17</sup>
+</xref> On the other hand, current understanding of the genetic determinants of fat deposition specifically in the pericardial tissue, independent of general adiposity and its distribution, remains limited.</p><p>At present, only 2 genome&#x02010;wide association studies (GWAS) have evaluated the genetic determinants of PAT in relation to whole&#x02010;body adiposity.<xref rid="jah38861-bib-0018" ref-type="bibr">
+<sup>18</sup>
+</xref>, <xref rid="jah38861-bib-0019" ref-type="bibr">
+<sup>19</sup>
+</xref> The largest of these, carried out in 2017 by Chu et&#x000a0;al, included 18&#x02009;332 participants and discovered 3 genetic variants in distinct loci associated with PAT after height and weight adjustment: rs6587515 in <italic toggle="yes">ENSA</italic>, rs1650505 in <italic toggle="yes">EBF1</italic>, and rs10198628 in <italic toggle="yes">TRIB2</italic>.<xref rid="jah38861-bib-0019" ref-type="bibr">
+<sup>19</sup>
+</xref> Genetic discovery in this field has been limited by the lack of large&#x02010;scale data. We recently developed a fully automated, quality&#x02010;controlled tool for PAT quantification from cardiac magnetic resonance (CMR) images,<xref rid="jah38861-bib-0020" ref-type="bibr">
+<sup>20</sup>
+</xref> enabling extraction of PAT measurements in 42&#x02009;598 participants in the UK Biobank, a large&#x02010;scale cohort study collecting clinical, genetic, imaging, and laboratory data from participants throughout the United Kingdom.</p><p>In this study, we employed UK Biobank data to investigate the genetic variants predisposed to the deposition of PAT independent of other measures of total adiposity and its distribution. We additionally leverage these variants to assess the causal role of PAT on left ventricular (LV) structure and function.</p><sec sec-type="methods" id="jah38861-sec-0008"><title>Methods</title><sec id="jah38861-sec-0009"><title>Data Access and Availability</title><p>This study was conducted using the UK Biobank under application 2964. The work is covered by ethical approval from the National Health Service National Research Ethics Service on June 17, 2011 (reference 11/NW/0382) and extended on June 18,2021 (reference 21/NW/0157). Written, informed consent was obtained from all participants.</p><p>The data produced from this study, including summary statistics, methods, and materials, will be returned to the UK Biobank. These will become available to all bona fide researchers for the purpose of health&#x02010;related research under approved applications, without preferential or exclusive access. Further details about application and access procedures are available at the UK Biobank website (<ext-link xlink:href="http://www.ukbiobank.ac.uk/register-apply/" ext-link-type="uri">http://www.ukbiobank.ac.uk/register&#x02010;apply/</ext-link>).</p></sec><sec id="jah38861-sec-0010"><title>Study Population</title><p>The UK Biobank is a population&#x02010;based cohort study based in the United Kingdom. Between 2006 and 2010, &#x0003e;500&#x02009;000 participants aged 40 to 69&#x02009;years were recruited and underwent a baseline assessment and regular integration of health outcomes through healthcare record linkage. The detailed study protocol is publicly available.<xref rid="jah38861-bib-0021" ref-type="bibr">
+<sup>21</sup>
+</xref> The UK Biobank Imaging Study is an ongoing subset of the UK Biobank aiming to perform multiorgan magnetic resonance imaging of the heart, brain, and abdomen in a randomly selected 20% (n=100&#x02009;000) subset of UK Biobank participants.</p></sec><sec id="jah38861-sec-0011"><title>Pericardial Fat Quantification</title><p>CMR scans were performed using 1.5 Tesla scanners (MAGNETOM Aera, Syngo Platform VD13A, Siemens Healthcare, Erlangen, Germany) in specific imaging units. Scanning was performed according to predefined protocols.<xref rid="jah38861-bib-0022" ref-type="bibr">
+<sup>22</sup>
+</xref> PAT area was extracted from CMR 4&#x02010;chamber cine images in end diastole using an automated tool that has been developed and validated in the UK Biobank and an external cohort.<xref rid="jah38861-bib-0020" ref-type="bibr">
+<sup>20</sup>
+</xref> This involves a neural network trained to perform fully automated PAT segmentation through a multiresidual U&#x02010;net architecture. It includes an in&#x02010;built quality&#x02010;control feature, which uses Dice scores as a measure of segmentation quality. In this analysis, we limited to scans with good segmentation quality (Dice score &#x0003e; 0.7). In the study population, PAT areas had a right&#x02010;skewed distribution and were therefore log&#x02010;transformed for linear modeling.</p></sec><sec id="jah38861-sec-0012"><title>Measures of Adiposity</title><p>A key aim of the study was to determine whether the relationship between PAT and cardiovascular phenotypes was distinct from other obesity measures. We considered anthropometric measures of obesity, impedance fat measures, and abdominal magnetic resonance imaging&#x02013;derived measures of visceral and subcutaneous adiposity. BMI and WHR were calculated from UK Biobank body size measures. Bioelectrical impedance measures of obesity were derived using the Tanita BC418MA body composition analyzer as per UK Biobank protocols.<xref rid="jah38861-bib-0023" ref-type="bibr">
+<sup>23</sup>
+</xref> We included whole&#x02010;body fat mass and trunk fat mass impedance measures. From abdominal magnetic resonance imaging (available for 15&#x02009;518 participants), we selected abdominal subcutaneous, visceral adipose tissue, and total adipose tissue volume measures, which are only available for a subset of participants.<xref rid="jah38861-bib-0024" ref-type="bibr">
+<sup>24</sup>
+</xref>
+</p></sec><sec id="jah38861-sec-0013"><title>Genetic Data and Quality Control</title><p>Genotyping was performed in all consenting individuals. Genotypes were directly called using the 2 closely related arrays UK Biobank Axiom (Affymetrix, Santa Clara, California) and UK Applied Biosystems UK BiLEVE Axiom Array (BiLEVE) Axiom. Imputation was carried out using the Haplotype Reference Consortium and UK10K+1000Genomes (phase 3) reference panels.</p></sec><sec id="jah38861-sec-0014"><title>Genome&#x02010;Wide Association Study</title><p>For genome&#x02010;wide association analysis, participants were excluded if their genetic samples failed bioinformatic quality control (missing rate on autosomes of &#x0003e;0.2 or mismatch between reported and genetically inferred sex), or if they were related (based on a kinship matrix with threshold K&#x0003e;0.175) by excluding 1 of the pair. The cohort was restricted to individuals of European ancestry. After exclusion criteria were applied, 28&#x02009;161 participants were included. Among the available imputed and genotyped variants, we restricted the analysis to autosomal variants with a minor allele frequency&#x0003e;0.01 and imputation quality score (information score) &#x0003e;0.3. This resulted in &#x02248;9&#x02009;283&#x02009;970&#x02009;million variants. Genome&#x02010;wide association analysis was performed using PLINK<xref rid="jah38861-bib-0025" ref-type="bibr">
+<sup>25</sup>
+</xref> and BOLT&#x02010;linear mixed model (BOLT&#x02010;LMM).<xref rid="jah38861-bib-0026" ref-type="bibr">
+<sup>26</sup>
+</xref>
+</p><p>In the main model, we assessed the association between variants and PAT after adjusting for sex, age, age<sup>2</sup>, age*sex, 10 genetic principal components (PCs), assessment center, genotype array, BMI, WHR, whole&#x02010;body fat mass, trunk fat mass, and body fat percentage. In this analysis, PC analysis was applied to BMI, WHR, whole&#x02010;body fat mass, trunk fat mass, and body fat percentage to explain at least 90% of the variance, which resulted in 2 PCs that explained 99% of the variance in the included phenotypes. These 2 PCs were included when GWAS was run instead of the BMI, WHR, whole&#x02010;body fat mass, trunk fat mass, and body fat percentage. For this model, the population was randomly split into set of 18&#x02009;774 participants for discovery and a replication set of 9&#x02009;387 participants for replication. This is the primary analysis of the study.</p><p>For discovery analysis, the threshold for statistical significance was considered <italic toggle="yes">P</italic>&#x0003c;5&#x000d7;10<sup>&#x02212;8</sup> to account for multiple tests. Replication analyses were carried out for all genome&#x02010;wide significant variant associations in the primary model. For replication analysis, the statistical significance threshold was calculated using Bonferroni correction based on the number of variants tested for validation (<italic toggle="yes">P</italic>&#x0003c;0.05/n; where n=number of lead variants to validate).</p><p>To increase the power for detection of significant signals using the whole sample, we additionally performed a meta&#x02010;analysis GWAS by combining the GWAS summary statistics of the discovery and replication analyses. This analysis was conducted using the Metal tool.<xref rid="jah38861-bib-0027" ref-type="bibr">
+<sup>27</sup>
+</xref>
+</p><p>We have also carried out a more relaxed GWAS without adjustment for different fat measures. The analysis was adjusted for sex, age, age<sup>2</sup>, age*sex, 10 genetic PCs, assessment center, and genotype array.</p></sec><sec id="jah38861-sec-0015"><title>Functional Annotation</title><p>Functional mapping was carried out using functional mapping and annotation (FUMA) of GWAS version 1.5.0.<xref rid="jah38861-bib-0028" ref-type="bibr">
+<sup>28</sup>
+</xref> Independent significant SNPs were defined as those associated with PAT in the primary discovery analysis model with <italic toggle="yes">P</italic>&#x0003c;5&#x000d7;10<sup>&#x02212;8</sup> that were correlated with <italic toggle="yes">r</italic>
+<sup>2</sup>&#x0003c;0.6. Additional candidate SNPs were identified by extracting SNPs in linkage disequilibrium with these at <italic toggle="yes">r</italic>
+<sup>2</sup>&#x0003e;0.6 using the 1000Genomes phase 3 European reference panel.<xref rid="jah38861-bib-0029" ref-type="bibr">
+<sup>29</sup>
+</xref> Finally, lead SNPs were identified among the candidates as the uncorrelated (<italic toggle="yes">r</italic>
+<sup>2</sup>&#x0003c;0.1) SNPs with prioritization of those with lowest <italic toggle="yes">P</italic> value for the association with PAT. For lead SNPs and any SNPs in linkage disequilibrium with these at <italic toggle="yes">r</italic>
+<sup>2</sup>&#x0003e;0.8, all reported phenotypic associations were listed using the GWAS Catalog.<xref rid="jah38861-bib-0030" ref-type="bibr">
+<sup>30</sup>
+</xref>
+</p><p>The functional consequences of the candidate SNPs on genes were determined using ANNOtate VARiation (ANNOVAR).<xref rid="jah38861-bib-0031" ref-type="bibr">
+<sup>31</sup>
+</xref> Deleteriousness score was described using combined annotation dependent depletion (CADD) scores (with scores&#x0003e;12.37 considered likely deleterious),<xref rid="jah38861-bib-0032" ref-type="bibr">
+<sup>32</sup>
+</xref> and SNPs were annotated for regulatory functions using regulatory elements database (RegulomeDB) score,<xref rid="jah38861-bib-0033" ref-type="bibr">
+<sup>33</sup>
+</xref> for 15&#x02010;core chromatin state using chromatin hidden Markov model (ChromHMM),<xref rid="jah38861-bib-0034" ref-type="bibr">
+<sup>34</sup>
+</xref>, <xref rid="jah38861-bib-0035" ref-type="bibr">
+<sup>35</sup>
+</xref> tissue&#x02010;specific expression quantitative trait loci (eQTLs),<xref rid="jah38861-bib-0036" ref-type="bibr">
+<sup>36</sup>
+</xref> and for 3&#x02010;dimensional chromatin interactions using high&#x02010;throughput adaptation of chromosome conformation capture (Hi&#x02010;C) data.<xref rid="jah38861-bib-0037" ref-type="bibr">
+<sup>37</sup>
+</xref>
+</p><p>Gene mapping was performed using positional, eQTL, and chromatin interactions mapping. First, genomic risk loci near independent significant SNPs were outlined using a maximum distance of 10 kB. Within each risk locus, the SNP with the lowest <italic toggle="yes">P</italic> value was defined as the lead SNP for the locus. Probability of loss of function intolerance was annotated using probability of being loss&#x02010;of&#x02010;function intolerant (pLI) scores for coding genes,<xref rid="jah38861-bib-0038" ref-type="bibr">
+<sup>38</sup>
+</xref> and with noncoding residual variation intolerance scores for noncoding genes.<xref rid="jah38861-bib-0039" ref-type="bibr">
+<sup>39</sup>
+</xref> Multi&#x02010;marker Analysis of GenoMic Annotation (MAGMA) gene&#x02010;based analysis was performed to assess the association between protein coding genes and PAT.<xref rid="jah38861-bib-0040" ref-type="bibr">
+<sup>40</sup>
+</xref> Because the input SNPs were mapped to 19&#x02009;086 protein coding genes, genome&#x02010;wide significance for this analysis was Bonferroni corrected at <italic toggle="yes">P</italic> value=0.05/19086=2.620&#x000d7;10<sup>&#x02212;6</sup>. Tissue&#x02010;specific eQTL mapping was then performed using data from single&#x02010;cell RNA sequencing<xref rid="jah38861-bib-0041" ref-type="bibr">
+<sup>41</sup>
+</xref> in immune cells, and GTEx (Genotype&#x02010;Tissue Expression) Project version 8<xref rid="jah38861-bib-0036" ref-type="bibr">
+<sup>36</sup>
+</xref> tissue&#x02010;specific eQTL data for arterial, adipose, and cardiac tissues. Finally, chromatin mapping was performed using tissue&#x02010;specific chromatin interaction (Hi&#x02010;C) data for the aorta, left ventricle, and right ventricle.<xref rid="jah38861-bib-0037" ref-type="bibr">
+<sup>37</sup>
+</xref>, <xref rid="jah38861-bib-0042" ref-type="bibr">
+<sup>42</sup>
+</xref>, <xref rid="jah38861-bib-0043" ref-type="bibr">
+<sup>43</sup>
+</xref>, <xref rid="jah38861-bib-0044" ref-type="bibr">
+<sup>44</sup>
+</xref>
+</p><p>To understand putative biological mechanisms behind mapped genes, gene&#x02010;to&#x02010;function mapping was performed within FUMA and GWASAtlas. GTEx version 8<xref rid="jah38861-bib-0036" ref-type="bibr">
+<sup>36</sup>
+</xref> data were used to visualize normalized tissue&#x02010;specific expression patterns for each gene. Differentially expressed gene set analyses were performed to test for differential expression of mapped genes across tissue types. Phenome&#x02010;wide associations were identified for all potentially causal genes using GWASAtlas.<xref rid="jah38861-bib-0045" ref-type="bibr">
+<sup>45</sup>
+</xref> Finally, the IMPC (International Mouse Phenotyping Consortium) database was searched for information about previous mouse models for potentially causal genes.<xref rid="jah38861-bib-0046" ref-type="bibr">
+<sup>46</sup>
+</xref>
+</p></sec><sec id="jah38861-sec-0016"><title>Colocalization Analysis</title><p>To evaluate the probability that GWAS loci and eQTLs share a single causal variant, a colocalization analysis was performed using coloc (version 5.1.0.1) and colochelpR (version 0.99.1).<xref rid="jah38861-bib-0047" ref-type="bibr">
+<sup>47</sup>
+</xref>, <xref rid="jah38861-bib-0048" ref-type="bibr">
+<sup>48</sup>
+</xref> Cis&#x02010;eQTLs were derived from GTEx version 8.<xref rid="jah38861-bib-0036" ref-type="bibr">
+<sup>36</sup>
+</xref>, <xref rid="jah38861-bib-0049" ref-type="bibr">
+<sup>49</sup>
+</xref> GWAS loci within 1 Mb of the 11 significant GWAS SNPs were explored. Loci identified through chromatin mapping were not included as these were expected to have trans&#x02010;associations. Associations were explored in 7 GTEx tissues: aortic artery (N=387), coronary artery (N=213), tibial artery (N=584), subcutaneous adipose (N=581), visceral adipose (N=469), the cardiac atrial appendage (N=372), and the cardiac LV (N=386). The prior probability that any random SNP in the region is associated with the GWAS (p<sub>1</sub>) or eQTL (p<sub>2</sub>) was set to the default 10<sup>&#x02212;4</sup>, whereas the prior probability that any random SNP in the region is associated with both traits (p<sub>12</sub>) was set to 10<sup>&#x02212;5</sup>. A posterior probability of hypothesis (PPH) 4 measures the probability that a locus is colocalized as the result of a single causal variant, as opposed to 2 distinct causal variants (PPH3). A PPH4&#x02265;0.8 was considered significant. All colocalizations were subjected to sensitivity analyses using coloc's sensitivity function, which plots prior and posterior probabilities of each coloc hypothesis as a function of the p12 prior. This permits exploration of the robustness of results to changes in the p12 prior. Code for coloc analyses is openly available at <ext-link xlink:href="https://github.com/aaronwagen/Pericardial_fat_gwas_coloc/" ext-link-type="uri">https://github.com/aaronwagen/Pericardial_fat_gwas_coloc/</ext-link>.</p></sec><sec id="jah38861-sec-0017"><title>Heritability and Genetic Associations</title><p>We used CTG&#x02010;VL 0.5 beta (<ext-link xlink:href="https://vl-dev.genoma.io/updates" ext-link-type="uri">https://vl&#x02010;dev.genoma.io/updates</ext-link>) to estimate trait heritability and calculate genetic correlation between PAT and multiple disease phenotypes. These included adiposity traits (trunk fat mass as percentage, whole&#x02010;body fat mass), cardiovascular risk factors (hypertension, diabetes, obesity), and cardiovascular outcomes (coronary heart disease, coronary event, heart failure, stroke, atrial fibrillation and flutter, and cardiac death).</p><p>Mendelian randomization (MR) was performed to assess the causal relevance of PAT on multiple CMR markers of LV structure and function, motivated by the previously established observational evidence suggesting potential causal mechanisms.<xref rid="jah38861-bib-0009" ref-type="bibr">
+<sup>9</sup>
+</xref> Genome&#x02010;wide significant (<italic toggle="yes">P</italic>&#x0003c;5&#x000d7;10<sup>&#x02212;8</sup>), uncorrelated (<italic toggle="yes">r</italic>
+<sup>2</sup>&#x0003c;0.001) variants for PAT were selected as instrumental variants. Instrument strength was quantified using <italic toggle="yes">F</italic> statistics. Gene&#x02010;outcome association data were extracted from summary statistics on GWAS of 45&#x02009;504 UK Biobank participants by Pirruccello et&#x000a0;al<xref rid="jah38861-bib-0050" ref-type="bibr">
+<sup>50</sup>
+</xref> for indexed LV end&#x02010;diastolic volume, LV end&#x02010;systolic volume, LV stroke volume, and LV ejection fraction. Additional gene&#x02010;outcome association data were extracted from the GWAS of 16&#x02009;923 participants for LV mass (LVM) and mass to end&#x02010;diastolic volume ratio (LV mass:LVEDV) by Aung et&#x000a0;al.<xref rid="jah38861-bib-0051" ref-type="bibr">
+<sup>51</sup>
+</xref> Inverse&#x02010;variance weighted MR with fixed effects was used for primary analysis. Single&#x02010;SNP analysis was performed using the Wald ratio method. Importantly, the data source for both gene&#x02010;exposure and gene&#x02010;outcome association estimates in this case is the UK Biobank cohort. Although the MR methods used are considered &#x0201c;2&#x02010;sample&#x0201d; methods, they have been demonstrated to be robust for individual&#x02010;level analysis when applied in the setting of large&#x02010;scale biobanks.<xref rid="jah38861-bib-0052" ref-type="bibr">
+<sup>52</sup>
+</xref> All MR analyses were performed using the MendelianRandomization package (version 0.7.0)<xref rid="jah38861-bib-0053" ref-type="bibr">
+<sup>53</sup>
+</xref> in RStudio (R version 4.1.2).<xref rid="jah38861-bib-0054" ref-type="bibr">
+<sup>54</sup>
+</xref>
+</p></sec></sec><sec sec-type="results" id="jah38861-sec-0018"><title>Results</title><sec id="jah38861-sec-0019"><title>Genome&#x02010;Wide Association Study</title><sec id="jah38861-sec-0020"><title>Genetic Variants Associated With Pericardial Fat Independent of BMI and Other Fat Distribution Measures</title><p>We used previously validated, automated, and quality&#x02010;controlled tool to extract measures of PAT area in 28&#x02009;161 UKB participants who were randomly split into a discovery set of 18&#x02009;774 participants and a testing set of 9&#x02009;387 participants.</p><p>In the genome&#x02010;wide association analysis in the discovery set, and after adjusting for sex, age, age<sup>2</sup>, age*sex, 10 genetic PCs, assessment center, genotype array, and 2 PCs reflecting BMI, WHR, whole&#x02010;body fat mass, trunk fat mass, and body fat percentage, a total of 11 genome&#x02010;wide significant variants were identified (rs11992444, rs6428792, rs10923752, rs10923748, rs6428794, rs12036872, rs4304634, rs764891110, rs4659150, rs4659146, rs2885227) as reported in Figure&#x000a0;<xref rid="jah38861-supitem-0001" ref-type="supplementary-material">S1</xref>, Table&#x000a0;<xref rid="jah38861-supitem-0002" ref-type="supplementary-material">S1</xref>, and Table&#x000a0;<xref rid="jah38861-tbl-0001" ref-type="table">1</xref>. The QQ plot for the results is presented in Figure&#x000a0;<xref rid="jah38861-supitem-0001" ref-type="supplementary-material">S2</xref>. Genomic inflation factor (lambda, &#x003bb;) was 1.026, and &#x003bb;1000 was 1.001.</p><table-wrap position="float" id="jah38861-tbl-0001" content-type="Table"><label>Table 1</label><caption><p>Genome&#x02010;Wide Significant Variants: Genome&#x02010;Wide Analysis Identified 11 Sentinel Variants That Were Genome&#x02010;Wide Significant (<italic toggle="no">P</italic>&#x0003c;5&#x000d7;10<sup>&#x02212;8</sup>)</p></caption><table frame="hsides" rules="groups"><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><thead><tr style="border-bottom:solid 1px #000000"><th align="left" rowspan="1" colspan="1">SNP</th><th align="left" rowspan="1" colspan="1">Chromosome</th><th align="left" rowspan="1" colspan="1">Position</th><th align="left" rowspan="1" colspan="1">Allele 1</th><th align="left" rowspan="1" colspan="1">Allele 0</th><th align="left" rowspan="1" colspan="1">Allele 1 frequency</th><th align="left" rowspan="1" colspan="1">Missing rate</th><th align="left" rowspan="1" colspan="1">&#x003b2;</th><th align="left" rowspan="1" colspan="1">Standard error</th><th align="left" rowspan="1" colspan="1">
+<italic toggle="yes">P</italic> value</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">rs11992444</td><td align="left" rowspan="1" colspan="1">8</td><td align="left" rowspan="1" colspan="1">25&#x02009;464&#x02009;690</td><td align="left" rowspan="1" colspan="1">G</td><td align="left" rowspan="1" colspan="1">T</td><td align="left" rowspan="1" colspan="1">0.490</td><td align="left" rowspan="1" colspan="1">0.003</td><td align="left" rowspan="1" colspan="1">&#x02212;0.012</td><td align="left" rowspan="1" colspan="1">0.002</td><td align="left" rowspan="1" colspan="1">1.30E&#x02010;12</td></tr><tr><td align="left" rowspan="1" colspan="1">rs6428792</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">119&#x02009;656&#x02009;867</td><td align="left" rowspan="1" colspan="1">G</td><td align="left" rowspan="1" colspan="1">A</td><td align="left" rowspan="1" colspan="1">0.380</td><td align="left" rowspan="1" colspan="1">0.006</td><td align="left" rowspan="1" colspan="1">&#x02212;0.010</td><td align="left" rowspan="1" colspan="1">0.002</td><td align="left" rowspan="1" colspan="1">4.20E&#x02010;09</td></tr><tr><td align="left" rowspan="1" colspan="1">rs10923752</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">119&#x02009;658&#x02009;925</td><td align="left" rowspan="1" colspan="1">G</td><td align="left" rowspan="1" colspan="1">A</td><td align="left" rowspan="1" colspan="1">0.341</td><td align="left" rowspan="1" colspan="1">0.007</td><td align="left" rowspan="1" colspan="1">0.010</td><td align="left" rowspan="1" colspan="1">0.002</td><td align="left" rowspan="1" colspan="1">1.40E&#x02010;08</td></tr><tr><td align="left" rowspan="1" colspan="1">rs10923748</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">119&#x02009;647&#x02009;946</td><td align="left" rowspan="1" colspan="1">G</td><td align="left" rowspan="1" colspan="1">C</td><td align="left" rowspan="1" colspan="1">0.341</td><td align="left" rowspan="1" colspan="1">0.007</td><td align="left" rowspan="1" colspan="1">0.010</td><td align="left" rowspan="1" colspan="1">0.002</td><td align="left" rowspan="1" colspan="1">1.60E&#x02010;08</td></tr><tr><td align="left" rowspan="1" colspan="1">rs6428794</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">119&#x02009;657&#x02009;743</td><td align="left" rowspan="1" colspan="1">A</td><td align="left" rowspan="1" colspan="1">T</td><td align="left" rowspan="1" colspan="1">0.341</td><td align="left" rowspan="1" colspan="1">0.007</td><td align="left" rowspan="1" colspan="1">0.010</td><td align="left" rowspan="1" colspan="1">0.002</td><td align="left" rowspan="1" colspan="1">1.60E&#x02010;08</td></tr><tr><td align="left" rowspan="1" colspan="1">rs12036872</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">119&#x02009;660&#x02009;505</td><td align="left" rowspan="1" colspan="1">C</td><td align="left" rowspan="1" colspan="1">G</td><td align="left" rowspan="1" colspan="1">0.341</td><td align="left" rowspan="1" colspan="1">0.007</td><td align="left" rowspan="1" colspan="1">0.010</td><td align="left" rowspan="1" colspan="1">0.002</td><td align="left" rowspan="1" colspan="1">1.60E&#x02010;08</td></tr><tr><td align="left" rowspan="1" colspan="1">rs4304634</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">119&#x02009;650&#x02009;931</td><td align="left" rowspan="1" colspan="1">T</td><td align="left" rowspan="1" colspan="1">A</td><td align="left" rowspan="1" colspan="1">0.340</td><td align="left" rowspan="1" colspan="1">0.009</td><td align="left" rowspan="1" colspan="1">0.010</td><td align="left" rowspan="1" colspan="1">0.002</td><td align="left" rowspan="1" colspan="1">1.80E&#x02010;08</td></tr><tr><td align="left" rowspan="1" colspan="1">rs764891110</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">119&#x02009;651&#x02009;167</td><td align="left" rowspan="1" colspan="1">T</td><td align="left" rowspan="1" colspan="1">TTATGA</td><td align="left" rowspan="1" colspan="1">0.341</td><td align="left" rowspan="1" colspan="1">0.010</td><td align="left" rowspan="1" colspan="1">0.010</td><td align="left" rowspan="1" colspan="1">0.002</td><td align="left" rowspan="1" colspan="1">1.80E&#x02010;08</td></tr><tr><td align="left" rowspan="1" colspan="1">rs4659150</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">119&#x02009;660&#x02009;819</td><td align="left" rowspan="1" colspan="1">T</td><td align="left" rowspan="1" colspan="1">G</td><td align="left" rowspan="1" colspan="1">0.340</td><td align="left" rowspan="1" colspan="1">0.008</td><td align="left" rowspan="1" colspan="1">0.010</td><td align="left" rowspan="1" colspan="1">0.002</td><td align="left" rowspan="1" colspan="1">1.90E&#x02010;08</td></tr><tr><td align="left" rowspan="1" colspan="1">rs4659146</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">119&#x02009;645&#x02009;535</td><td align="left" rowspan="1" colspan="1">T</td><td align="left" rowspan="1" colspan="1">C</td><td align="left" rowspan="1" colspan="1">0.342</td><td align="left" rowspan="1" colspan="1">0.009</td><td align="left" rowspan="1" colspan="1">0.010</td><td align="left" rowspan="1" colspan="1">0.002</td><td align="left" rowspan="1" colspan="1">2.10E&#x02010;08</td></tr><tr><td align="left" rowspan="1" colspan="1">rs2885227</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">119&#x02009;650&#x02009;928</td><td align="left" rowspan="1" colspan="1">C</td><td align="left" rowspan="1" colspan="1">A</td><td align="left" rowspan="1" colspan="1">0.340</td><td align="left" rowspan="1" colspan="1">0.009</td><td align="left" rowspan="1" colspan="1">0.010</td><td align="left" rowspan="1" colspan="1">0.002</td><td align="left" rowspan="1" colspan="1">2.00E&#x02010;08</td></tr></tbody></table><table-wrap-foot id="jah38861-ntgp-0002"><fn id="jah38861-note-0006"><p>The table displays &#x003b2; coefficients with standard errors, and <italic toggle="yes">P</italic> value estimates. Allele 1 is the effect allele. SNP indicates single nucleotide polymorphism.</p></fn></table-wrap-foot></table-wrap><p>Among the discovered variants, 1 single variant was located on chromosome 8, rs11992444 (<italic toggle="yes">P</italic>=1.30&#x000d7;10<sup>&#x02212;12</sup>), and 10 variants were located on chromosome 1, among which the variant with lowest the <italic toggle="yes">P</italic> value was rs6428792 (<italic toggle="yes">P</italic>=4.20&#x000d7;10<sup>&#x02212;9</sup>). The association of all 11 genome&#x02010;wide significant variants with PAT was replicated in the replication set at the Bonferroni&#x02010;corrected <italic toggle="yes">P</italic> value threshold (<italic toggle="yes">P</italic>&#x0003c;0.0045), as reported in Table&#x000a0;<xref rid="jah38861-tbl-0002" ref-type="table">2</xref>.</p><table-wrap position="float" id="jah38861-tbl-0002" content-type="Table"><label>Table 2</label><caption><p>Replication of Association Between Genome&#x02010;Wide Significant Variants and Adjusted Pericardial Fat Area in the Testing Set</p></caption><table frame="hsides" rules="groups"><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><thead><tr style="border-bottom:solid 1px #000000"><th align="left" rowspan="1" colspan="1">SNP</th><th align="left" rowspan="1" colspan="1">Chromosome</th><th align="left" rowspan="1" colspan="1">Position</th><th align="left" rowspan="1" colspan="1">Allele 1</th><th align="left" rowspan="1" colspan="1">Allele 0</th><th align="left" rowspan="1" colspan="1">Allele 1 frequency</th><th align="left" rowspan="1" colspan="1">Missing rate</th><th align="left" rowspan="1" colspan="1">&#x003b2;</th><th align="left" rowspan="1" colspan="1">Standard error</th><th align="left" rowspan="1" colspan="1">
+<italic toggle="yes">P</italic> value</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">rs11992444</td><td align="left" rowspan="1" colspan="1">8</td><td align="left" rowspan="1" colspan="1">25&#x02009;464&#x02009;690</td><td align="left" rowspan="1" colspan="1">G</td><td align="left" rowspan="1" colspan="1">T</td><td align="left" rowspan="1" colspan="1">0.489</td><td align="left" rowspan="1" colspan="1">0.002</td><td align="left" rowspan="1" colspan="1">&#x02212;0.015</td><td align="left" rowspan="1" colspan="1">0.002</td><td align="left" rowspan="1" colspan="1">5.00E&#x02010;11</td></tr><tr><td align="left" rowspan="1" colspan="1">rs6428792</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">119&#x02009;656&#x02009;867</td><td align="left" rowspan="1" colspan="1">G</td><td align="left" rowspan="1" colspan="1">A</td><td align="left" rowspan="1" colspan="1">0.380</td><td align="left" rowspan="1" colspan="1">0.007</td><td align="left" rowspan="1" colspan="1">&#x02212;0.008</td><td align="left" rowspan="1" colspan="1">0.002</td><td align="left" rowspan="1" colspan="1">0.00078</td></tr><tr><td align="left" rowspan="1" colspan="1">rs10923752</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">119&#x02009;658&#x02009;925</td><td align="left" rowspan="1" colspan="1">G</td><td align="left" rowspan="1" colspan="1">A</td><td align="left" rowspan="1" colspan="1">0.339</td><td align="left" rowspan="1" colspan="1">0.008</td><td align="left" rowspan="1" colspan="1">0.007</td><td align="left" rowspan="1" colspan="1">0.002</td><td align="left" rowspan="1" colspan="1">0.0028</td></tr><tr><td align="left" rowspan="1" colspan="1">rs10923748</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">119&#x02009;647&#x02009;946</td><td align="left" rowspan="1" colspan="1">G</td><td align="left" rowspan="1" colspan="1">C</td><td align="left" rowspan="1" colspan="1">0.339</td><td align="left" rowspan="1" colspan="1">0.008</td><td align="left" rowspan="1" colspan="1">0.007</td><td align="left" rowspan="1" colspan="1">0.002</td><td align="left" rowspan="1" colspan="1">0.0026</td></tr><tr><td align="left" rowspan="1" colspan="1">rs6428794</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">119&#x02009;657&#x02009;743</td><td align="left" rowspan="1" colspan="1">A</td><td align="left" rowspan="1" colspan="1">T</td><td align="left" rowspan="1" colspan="1">0.339</td><td align="left" rowspan="1" colspan="1">0.008</td><td align="left" rowspan="1" colspan="1">0.007</td><td align="left" rowspan="1" colspan="1">0.002</td><td align="left" rowspan="1" colspan="1">0.0027</td></tr><tr><td align="left" rowspan="1" colspan="1">rs12036872</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">119&#x02009;660&#x02009;505</td><td align="left" rowspan="1" colspan="1">C</td><td align="left" rowspan="1" colspan="1">G</td><td align="left" rowspan="1" colspan="1">0.339</td><td align="left" rowspan="1" colspan="1">0.008</td><td align="left" rowspan="1" colspan="1">0.007</td><td align="left" rowspan="1" colspan="1">0.002</td><td align="left" rowspan="1" colspan="1">0.0027</td></tr><tr><td align="left" rowspan="1" colspan="1">rs4304634</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">119&#x02009;650&#x02009;931</td><td align="left" rowspan="1" colspan="1">T</td><td align="left" rowspan="1" colspan="1">A</td><td align="left" rowspan="1" colspan="1">0.338</td><td align="left" rowspan="1" colspan="1">0.009</td><td align="left" rowspan="1" colspan="1">0.007</td><td align="left" rowspan="1" colspan="1">0.002</td><td align="left" rowspan="1" colspan="1">0.0026</td></tr><tr><td align="left" rowspan="1" colspan="1">rs764891110</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">119&#x02009;651&#x02009;167</td><td align="left" rowspan="1" colspan="1">T</td><td align="left" rowspan="1" colspan="1">TTATGA</td><td align="left" rowspan="1" colspan="1">0.339</td><td align="left" rowspan="1" colspan="1">0.011</td><td align="left" rowspan="1" colspan="1">0.007</td><td align="left" rowspan="1" colspan="1">0.002</td><td align="left" rowspan="1" colspan="1">0.0025</td></tr><tr><td align="left" rowspan="1" colspan="1">rs4659150</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">119&#x02009;660&#x02009;819</td><td align="left" rowspan="1" colspan="1">T</td><td align="left" rowspan="1" colspan="1">G</td><td align="left" rowspan="1" colspan="1">0.338</td><td align="left" rowspan="1" colspan="1">0.008</td><td align="left" rowspan="1" colspan="1">0.007</td><td align="left" rowspan="1" colspan="1">0.002</td><td align="left" rowspan="1" colspan="1">0.0026</td></tr><tr><td align="left" rowspan="1" colspan="1">rs4659146</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">119&#x02009;645&#x02009;535</td><td align="left" rowspan="1" colspan="1">T</td><td align="left" rowspan="1" colspan="1">C</td><td align="left" rowspan="1" colspan="1">0.339</td><td align="left" rowspan="1" colspan="1">0.010</td><td align="left" rowspan="1" colspan="1">0.007</td><td align="left" rowspan="1" colspan="1">0.002</td><td align="left" rowspan="1" colspan="1">0.0021</td></tr><tr><td align="left" rowspan="1" colspan="1">rs2885227</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">119&#x02009;650&#x02009;928</td><td align="left" rowspan="1" colspan="1">C</td><td align="left" rowspan="1" colspan="1">A</td><td align="left" rowspan="1" colspan="1">0.338</td><td align="left" rowspan="1" colspan="1">0.009</td><td align="left" rowspan="1" colspan="1">0.007</td><td align="left" rowspan="1" colspan="1">0.002</td><td align="left" rowspan="1" colspan="1">0.0025</td></tr></tbody></table><table-wrap-foot id="jah38861-ntgp-0003"><fn id="jah38861-note-0007"><p>All variants passed replication at Bonferroni&#x02010;adjusted statistical significance threshold (<italic toggle="yes">P</italic>&#x0003c;4.5&#x000d7;10<sup>&#x02212;3</sup>). SNP indicates single nucleotide polymorphism.</p></fn></table-wrap-foot></table-wrap></sec></sec><sec id="jah38861-sec-0021"><title>Functional Annotation</title><p>Functional annotation through positional, eQTL, and chromatin interaction mapping identified a total of 10 potentially causal genes. A visual representation of the annotation process and key results are provided in Figure&#x000a0;<xref rid="jah38861-fig-0001" ref-type="fig">1</xref>.</p><fig position="float" fig-type="Figure" id="jah38861-fig-0001"><label>Figure 1</label><caption><title>Methods and key results of functional annotation of genome&#x02010;wide significant variants and exploration of functional consequences of prioritized variants and genes.</title><p>ANNOVAR indicates ANNOtate VARiation; BMI, body mass index; CADD, combined annotation dependent depletion; Chr, chromosome; DEG, differentially expressed gene; EBF2, early B&#x02010;cell factor&#x02010;2; eQTL, expression quantitative trait loci; GTEx, Genotype&#x02010;Tissue Expression; GWASCatalog, GWAS Catalog; IMPC, International Mouse Phenotyping Consortium; LD, linkage disequilibrium; MAGMA, Multi&#x02010;marker Analysis of GenoMic Annotation; OpenGWAS, IEU OpenGWAS project; PSMC1P12, proteasome 26S subunit, ATPase 1 pseudogene 12; RegulomeDB, regulatory elements database; RNA5SP56, RNA, 5S ribosomal pseudogene 56; SDAD1P1, SDA1 domain containing 1 pseudogene 1; SNP, single nucleotide polymorphism; TBX15, T&#x02010;box transcription factor 15; WARS2, tryptophanyl tRNA synthetase 2, mitochondrial; and WHR, waist:hip ratio.</p></caption><graphic xlink:href="JAH3-12-e030661-g001" position="anchor" id="jats-graphic-1"/></fig><sec id="jah38861-sec-0022"><title>Positional Mapping</title><p>In addition to the 11 GWAS&#x02010;tagged variants, 1 additional closely correlated variant (rs72707349) was extracted using the 1000 Genomes reference panel. Among the 12 candidate SNPs, 2 lead variants were identified (<italic toggle="yes">r</italic>
+<sup>2</sup>&#x0003c;0.1)&#x02014;rs6428792 and rs11992444&#x02014;in 2 separate genetic loci (Tables&#x000a0;<xref rid="jah38861-supitem-0002" ref-type="supplementary-material">S1</xref> through <xref rid="jah38861-supitem-0002" ref-type="supplementary-material">S3</xref>). All previously reported phenotypic associations for these 2 SNPs and SNPs in close linkage disequilibrium with these (<italic toggle="yes">r</italic>
+<sup>2</sup>&#x0003e;0.8) are reported in Table&#x000a0;<xref rid="jah38861-supitem-0002" ref-type="supplementary-material">S4</xref>, and these included multiple BMI&#x02010;adjusted adiposity traits, body shape indexes, and lipid traits.</p><p>Among the 12 candidate variants, the 11 variants on chromosome 1 were intronic (of which 1 in noncoding RNA), and the variant on chromosome 8 was intergenic (Table&#x000a0;<xref rid="jah38861-supitem-0002" ref-type="supplementary-material">S5</xref>). RegulomeDB score for both variants was 7, indicating a lack of evidence about potential regulatory functions. The minimum 15&#x02010;core chromatin state was 5 for rs6428792, indicating weak transcription function, and 7 for rs11992444, indicating enhancer chromatin state. Positional mapping prioritized 3 genes: <italic toggle="yes">WARS2</italic> (protein coding), <italic toggle="yes">RPS3AP12</italic> (pseudogenic) and <italic toggle="yes">RP11&#x02010;418J17.1</italic> (antisense), all mapped to the chromosome 1 locus (Table&#x000a0;<xref rid="jah38861-supitem-0002" ref-type="supplementary-material">S6</xref>). Among these, <italic toggle="yes">WARS2</italic> had the highest maximum SNP CADD score of 10.56, and the remaining 2 had a low risk of deleteriousness (CADD 6.85 for <italic toggle="yes">RPS3AP12</italic>, and CADD 3.06 for <italic toggle="yes">RP11&#x02010;418J17.1</italic>). The nearest genes for the chromosome 8 risk locus were <italic toggle="yes">CDCA2</italic> and <italic toggle="yes">RP11&#x02010;219J21.1</italic>, although these were distant, respectively 99&#x02009;254 and 78&#x02009;624 bases from the risk locus (Table&#x000a0;<xref rid="jah38861-supitem-0002" ref-type="supplementary-material">S5</xref>).</p></sec><sec id="jah38861-sec-0023"><title>
+<styled-content style="fixed-case" toggle="no">eQTL</styled-content> Mapping</title><p>eQTL mapping consistently prioritized <italic toggle="yes">WARS2</italic> (protein coding, expressed in adipose, arterial, and cardiac tissues) and <italic toggle="yes">RP11&#x02010;418J17.1</italic> (antisense, expressed in adipose, arterial, and cardiac tissues), but additionally identified regulatory functions of the candidate variants on <italic toggle="yes">TBX15</italic> (protein coding, expressed in adipose tissues) and <italic toggle="yes">RP4&#x02010;712E4.1</italic> (lincRNA, expressed in adipose and arterial tissue) (Tables&#x000a0;<xref rid="jah38861-supitem-0002" ref-type="supplementary-material">S6</xref> and <xref rid="jah38861-supitem-0002" ref-type="supplementary-material">S7</xref>). No chromosome 8 genes were mapped using eQTLs. The locus plots, positional mapping, and corresponding eQTLs for chromosome 1 variants are summarized in Figure&#x000a0;<xref rid="jah38861-fig-0002" ref-type="fig">2</xref>. Notably, the <italic toggle="yes">TBX15</italic> gene was also highlighted as the most strongly associated protein coding gene with adjusted PAT in MAGMA genome&#x02010;wide analysis (Figure&#x000a0;<xref rid="jah38861-supitem-0001" ref-type="supplementary-material">S3</xref>).</p><fig position="float" fig-type="Figure" id="jah38861-fig-0002"><label>Figure 2</label><caption><title>Regional plot of the chromosome 1 locus. Genes prioritized by FUMA are highlighted in red, and colors of genome&#x02010;wide significant SNPs are based on <italic toggle="yes">r</italic>
+<sup>2</sup>.</title><p>From the top: genome&#x02010;wide significance <italic toggle="yes">P</italic> value, CADD score, and eQTL <italic toggle="yes">P</italic> value. eQTLs are plotted for each gene, and colors are based on tissue types. CADD indicates combined annotation dependent depletion; eQTL, expression quantitative trait loci; GTE, Genotype&#x02010;Tissue Expression; RBMX2P3, RNA binding motif protein X&#x02010;Linked 2 pseudogene 3; SNP, single nucleotide polymorphism; TBX15, T&#x02010;box transcription factor 15; and WARS2, tryptophanyl tRNA synthetase 2, mitochondrial.</p></caption><graphic xlink:href="JAH3-12-e030661-g002" position="anchor" id="jats-graphic-3"/></fig></sec><sec id="jah38861-sec-0024"><title>Chromatin Interaction Mapping</title><p>Finally, 11 chromatin interaction regions were identified (Table&#x000a0;<xref rid="jah38861-supitem-0002" ref-type="supplementary-material">S8</xref>) mapping to 5 distinct genes (Table&#x000a0;<xref rid="jah38861-supitem-0002" ref-type="supplementary-material">S6</xref>). These are depicted in Figure&#x000a0;<xref rid="jah38861-fig-0003" ref-type="fig">3</xref> and Figure&#x000a0;<xref rid="jah38861-fig-0004" ref-type="fig">4</xref>. Using chromatin interaction mapping, a total of 3 genes were mapped in chromosome 8: <italic toggle="yes">EBF2</italic>, <italic toggle="yes">AC090103.1</italic>, and <italic toggle="yes">SDAD1P1</italic>. Among these, the protein coding <italic toggle="yes">EBF2</italic> gene appeared highly intolerant to loss of function (pLI 0.97).</p><fig position="float" fig-type="Figure" id="jah38861-fig-0003"><label>Figure 3</label><caption><title>Chromatin interactions and expression quantitative trait loci of pericardial adipose tissue risk loci on chromosome 1.</title><p>The outer layer displays genome&#x02010;wide association study <italic toggle="yes">P</italic> values, with the lead single nucleotide polymorphism labeled. Genes mapped by either expression quantitative trait loci or chromatin interactions are displayed in the innermost circle. Genes mapped by chromatin interactions are displayed in orange, expression quantitative trait loci in green, and those mapped by both in red. Orange links display chromatin interactions, and green links display expression quantitative trait loci. PSMC1P12 indicates proteasome 26S subunit, ATPase 1 seudogene 12; RNA5SP56, RNA, 5S ribosomal seudogene 56; TBX15, T&#x02010;box transcription factor 15; and WARS2, tryptophanyl tRNA synthetase 2, mitochondrial.</p></caption><graphic xlink:href="JAH3-12-e030661-g003" position="anchor" id="jats-graphic-5"/></fig><fig position="float" fig-type="Figure" id="jah38861-fig-0004"><label>Figure 4</label><caption><title>Chromatin interactions and expression quantitative trait loci of pericardial adipose tissue risk loci on chromosome 8. The outer layer displays genome&#x02010;wide association study <italic toggle="yes">P</italic> values, with the lead single nucleotide polymorphism labeled.</title><p>Genes mapped by either expression quantitative trait loci or chromatin interactions are displayed in the innermost circle. Genes mapped by chromatin interactions are displayed in orange, expression quantitative trait loci in green, and those mapped by both in red. Orange links display chromatin interactions, and green links display expression quantitative trait loci. EBF2 indicates early B&#x02010;cell factor&#x02010;2; and SDAD1P1, SDA1 domain containing 1 pseudogene 1.</p></caption><graphic xlink:href="JAH3-12-e030661-g005" position="anchor" id="jats-graphic-7"/></fig></sec><sec id="jah38861-sec-0025"><title>Colocalization Analysis</title><p>Colocalization analysis was performed to explore whether risk variants for PAT were associated with gene expression in adipose, arterial, and cardiac tissues. Using cis&#x02010;eQTLs from GTEx version 8, associations were explored within 1 Mb of significant GWAS SNPs. In the discovery GWAS, evidence for colocalization was found in the <italic toggle="yes">RP4&#x02010;712E4.1</italic> locus in subcutaneous adipose tissue (PPH4=0.93) and tibial artery (PPH4=0.96; Table&#x000a0;<xref rid="jah38861-supitem-0002" ref-type="supplementary-material">S9</xref>, Figures&#x000a0;<xref rid="jah38861-supitem-0001" ref-type="supplementary-material">S4</xref> and <xref rid="jah38861-supitem-0001" ref-type="supplementary-material">S5</xref>). For SNPs in the region surrounding RP4&#x02010;712E4.1, PAT risk and RP4&#x02010;712E4.1 tended to correlate, suggesting that increased PAT risk is associated with increased RP4&#x02010;712E4.1 expression (Figures&#x000a0;<xref rid="jah38861-supitem-0001" ref-type="supplementary-material">S4D</xref> and <xref rid="jah38861-supitem-0001" ref-type="supplementary-material">S5D</xref>). These results were not duplicated in the replication data set. Sensitivity analysis confirmed that these colocalizations were robust to changes in the prior probability of a variant associating with both traits (ie, p12 prior; Figure&#x000a0;<xref rid="jah38861-supitem-0001" ref-type="supplementary-material">S6</xref>). An additional locus of high PPH4 was found between the gene <italic toggle="yes">CDCA2</italic> in the LV, in both discovery and replication data sets, although these were driven by a single SNP (Figure&#x000a0;<xref rid="jah38861-supitem-0001" ref-type="supplementary-material">S7</xref>). Multiple associations were found for loci where SNPs independently associated with PAT risk and gene expression in a region, including the <italic toggle="yes">DOCK5</italic> locus using the tibial artery eQTL (PPH3=0.93 in discovery and replication data sets) and in the <italic toggle="yes">WARS2</italic> and <italic toggle="yes">RP11&#x02010;418J17.1</italic> loci in all 7 tissues tested (PPH3&#x02265;0.99 throughout the discovery GWAS; Table&#x000a0;<xref rid="jah38861-supitem-0002" ref-type="supplementary-material">S9</xref>).</p></sec><sec id="jah38861-sec-0026"><title>Gene to Function</title><p>To understand putative biological mechanisms behind the potentially causal genes (<italic toggle="yes">TBX15</italic>, <italic toggle="yes">WARS2</italic>, <italic toggle="yes">EBF2</italic>), gene&#x02010;to&#x02010;function mapping was performed in FUMA. A visual representation of normalized gene expression across tissue types is depicted in Figure&#x000a0;<xref rid="jah38861-supitem-0001" ref-type="supplementary-material">S8</xref>, highlighting the elevated expression of <italic toggle="yes">EBF2</italic> and <italic toggle="yes">TBX15</italic> in adipose tissue, with only <italic toggle="yes">EBF2</italic> specifically expressed in visceral omental adipose tissue. Differentially expressed gene analyses did not identify any statistically significant differences in gene expression across tissue types (Table&#x000a0;<xref rid="jah38861-supitem-0002" ref-type="supplementary-material">S10</xref>). The gene&#x02010;set enrichment and pathway analyses did not yield any significant results.</p><p>A phenome&#x02010;wide association study was performed for protein coding potentially causal genes. The 2 prioritized genes on chromosome 1, <italic toggle="yes">TBX15</italic> and <italic toggle="yes">WARS2</italic>, were associated with similar phenotypes, including male pattern baldness, white blood cells, measures of overall adiposity and its distribution, bone mineral density, and height (Figure&#x000a0;<xref rid="jah38861-supitem-0001" ref-type="supplementary-material">S9</xref>, Table&#x000a0;<xref rid="jah38861-supitem-0002" ref-type="supplementary-material">S11</xref>). The prioritized chromosome 8 gene, <italic toggle="yes">EBF2</italic>, was associated with traits relating to adiposity and its distribution and height but was also associated with blood pressure traits. An association was also noted with inguinal hernias. The results are presented in Figure&#x000a0;<xref rid="jah38861-supitem-0001" ref-type="supplementary-material">S10</xref> and Table&#x000a0;<xref rid="jah38861-supitem-0002" ref-type="supplementary-material">S11</xref>. In mice, homozygous loss of function in both <italic toggle="yes">EBF2</italic> and <italic toggle="yes">WARS2</italic> have been associated with embryonic lethality, whereas heterozygous loss&#x02010;of&#x02010;function mutations in <italic toggle="yes">EBF2</italic> have been associated with a variety of cardiac, spleen, vascular, and other malformations. The full list of mouse phenotypes is reported in Table&#x000a0;<xref rid="jah38861-supitem-0002" ref-type="supplementary-material">S12</xref>.</p></sec></sec><sec id="jah38861-sec-0027"><title>Heritability and Phenotypic Associations</title><sec id="jah38861-sec-0028"><title>Heritability and Genetic Correlations</title><p>The genome&#x02010;wide heritability (h<sup>2</sup>
+<sub>g</sub> SNP) of adiposity&#x02010;adjusted PAT was estimated at 9.15% (standard error, 2.49%). The genetic correlations of adjusted PAT are displayed in Table&#x000a0;<xref rid="jah38861-supitem-0002" ref-type="supplementary-material">S13</xref>. There was no significant correlation with adiposity measures, which is expected given the adjustment for these measures in the GWAS analysis. A nominally significant correlation was noted between adjusted PAT and heart failure (genetic correlation [rG]=0.36, standard error [se]=0.18, <italic toggle="yes">P</italic>=0.048). No further correlations were discovered with other cardiovascular outcomes, and no associations were significant after accounting for multiple testing.</p></sec><sec id="jah38861-sec-0029"><title>Mendelian Randomization</title><p>The instrumental variants extracted for MR analyses corresponded with the 2 prioritized lead variants at the 2 risk loci. <italic toggle="yes">F</italic> statistics were 34.5 for rs6428792 and 50.3 for rs11992444, indicating adequate instrument strength.</p><p>Higher genetically predicted adjusted PAT was associated with lower LVEDV (&#x003b2;, &#x02212;1.04 [95% CI, &#x02212;1.88 to &#x02212;0.19]; <italic toggle="yes">P</italic>=0.016) and LV end&#x02010;systolic volume (&#x003b2;, &#x02212;0.91 [95% CI, &#x02212;1.74 to &#x02212;0.08]; <italic toggle="yes">P</italic>=0.032). There was no significant association between genetically predicted PAT and LV stroke volume (&#x003b2;, &#x02212;0.72 [95% CI, &#x02212;1.73 to 0.07]; <italic toggle="yes">P</italic>=0.072), LV ejection fraction (&#x003b2;, 0.23 [95% CI, &#x02212;0.64 to 1.11]; <italic toggle="yes">P</italic>=0.602), and LV mass:LVEDV ratio (&#x003b2;, 1.14 [95% CI, &#x02212;0.28 to 2.55]; <italic toggle="yes">P</italic>=0.115).</p><p>The results of the MR analyses are summarized in Figure&#x000a0;<xref rid="jah38861-fig-0005" ref-type="fig">5</xref> and Table&#x000a0;<xref rid="jah38861-supitem-0002" ref-type="supplementary-material">S14</xref>. Single&#x02010;SNP analysis revealed consistency in effect estimate directions with the main analysis and between both instrumental variants, as depicted in Figure&#x000a0;<xref rid="jah38861-fig-0006" ref-type="fig">6</xref>.</p><fig position="float" fig-type="Figure" id="jah38861-fig-0005"><label>Figure 5</label><caption><title>Inverse&#x02010;variance weighted Mendelian randomization analysis exploring the association between pericardial fat area (pericardial adipose tissue) and left ventricular (LV) end&#x02010;diastolic volume (LVEDV), LV end&#x02010;systolic volume (LVESV), LV ejection fraction (LVEF), LV mass (LVM), and LV mass to end&#x02010;diastolic volume ratio (LVM:LVEDV).</title><p>LVSV indicates left ventricular stroke volume.</p></caption><graphic xlink:href="JAH3-12-e030661-g006" position="anchor" id="jats-graphic-9"/></fig><fig position="float" fig-type="Figure" id="jah38861-fig-0006"><label>Figure 6</label><caption><title>Single&#x02013;single nucleotide polymorphism Mendelian randomization analysis (Wald ratio method) exploring the association between pericardial fat area (pericardial adipose tissue) through rs6428792 and rs11992444 and left ventricular (LV) end&#x02010;diastolic volume (LVEDV), LV end&#x02010;systolic volume (LVESV), LV ejection fraction (LVEF), LV mass (LVM), and LV mass to end&#x02010;diastolic volume ratio (LVM:LVEDV).</title><p>LVSV indicates left ventricular stroke volume.</p></caption><graphic xlink:href="JAH3-12-e030661-g004" position="anchor" id="jats-graphic-11"/></fig></sec><sec id="jah38861-sec-0030"><title>Sensitivity Analyses</title><p>The meta&#x02010;analysis GWAS resulted in 185 SNPs that passed the GWAS <italic toggle="yes">P</italic> value threshold (5&#x000d7;10<sup>&#x02212;8</sup>) mostly in chromosome 1 and 2 and 1 in chromosome 8 (Table&#x000a0;<xref rid="jah38861-tbl-0003" ref-type="table">3</xref>). The leading SNPs are rs6428792 (chromosome 1), rs1430788 (chromosome 2), and rs1199244 (chromosome 8) which match the GWAS discovery and replication summaries. rs1430788 (chromosome 2) was neither significant in the discovery nor in the replication GWAS, although it was among the leading SNPs in the meta&#x02010;analysis.</p><table-wrap position="float" id="jah38861-tbl-0003" content-type="Table"><label>Table 3</label><caption><p>Meta&#x02010;analysis Genome&#x02010;wide Association Studies Summary Statistics for the Lead SNPs Using the Metal Tool</p></caption><table frame="hsides" rules="groups"><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><thead><tr style="border-bottom:solid 1px #000000"><th align="left" rowspan="1" colspan="1">SNP</th><th align="left" rowspan="1" colspan="1">Chromosome</th><th align="left" rowspan="1" colspan="1">BP</th><th align="left" rowspan="1" colspan="1">Allele 1</th><th align="left" rowspan="1" colspan="1">Allele 2</th><th align="left" rowspan="1" colspan="1">Effect</th><th align="left" rowspan="1" colspan="1">Standard error</th><th align="left" rowspan="1" colspan="1">
+<italic toggle="yes">P</italic> value</th><th align="left" rowspan="1" colspan="1">Direction</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">rs6428792</td><td align="left" rowspan="1" colspan="1">1</td><td align="left" rowspan="1" colspan="1">119&#x02009;656&#x02009;867</td><td align="left" rowspan="1" colspan="1">A</td><td align="left" rowspan="1" colspan="1">G</td><td align="left" rowspan="1" colspan="1">&#x02212;0.0092</td><td align="left" rowspan="1" colspan="1">0.0014</td><td align="left" rowspan="1" colspan="1">1.67E&#x02010;11</td><td align="left" rowspan="1" colspan="1">&#x02026;</td></tr><tr><td align="left" rowspan="1" colspan="1">rs143078898</td><td align="left" rowspan="1" colspan="1">2</td><td align="left" rowspan="1" colspan="1">229&#x02009;994&#x02009;086</td><td align="left" rowspan="1" colspan="1">T</td><td align="left" rowspan="1" colspan="1">C</td><td align="left" rowspan="1" colspan="1">&#x02212;0.0133</td><td align="left" rowspan="1" colspan="1">0.0023</td><td align="left" rowspan="1" colspan="1">1.53E&#x02010;08</td><td align="left" rowspan="1" colspan="1">&#x02026;</td></tr><tr><td align="left" rowspan="1" colspan="1">rs11992444</td><td align="left" rowspan="1" colspan="1">8</td><td align="left" rowspan="1" colspan="1">25&#x02009;464&#x02009;690</td><td align="left" rowspan="1" colspan="1">T</td><td align="left" rowspan="1" colspan="1">G</td><td align="left" rowspan="1" colspan="1">&#x02212;0.0127</td><td align="left" rowspan="1" colspan="1">0.0013</td><td align="left" rowspan="1" colspan="1">8.77E&#x02010;22</td><td align="left" rowspan="1" colspan="1">&#x02026;</td></tr></tbody></table><table-wrap-foot id="jah38861-ntgp-0004"><fn id="jah38861-note-0008"><p>BP indicates base pair; and SNP, single nucleotide polymorphism.</p></fn></table-wrap-foot></table-wrap><p>The results of the more relaxed GWAS (without adjustment for fat measures) are presented in Table&#x000a0;<xref rid="jah38861-supitem-0002" ref-type="supplementary-material">S15</xref>. rs11992444 (chromosome 8) SNP that was replicated in the adjusted model and in the meta&#x02010;analysis was also significant in the relaxed GWAS. In addition, the rs143078898 (chromosome 2) SNP that was significant in the meta&#x02010;analysis GWAS was also significant in the relaxed GWAS analysis.</p></sec></sec></sec><sec sec-type="discussion" id="jah38861-sec-0031"><title>Discussion</title><p>This study is the largest individual&#x02010;level GWAS to date exploring the polygenic basis and genetic architecture of PAT. To add to previous literature, we specifically aimed to disentangle PAT from multiple other biometric measures of total adiposity and its distribution to isolate specific determinants of preferential fat deposition in the pericardial compartment. This strategy yielded a total of 11 genome&#x02010;wide significant variants, with 2 lead uncorrelated SNPs relating to 2 genomic risk loci. These were mapped to 10 potentially causal genes using positional, eQTL, and chromatin interaction mapping. Among these, 3 protein coding genes were identified: <italic toggle="yes">TBX15</italic>, <italic toggle="yes">WARS2</italic>, and <italic toggle="yes">EBF2</italic>. For the latter 2 genes, enrichment analyses determined significant tissue&#x02010;specific eQTLs and chromatin interactions in both adipose and cardiac tissue, supporting an overlapping physiology in these tissue types. Importantly, we also found that the proportion of phenotypic variance explained by the genotype was 9.1%, indicating a relatively high genetic determination of proportionally greater PAT deposition.</p><p>To date, only 2 genome&#x02010;wide association studies<xref rid="jah38861-bib-0018" ref-type="bibr">
+<sup>18</sup>
+</xref>, <xref rid="jah38861-bib-0019" ref-type="bibr">
+<sup>19</sup>
+</xref> have been performed exploring the polygenic basis of PAT. Fox et&#x000a0;al<xref rid="jah38861-bib-0018" ref-type="bibr">
+<sup>18</sup>
+</xref> explored the genetic determinants of PAT adjusted for visceral fat volume, WHR, and BMI in 5487 participants of the Framingham Heart Study, uncovering 1 single genome&#x02010;wide significant variant at 1 locus (rs10198628 mapped to the <italic toggle="yes">TRIB2</italic> gene). In our relaxed GWAS, this SNP was only nominally associated with PAT (<italic toggle="yes">P</italic> value=0.029). The result was similar in the main GWAS analysis adjusted for fat measures (<italic toggle="yes">P</italic> value=0.037) and in the meta&#x02010;analysis (<italic toggle="yes">P</italic> value=0.012). Chu et&#x000a0;al<xref rid="jah38861-bib-0019" ref-type="bibr">
+<sup>19</sup>
+</xref> explored the genetic determinants of PAT, adjusted for height and weight only, in a cohort of 18&#x02009;332 participants that included individuals in the study by Fox et&#x000a0;al. A total of 3 genome&#x02010;wide significant variants were identified (rs6587515 mapped to the <italic toggle="yes">ENSA</italic> gene, rs1650505 mapped to the <italic toggle="yes">EBF1</italic> gene, and rs10198628 mapped to the <italic toggle="yes">TRIB2</italic> gene). Among them, 1 was replicated from the study by Fox et&#x000a0;al (rs10198628 [chromosome 2]). In our &#x0201c;relaxed&#x0201d; GWAS, rs6689335 (<italic toggle="yes">P</italic>=0.320), rs6587515 (<italic toggle="yes">P</italic>=0.220), and rs10198628 (<italic toggle="yes">P</italic>=0.015) were replicated. In the main GWAS analysis with adjustment for fat measures, rs6689335 was not associated with PAT (<italic toggle="yes">P</italic>=0.900) and neither was rs6587515 (<italic toggle="yes">P</italic>=0.150), whereas rs10198628 was (<italic toggle="yes">P</italic>=0.160). In the meta&#x02010;analysis, rs6689335 (<italic toggle="yes">P</italic>=0.657) and rs6587515 (<italic toggle="yes">P</italic>=0.383) were not associated with PAT, whereas rs10198628 (<italic toggle="yes">P</italic>=0.011) was nominally significant but did not pass GWAS threshold. This discrepancy is likely to relate to the lack of sample overlap and more comprehensive adjustment for measures of total and relative adipose tissue distribution in our analysis. Importantly, we carried out a replication analysis in an independent subset of UK Biobank participants who were excluded from the discovery analysis. This replicated all the genome&#x02010;wide significant signals at Bonferroni&#x02010;adjusted <italic toggle="yes">P</italic> value, increasing confidence in the validity of our results.</p><p>Among the genome&#x02010;wide significant variants discovered, 10 of the 11 were located in a single genomic risk locus on chromosome 1. Among these, 1 single lead variant was retained (rs6428792). Positional mapping identified 3 potential causal genes, eQTL mapping identified 4 potential causal genes (2 overlapping) and chromatin interaction using Hi&#x02010;C data from the LV identified 2 further potential causal genes. Colocalization analysis suggested that, for all the genes in the implicated region in chromosome 1, the risk of PAT in both subcutaneous adipose and tibial arterial regions were associated with increase gene expression of RP4&#x02010;712E4.1, a long noncoding RNA, at this locus. For the chromosome 8 variant (rs11992444), positional and eQTL mapping did not identify any genes, and the colocalization analysis was inconclusive. However, chromatin interaction mapping using Hi&#x02010;C data from the LV identified 3 potentially causal genes. Overall, among the identified potentially causal genes at both loci, 5 had been previously associated with BMI&#x02010;adjusted adiposity distribution traits (<italic toggle="yes">TBX15</italic>, <italic toggle="yes">WARS2</italic>, <italic toggle="yes">EBF2</italic>, <italic toggle="yes">PSMC1P12</italic>, <italic toggle="yes">RNA5SP56</italic>), and 1 gene, <italic toggle="yes">SDAD1P1</italic>, has been previously associated with red cell distribution width. The remaining 4 genes had no previously reported associations.</p><p>The potentially causal protein coding genes have been implicated in a variety of physiological pathways. <italic toggle="yes">EBF2</italic> is known to play a key role in activating the expression of brown fat&#x02013;selective genes in adipocytes.<xref rid="jah38861-bib-0055" ref-type="bibr">
+<sup>55</sup>
+</xref>
+<italic toggle="yes">WARS2</italic> encodes a cytoplasmic form of tryptophanyl&#x02010;tRNA synthetase, which has been shown to play a central role in angiogenesis, including cardiac angiogenesis.<xref rid="jah38861-bib-0056" ref-type="bibr">
+<sup>56</sup>
+</xref> In mouse models, a reduction of <italic toggle="yes">WARS2</italic> gene function was shown to lead to reduced food intake and depot&#x02010;specific changes in fat mass and brown fat distribution.<xref rid="jah38861-bib-0057" ref-type="bibr">
+<sup>57</sup>
+</xref> Similarly, <italic toggle="yes">TBX15</italic> activation has been implicated in the preferential distribution of abdominal adiposity<xref rid="jah38861-bib-0058" ref-type="bibr">
+<sup>58</sup>
+</xref> as well as in adrenergic&#x02010;induced adipocyte browning.<xref rid="jah38861-bib-0059" ref-type="bibr">
+<sup>59</sup>
+</xref> Generally, white adipose tissue is considered predominantly an inactive energy storage, whereas brown adipose tissue contains a higher concentration of mitochondria and expresses UCP1 (uncoupling protein 1), a protein that enables its metabolic use and thermogenesis.<xref rid="jah38861-bib-0060" ref-type="bibr">
+<sup>60</sup>
+</xref> PAT is considered predominantly a white adipose tissue depot, although it is known to have higher expression of UCP1 compared with white adipose tissue in the rest of the body. The results of our study and functional annotation suggest that a reduced propensity toward fat browning likely contributes to higher proportional PAT deposition. Indeed, both lead variants in this study were inversely associated with PAT, and unaligned eQTL mapping displayed a predominantly inhibitory role of the unaligned variants on <italic toggle="yes">WARS2</italic>, but an enhancing role on <italic toggle="yes">TBX15</italic>. Thus, aligning the variants toward greater PAT would suggest an enhancing role on <italic toggle="yes">WARS2</italic>, and an inhibitory action on <italic toggle="yes">TBX15</italic>, both of which are consistent with a phenotype of inhibited adipose tissue browning. This is mechanistically consistent with previous observational work outlining an inverse association between brown adipose tissue and visceral adiposity deposition.<xref rid="jah38861-bib-0061" ref-type="bibr">
+<sup>61</sup>
+</xref>
+</p><p>To relate the genetic data with potential biological consequences of PAT, we examined genetic correlation analyses and performed MR. A genetic correlation was observed between adjusted PAT and heart failure, consistent with previous evidence linking PAT with heart failure<xref rid="jah38861-bib-0006" ref-type="bibr">
+<sup>6</sup>
+</xref> and adverse cardiac structure and function independent of overall adiposity.<xref rid="jah38861-bib-0009" ref-type="bibr">
+<sup>9</sup>
+</xref> Building on these observational data, we performed MR analyses to elucidate the potential causal relevance of PAT on cardiac structure and function. This revealed an association of higher PAT with lower LVEDV, lower LV end&#x02010;systolic volume, and a suggestive result for lower LV stroke volume. This is broadly reflective of a reduction in ventricular chamber volume, consistent with remodeling patterns seen in aging<xref rid="jah38861-bib-0062" ref-type="bibr">
+<sup>62</sup>
+</xref> and in heart failure with a preserved ejection fraction.<xref rid="jah38861-bib-0063" ref-type="bibr">
+<sup>63</sup>
+</xref> Beyond the reduction in LV volumes and stroke volume, the aging heart with a preserved ejection fraction phenotype is characterized by lower LV mass attributed to cardiomyocyte attrition,<xref rid="jah38861-bib-0063" ref-type="bibr">
+<sup>63</sup>
+</xref>, <xref rid="jah38861-bib-0064" ref-type="bibr">
+<sup>64</sup>
+</xref> typically occurring to a lesser proportion to the reduction in volumes, leading to an increased LV mass:LVEDV ratio reflecting greater concentricity.<xref rid="jah38861-bib-0063" ref-type="bibr">
+<sup>63</sup>
+</xref> In this phenotype, LV ejection fraction would be expected to remain similar or paradoxically increase with the rise in concentricity.<xref rid="jah38861-bib-0065" ref-type="bibr">
+<sup>65</sup>
+</xref> Although not all of these associations were statistically significant, the directionality of the MR results is consistent with remodeling in a heart failure with a preserved ejection fraction cardiac phenotype. This is consistent with the cardiac remodeling pattern that has previously been associated with PAT in observational studies.<xref rid="jah38861-bib-0006" ref-type="bibr">
+<sup>6</sup>
+</xref>, <xref rid="jah38861-bib-0066" ref-type="bibr">
+<sup>66</sup>
+</xref>, <xref rid="jah38861-bib-0067" ref-type="bibr">
+<sup>67</sup>
+</xref>
+</p><p>We acknowledge some limitations. Despite being the largest currently available GWAS of PAT, the number of loci discovered remains small. In addition, because of the restricted sample size, the analysis was restricted to variants with a minor allele frequency&#x0003e;1%. Incorporation of rare variants in further analyses when larger sample sizes are available might enhance genetic discovery. Finally, the UK Biobank population was restricted to European ancestry; therefore, further research is warranted in populations of other ancestries.</p><p>In summary, the results of this study enhance the current knowledge about the genetic basis of preferential PAT deposition, prioritize a number of potentially causal genes that might exert influence through the modulation of adipose tissue browning, and provide genetic evidence to support causal relevance of PAT on cardiac structure and function that might contribute to heart failure risk.</p></sec><sec id="jah38861-sec-0032"><title>Sources of Funding</title><p>Salih is supported by a British Heart Foundation project grant (PG/21/10619). Ardissino is funded by a National Institute for Health and Care Research for an Academic Clinical Fellowship. Barts Charity (G&#x02010;002346) contributed to fees required to access UK Biobank data (access application 2964). Petersen acknowledges the British Heart Foundation for funding the manual analysis to create a cardiovascular magnetic resonance imaging reference standard for the UK Biobank imaging resource in 5000 cardiovascular magnetic resonance scans (<ext-link xlink:href="http://www.bhf.org.uk" ext-link-type="uri">http://www.bhf.org.uk</ext-link>; PG/14/89/31194), support from the National Institute for Health and Care Research Biomedical Research Centre at Barts, and support from the &#x0201c;SmartHeart&#x0201d; Engineering and Physical Sciences Research Council (EPSRC) program grant (<ext-link xlink:href="http://www.nihr.ac.uk" ext-link-type="uri">http://www.nihr.ac.uk</ext-link>; EP/P001009/1). Raisi&#x02010;Estabragh was supported by a British Heart Foundation Clinical Research Training Fellowship (FS/17/81/33318). Petersen and Szabo have received funding from the European Union's Horizon 2020 research and innovation program under grant agreement No. 825903 (an EU&#x02010;Canada joint infrastructure for next&#x02010;generation multi&#x02010;Study Heart Research [euCanSHare] project). This article is supported by the London Medical Imaging and Artificial Intelligence Centre for Value Based Healthcare, which is funded by the Data to Early Diagnosis and Precision Medicine strand of the government's Industrial Strategy Challenge Fund, managed and delivered by Innovate UK on behalf of UK Research and Innovation. The views expressed are those of the authors and not necessarily those of the Artificial Intelligence Centre for Value Based Healthcare Consortium members, the National Health Service, Innovate UK, or the UK Research and Innovation. This work was supported by Health Data Research UK, an initiative funded by UK Research and Innovation, Department of Health and Social Care (England) and the devolved administrations, and leading medical research charities. The funders provided support in the form of salaries for the authors as detailed previously but did not have any additional role in the study design, data collection and analysis, decision to publish, or preparation of the article.</p></sec><sec id="jah38861-sec-0033"><title>Disclosures</title><p>Professor Petersen provides consultancy to Circle Cardiovascular Imaging Inc., Calgary, Alberta, Canada. The remaining authors have no disclosures to report.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material id="jah38861-supitem-0002" position="float" content-type="local-data"><caption><p>Tables&#x000a0;S1&#x02013;S15</p></caption><media xlink:href="JAH3-12-e030661-s002.xlsx"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material id="jah38861-supitem-0001" position="float" content-type="local-data"><caption><p>Figures&#x000a0;S1&#x02013;S10</p></caption><media xlink:href="JAH3-12-e030661-s001.pdf"><caption><p>Click here for additional data file.</p></caption></media></supplementary-material></sec></body><back><ref-list content-type="cited-references" id="jah38861-bibl-0001"><title>References</title><ref id="jah38861-bib-0001"><label>1</label><mixed-citation publication-type="journal" id="jah38861-cit-0001">
+<string-name>
+<surname>Barandier</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Montani</surname>
+<given-names>J&#x02010;P</given-names>
+</string-name>, <string-name>
+<surname>Yang</surname>
+<given-names>Z</given-names>
+</string-name>. <article-title>Mature adipocytes and perivascular adipose tissue stimulate vascular smooth muscle cell proliferation: effects of aging and obesity</article-title>. <source>Am J Physiol Circ Physiol</source>. <year>2005</year>;<volume>289</volume>:<fpage>H1807</fpage>&#x02013;<lpage>H1813</lpage>. doi: <pub-id pub-id-type="doi">10.1152/ajpheart.01259.2004</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0002"><label>2</label><mixed-citation publication-type="journal" id="jah38861-cit-0002">
+<string-name>
+<surname>Henrichot</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Juge&#x02010;Aubry</surname>
+<given-names>CE</given-names>
+</string-name>, <string-name>
+<surname>Pernin</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Pache</surname>
+<given-names>J&#x02010;C</given-names>
+</string-name>, <string-name>
+<surname>Velebit</surname>
+<given-names>V</given-names>
+</string-name>, <string-name>
+<surname>Dayer</surname>
+<given-names>J&#x02010;M</given-names>
+</string-name>, <string-name>
+<surname>Meda</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Chizzolini</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Meier</surname>
+<given-names>CA</given-names>
+</string-name>. <article-title>Production of chemokines by perivascular adipose tissue</article-title>. <source>Arterioscler Thromb Vasc Biol</source>. <year>2005</year>;<volume>25</volume>:<fpage>2594</fpage>&#x02013;<lpage>2599</lpage>. doi: <pub-id pub-id-type="doi">10.1161/01.ATV.0000188508.40052.35</pub-id>
+<pub-id pub-id-type="pmid">16195477</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0003"><label>3</label><mixed-citation publication-type="journal" id="jah38861-cit-0003">
+<string-name>
+<surname>Mazurek</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Zhang</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Zalewski</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Mannion</surname>
+<given-names>JD</given-names>
+</string-name>, <string-name>
+<surname>Diehl</surname>
+<given-names>JT</given-names>
+</string-name>, <string-name>
+<surname>Arafat</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Sarov&#x02010;Blat</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>O'Brien</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Keiper</surname>
+<given-names>EA</given-names>
+</string-name>, <string-name>
+<surname>Johnson</surname>
+<given-names>AG</given-names>
+</string-name>, et&#x000a0;al. <article-title>Human epicardial adipose tissue is a source of inflammatory mediators</article-title>. <source>Circulation</source>. <year>2003</year>;<volume>108</volume>:<fpage>2460</fpage>&#x02013;<lpage>2466</lpage>. doi: <pub-id pub-id-type="doi">10.1161/01.CIR.0000099542.57313.C5</pub-id>
+<pub-id pub-id-type="pmid">14581396</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0004"><label>4</label><mixed-citation publication-type="journal" id="jah38861-cit-0004">
+<string-name>
+<surname>Iacobellis</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Bianco</surname>
+<given-names>AC</given-names>
+</string-name>. <article-title>Epicardial adipose tissue: emerging physiological, pathophysiological and clinical features</article-title>. <source>Trends Endocrinol Metab</source>. <year>2011</year>;<volume>22</volume>:<fpage>450</fpage>&#x02013;<lpage>457</lpage>. doi: <pub-id pub-id-type="doi">10.1016/j.tem.2011.07.003</pub-id>
+<pub-id pub-id-type="pmid">21852149</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0005"><label>5</label><mixed-citation publication-type="journal" id="jah38861-cit-0005">
+<string-name>
+<surname>Greif</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Becker</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Von</surname>
+<given-names>ZF</given-names>
+</string-name>, <string-name>
+<surname>Lebherz</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Lehrke</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Broedl</surname>
+<given-names>UC</given-names>
+</string-name>, <string-name>
+<surname>Tittus</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Parhofer</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Becker</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Reiser</surname>
+<given-names>M</given-names>
+</string-name>, et&#x000a0;al. <article-title>Pericardial adipose tissue determined by dual source CT is a risk factor for coronary atherosclerosis</article-title>. <source>Arterioscler Thromb Vasc Biol</source>. <year>2009</year>;<volume>29</volume>:<fpage>781</fpage>&#x02013;<lpage>786</lpage>. doi: <pub-id pub-id-type="doi">10.1161/ATVBAHA.108.180653</pub-id>
+<pub-id pub-id-type="pmid">19229071</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0006"><label>6</label><mixed-citation publication-type="journal" id="jah38861-cit-0006">
+<string-name>
+<surname>Kenchaiah</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Ding</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Carr</surname>
+<given-names>JJ</given-names>
+</string-name>, <string-name>
+<surname>Allison</surname>
+<given-names>MA</given-names>
+</string-name>, <string-name>
+<surname>Budoff</surname>
+<given-names>MJ</given-names>
+</string-name>, <string-name>
+<surname>Tracy</surname>
+<given-names>RP</given-names>
+</string-name>, <string-name>
+<surname>Burke</surname>
+<given-names>GL</given-names>
+</string-name>, <string-name>
+<surname>McClelland</surname>
+<given-names>RL</given-names>
+</string-name>, <string-name>
+<surname>Arai</surname>
+<given-names>AE</given-names>
+</string-name>, <string-name>
+<surname>Bluemke</surname>
+<given-names>DA</given-names>
+</string-name>. <article-title>Pericardial fat and the risk of heart failure</article-title>. <source>J Am Coll Cardiol</source>. <year>2021</year>;<volume>77</volume>:<fpage>2638</fpage>&#x02013;<lpage>2652</lpage>.<pub-id pub-id-type="pmid">34045020</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0007"><label>7</label><mixed-citation publication-type="journal" id="jah38861-cit-0007">
+<string-name>
+<surname>Wong</surname>
+<given-names>CX</given-names>
+</string-name>, <string-name>
+<surname>Ganesan</surname>
+<given-names>AN</given-names>
+</string-name>, <string-name>
+<surname>Selvanayagam</surname>
+<given-names>JB</given-names>
+</string-name>. <article-title>Epicardial fat and atrial fibrillation: current evidence, potential mechanisms, clinical implications, and future directions</article-title>. <source>Eur Heart J</source>. <year>2017</year>;<volume>38</volume>:<fpage>1294</fpage>&#x02013;<lpage>1302</lpage>.<pub-id pub-id-type="pmid">26935271</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0008"><label>8</label><mixed-citation publication-type="journal" id="jah38861-cit-0008">
+<string-name>
+<surname>Batal</surname>
+<given-names>O</given-names>
+</string-name>, <string-name>
+<surname>Schoenhagen</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Shao</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Ayyad</surname>
+<given-names>AE</given-names>
+</string-name>, <string-name>
+<surname>Van Wagoner</surname>
+<given-names>DR</given-names>
+</string-name>, <string-name>
+<surname>Halliburton</surname>
+<given-names>SS</given-names>
+</string-name>, <string-name>
+<surname>Tchou</surname>
+<given-names>PJ</given-names>
+</string-name>, <string-name>
+<surname>Chung</surname>
+<given-names>MK</given-names>
+</string-name>. <article-title>Left atrial epicardial adiposity and atrial fibrillation</article-title>. <source>Circ Arrhythmia Electrophysiol</source>. <year>2010</year>;<volume>3</volume>:<fpage>230</fpage>&#x02013;<lpage>236</lpage>. doi: <pub-id pub-id-type="doi">10.1161/CIRCEP.110.957241</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0009"><label>9</label><mixed-citation publication-type="journal" id="jah38861-cit-0009">
+<string-name>
+<surname>Ardissino</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>McCracken</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Bard</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Antoniades</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Neubauer</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Harvey</surname>
+<given-names>NC</given-names>
+</string-name>, <string-name>
+<surname>Petersen</surname>
+<given-names>SE</given-names>
+</string-name>, <string-name>
+<surname>Raisi&#x02010;Estabragh</surname>
+<given-names>Z</given-names>
+</string-name>. <article-title>Pericardial adiposity is independently linked to adverse cardiovascular phenotypes: a CMR study of 42 598 UK Biobank participants</article-title>. <source>Eur Hear J Cardiovasc Imaging</source>. <year>2022</year>;<volume>23</volume>:<fpage>1471</fpage>&#x02013;<lpage>1481</lpage>. doi: <pub-id pub-id-type="doi">10.1093/ehjci/jeac101</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0010"><label>10</label><mixed-citation publication-type="journal" id="jah38861-cit-0010">
+<string-name>
+<surname>Shah</surname>
+<given-names>RV</given-names>
+</string-name>, <string-name>
+<surname>Anderson</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Ding</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Budoff</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Rider</surname>
+<given-names>O</given-names>
+</string-name>, <string-name>
+<surname>Petersen</surname>
+<given-names>SE</given-names>
+</string-name>, <string-name>
+<surname>Jensen</surname>
+<given-names>MK</given-names>
+</string-name>, <string-name>
+<surname>Koch</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Allison</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Kawel&#x02010;Boehm</surname>
+<given-names>N</given-names>
+</string-name>, et&#x000a0;al. <article-title>Pericardial, but not hepatic, fat by CT is associated with CV outcomes and structure</article-title>. <source>JACC Cardiovasc Imaging</source>. <year>2017</year>;<volume>10</volume>:<fpage>1016</fpage>&#x02013;<lpage>1027</lpage>. doi: <pub-id pub-id-type="doi">10.1016/j.jcmg.2016.10.024</pub-id>
+<pub-id pub-id-type="pmid">28330662</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0011"><label>11</label><mixed-citation publication-type="journal" id="jah38861-cit-0011">
+<string-name>
+<surname>Rose</surname>
+<given-names>KM</given-names>
+</string-name>, <string-name>
+<surname>Newman</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Mayer&#x02010;Davis</surname>
+<given-names>EJ</given-names>
+</string-name>, <string-name>
+<surname>Selby</surname>
+<given-names>JV</given-names>
+</string-name>. <article-title>Genetic and behavioral determinants of waist&#x02010;hip ratio and waist circumference in women twins</article-title>. <source>Obes Res</source>. <year>1998</year>;<volume>6</volume>:<fpage>383</fpage>&#x02013;<lpage>392</lpage>. doi: <pub-id pub-id-type="doi">10.1002/j.1550-8528.1998.tb00369.x</pub-id>
+<pub-id pub-id-type="pmid">9845227</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0012"><label>12</label><mixed-citation publication-type="journal" id="jah38861-cit-0012">
+<string-name>
+<surname>Shungin</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Winkler</surname>
+<given-names>TW</given-names>
+</string-name>, <string-name>
+<surname>Croteau&#x02010;Chonka</surname>
+<given-names>DC</given-names>
+</string-name>, <string-name>
+<surname>Ferreira</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Locke</surname>
+<given-names>AE</given-names>
+</string-name>, <string-name>
+<surname>M&#x000e4;gi</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Strawbridge</surname>
+<given-names>RJ</given-names>
+</string-name>, <string-name>
+<surname>Pers</surname>
+<given-names>TH</given-names>
+</string-name>, <string-name>
+<surname>Fischer</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Justice</surname>
+<given-names>AE</given-names>
+</string-name>, et&#x000a0;al. <article-title>New genetic loci link adipose and insulin biology to body fat distribution</article-title>. <source>Nature</source>. <year>2015</year>;<volume>518</volume>:<fpage>187</fpage>&#x02013;<lpage>196</lpage>. doi: <pub-id pub-id-type="doi">10.1038/nature14132</pub-id>
+<pub-id pub-id-type="pmid">25673412</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0013"><label>13</label><mixed-citation publication-type="journal" id="jah38861-cit-0013">
+<string-name>
+<surname>Pulit</surname>
+<given-names>SL</given-names>
+</string-name>, <string-name>
+<surname>Stoneman</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Morris</surname>
+<given-names>AP</given-names>
+</string-name>, <string-name>
+<surname>Wood</surname>
+<given-names>AR</given-names>
+</string-name>, <string-name>
+<surname>Glastonbury</surname>
+<given-names>CA</given-names>
+</string-name>, <string-name>
+<surname>Tyrrell</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Yengo</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Ferreira</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Marouli</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Ji</surname>
+<given-names>Y</given-names>
+</string-name>, et&#x000a0;al. <article-title>Meta&#x02010;analysis of genome&#x02010;wide association studies for body fat distribution in 694 649 individuals of European ancestry</article-title>. <source>Hum Mol Genet</source>. <year>2019</year>;<volume>28</volume>:<fpage>166</fpage>&#x02013;<lpage>174</lpage>. doi: <pub-id pub-id-type="doi">10.1093/hmg/ddy327</pub-id>
+<pub-id pub-id-type="pmid">30239722</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0014"><label>14</label><mixed-citation publication-type="journal" id="jah38861-cit-0014">
+<string-name>
+<surname>Kaess</surname>
+<given-names>BM</given-names>
+</string-name>, <string-name>
+<surname>Pedley</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Massaro</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name>
+<surname>Murabito</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Hoffmann</surname>
+<given-names>U</given-names>
+</string-name>, <string-name>
+<surname>Fox</surname>
+<given-names>CS</given-names>
+</string-name>. <article-title>The ratio of visceral to subcutaneous fat, a metric of body fat distribution, is a unique correlate of cardiometabolic risk</article-title>. <source>Diabetologia</source>. <year>2012</year>;<volume>55</volume>:<fpage>2622</fpage>&#x02013;<lpage>2630</lpage>. doi: <pub-id pub-id-type="doi">10.1007/s00125-012-2639-5</pub-id>
+<pub-id pub-id-type="pmid">22898763</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0015"><label>15</label><mixed-citation publication-type="journal" id="jah38861-cit-0015">
+<string-name>
+<surname>Rosenquist</surname>
+<given-names>KJ</given-names>
+</string-name>, <string-name>
+<surname>Pedley</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Massaro</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name>
+<surname>Therkelsen</surname>
+<given-names>KE</given-names>
+</string-name>, <string-name>
+<surname>Murabito</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name>
+<surname>Hoffmann</surname>
+<given-names>U</given-names>
+</string-name>, <string-name>
+<surname>Fox</surname>
+<given-names>CS</given-names>
+</string-name>. <article-title>Visceral and subcutaneous fat quality and cardiometabolic risk</article-title>. <source>JACC Cardiovasc Imaging</source>. <year>2013</year>;<volume>6</volume>:<fpage>762</fpage>&#x02013;<lpage>771</lpage>. doi: <pub-id pub-id-type="doi">10.1016/j.jcmg.2012.11.021</pub-id>
+<pub-id pub-id-type="pmid">23664720</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0016"><label>16</label><mixed-citation publication-type="journal" id="jah38861-cit-0016">
+<string-name>
+<surname>Britton</surname>
+<given-names>KA</given-names>
+</string-name>, <string-name>
+<surname>Massaro</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name>
+<surname>Murabito</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name>
+<surname>Kreger</surname>
+<given-names>BE</given-names>
+</string-name>, <string-name>
+<surname>Hoffmann</surname>
+<given-names>U</given-names>
+</string-name>, <string-name>
+<surname>Fox</surname>
+<given-names>CS</given-names>
+</string-name>. <article-title>Body fat distribution, incident cardiovascular disease, cancer, and all&#x02010;cause mortality</article-title>. <source>J Am Coll Cardiol</source>. <year>2013</year>;<volume>62</volume>:<fpage>921</fpage>&#x02013;<lpage>925</lpage>. doi: <pub-id pub-id-type="doi">10.1016/j.jacc.2013.06.027</pub-id>
+<pub-id pub-id-type="pmid">23850922</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0017"><label>17</label><mixed-citation publication-type="journal" id="jah38861-cit-0017">
+<string-name>
+<surname>Emdin</surname>
+<given-names>CA</given-names>
+</string-name>, <string-name>
+<surname>Khera</surname>
+<given-names>AV</given-names>
+</string-name>, <string-name>
+<surname>Natarajan</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Klarin</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Zekavat</surname>
+<given-names>SM</given-names>
+</string-name>, <string-name>
+<surname>Hsiao</surname>
+<given-names>AJ</given-names>
+</string-name>, <string-name>
+<surname>Kathiresan</surname>
+<given-names>S</given-names>
+</string-name>. <article-title>Genetic association of waist&#x02010;to&#x02010;hip ratio with cardiometabolic traits, type 2 diabetes, and coronary heart disease</article-title>. <source>JAMA</source>. <year>2017</year>;<volume>317</volume>:<fpage>626</fpage>&#x02013;<lpage>634</lpage>. doi: <pub-id pub-id-type="doi">10.1001/jama.2016.21042</pub-id>
+<pub-id pub-id-type="pmid">28196256</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0018"><label>18</label><mixed-citation publication-type="journal" id="jah38861-cit-0018">
+<string-name>
+<surname>Fox</surname>
+<given-names>CS</given-names>
+</string-name>, <string-name>
+<surname>White</surname>
+<given-names>CC</given-names>
+</string-name>, <string-name>
+<surname>Lohman</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Heard&#x02010;Costa</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Cohen</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Zhang</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Johnson</surname>
+<given-names>AD</given-names>
+</string-name>, <string-name>
+<surname>Emilsson</surname>
+<given-names>V</given-names>
+</string-name>, <string-name>
+<surname>Liu</surname>
+<given-names>C&#x02010;T</given-names>
+</string-name>, <string-name>
+<surname>Y&#x02010;DI</surname>
+<given-names>C</given-names>
+</string-name>, et&#x000a0;al. <article-title>Genome&#x02010;wide association of pericardial fat identifies a unique locus for ectopic fat</article-title>. <source>PLoS Genet</source>. <year>2012</year>;<volume>8</volume>:<elocation-id>e1002705</elocation-id>. doi: <pub-id pub-id-type="doi">10.1371/journal.pgen.1002705</pub-id>
+<pub-id pub-id-type="pmid">22589742</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0019"><label>19</label><mixed-citation publication-type="journal" id="jah38861-cit-0019">
+<string-name>
+<surname>Chu</surname>
+<given-names>AY</given-names>
+</string-name>, <string-name>
+<surname>Deng</surname>
+<given-names>X</given-names>
+</string-name>, <string-name>
+<surname>Fisher</surname>
+<given-names>VA</given-names>
+</string-name>, <string-name>
+<surname>Drong</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Zhang</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Feitosa</surname>
+<given-names>MF</given-names>
+</string-name>, <string-name>
+<surname>Liu</surname>
+<given-names>C&#x02010;T</given-names>
+</string-name>, <string-name>
+<surname>Weeks</surname>
+<given-names>O</given-names>
+</string-name>, <string-name>
+<surname>Choh</surname>
+<given-names>AC</given-names>
+</string-name>, <string-name>
+<surname>Duan</surname>
+<given-names>Q</given-names>
+</string-name>, et&#x000a0;al. <article-title>Multiethnic genome&#x02010;wide meta&#x02010;analysis of ectopic fat depots identifies loci associated with adipocyte development and differentiation</article-title>. <source>Nat Genet</source>. <year>2017</year>;<volume>49</volume>:<fpage>125</fpage>&#x02013;<lpage>130</lpage>. doi: <pub-id pub-id-type="doi">10.1038/ng.3738</pub-id>
+<pub-id pub-id-type="pmid">27918534</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0020"><label>20</label><mixed-citation publication-type="journal" id="jah38861-cit-0020">
+<string-name>
+<surname>Bard</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Raisi&#x02010;Estabragh</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name>
+<surname>Ardissino</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Lee</surname>
+<given-names>AM</given-names>
+</string-name>, <string-name>
+<surname>Pugliese</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Dey</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Sarkar</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Munroe</surname>
+<given-names>PB</given-names>
+</string-name>, <string-name>
+<surname>Neubauer</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Harvey</surname>
+<given-names>NC</given-names>
+</string-name>, et&#x000a0;al. <article-title>Automated quality&#x02010;controlled cardiovascular magnetic resonance pericardial fat quantification using a convolutional neural network in the UK Biobank</article-title>. <source>Front Cardiovasc Med</source>. <year>2021</year>;<volume>8</volume>:<fpage>1</fpage>&#x02013;<lpage>11</lpage>. doi: <pub-id pub-id-type="doi">10.3389/fcvm.2021.677574</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0021"><label>21</label><mixed-citation publication-type="miscellaneous" id="jah38861-cit-0021">
+<string-name>
+<surname>Collins</surname>
+<given-names>R</given-names>
+</string-name>. <article-title>UK Biobank: Protocol for a large&#x02010;scale prospective epidemiological resource</article-title>. <year>2007</year>.</mixed-citation></ref><ref id="jah38861-bib-0022"><label>22</label><mixed-citation publication-type="journal" id="jah38861-cit-0022">
+<string-name>
+<surname>Petersen</surname>
+<given-names>SE</given-names>
+</string-name>, <string-name>
+<surname>Matthews</surname>
+<given-names>PM</given-names>
+</string-name>, <string-name>
+<surname>Francis</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name>
+<surname>Robson</surname>
+<given-names>MD</given-names>
+</string-name>, <string-name>
+<surname>Zemrak</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Boubertakh</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Young</surname>
+<given-names>AA</given-names>
+</string-name>, <string-name>
+<surname>Hudson</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Weale</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Garratt</surname>
+<given-names>S</given-names>
+</string-name>, et&#x000a0;al. <article-title>UK Biobank's cardiovascular magnetic resonance protocol</article-title>. <source>J Cardiovasc Magn Reson</source>. <year>2015</year>;<volume>18</volume>:<fpage>8</fpage>. doi: <pub-id pub-id-type="doi">10.1186/s12968-016-0227-4</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0023"><label>23</label><mixed-citation publication-type="journal" id="jah38861-cit-0023">
+<string-name>
+<surname>Linge</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Borga</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>West</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Tuthill</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Miller</surname>
+<given-names>MR</given-names>
+</string-name>, <string-name>
+<surname>Dumitriu</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Louise Thomas</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Romu</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Tun&#x000f3;n</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Bell</surname>
+<given-names>JD</given-names>
+</string-name>, et&#x000a0;al. <article-title>Body composition profiling in the UK Biobank Imaging Study</article-title>. <source>Obesity</source>. <year>2018</year>;<volume>26</volume>:<fpage>1785</fpage>&#x02013;<lpage>1795</lpage>.<pub-id pub-id-type="pmid">29785727</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0024"><label>24</label><mixed-citation publication-type="journal" id="jah38861-cit-0024">
+<string-name>
+<surname>West</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Leinhard</surname>
+<given-names>OD</given-names>
+</string-name>, <string-name>
+<surname>Romu</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Collins</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Garratt</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Bell</surname>
+<given-names>JD</given-names>
+</string-name>, <string-name>
+<surname>Borga</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Thomas</surname>
+<given-names>L</given-names>
+</string-name>. <article-title>Feasibility of MR&#x02010;based body composition analysis In large scale population studies</article-title>. <source>PLoS One</source>. <year>2016</year>;<volume>11</volume>:<fpage>1</fpage>&#x02013;<lpage>14</lpage>. doi: <pub-id pub-id-type="doi">10.1371/journal.pone.0163332</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0025"><label>25</label><mixed-citation publication-type="journal" id="jah38861-cit-0025">
+<string-name>
+<surname>Purcell</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Neale</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Todd&#x02010;Brown</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Thomas</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Ferreira</surname>
+<given-names>MA</given-names>
+</string-name>, <string-name>
+<surname>Bender</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Maller</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Sklar</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>de Bakker</surname>
+<given-names>PI</given-names>
+</string-name>, <string-name>
+<surname>Daly</surname>
+<given-names>MJ</given-names>
+</string-name>, et&#x000a0;al. <article-title>PLINK: a tool set for whole&#x02010;genome association and population&#x02010;based linkage analyses</article-title>. <source>Am J Hum Genet</source>. <year>2007</year>;<volume>81</volume>:<fpage>559</fpage>&#x02013;<lpage>575</lpage>. doi: <pub-id pub-id-type="doi">10.1086/519795</pub-id>
+<pub-id pub-id-type="pmid">17701901</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0026"><label>26</label><mixed-citation publication-type="journal" id="jah38861-cit-0026">
+<string-name>
+<surname>Loh</surname>
+<given-names>P&#x02010;R</given-names>
+</string-name>, <string-name>
+<surname>Tucker</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Bulik&#x02010;Sullivan</surname>
+<given-names>BK</given-names>
+</string-name>, <string-name>
+<surname>Vilhj&#x000e1;lmsson</surname>
+<given-names>BJ</given-names>
+</string-name>, <string-name>
+<surname>Finucane</surname>
+<given-names>HK</given-names>
+</string-name>, <string-name>
+<surname>Salem</surname>
+<given-names>RM</given-names>
+</string-name>, <string-name>
+<surname>Chasman</surname>
+<given-names>DI</given-names>
+</string-name>, <string-name>
+<surname>Ridker</surname>
+<given-names>PM</given-names>
+</string-name>, <string-name>
+<surname>Neale</surname>
+<given-names>BM</given-names>
+</string-name>, <string-name>
+<surname>Berger</surname>
+<given-names>B</given-names>
+</string-name>, et&#x000a0;al. <article-title>Efficient Bayesian mixed&#x02010;model analysis increases association power in large cohorts</article-title>. <source>Nat Genet</source>. <year>2015</year>;<volume>47</volume>:<fpage>284</fpage>&#x02013;<lpage>290</lpage>. doi: <pub-id pub-id-type="doi">10.1038/ng.3190</pub-id>
+<pub-id pub-id-type="pmid">25642633</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0027"><label>27</label><mixed-citation publication-type="journal" id="jah38861-cit-0027">
+<string-name>
+<surname>Willer</surname>
+<given-names>CJ</given-names>
+</string-name>, <string-name>
+<surname>Li</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Abecasis</surname>
+<given-names>GR</given-names>
+</string-name>. <article-title>METAL: fast and efficient meta&#x02010;analysis of genomewide association scans</article-title>. <source>Bioinformatics</source>. <year>2010</year>;<volume>26</volume>:<fpage>2190</fpage>&#x02013;<lpage>2191</lpage>. doi: <pub-id pub-id-type="doi">10.1093/bioinformatics/btq340</pub-id>
+<pub-id pub-id-type="pmid">20616382</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0028"><label>28</label><mixed-citation publication-type="journal" id="jah38861-cit-0028">
+<string-name>
+<surname>Watanabe</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Taskesen</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>van Bochoven</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Posthuma</surname>
+<given-names>D</given-names>
+</string-name>. <article-title>Functional mapping and annotation of genetic associations with FUMA</article-title>. <source>Nat Commun</source>. <year>2017</year>;<volume>8</volume>:<fpage>1826</fpage>. doi: <pub-id pub-id-type="doi">10.1038/s41467-017-01261-5</pub-id>
+<pub-id pub-id-type="pmid">29184056</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0029"><label>29</label><mixed-citation publication-type="journal" id="jah38861-cit-0029">
+<collab collab-type="authors">1000 Genomes Project Consortium</collab>
+; <string-name>
+<surname>Auton</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Brooks</surname>
+<given-names>LD</given-names>
+</string-name>, <string-name>
+<surname>Durbin</surname>
+<given-names>RM</given-names>
+</string-name>, <string-name>
+<surname>Garrison</surname>
+<given-names>EP</given-names>
+</string-name>, <string-name>
+<surname>Kang</surname>
+<given-names>HM</given-names>
+</string-name>, <string-name>
+<surname>Korbel</surname>
+<given-names>JO</given-names>
+</string-name>, <string-name>
+<surname>Marchini</surname>
+<given-names>JL</given-names>
+</string-name>, <string-name>
+<surname>McCarthy</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>McVean</surname>
+<given-names>GA</given-names>
+</string-name>, et&#x000a0;al. <article-title>A global reference for human genetic variation</article-title>. <source>Nature</source>. <year>2015</year>;<volume>526</volume>:<fpage>68</fpage>&#x02013;<lpage>74</lpage>. doi: <pub-id pub-id-type="doi">10.1038/nature15393</pub-id>
+<pub-id pub-id-type="pmid">26432245</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0030"><label>30</label><mixed-citation publication-type="journal" id="jah38861-cit-0030">
+<string-name>
+<surname>Buniello</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Macarthur</surname>
+<given-names>JAL</given-names>
+</string-name>, <string-name>
+<surname>Cerezo</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Harris</surname>
+<given-names>LW</given-names>
+</string-name>, <string-name>
+<surname>Hayhurst</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Malangone</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>McMahon</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Morales</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Mountjoy</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Sollis</surname>
+<given-names>E</given-names>
+</string-name>, et&#x000a0;al. <article-title>The NHGRI&#x02010;EBI GWAS catalog of published genome&#x02010;wide association studies, targeted arrays and summary statistics 2019</article-title>. <source>Nucleic Acids Res</source>. <year>2019</year>;<volume>47</volume>:<fpage>D1005</fpage>&#x02013;<lpage>D1012</lpage>. doi: <pub-id pub-id-type="doi">10.1093/nar/gky1120</pub-id>
+<pub-id pub-id-type="pmid">30445434</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0031"><label>31</label><mixed-citation publication-type="journal" id="jah38861-cit-0031">
+<string-name>
+<surname>Wang</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Li</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Hakonarson</surname>
+<given-names>H</given-names>
+</string-name>. <article-title>ANNOVAR: functional annotation of genetic variants from high&#x02010;throughput sequencing data</article-title>. <source>Nucleic Acids Res</source>. <year>2010</year>;<volume>38</volume>:<elocation-id>e164</elocation-id>. doi: <pub-id pub-id-type="doi">10.1093/nar/gkq603</pub-id>
+<pub-id pub-id-type="pmid">20601685</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0032"><label>32</label><mixed-citation publication-type="journal" id="jah38861-cit-0032">
+<string-name>
+<surname>Kircher</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Witten</surname>
+<given-names>DM</given-names>
+</string-name>, <string-name>
+<surname>Jain</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>O'Roak</surname>
+<given-names>BJ</given-names>
+</string-name>, <string-name>
+<surname>Cooper</surname>
+<given-names>GM</given-names>
+</string-name>, <string-name>
+<surname>Shendure</surname>
+<given-names>J</given-names>
+</string-name>. <article-title>A general framework for estimating the relative pathogenicity of human genetic variants</article-title>. <source>Nat Genet</source>. <year>2014</year>;<volume>46</volume>:<fpage>310</fpage>&#x02013;<lpage>315</lpage>. doi: <pub-id pub-id-type="doi">10.1038/ng.2892</pub-id>
+<pub-id pub-id-type="pmid">24487276</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0033"><label>33</label><mixed-citation publication-type="journal" id="jah38861-cit-0033">
+<string-name>
+<surname>Boyle</surname>
+<given-names>AP</given-names>
+</string-name>, <string-name>
+<surname>Hong</surname>
+<given-names>EL</given-names>
+</string-name>, <string-name>
+<surname>Hariharan</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Cheng</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Schaub</surname>
+<given-names>MA</given-names>
+</string-name>, <string-name>
+<surname>Kasowski</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Karczewski</surname>
+<given-names>KJ</given-names>
+</string-name>, <string-name>
+<surname>Park</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Hitz</surname>
+<given-names>BC</given-names>
+</string-name>, <string-name>
+<surname>Weng</surname>
+<given-names>S</given-names>
+</string-name>, et&#x000a0;al. <article-title>Annotation of functional variation in personal genomes using RegulomeDB</article-title>. <source>Genome Res</source>. <year>2012</year>;<volume>22</volume>:<fpage>1790</fpage>&#x02013;<lpage>1797</lpage>. doi: <pub-id pub-id-type="doi">10.1101/gr.137323.112</pub-id>
+<pub-id pub-id-type="pmid">22955989</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0034"><label>34</label><mixed-citation publication-type="journal" id="jah38861-cit-0034">
+<collab collab-type="authors">Roadmap Epigenomics Consortium</collab>
+, <string-name>
+<surname>Kundaje</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Meuleman</surname>
+<given-names>W</given-names>
+</string-name>, <string-name>
+<surname>Ernst</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Bilenky</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Yen</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Heravi&#x02010;Moussavi</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Kheradpour</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Zhang</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name>
+<surname>Wang</surname>
+<given-names>J</given-names>
+</string-name>, et&#x000a0;al. <article-title>Integrative analysis of 111 reference human epigenomes</article-title>. <source>Nature</source>. <year>2015</year>;<volume>518</volume>:<fpage>317</fpage>&#x02013;<lpage>330</lpage>. doi: <pub-id pub-id-type="doi">10.1038/nature14248</pub-id>
+<pub-id pub-id-type="pmid">25693563</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0035"><label>35</label><mixed-citation publication-type="journal" id="jah38861-cit-0035">
+<string-name>
+<surname>Ernst</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Kellis</surname>
+<given-names>M</given-names>
+</string-name>. <article-title>ChromHMM: automating chromatin&#x02010;state discovery and characterization</article-title>. <source>Nat Methods</source>. <year>2012</year>;<volume>9</volume>:<fpage>215</fpage>&#x02013;<lpage>216</lpage>. doi: <pub-id pub-id-type="doi">10.1038/nmeth.1906</pub-id>
+<pub-id pub-id-type="pmid">22373907</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0036"><label>36</label><mixed-citation publication-type="journal" id="jah38861-cit-0036">
+<collab collab-type="authors">GTEx Consortium; Laboratory Data Analysis &#x00026; Coordinating Center (LDACC)&#x02014;Analysis Working Group; Statistical Methods groups&#x02014;Analysis Working Group; Enhancing GTEx (eGTEx) groups; NIH Common Fund; NIH/NCI; NIH/NHGRI; NIH/NIMH; NIH/NIDA; Biospecimen Collection Source Site&#x02014;NDRI; Biospecimen Collection Source Site&#x02014;RPCI; Biospecimen Core Resource&#x02014;VARI; Brain Bank Repository&#x02014;University of Miami Brain Endowment Bank; Leidos Biomedical&#x02014;Project Management; ELSI Study; Genome Browser Data Integration &#x00026; Visualization&#x02014;EBI; Genome Browser Data Integration &#x00026; Visualization&#x02014;UCSC Genomics Institute, University&#x000a0;of California Santa Cruz, Lead analysts; Laboratory Data Analysis &#x00026; Coordinating Center (LDACC); NIH program management; Biospecimen collection; Pathology; eQTL manuscript working group</collab>
+; <string-name>
+<surname>Battle</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Brown</surname>
+<given-names>CD</given-names>
+</string-name>, <string-name>
+<surname>Engelhardt</surname>
+<given-names>BE</given-names>
+</string-name>, <string-name>
+<surname>Montgomery</surname>
+<given-names>SB</given-names>
+</string-name>. <article-title>Genetic effects on gene expression across human tissues</article-title>. <source>Nature</source>. <year>2017</year>;<volume>550</volume>:<fpage>204</fpage>&#x02013;<lpage>213</lpage>. doi: <pub-id pub-id-type="doi">10.1038/nature24277</pub-id>
+<pub-id pub-id-type="pmid">29022597</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0037"><label>37</label><mixed-citation publication-type="journal" id="jah38861-cit-0037">
+<string-name>
+<surname>Wang</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Liu</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Warrell</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Won</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Shi</surname>
+<given-names>X</given-names>
+</string-name>, <string-name>
+<surname>Navarro</surname>
+<given-names>FCP</given-names>
+</string-name>, <string-name>
+<surname>Clarke</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Gu</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Emani</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Yang</surname>
+<given-names>YT</given-names>
+</string-name>, et&#x000a0;al. <article-title>Comprehensive functional genomic resource and integrative model for the human brain</article-title>. <source>Science</source>. <year>2018</year>;<volume>362</volume>:<elocation-id>eaat8464</elocation-id>.<pub-id pub-id-type="pmid">30545857</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0038"><label>38</label><mixed-citation publication-type="journal" id="jah38861-cit-0038">
+<string-name>
+<surname>Lek</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Karczewski</surname>
+<given-names>KJ</given-names>
+</string-name>, <string-name>
+<surname>Minikel</surname>
+<given-names>EV</given-names>
+</string-name>, <string-name>
+<surname>Samocha</surname>
+<given-names>KE</given-names>
+</string-name>, <string-name>
+<surname>Banks</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Fennell</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>O'Donnell&#x02010;Luria</surname>
+<given-names>AH</given-names>
+</string-name>, <string-name>
+<surname>Ware</surname>
+<given-names>JS</given-names>
+</string-name>, <string-name>
+<surname>Hill</surname>
+<given-names>AJ</given-names>
+</string-name>, <string-name>
+<surname>Cummings</surname>
+<given-names>BB</given-names>
+</string-name>, et&#x000a0;al. <article-title>Analysis of protein&#x02010;coding genetic variation in 60,706 humans</article-title>. <source>Nature</source>. <year>2016</year>;<volume>536</volume>:<fpage>285</fpage>&#x02013;<lpage>291</lpage>. doi: <pub-id pub-id-type="doi">10.1038/nature19057</pub-id>
+<pub-id pub-id-type="pmid">27535533</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0039"><label>39</label><mixed-citation publication-type="journal" id="jah38861-cit-0039">
+<string-name>
+<surname>Petrovski</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Gussow</surname>
+<given-names>AB</given-names>
+</string-name>, <string-name>
+<surname>Wang</surname>
+<given-names>Q</given-names>
+</string-name>, <string-name>
+<surname>Halvorsen</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Han</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Weir</surname>
+<given-names>WH</given-names>
+</string-name>, <string-name>
+<surname>Allen</surname>
+<given-names>AS</given-names>
+</string-name>, <string-name>
+<surname>Goldstein</surname>
+<given-names>DB</given-names>
+</string-name>. <article-title>The intolerance of regulatory sequence to genetic variation predicts gene dosage sensitivity</article-title>. <source>PLoS Genet</source>. <year>2015</year>;<volume>11</volume>:<elocation-id>e1005492</elocation-id>. doi: <pub-id pub-id-type="doi">10.1371/journal.pgen.1005492</pub-id>
+<pub-id pub-id-type="pmid">26332131</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0040"><label>40</label><mixed-citation publication-type="journal" id="jah38861-cit-0040">
+<string-name>
+<surname>de Leeuw</surname>
+<given-names>CA</given-names>
+</string-name>, <string-name>
+<surname>Mooij</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name>
+<surname>Heskes</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Posthuma</surname>
+<given-names>D</given-names>
+</string-name>. <article-title>MAGMA: generalized gene&#x02010;set analysis of GWAS data</article-title>. <source>PLOS Comput Biol</source>. <year>2015</year>;<volume>11</volume>:<elocation-id>e1004219</elocation-id>. doi: <pub-id pub-id-type="doi">10.1371/journal.pcbi.1004219</pub-id>
+<pub-id pub-id-type="pmid">25885710</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0041"><label>41</label><mixed-citation publication-type="journal" id="jah38861-cit-0041">
+<string-name>
+<surname>van der Wijst</surname>
+<given-names>MGP</given-names>
+</string-name>, <string-name>
+<surname>Brugge</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>de Vries</surname>
+<given-names>DH</given-names>
+</string-name>, <string-name>
+<surname>Deelen</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Swertz</surname>
+<given-names>MA</given-names>
+</string-name>; <collab collab-type="authors">LifeLines Cohort Study; BIOS Consortium</collab>
+; <string-name>
+<surname>Franke</surname>
+<given-names>L</given-names>
+</string-name>. <article-title>Single&#x02010;cell RNA sequencing identifies celltype&#x02010;specific cis&#x02010;eQTLs and co&#x02010;expression QTLs</article-title>. <source>Nat Genet</source>. <year>2018</year>;<volume>50</volume>:<fpage>493</fpage>&#x02013;<lpage>497</lpage>. doi: <pub-id pub-id-type="doi">10.1038/s41588-018-0089-9</pub-id>
+<pub-id pub-id-type="pmid">29610479</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0042"><label>42</label><mixed-citation publication-type="journal" id="jah38861-cit-0042">
+<string-name>
+<surname>Schmitt</surname>
+<given-names>AD</given-names>
+</string-name>, <string-name>
+<surname>Hu</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Jung</surname>
+<given-names>I</given-names>
+</string-name>, <string-name>
+<surname>Xu</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name>
+<surname>Qiu</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Tan</surname>
+<given-names>CL</given-names>
+</string-name>, <string-name>
+<surname>Li</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Lin</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Lin</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Barr</surname>
+<given-names>CL</given-names>
+</string-name>, et&#x000a0;al. <article-title>A compendium of chromatin contact maps reveals spatially active regions in the human genome</article-title>. <source>Cell Rep</source>. <year>2016</year>;<volume>17</volume>:<fpage>2042</fpage>&#x02013;<lpage>2059</lpage>. doi: <pub-id pub-id-type="doi">10.1016/j.celrep.2016.10.061</pub-id>
+<pub-id pub-id-type="pmid">27851967</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0043"><label>43</label><mixed-citation publication-type="journal" id="jah38861-cit-0043">
+<string-name>
+<surname>Lizio</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Harshbarger</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Shimoji</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Severin</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Kasukawa</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Sahin</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Abugessaisa</surname>
+<given-names>I</given-names>
+</string-name>, <string-name>
+<surname>Fukuda</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Hori</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Ishikawa&#x02010;Kato</surname>
+<given-names>S</given-names>
+</string-name>, et&#x000a0;al. <article-title>Gateways to the FANTOM5 promoter level mammalian expression atlas</article-title>. <source>Genome Biol</source>. <year>2015</year>;<volume>16</volume>:<fpage>22</fpage>. doi: <pub-id pub-id-type="doi">10.1186/s13059-014-0560-6</pub-id>
+<pub-id pub-id-type="pmid">25723102</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0044"><label>44</label><mixed-citation publication-type="journal" id="jah38861-cit-0044">
+<string-name>
+<surname>Lu</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Liu</surname>
+<given-names>X</given-names>
+</string-name>, <string-name>
+<surname>Huang</surname>
+<given-names>W&#x02010;K</given-names>
+</string-name>, <string-name>
+<surname>Giusti&#x02010;Rodr&#x000ed;guez</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Cui</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Zhang</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Xu</surname>
+<given-names>W</given-names>
+</string-name>, <string-name>
+<surname>Wen</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name>
+<surname>Ma</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Rosen</surname>
+<given-names>JD</given-names>
+</string-name>, et&#x000a0;al. <article-title>Robust hi&#x02010;C maps of enhancer&#x02010;promoter interactions reveal the function of non&#x02010;coding genome in neural development and diseases</article-title>. <source>Mol Cell</source>. <year>2020</year>;<volume>79</volume>:<fpage>521</fpage>&#x02013;<lpage>534.e15</lpage>. doi: <pub-id pub-id-type="doi">10.1016/j.molcel.2020.06.007</pub-id>
+<pub-id pub-id-type="pmid">32592681</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0045"><label>45</label><mixed-citation publication-type="journal" id="jah38861-cit-0045">
+<string-name>
+<surname>Watanabe</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Stringer</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Frei</surname>
+<given-names>O</given-names>
+</string-name>, <string-name>
+<surname>Umi&#x00107;evi&#x00107; Mirkov</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>de Leeuw</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Polderman</surname>
+<given-names>TJC</given-names>
+</string-name>, <string-name>
+<surname>van der Sluis</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Andreassen</surname>
+<given-names>OA</given-names>
+</string-name>, <string-name>
+<surname>Neale</surname>
+<given-names>BM</given-names>
+</string-name>, <string-name>
+<surname>Posthuma</surname>
+<given-names>D</given-names>
+</string-name>. <article-title>A global overview of pleiotropy and genetic architecture in complex traits</article-title>. <source>Nat Genet</source>. <year>2019</year>;<volume>51</volume>:<fpage>1339</fpage>&#x02013;<lpage>1348</lpage>. doi: <pub-id pub-id-type="doi">10.1038/s41588-019-0481-0</pub-id>
+<pub-id pub-id-type="pmid">31427789</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0046"><label>46</label><mixed-citation publication-type="journal" id="jah38861-cit-0046">
+<string-name>
+<surname>Groza</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Gomez</surname>
+<given-names>FL</given-names>
+</string-name>, <string-name>
+<surname>Mashhadi</surname>
+<given-names>HH</given-names>
+</string-name>, <string-name>
+<surname>Mu&#x000f1;oz&#x02010;Fuentes</surname>
+<given-names>V</given-names>
+</string-name>, <string-name>
+<surname>Gunes</surname>
+<given-names>O</given-names>
+</string-name>, <string-name>
+<surname>Wilson</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Cacheiro</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Frost</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Keskivali&#x02010;Bond</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Vardal</surname>
+<given-names>B</given-names>
+</string-name>, et&#x000a0;al. <article-title>The International Mouse Phenotyping Consortium: comprehensive knockout phenotyping underpinning the study of human disease</article-title>. <source>Nucleic Acids Res</source>. <year>2022</year>;<volume>51</volume>:<fpage>D1038</fpage>&#x02013;<lpage>D1045</lpage>. doi: <pub-id pub-id-type="doi">10.1093/nar/gkac972</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0047"><label>47</label><mixed-citation publication-type="journal" id="jah38861-cit-0047">
+<string-name>
+<surname>Giambartolomei</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Vukcevic</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Schadt</surname>
+<given-names>EE</given-names>
+</string-name>, <string-name>
+<surname>Franke</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Hingorani</surname>
+<given-names>AD</given-names>
+</string-name>, <string-name>
+<surname>Wallace</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Plagnol</surname>
+<given-names>V</given-names>
+</string-name>. <article-title>Bayesian test for colocalisation between pairs of genetic association studies using summary statistics</article-title>. <source>PLoS Genet</source>. <year>2014</year>;<volume>10</volume>:<fpage>e1004383</fpage>. doi: <pub-id pub-id-type="doi">10.1371/journal.pgen.1004383</pub-id>
+<pub-id pub-id-type="pmid">24830394</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0048"><label>48</label><mixed-citation publication-type="journal" id="jah38861-cit-0048">
+<string-name>
+<surname>Wallace</surname>
+<given-names>C</given-names>
+</string-name>. <article-title>Eliciting priors and relaxing the single causal variant assumption in colocalisation analyses</article-title>. <source>PLOS Genet</source>. <year>2020</year>;<volume>16</volume>:<elocation-id>e1008720</elocation-id>. doi: <pub-id pub-id-type="doi">10.1371/journal.pgen.1008720</pub-id>
+<pub-id pub-id-type="pmid">32310995</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0049"><label>49</label><mixed-citation publication-type="journal" id="jah38861-cit-0049">
+<string-name>
+<surname>Lonsdale</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Thomas</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Salvatore</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Phillips</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Lo</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Shad</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Hasz</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Walters</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Garcia</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>Young</surname>
+<given-names>N</given-names>
+</string-name>, et&#x000a0;al. <article-title>The genotype&#x02010;tissue expression (GTEx) project</article-title>. <source>Nat Genet</source>. <year>2013</year>;<volume>45</volume>:<fpage>580</fpage>&#x02013;<lpage>585</lpage>. doi: <pub-id pub-id-type="doi">10.1038/ng.2653</pub-id>
+<pub-id pub-id-type="pmid">23715323</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0050"><label>50</label><mixed-citation publication-type="journal" id="jah38861-cit-0050">
+<string-name>
+<surname>Pirruccello</surname>
+<given-names>JP</given-names>
+</string-name>, <string-name>
+<surname>Di</surname>
+<given-names>AP</given-names>
+</string-name>, <string-name>
+<surname>Nauffal</surname>
+<given-names>V</given-names>
+</string-name>, <string-name>
+<surname>Nekoui</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Friedman</surname>
+<given-names>SF</given-names>
+</string-name>, <string-name>
+<surname>Klarqvist</surname>
+<given-names>MDR</given-names>
+</string-name>, <string-name>
+<surname>Chaffin</surname>
+<given-names>MD</given-names>
+</string-name>, <string-name>
+<surname>Weng</surname>
+<given-names>L&#x02010;C</given-names>
+</string-name>, <string-name>
+<surname>Cunningham</surname>
+<given-names>JW</given-names>
+</string-name>, <string-name>
+<surname>Khurshid</surname>
+<given-names>S</given-names>
+</string-name>, et&#x000a0;al. <article-title>Genetic analysis of right heart structure and function in 40,000 people</article-title>. <source>Nat Genet</source>. <year>2022</year>;<volume>54</volume>:<fpage>792</fpage>&#x02013;<lpage>803</lpage>. doi: <pub-id pub-id-type="doi">10.1038/s41588-022-01090-3</pub-id>
+<pub-id pub-id-type="pmid">35697867</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0051"><label>51</label><mixed-citation publication-type="journal" id="jah38861-cit-0051">
+<string-name>
+<surname>Aung</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Vargas</surname>
+<given-names>JD</given-names>
+</string-name>, <string-name>
+<surname>Yang</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Cabrera</surname>
+<given-names>CP</given-names>
+</string-name>, <string-name>
+<surname>Warren</surname>
+<given-names>HR</given-names>
+</string-name>, <string-name>
+<surname>Fung</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Tzanis</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Barnes</surname>
+<given-names>MR</given-names>
+</string-name>, <string-name>
+<surname>Rotter</surname>
+<given-names>JI</given-names>
+</string-name>, <string-name>
+<surname>Taylor</surname>
+<given-names>KD</given-names>
+</string-name>, et&#x000a0;al. <article-title>Genome&#x02010;wide analysis of left ventricular image&#x02010;derived phenotypes identifies fourteen loci associated with cardiac morphogenesis and heart failure development</article-title>. <source>Circulation</source>. <year>2019</year>;<volume>140</volume>:<fpage>1318</fpage>&#x02013;<lpage>1330</lpage>. doi: <pub-id pub-id-type="doi">10.1161/CIRCULATIONAHA.119.041161</pub-id>
+<pub-id pub-id-type="pmid">31554410</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0052"><label>52</label><mixed-citation publication-type="journal" id="jah38861-cit-0052">
+<string-name>
+<surname>Minelli</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Del Greco</surname>
+<given-names>MF</given-names>
+</string-name>, <string-name>
+<surname>van der Plaat</surname>
+<given-names>DA</given-names>
+</string-name>, <string-name>
+<surname>Bowden</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Sheehan</surname>
+<given-names>NA</given-names>
+</string-name>, <string-name>
+<surname>Thompson</surname>
+<given-names>J</given-names>
+</string-name>. <article-title>The use of two&#x02010;sample methods for mendelian randomization analyses on single large datasets</article-title>. <source>Int J Epidemiol</source>. <year>2021</year>;<volume>50</volume>:<fpage>1651</fpage>&#x02013;<lpage>1659</lpage>. doi: <pub-id pub-id-type="doi">10.1093/ije/dyab084</pub-id>
+<pub-id pub-id-type="pmid">33899104</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0053"><label>53</label><mixed-citation publication-type="journal" id="jah38861-cit-0053">
+<string-name>
+<surname>Yavorska</surname>
+<given-names>OO</given-names>
+</string-name>, <string-name>
+<surname>Burgess</surname>
+<given-names>S</given-names>
+</string-name>. <article-title>MendelianRandomization: an R package for performing mendelian randomization analyses using summarized data</article-title>. <source>Int J Epidemiol</source>. <year>2017</year>;<volume>46</volume>:<fpage>1734</fpage>&#x02013;<lpage>1739</lpage>. doi: <pub-id pub-id-type="doi">10.1093/ije/dyx034</pub-id>
+<pub-id pub-id-type="pmid">28398548</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0054"><label>54</label><mixed-citation publication-type="book" id="jah38861-cit-0054">
+<collab collab-type="authors">R Core Team</collab>
+. <source>R: a language and environment for statistical computing</source>. <publisher-loc>Vienna, Austria</publisher-loc>: <publisher-name>R Foundation for Statistical Computing</publisher-name>. <year>2022</year>. <ext-link xlink:href="https://www.R-project.org/" ext-link-type="uri">https://www.R&#x02010;project.org/</ext-link>
+</mixed-citation></ref><ref id="jah38861-bib-0055"><label>55</label><mixed-citation publication-type="journal" id="jah38861-cit-0055">
+<string-name>
+<surname>Shapira</surname>
+<given-names>SN</given-names>
+</string-name>, <string-name>
+<surname>Lim</surname>
+<given-names>H&#x02010;W</given-names>
+</string-name>, <string-name>
+<surname>Rajakumari</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Sakers</surname>
+<given-names>AP</given-names>
+</string-name>, <string-name>
+<surname>Ishibashi</surname>
+<given-names>J</given-names>
+</string-name>, <string-name>
+<surname>Harms</surname>
+<given-names>MJ</given-names>
+</string-name>, <string-name>
+<surname>Won</surname>
+<given-names>K&#x02010;J</given-names>
+</string-name>, <string-name>
+<surname>Seale</surname>
+<given-names>P</given-names>
+</string-name>. <article-title>EBF2 transcriptionally regulates brown adipogenesis via the histone reader DPF3 and the BAF chromatin remodeling complex</article-title>. <source>Genes Dev</source>. <year>2017</year>;<volume>31</volume>:<fpage>660</fpage>&#x02013;<lpage>673</lpage>. doi: <pub-id pub-id-type="doi">10.1101/gad.294405.116</pub-id>
+<pub-id pub-id-type="pmid">28428261</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0056"><label>56</label><mixed-citation publication-type="journal" id="jah38861-cit-0056">
+<string-name>
+<surname>Wang</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Sips</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Khin</surname>
+<given-names>E</given-names>
+</string-name>, <string-name>
+<surname>Rotival</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Sun</surname>
+<given-names>X</given-names>
+</string-name>, <string-name>
+<surname>Ahmed</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Widjaja</surname>
+<given-names>AA</given-names>
+</string-name>, <string-name>
+<surname>Schafer</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Yusoff</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Choksi</surname>
+<given-names>PK</given-names>
+</string-name>, et&#x000a0;al. <article-title>Wars2 is a determinant of angiogenesis</article-title>. <source>Nat Commun</source>. <year>2016</year>;<volume>7</volume>:<fpage>12061</fpage>. doi: <pub-id pub-id-type="doi">10.1038/ncomms12061</pub-id>
+<pub-id pub-id-type="pmid">27389904</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0057"><label>57</label><mixed-citation publication-type="journal" id="jah38861-cit-0057">
+<string-name>
+<surname>Mu&#x00161;o</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Bentley</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Vizor</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Yon</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Burling</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Barker</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Zolkiewski</surname>
+<given-names>LAK</given-names>
+</string-name>, <string-name>
+<surname>Cox</surname>
+<given-names>RD</given-names>
+</string-name>, <string-name>
+<surname>Dumbell</surname>
+<given-names>R</given-names>
+</string-name>. <article-title>A Wars2 mutant mouse shows a sex and diet specific change in fat distribution, reduced food intake and depot&#x02010;specific upregulation of WAT browning</article-title>. <source>Front Physiol</source>. <year>2022</year>;<volume>13</volume>:<fpage>13</fpage>. doi: <pub-id pub-id-type="doi">10.3389/fphys.2022.953199</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0058"><label>58</label><mixed-citation publication-type="journal" id="jah38861-cit-0058">
+<string-name>
+<surname>Pan</surname>
+<given-names>DZ</given-names>
+</string-name>, <string-name>
+<surname>Miao</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name>
+<surname>Comenho</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Rajkumar</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Koka</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Lee</surname>
+<given-names>SHT</given-names>
+</string-name>, <string-name>
+<surname>Alvarez</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Kaminska</surname>
+<given-names>D</given-names>
+</string-name>, <string-name>
+<surname>Ko</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Sinsheimer</surname>
+<given-names>JS</given-names>
+</string-name>, et&#x000a0;al. <article-title>Identification of TBX15 as an adipose master trans regulator of abdominal obesity genes</article-title>. <source>Genome Med</source>. <year>2021</year>;<volume>13</volume>:<fpage>123</fpage>. doi: <pub-id pub-id-type="doi">10.1186/s13073-021-00939-2</pub-id>
+<pub-id pub-id-type="pmid">34340684</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0059"><label>59</label><mixed-citation publication-type="journal" id="jah38861-cit-0059">
+<string-name>
+<surname>Sun</surname>
+<given-names>W</given-names>
+</string-name>, <string-name>
+<surname>Zhao</surname>
+<given-names>X</given-names>
+</string-name>, <string-name>
+<surname>Wang</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name>
+<surname>Chu</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Mao</surname>
+<given-names>L</given-names>
+</string-name>, <string-name>
+<surname>Lin</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Gao</surname>
+<given-names>X</given-names>
+</string-name>, <string-name>
+<surname>Song</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name>
+<surname>Hui</surname>
+<given-names>X</given-names>
+</string-name>, <string-name>
+<surname>Jia</surname>
+<given-names>S</given-names>
+</string-name>, et&#x000a0;al. <article-title>Tbx15 is required for adipocyte browning induced by adrenergic signaling pathway</article-title>. <source>Mol Metab</source>. <year>2019</year>;<volume>28</volume>:<fpage>48</fpage>&#x02013;<lpage>57</lpage>. doi: <pub-id pub-id-type="doi">10.1016/j.molmet.2019.07.004</pub-id>
+<pub-id pub-id-type="pmid">31352005</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0060"><label>60</label><mixed-citation publication-type="journal" id="jah38861-cit-0060">
+<string-name>
+<surname>Townsend</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Tseng</surname>
+<given-names>Y&#x02010;H</given-names>
+</string-name>. <article-title>Brown adipose tissue: recent insights into development, metabolic function and therapeutic potential</article-title>. <source>Adipocyte</source>. <year>2012</year>;<volume>1</volume>:<fpage>13</fpage>&#x02013;<lpage>24</lpage>. doi: <pub-id pub-id-type="doi">10.4161/adip.18951</pub-id>
+<pub-id pub-id-type="pmid">23700507</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0061"><label>61</label><mixed-citation publication-type="journal" id="jah38861-cit-0061">
+<string-name>
+<surname>Wibmer</surname>
+<given-names>AG</given-names>
+</string-name>, <string-name>
+<surname>Becher</surname>
+<given-names>T</given-names>
+</string-name>, <string-name>
+<surname>Eljalby</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Crane</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Andrieu</surname>
+<given-names>PC</given-names>
+</string-name>, <string-name>
+<surname>Jiang</surname>
+<given-names>CS</given-names>
+</string-name>, <string-name>
+<surname>Vaughan</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Sch&#x000f6;der</surname>
+<given-names>H</given-names>
+</string-name>, <string-name>
+<surname>Cohen</surname>
+<given-names>P</given-names>
+</string-name>. <article-title>Brown adipose tissue is associated with healthier body fat distribution and metabolic benefits independent of regional adiposity</article-title>. <source>Cell Reports Med</source>. <year>2021</year>;<volume>2</volume>:<elocation-id>100332</elocation-id>. doi: <pub-id pub-id-type="doi">10.1016/j.xcrm.2021.100332</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0062"><label>62</label><mixed-citation publication-type="journal" id="jah38861-cit-0062">
+<string-name>
+<surname>Cheng</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Fernandes</surname>
+<given-names>VRS</given-names>
+</string-name>, <string-name>
+<surname>Bluemke</surname>
+<given-names>DA</given-names>
+</string-name>, <string-name>
+<surname>McClelland</surname>
+<given-names>RL</given-names>
+</string-name>, <string-name>
+<surname>Kronmal</surname>
+<given-names>RA</given-names>
+</string-name>, <string-name>
+<surname>Lima</surname>
+<given-names>JAC</given-names>
+</string-name>. <article-title>Age&#x02010;related left ventricular remodeling and associated risk for cardiovascular outcomes</article-title>. <source>Circ Cardiovasc Imaging</source>. <year>2009</year>;<volume>2</volume>:<fpage>191</fpage>&#x02013;<lpage>198</lpage>. doi: <pub-id pub-id-type="doi">10.1161/CIRCIMAGING.108.819938</pub-id>
+<pub-id pub-id-type="pmid">19808592</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0063"><label>63</label><mixed-citation publication-type="journal" id="jah38861-cit-0063">
+<string-name>
+<surname>Samson</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Jaiswal</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Ennezat</surname>
+<given-names>PV</given-names>
+</string-name>, <string-name>
+<surname>Cassidy</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Le Jemtel</surname>
+<given-names>TH</given-names>
+</string-name>. <article-title>Clinical phenotypes in heart failure with preserved ejection fraction</article-title>. <source>J Am Heart Assoc</source>. <year>2016</year>;<volume>5</volume>:<fpage>5</fpage>. doi: <pub-id pub-id-type="doi">10.1161/JAHA.115.002477</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0064"><label>64</label><mixed-citation publication-type="journal" id="jah38861-cit-0064">
+<string-name>
+<surname>Anversa</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Hiler</surname>
+<given-names>B</given-names>
+</string-name>, <string-name>
+<surname>Ricci</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Guideri</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Olivetti</surname>
+<given-names>G</given-names>
+</string-name>. <article-title>Myocyte cell loss and myocyte hypertrophy in the aging rat heart</article-title>. <source>J Am Coll Cardiol</source>. <year>1986</year>;<volume>8</volume>:<fpage>1441</fpage>&#x02013;<lpage>1448</lpage>. doi: <pub-id pub-id-type="doi">10.1016/S0735-1097(86)80321-7</pub-id>
+<pub-id pub-id-type="pmid">2946746</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0065"><label>65</label><mixed-citation publication-type="journal" id="jah38861-cit-0065">
+<string-name>
+<surname>Shah</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Segar</surname>
+<given-names>MW</given-names>
+</string-name>, <string-name>
+<surname>Kondamudi</surname>
+<given-names>N</given-names>
+</string-name>, <string-name>
+<surname>Ayers</surname>
+<given-names>C</given-names>
+</string-name>, <string-name>
+<surname>Chandra</surname>
+<given-names>A</given-names>
+</string-name>, <string-name>
+<surname>Matulevicius</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Agusala</surname>
+<given-names>K</given-names>
+</string-name>, <string-name>
+<surname>Peshock</surname>
+<given-names>R</given-names>
+</string-name>, <string-name>
+<surname>Abbara</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Michos</surname>
+<given-names>ED</given-names>
+</string-name>, et&#x000a0;al. <article-title>Supranormal left ventricular ejection fraction, stroke volume, and cardiovascular risk</article-title>. <source>JACC Hear Fail</source>. <year>2022</year>;<volume>10</volume>:<fpage>583</fpage>&#x02013;<lpage>594</lpage>. doi: <pub-id pub-id-type="doi">10.1016/j.jchf.2022.05.007</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0066"><label>66</label><mixed-citation publication-type="journal" id="jah38861-cit-0066">
+<string-name>
+<surname>van Woerden</surname>
+<given-names>G</given-names>
+</string-name>, <string-name>
+<surname>Gorter</surname>
+<given-names>TM</given-names>
+</string-name>, <string-name>
+<surname>Westenbrink</surname>
+<given-names>BD</given-names>
+</string-name>, <string-name>
+<surname>Willems</surname>
+<given-names>TP</given-names>
+</string-name>, <string-name>
+<surname>van Veldhuisen</surname>
+<given-names>DJ</given-names>
+</string-name>, <string-name>
+<surname>Rienstra</surname>
+<given-names>M</given-names>
+</string-name>. <article-title>Epicardial fat in heart failure patients with mid&#x02010;range and preserved ejection fraction</article-title>. <source>Eur J Heart Fail</source>. <year>2018</year>;<volume>20</volume>:<fpage>1559</fpage>&#x02013;<lpage>1566</lpage>. doi: <pub-id pub-id-type="doi">10.1002/ejhf.1283</pub-id>
+<pub-id pub-id-type="pmid">30070041</pub-id>
+</mixed-citation></ref><ref id="jah38861-bib-0067"><label>67</label><mixed-citation publication-type="journal" id="jah38861-cit-0067">
+<string-name>
+<surname>Mahabadi</surname>
+<given-names>AA</given-names>
+</string-name>, <string-name>
+<surname>Anapliotis</surname>
+<given-names>V</given-names>
+</string-name>, <string-name>
+<surname>Dykun</surname>
+<given-names>I</given-names>
+</string-name>, <string-name>
+<surname>Hendricks</surname>
+<given-names>S</given-names>
+</string-name>, <string-name>
+<surname>Al&#x02010;Rashid</surname>
+<given-names>F</given-names>
+</string-name>, <string-name>
+<surname>L&#x000fc;dike</surname>
+<given-names>P</given-names>
+</string-name>, <string-name>
+<surname>Totzeck</surname>
+<given-names>M</given-names>
+</string-name>, <string-name>
+<surname>Rassaf</surname>
+<given-names>T</given-names>
+</string-name>. <article-title>Epicardial fat and incident heart failure with preserved ejection fraction in patients with coronary artery disease</article-title>. <source>Int J Cardiol</source>. <year>2022</year>;<volume>357</volume>:<fpage>140</fpage>&#x02013;<lpage>145</lpage>. doi: <pub-id pub-id-type="doi">10.1016/j.ijcard.2022.04.009</pub-id>
+<pub-id pub-id-type="pmid">35395282</pub-id>
+</mixed-citation></ref></ref-list></back></article>

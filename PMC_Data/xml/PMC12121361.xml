@@ -1,0 +1,1258 @@
+<!--
+
+File produced by pipelineRunner package (for JATS 2 SCJATS with pipeline SCJATS)
+At: 2025-05-29T13:30:48.343Z
+
+Version        : 1.16.1
+Last update    : 2024-08-27
+Modified by    : dunnm
+
+-->
+<!DOCTYPE article
+PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.3 20210610//EN" "JATS-archivearticle1-3-mathml3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.3" xml:lang="en" article-type="research-article"><?properties open_access?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Brief Bioinform</journal-id><journal-id journal-id-type="iso-abbrev">Brief Bioinform</journal-id><journal-id journal-id-type="publisher-id">bib</journal-id><journal-title-group><journal-title>Briefings in Bioinformatics</journal-title></journal-title-group><issn pub-type="ppub">1467-5463</issn><issn pub-type="epub">1477-4054</issn><publisher><publisher-name>Oxford University Press</publisher-name></publisher></journal-meta>
+<article-meta><article-id pub-id-type="pmid">40439668</article-id><article-id pub-id-type="pmc">PMC12121361</article-id><article-id pub-id-type="doi">10.1093/bib/bbaf213</article-id><article-id pub-id-type="publisher-id">bbaf213</article-id><article-categories><subj-group subj-group-type="heading"><subject>Problem Solving Protocol</subject></subj-group><subj-group subj-group-type="category-taxonomy-collection"><subject>AcademicSubjects/SCI01060</subject></subj-group></article-categories><title-group><article-title>PPIxGPN: plasma proteomic profiling of neurodegenerative biomarkers with protein&#x02013;protein interaction-based eXplainable graph propagational network</article-title></title-group><contrib-group><contrib contrib-type="author"><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-5158-4670</contrib-id><name><surname>Park</surname><given-names>Sunghong</given-names></name><aff>
+<institution>Department of Physiology</institution>, Ajou University School of Medicine, Worldcup-ro 164, Yeongtong-gu, Suwon, 16499, <country country="KR">Republic of Korea</country></aff><xref rid="afn1" ref-type="author-notes"/></contrib><contrib contrib-type="author"><name><surname>Lee</surname><given-names>Dong-gi</given-names></name><aff>
+<institution>Department of Biostatistics</institution>, Epidemiology and Informatics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA 19104, <country country="US">USA</country></aff><xref rid="afn1" ref-type="author-notes"/></contrib><contrib contrib-type="author"><name><surname>Kim</surname><given-names>Juhyeon</given-names></name><aff>
+<institution>Department of Industrial Engineering</institution>, Ajou University, Worldcup-ro 206, Yeongtong-gu, Suwon, 16499, <country country="KR">Republic of Korea</country></aff><aff>
+<institution>Department of Data-Centric Problem Solving Research</institution>, Korea Institute of Science and Technology Information, Daehak-ro 245, Yuseong-gu, Daejeon, 34141, <country country="KR">Republic of Korea</country></aff><xref rid="afn1" ref-type="author-notes"/></contrib><contrib contrib-type="author"><name><surname>Kim</surname><given-names>Seung Ho</given-names></name><aff>
+<institution>Department of Physiology</institution>, Ajou University School of Medicine, Worldcup-ro 164, Yeongtong-gu, Suwon, 16499, <country country="KR">Republic of Korea</country></aff><aff>
+<institution>Department of Biomedical Science</institution>, Graduate School of Ajou University, Worldcup-ro 164, Yeongtong-gu, Suwon, 16499, <country country="KR">Republic of Korea</country></aff></contrib><contrib contrib-type="author"><name><surname>Hwang</surname><given-names>Hyeon Jin</given-names></name><aff>
+<institution>Department of Physiology</institution>, Ajou University School of Medicine, Worldcup-ro 164, Yeongtong-gu, Suwon, 16499, <country country="KR">Republic of Korea</country></aff><aff>
+<institution>Department of Biomedical Science</institution>, Graduate School of Ajou University, Worldcup-ro 164, Yeongtong-gu, Suwon, 16499, <country country="KR">Republic of Korea</country></aff></contrib><contrib contrib-type="author" corresp="yes"><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0001-8347-8277</contrib-id><name><surname>Shin</surname><given-names>Hyunjung</given-names></name><!--shin@ajou.ac.kr--><aff>
+<institution>Department of Industrial Engineering</institution>, Ajou University, Worldcup-ro 206, Yeongtong-gu, Suwon, 16499, <country country="KR">Republic of Korea</country></aff><aff>
+<institution>Department of Artificial Intelligence</institution>, Ajou University, Worldcup-ro 206, Yeongtong-gu, Suwon, 16499, <country country="KR">Republic of Korea</country></aff><xref rid="cor1" ref-type="corresp"/></contrib><contrib contrib-type="author" corresp="yes"><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-0916-893X</contrib-id><name><surname>Woo</surname><given-names>Hyun Goo</given-names></name><!--hg@ajou.ac.kr--><aff>
+<institution>Department of Physiology</institution>, Ajou University School of Medicine, Worldcup-ro 164, Yeongtong-gu, Suwon, 16499, <country country="KR">Republic of Korea</country></aff><aff>
+<institution>Department of Biomedical Science</institution>, Graduate School of Ajou University, Worldcup-ro 164, Yeongtong-gu, Suwon, 16499, <country country="KR">Republic of Korea</country></aff><aff>
+<institution>Ajou Translational Omics Center</institution>, Research Institute for Innovative Medicine, Ajou University Medical Center, Worldcup-ro 164, Yeongtong-gu, Suwon, 16499, <country country="KR">Republic of Korea</country></aff><xref rid="cor1" ref-type="corresp"/></contrib></contrib-group><author-notes><corresp id="cor1">Corresponding authors. Hyunjung Shin, Department of Industrial Engineering, Ajou University, Worldcup-ro 206, Yeongtong-gu, Suwon, 16499, Republic of Korea. E-mail: <email>shin@ajou.ac.kr</email>; Hyun Goo Woo, Department of Physiology, Ajou University School of Medicine, Worldcup-ro 164, Yeongtong-gu, Suwon, 16499, Republic of Korea. E-mail: <email>hg@ajou.ac.kr</email></corresp><fn id="afn1"><p>Sunghong Park, Dong-gi Lee, and Juhyeon Kim contributed equally to this work.</p></fn></author-notes><pub-date pub-type="collection"><month>5</month><year>2025</year></pub-date><pub-date pub-type="epub" iso-8601-date="2025-05-29"><day>29</day><month>5</month><year>2025</year></pub-date><pub-date pub-type="pmc-release"><day>29</day><month>5</month><year>2025</year></pub-date><volume>26</volume><issue>3</issue><elocation-id>bbaf213</elocation-id><history><date date-type="received"><day>27</day><month>2</month><year>2025</year></date><date date-type="rev-recd"><day>20</day><month>4</month><year>2025</year></date><date date-type="accepted"><day>21</day><month>4</month><year>2025</year></date></history><permissions><copyright-statement>&#x000a9; The Author(s) 2025. Published by Oxford University Press.</copyright-statement><copyright-year>2025</copyright-year><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an Open Access article distributed under the terms of the Creative Commons Attribution License (<ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</ext-link>), which permits unrestricted reuse, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri xlink:href="bbaf213.pdf"/><abstract><title>Abstract</title><p>Neurodegenerative diseases involve progressive neuronal dysfunction, requiring the identification of specific pathological features for accurate diagnosis. While cerebrospinal fluid analysis and neuroimaging are commonly used, their invasive nature and high costs limit clinical applicability. Recently advances in plasma proteomics offer a less invasive and cost-effective alternative, further enhanced by machine learning (ML). However, most ML-based studies overlook synergetic effects from protein&#x02013;protein interactions (PPIs), which play a key role in disease mechanisms. Although graph convolutional network and its extensions can utilize PPIs, they rely on locality-based feature aggregation, overlooking essential components and emphasizing noisy interactions. Moreover, expanding those methods to cover broader PPIs results in complex model architectures that reduce explainability, which is crucial in medical ML models for clinical decision-making. To address these challenges, we propose Protein&#x02013;Protein Interaction-based eXplainable Graph Propagational Network (PPIxGPN), a novel ML model designed for plasma proteomic profiling of neurodegenerative biomarkers. PPIxGPN captures synergetic effects between proteins by integrating PPIs with independent effects of proteins, leveraging globality-based feature aggregation to represent comprehensive PPI properties. This process is implemented using a single graph propagational layer, enabling PPIxGPN to be configured by shallow architecture, thereby PPIxGPN ensures high model explainability, enhancing clinical applicability by providing interpretable outputs. Experimental validation on the UK Biobank dataset demonstrated the superior performance of PPIxGPN in neurodegenerative risk prediction, outperforming comparison methods. Furthermore, the explainability of PPIxGPN facilitated detailed analyses of the discriminative significance of synergistic effects, the predictive importance of proteins, and the longitudinal changes in biomarker profiles, highlighting its clinical relevance.</p></abstract><kwd-group><kwd>neurodegenerative diseases</kwd><kwd>blood-based biomarkers</kwd><kwd>protein&#x02013;protein interaction</kwd><kwd>graph neural network</kwd><kwd>explainable machine learning</kwd></kwd-group><funding-group><award-group award-type="grant"><funding-source>
+<institution-wrap><institution>Basic Science Research Program</institution></institution-wrap>
+</funding-source></award-group><award-group award-type="grant"><funding-source>
+<institution-wrap><institution>National Research Foundation of Korea</institution><institution-id institution-id-type="DOI">10.13039/501100003725</institution-id></institution-wrap>
+</funding-source></award-group><award-group award-type="grant"><funding-source>
+<institution-wrap><institution>Ministry of Education, Republic of Korea</institution></institution-wrap>
+</funding-source><award-id>2022R1A6A3A01086784</award-id></award-group><award-group award-type="grant"><funding-source>
+<institution-wrap><institution>Ajou University Research Fund</institution></institution-wrap>
+</funding-source></award-group><award-group award-type="grant"><funding-source>
+<institution-wrap><institution>Ministry of Science and ICT, Republic of Korea</institution></institution-wrap>
+</funding-source><award-id>2019R1A5A2026045</award-id><award-id>RS-2022-001653</award-id><award-id>2021R1A2C2003474</award-id></award-group><award-group award-type="grant"><funding-source>
+<institution-wrap><institution>Institute of Information &#x00026; Communications Technology Planning &#x00026; Evaluation grant</institution></institution-wrap>
+</funding-source><award-id>RS-2023-00255968</award-id></award-group><award-group award-type="grant"><funding-source>
+<institution-wrap><institution>Korea Health Technology R&#x00026;D Project through Korea Health Industry Development Institute</institution></institution-wrap>
+</funding-source></award-group><award-group award-type="grant"><funding-source>
+<institution-wrap><institution>Ministry of Health and Welfare, Republic of Korea</institution></institution-wrap>
+</funding-source><award-id>RS-2021-KH113821</award-id></award-group></funding-group><counts><page-count count="13"/></counts></article-meta></front><body><sec id="sec4"><title>Introduction</title><p>Neurodegenerative diseases are characterized by the progressive dysfunction and loss of neurons in the brain and nervous system. Accurate diagnosis of these conditions depends on identifying specific pathological features [<xref rid="ref1" ref-type="bibr">1</xref>]. For example, dementia, the most prevalent neurodegenerative disease, is categorized into several subtypes based on distinct neuropathological hallmarks. Alzheimer&#x02019;s disease (AD) is associated with &#x003b2;-amyloid (A&#x003b2;) deposition and tau pathology, and Parkinson&#x02019;s disease (PD) and Lewy body dementia are related to &#x003b1;-synuclein pathology [<xref rid="ref2" ref-type="bibr">2</xref>]. Traditionally, the primary methods for identifying these neuropathological features have included cerebrospinal fluid (CSF) biomarkers and neuroimaging. CSF biomarkers, such as the A&#x003b2;<sub>42</sub>/A&#x003b2;<sub>40</sub> ratio (A&#x003b2;<sub>42/40</sub>) and phosphorylated tau (pTau), are employed to evaluate nervous system conditions, diagnose neurological disorders, and monitor disease progression [<xref rid="ref3" ref-type="bibr">3</xref>]. However, the invasive nature of CSF collection poses risks of severe complications. Neuroimaging provides objective evidence of A&#x003b2; deposition or tau tracer detection via positron emission tomography and assesses hippocampal or medial temporal neurodegeneration through magnetic resonance imaging [<xref rid="ref4" ref-type="bibr">4</xref>]. Despite their utility, these methods are associated with high costs. As a result, in recent decades, substantial research efforts have been directed toward developing diagnostic biomarkers to better differentiate the pathophysiological features of neurodegenerative diseases [<xref rid="ref5" ref-type="bibr">5</xref>].</p><p>Recently, the advent of plasma biomarkers has provided a less invasive and more cost-effective alternative for identifying diverse neuropathological features through the assessment of multiple biomarkers from a single sample [<xref rid="ref6" ref-type="bibr">6</xref>]. There are four key plasma biomarkers associated with neurodegeneration: A&#x003b2;<sub>42/40</sub>, pTau, neurofilament light (NfL), and glial fibrillary acidic protein (GFAP). A&#x003b2;<sub>42/40</sub> is widely used and strongly related to cerebral amyloid pathology and neuronal damage [<xref rid="ref7" ref-type="bibr">7</xref>]. The blood levels of pTau significantly correlate with A&#x003b2; accumulation and clinical severity in AD [<xref rid="ref8" ref-type="bibr">8</xref>]. NfL serves as a promising biomarker of neurodegeneration and neuroaxonal damage, reflecting active brain pathology [<xref rid="ref9" ref-type="bibr">9</xref>]. GFAP is found to be associated with neuroinflammation and plays a key role in assessing various aspects of the astrocytic response in neurological disorders [<xref rid="ref10" ref-type="bibr">10</xref>]. Accordingly, plasma proteomic profiling of these biomarkers offers a comprehensive understanding of neuropathological features, enabling precise diagnoses of neurodegenerative diseases.</p><p>Furthermore, the application of machine learning (ML) has significantly advanced plasma proteomic profiling of neurodegenerative biomarkers with more sophisticated analytical approaches [<xref rid="ref11" ref-type="bibr">11</xref>]. However, many existing studies primarily focus on the independent effects of proteins, relying solely on expression data while often overlooking their interactions [<xref rid="ref12" ref-type="bibr">12</xref>]. This oversight fails to capture the collective contributions of multiple proteins with small effect sizes, which can influence disease progression through their interactions [<xref rid="ref13" ref-type="bibr">13</xref>]. Synergetic effects arising from protein&#x02013;protein interactions (PPIs) play a crucial role in disease mechanisms, emphasizing the importance of PPI-based assessment of disease risk for understanding molecular pathogenesis [<xref rid="ref14" ref-type="bibr">14</xref>]. Neurodegenerative diseases involve complex interactions between various molecular pathways, further underscoring the critical role of PPIs [<xref rid="ref15" ref-type="bibr">15</xref>]. Additionally, advancements in PPI databases have broadened their coverage to nearly the entire proteome, facilitating the adoption of computational approaches based on PPI networks [<xref rid="ref16" ref-type="bibr">16</xref>]. Consequently, the significance of ML-based plasma proteomic profiling of neurodegenerative biomarkers, enhanced by leveraging PPIs, is becoming increasingly evident.</p><p>One well-established ML approach for modeling the PPI network is graph neural network (GNN), particularly graph convolutional network (GCN) [<xref rid="ref17" ref-type="bibr">17</xref>], where proteins are represented as nodes, PPIs as edges, and protein expression values as features. GCN leverages graph convolutional layers to aggregate feature information from one-hop neighboring nodes, enabling it to capture local properties of PPIs. However, it struggles to account for global properties of PPIs and multi-hop relationships between proteins [<xref rid="ref18" ref-type="bibr">18</xref>]. To overcome this limitation, GCN has been adapted for multi-hop feature aggregation. Approaches like simple graph convolution (SGC) [<xref rid="ref19" ref-type="bibr">19</xref>] utilize the higher-order graph convolutional filter to aggregate features from distant nodes. More advanced models, including Exponential Graph Convolution (EGC) and Linear Graph Convolution (LGC) [<xref rid="ref20" ref-type="bibr">20</xref>], enhance SGC by incorporating more sophisticated graph Laplacian computations. Additionally, methods with parallelized graph convolutional architectures, such as MixHop [<xref rid="ref21" ref-type="bibr">21</xref>] and its derivatives, Universal GCN (UGCN) [<xref rid="ref22" ref-type="bibr">22</xref>] and Mixed-order GCN (MOGCN) [<xref rid="ref23" ref-type="bibr">23</xref>], improve their ability to model a wider range of PPIs by incorporating multi-hop feature aggregation.</p><p>While the extended versions of GCN can account for a somewhat broader range of PPIs, they nevertheless fail to encompass the full range of properties present in the PPI network, where the locality-based feature representation of PPIs gives rise to a couple of issues. Firstly, the structural properties of the PPI network are overlooked. The PPI network is intricate and hierarchical, comprising various subnetworks. By focusing exclusively on interactions between nearby proteins, important features and modules within the entire PPI network may be overlooked [<xref rid="ref24" ref-type="bibr">24</xref>, <xref rid="ref25" ref-type="bibr">25</xref>]. Secondly, the noisy interactions in the PPI network are emphasized. Since the PPI network incorporates data from diverse experimental sources, it is susceptible to some noisy interactions [<xref rid="ref26" ref-type="bibr">26</xref>, <xref rid="ref27" ref-type="bibr">27</xref>]. The locality-based representation of PPIs may potentially exaggerate these noisy interactions. Accordingly, GCN-based models necessitate globality-based feature aggregation to address these issues and reflect the comprehensive properties of the PPI network.</p><p>Although the re-extension of GCN-based models can partially mitigate the aforementioned issues, it remains a provisional solution that fails to capture the comprehensive properties of the PPI network. Moreover, this approach necessitates a more complex model architecture, which compromises the explainability of the model and its outcomes [<xref rid="ref28" ref-type="bibr">28</xref>]. Explainability is crucial for understanding the predictive processes of ML models, particularly in the medical field, where decisions directly impact on patient care [<xref rid="ref29" ref-type="bibr">29</xref>]. Explainability improves the transparency of ML models, enabling healthcare professionals to trust and effectively integrate them into clinical decision-making [<xref rid="ref30" ref-type="bibr">30</xref>]. Furthermore, it provides deeper insights into biological processes and disease mechanisms, aiding in understanding disease pathophysiology and advancing precision medicine [<xref rid="ref31" ref-type="bibr">31</xref>, <xref rid="ref32" ref-type="bibr">32</xref>]. Therefore, to ensure high explainability, the globality-based feature aggregation, which comprehensively captures the properties of the PPI network, should be implemented using shallow model architecture.</p><p>In this study, we propose a novel ML method, called <italic toggle="yes">Protein&#x02013;Protein Interaction-based eXplainable Graph Propagational Network</italic> (PPIxGPN), for plasma proteomic profiling of neurodegenerative biomarkers, including A&#x003b2;, GFAP, NfL, and pTau. The proposed method leverages the PPI network by utilizing a GNN-based architecture, enabling it to capture synergetic effects between proteins and apply them to predict risks for the biomarkers. This process is implemented using a single graph propagational layer, a key component of the proposed method, allowing PPIxGPN to be configured by shallow architecture with only two layers, along with a fully connected layer for risk prediction. Accordingly, PPIxGPN reflects the comprehensive properties of the PPI network through globality-based feature aggregation while preserving an intuitive architecture that enhances the explainability of both the model and its outcomes. As illustrated in <xref rid="f1" ref-type="fig">Fig. 1</xref>, our study framework consists of target protein identification and neurodegenerative risk prediction. The proposed method first identifies differentially expressed proteins (DEPs) associated with the biomarkers. Among these DEPs, those common to all biomarkers are identified as target proteins. Subsequently, PPIxGPN integrates the independent effects of target proteins with the PPI network to predict individual risks for four biomarkers. PPIxGPN comprises two processes: graph propagation and risk estimation, with model parameters defined for each. The parameter for graph propagation controls the propagation intensity within the PPI network for each protein, while the parameter for risk estimation optimizes the effect size of target proteins for each biomarker, ensuring a clear distinction between positive and negative diagnosis groups. The main contributions of the proposed method are summarized as follows:
+</p><list list-type="bullet"><list-item><p>We introduce a novel method, called PPIxGPN, for plasma proteomic profiling of neurodegenerative biomarkers, which predict the individual risks for A&#x003b2;, GFAP, NfL, and pTau by identifying target proteins that are significantly expressed across all four biomarkers.</p></list-item><list-item><p>PPIxGPN integrates the PPI network with the independent effects of target proteins for the biomarkers, effectively capturing synergetic effects among proteins, and by incorporating globality-based feature aggregation, PPIxGPN reflects the comprehensive properties of the PPI network.</p></list-item><list-item><p>PPIxGPN is designed with shallow architecture including only two layers, ensuring high model explainability, thereby enhances clinical applicability by providing interpretable outputs that not only improve neurodegenerative risk prediction but also help understand the biological significance of PPIs and their contributions to disease progression.</p></list-item></list><fig position="float" id="f1"><label>Figure 1</label><caption><p>Overview of the proposed method. Our study framework comprises target protein identification and neurodegenerative risk prediction. (a) The proposed method first identifies DEPs associated with biomarkers, selecting those common across all biomarkers as target proteins. (b) PPIxGPN then integrates the independent effects of these proteins with the PPI network to predict individual risks for four biomarkers, consisting of graph propagation and risk estimation, each implemented by specific model parameters. The graph propagation parameter regulates the propagation intensity within the PPI network for each protein, while the risk estimation parameter fine-tunes protein effect sizes for each biomarker, ensuring a distinct separation between positive and negative diagnosis groups.</p></caption><graphic xlink:href="bbaf213f1" position="float"/></fig></sec><sec id="sec5"><title>Protein-protein interaction-based eXplainable graph propagational network</title><sec id="sec6"><title>Overall process</title><p>Given that <inline-formula><tex-math notation="LaTeX" id="ineq01">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$d$\end{document}</tex-math></inline-formula> and <inline-formula><tex-math notation="LaTeX" id="ineq02">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$n$\end{document}</tex-math></inline-formula> are the numbers of target proteins and study participants, respectively, the data matrix for the independent effects, denoted by <inline-formula><tex-math notation="LaTeX" id="ineq03">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\mathbf{X}\in{\mathbb{R}}^{d\times n}$\end{document}</tex-math></inline-formula>, consists of the preprocessed expression data for the target proteins. PPIxGPN first extracts the synergetic effects of target proteins, denoted as <inline-formula><tex-math notation="LaTeX" id="ineq04">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\mathbf{Z}\in{\mathbb{R}}^{d\times n}$\end{document}</tex-math></inline-formula>, by propagating the independent effects onto the PPI network <inline-formula><tex-math notation="LaTeX" id="ineq05">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\mathbf{W}\in{\mathbb{R}}^{d\times d}$\end{document}</tex-math></inline-formula>. In this process, the propagation parameter <inline-formula><tex-math notation="LaTeX" id="ineq06">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\boldsymbol{\phi} \in{\mathbb{R}}^d$\end{document}</tex-math></inline-formula> is applied to the proteins for individually controlling the intensity of propagation. Subsequently, the synergetic effect is applied to the estimation parameter, denoted as <inline-formula><tex-math notation="LaTeX" id="ineq07">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+${\boldsymbol{\Theta}}_{\ast}\in{\mathbb{R}}^d$\end{document}</tex-math></inline-formula> (<inline-formula><tex-math notation="LaTeX" id="ineq08">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\ast$\end{document}</tex-math></inline-formula>: A&#x003b2;, GFAP, NfL, pTau), and the individual risks for neurodegenerative biomarkers, denoted as <inline-formula><tex-math notation="LaTeX" id="ineq09">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+${\mathbf{P}}_{\ast}\in{\mathbb{R}}^n$\end{document}</tex-math></inline-formula>, are derived. The proposed method encompasses two-layered model architecture, including two parameter sets, <inline-formula><tex-math notation="LaTeX" id="ineq10">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\boldsymbol{\phi}$\end{document}</tex-math></inline-formula> and <inline-formula><tex-math notation="LaTeX" id="ineq11">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+${\boldsymbol{\Theta}}_{\ast}$\end{document}</tex-math></inline-formula>, which are optimized by comparing the predicted risk <inline-formula><tex-math notation="LaTeX" id="ineq12">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+${\mathbf{P}}_{\ast}$\end{document}</tex-math></inline-formula> with the real diagnosis, denoted as <inline-formula><tex-math notation="LaTeX" id="ineq13">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+${\mathbf{Y}}_{\ast}\in{\mathbb{R}}^n$\end{document}</tex-math></inline-formula>. Notations for PPIxGPN are summarized in <xref rid="TB1" ref-type="table">Table 1</xref>.</p><table-wrap position="float" id="TB1"><label>Table 1</label><caption><p>Summarized description for notation of PPIxGPN.</p></caption><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="left" span="1"/></colgroup><thead><tr><th align="left" rowspan="1" colspan="1">Notation</th><th align="left" rowspan="1" colspan="1">Description</th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">
+<inline-formula>
+<tex-math notation="LaTeX" id="ineq14">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$n$\end{document}</tex-math>
+</inline-formula>
+</td><td align="left" rowspan="1" colspan="1">Number of study participants</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<inline-formula>
+<tex-math notation="LaTeX" id="ineq15">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$d$\end{document}</tex-math>
+</inline-formula>
+</td><td align="left" rowspan="1" colspan="1">Number of target proteins</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<inline-formula>
+<tex-math notation="LaTeX" id="ineq16">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\mathbf{X}\in{\mathbb{R}}^{d\times n}$\end{document}</tex-math>
+</inline-formula>
+</td><td align="left" rowspan="1" colspan="1">Independent effect of target proteins</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<inline-formula>
+<tex-math notation="LaTeX" id="ineq17">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\mathbf{Z}\in{\mathbb{R}}^{d\times n}$\end{document}</tex-math>
+</inline-formula>
+</td><td align="left" rowspan="1" colspan="1">Synergetic effect of target proteins</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<inline-formula>
+<tex-math notation="LaTeX" id="ineq18">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\mathbf{W}\in{\mathbb{R}}^{d\times d}$\end{document}</tex-math>
+</inline-formula>
+</td><td align="left" rowspan="1" colspan="1">PPI network for target proteins</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<inline-formula>
+<tex-math notation="LaTeX" id="ineq19">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\boldsymbol{\phi} \in{\mathbb{R}}^d$\end{document}</tex-math>
+</inline-formula>
+</td><td align="left" rowspan="1" colspan="1">Propagation parameter set of PPIxGPN</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<inline-formula>
+<tex-math notation="LaTeX" id="ineq20">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+${\boldsymbol{\Theta}}_{\ast}\in{\mathbb{R}}^d$\end{document}</tex-math>
+</inline-formula>
+</td><td align="left" rowspan="1" colspan="1">Estimation parameter set of PPIxGPN</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<inline-formula>
+<tex-math notation="LaTeX" id="ineq21">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+${\mathbf{P}}_{\ast}\in{\mathbb{R}}^n$\end{document}</tex-math>
+</inline-formula>
+</td><td align="left" rowspan="1" colspan="1">Predicted risk set for biomarkers</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<inline-formula>
+<tex-math notation="LaTeX" id="ineq22">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+${\mathbf{Y}}_{\ast}\in{\mathbb{R}}^n$\end{document}</tex-math>
+</inline-formula>
+</td><td align="left" rowspan="1" colspan="1">Real diagnosis label set for biomarkers</td></tr><tr><td align="left" rowspan="1" colspan="1">
+<inline-formula>
+<tex-math notation="LaTeX" id="ineq23">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\ast$\end{document}</tex-math>
+</inline-formula>
+</td><td align="left" rowspan="1" colspan="1">A&#x003b2;, GFAP, NfL, pTau</td></tr></tbody></table></table-wrap></sec><sec id="sec7"><title>Model implementation</title><p>PPIxGPN consists of two processes: <italic toggle="yes">graph propagation</italic> and <italic toggle="yes">risk estimation</italic>, where the former extracts the synergetic effect, while the latter derives the individual risks for neurodegenerative biomarkers. The graph propagation process transforms the independent effect into the synergetic effect that accounts for PPIs. Here, the &#x0201c;independent effect&#x0201d; refers to the expression value of each protein, capturing only its own expression level without considering PPIs. To incorporate PPIs, the proposed method represents the synergetic effect via the following objective function:</p><disp-formula id="deqn01">
+<label>(1)</label>
+<tex-math notation="LaTeX" id="DmEquation1">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+\begin{equation*} \sum_{i\sim j}{\mathbf{W}}^{\left(i,j\right)}{\left({\mathbf{Z}}^{(i)}-{\mathbf{Z}}^{(j)}\right)}^2+\sum{\boldsymbol{\phi}}^{(i)}{\left({\mathbf{Z}}^{(i)}-{\mathbf{X}}^{(i)}\right)}^2. \end{equation*}\end{document}</tex-math>
+</disp-formula><p>In Equation (<xref rid="deqn01" ref-type="disp-formula">1</xref>), the first term enhances &#x0201c;smoothness,&#x0201d; ensuring that adjacent proteins have similar representation values. The second term enhances &#x0201c;steadiness,&#x0201d; preventing the newly generated synergetic effect (<inline-formula><tex-math notation="LaTeX" id="ineq24">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\mathbf{Z}$\end{document}</tex-math></inline-formula>) from deviating excessively from the original independent effect (<inline-formula><tex-math notation="LaTeX" id="ineq25">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\mathbf{X}$\end{document}</tex-math></inline-formula>). The propagation parameter <inline-formula><tex-math notation="LaTeX" id="ineq26">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\boldsymbol{\phi}$\end{document}</tex-math></inline-formula> is defined for each protein and can be viewed as a parameter that determines how much interaction information is exchanged with neighboring nodes&#x02014;i.e. how extensively it propagates. The objective function in Equation (<xref rid="deqn01" ref-type="disp-formula">1</xref>) can be expressed in matrix form as shown below:</p><disp-formula id="deqn02">
+<label>(2)</label>
+<tex-math notation="LaTeX" id="DmEquation2">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+\begin{equation*} \underset{\mathbf{Z}}{\min }\ {\mathbf{Z}}^{\mathrm{T}}\mathbf{LZ}+{\left(\mathbf{Z}-\mathbf{X}\right)}^{\mathrm{T}}\boldsymbol{\Phi} \left(\mathbf{Z}-\mathbf{X}\right) \end{equation*}\end{document}</tex-math>
+</disp-formula><p>where <inline-formula><tex-math notation="LaTeX" id="ineq27">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\boldsymbol{\Phi}$\end{document}</tex-math></inline-formula> is the diagonal matrix for <inline-formula><tex-math notation="LaTeX" id="ineq28">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\boldsymbol{\phi}$\end{document}</tex-math></inline-formula>, and <inline-formula><tex-math notation="LaTeX" id="ineq29">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\mathbf{L}$\end{document}</tex-math></inline-formula> is the normalized graph Laplacian for <inline-formula><tex-math notation="LaTeX" id="ineq30">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\mathbf{W}$\end{document}</tex-math></inline-formula>, which is defined as <inline-formula><tex-math notation="LaTeX" id="ineq31">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\mathbf{L}={\mathbf{I}}_d-{\mathbf{D}}^{-1/2}\mathbf{W}{\mathbf{D}}^{-1/2}$\end{document}</tex-math></inline-formula> with the diagonal matrix <inline-formula><tex-math notation="LaTeX" id="ineq32">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\mathbf{D}=\mathrm{Diag}\left({\mathbf{D}}^{(i)}\right)$\end{document}</tex-math></inline-formula> from <inline-formula><tex-math notation="LaTeX" id="ineq33">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+${\mathbf{D}}^{(i)}={\sum}_k{\mathbf{W}}^{\left(i,k\right)}$\end{document}</tex-math></inline-formula> and the identity matrix <inline-formula><tex-math notation="LaTeX" id="ineq34">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+${\mathbf{I}}_d\in{\mathbb{R}}^{d\times d}$\end{document}</tex-math></inline-formula>. The solution of Equation (<xref rid="deqn02" ref-type="disp-formula">2</xref>) is obtained in the closed form as below:</p><disp-formula id="deqn03">
+<label>(3)</label>
+<tex-math notation="LaTeX" id="DmEquation3">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+\begin{equation*} \mathbf{Z}={\left(\boldsymbol{\Phi} +\mathbf{L}\right)}^{-1}\boldsymbol{\Phi} \mathbf{X} \end{equation*}\end{document}</tex-math>
+</disp-formula><p>As a result, the graph propagation process simultaneously propagates protein expression (the independent effect) across the entire PPI network, producing a new representation (the synergetic effect) that accounts for relationships with adjacent nodes. Because this global (all-hop) propagation is computed in closed form within a single layer, it can capture the complete properties of the PPI network in one pass&#x02014;without stacking multiple layers.</p><p>Subsequently, in the risk estimation process, <inline-formula><tex-math notation="LaTeX" id="ineq35">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\mathbf{Z}$\end{document}</tex-math></inline-formula> is combined with the estimation parameter <inline-formula><tex-math notation="LaTeX" id="ineq36">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+${\boldsymbol{\Theta}}_{\ast }$\end{document}</tex-math></inline-formula>, and then, the individual risks for neurodegenerative biomarkers are derived by applying the logistic function as follows:</p><disp-formula id="deqn04">
+<label>(4)</label>
+<tex-math notation="LaTeX" id="DmEquation4">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+\begin{equation*} {\mathbf{P}}_{\ast }=1/\left(1+{e}^{-{{\boldsymbol{\Theta}}_{\ast}}^{\mathrm{T}}\mathbf{Z}}\right) \end{equation*}\end{document}</tex-math>
+</disp-formula></sec><sec id="sec8"><title>Parameter optimization</title><p>PPIxGPN includes two parameter sets: <inline-formula><tex-math notation="LaTeX" id="ineq37">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\boldsymbol{\phi}$\end{document}</tex-math></inline-formula> for the graph propagation and <inline-formula><tex-math notation="LaTeX" id="ineq38">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+${\boldsymbol{\Theta}}_{\ast }$\end{document}</tex-math></inline-formula> for the risk estimation. These parameters are trained to minimize the binary cross-entropy loss <inline-formula><tex-math notation="LaTeX" id="ineq39">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+${\mathcal{L}}_{\ast }$\end{document}</tex-math></inline-formula> as represented below:</p><disp-formula id="deqn05">
+<label>(5)</label>
+<tex-math notation="LaTeX" id="DmEquation5">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+\begin{equation*} {\mathcal{L}}_{\ast }=\frac{1}{n}\left\{\left({{\mathbf{Y}}_{\ast}}^{\mathrm{T}}\log{\mathbf{P}}_{\ast}\right)+{\left({\mathbf{1}}_n-{\mathbf{Y}}_{\ast}\right)}^{\mathrm{T}}\log \left({\mathbf{1}}_n-{\mathbf{P}}_{\ast}\right)\right\} \end{equation*}\end{document}</tex-math>
+</disp-formula><p>Accordingly, the objective function for PPIxGPN is defined as follows:</p><disp-formula id="deqn06">
+<label>(6)</label>
+<tex-math notation="LaTeX" id="DmEquation6">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+\begin{equation*} \underset{\boldsymbol{\phi}, \kern0.5em {\boldsymbol{\Theta}}_{\ast }}{\mathrm{argmin}}\kern0.5em \sum{\mathcal{L}}_{\ast }+\delta \mathcal{R} \end{equation*}\end{document}</tex-math>
+</disp-formula><p>where <inline-formula><tex-math notation="LaTeX" id="ineq40">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\mathcal{R}={\left\Vert \boldsymbol{\phi} \right\Vert}_2^2+\sum{\left\Vert{\boldsymbol{\Theta}}_{\ast}\right\Vert}_2^2$\end{document}</tex-math></inline-formula> stands for regularizing the complexity of parameters, and <inline-formula><tex-math notation="LaTeX" id="ineq41">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\delta$\end{document}</tex-math></inline-formula> is the hyper-parameter for <inline-formula><tex-math notation="LaTeX" id="ineq42">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\mathcal{R}$\end{document}</tex-math></inline-formula>. The objective function in Equation (<xref rid="deqn06" ref-type="disp-formula">6</xref>) is optimized by using the gradient descent method [<xref rid="ref33" ref-type="bibr">33</xref>].</p><p>
+<bold>Minimization over</bold> &#x000a0;<inline-formula><tex-math notation="LaTeX" id="ineq43">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+${\boldsymbol{\Theta}}_{\ast }$\end{document}</tex-math></inline-formula>: to find gradient <italic toggle="yes">w.r.t.</italic> the estimation parameter <inline-formula><tex-math notation="LaTeX" id="ineq44">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+${\boldsymbol{\Theta}}_{\ast }$\end{document}</tex-math></inline-formula>, the derivatives of two terms in Equation (<xref rid="deqn06" ref-type="disp-formula">6</xref>) <italic toggle="yes">w.r.t.</italic> &#x000a0;<inline-formula><tex-math notation="LaTeX" id="ineq45">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+${\boldsymbol{\Theta}}_{\ast }$\end{document}</tex-math></inline-formula> are firstly obtained as below:</p><disp-formula id="deqn07">
+<tex-math notation="LaTeX" id="DmEquation7">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$$ \frac{\partial{\mathcal{L}}_{\ast }}{\partial{\boldsymbol{\Theta}}_{\ast }}=\frac{1}{n}\mathbf{Z}{\left({\mathbf{P}}_{\ast }-{\mathbf{Y}}_{\ast}\right)}^{\mathrm{T}},\kern0.5em \frac{\partial \mathcal{R}}{\partial{\boldsymbol{\Theta}}_{\ast }}=2\delta{\boldsymbol{\Theta}}_{\ast } $$\end{document}</tex-math>
+</disp-formula><p>Then, the gradient <italic toggle="yes">w.r.t.</italic> &#x000a0;<inline-formula><tex-math notation="LaTeX" id="ineq46">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+${\boldsymbol{\Theta}}_{\ast }$\end{document}</tex-math></inline-formula> is derived as follows:</p><disp-formula id="deqn08">
+<label>(7)</label>
+<tex-math notation="LaTeX" id="DmEquation8">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+\begin{equation*} \nabla{\boldsymbol{\Theta}}_{\ast }=\frac{1}{n}\mathbf{Z}{\left({\mathbf{P}}_{\ast }-{\mathbf{Y}}_{\ast}\right)}^{\mathrm{T}}+2\delta{\boldsymbol{\Theta}}_{\ast } \end{equation*}\end{document}</tex-math>
+</disp-formula><p>
+<bold>Minimization over</bold> &#x000a0;<inline-formula><tex-math notation="LaTeX" id="ineq47">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\boldsymbol{\phi}$\end{document}</tex-math></inline-formula>: to find the gradient <italic toggle="yes">w.r.t.</italic>, the propagation parameter <inline-formula><tex-math notation="LaTeX" id="ineq48">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\boldsymbol{\phi}$\end{document}</tex-math></inline-formula>, the derivative of <inline-formula><tex-math notation="LaTeX" id="ineq49">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\mathcal{L}$\end{document}</tex-math></inline-formula> &#x000a0;<italic toggle="yes">w.r.t.</italic> &#x000a0;<inline-formula><tex-math notation="LaTeX" id="ineq50">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\mathbf{Z}$\end{document}</tex-math></inline-formula> is firstly obtained as follows:</p><disp-formula id="deqn09">
+<label>(8)</label>
+<tex-math notation="LaTeX" id="DmEquation9">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+\begin{equation*} \frac{\partial \mathcal{L}}{\partial \mathbf{Z}}=\sum \frac{\partial{\mathcal{L}}_{\ast }}{\partial \mathbf{Z}}=\frac{1}{n}\sum{\boldsymbol{\Theta}}_{\ast}\left({\mathbf{P}}_{\ast }-{\mathbf{Y}}_{\ast}\right) \end{equation*}\end{document}</tex-math>
+</disp-formula><p>Next, the derivative of <inline-formula><tex-math notation="LaTeX" id="ineq51">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\mathbf{Z}$\end{document}</tex-math></inline-formula> &#x000a0;<italic toggle="yes">w.r.t.</italic> &#x000a0;<inline-formula><tex-math notation="LaTeX" id="ineq52">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\boldsymbol{\Phi}$\end{document}</tex-math></inline-formula> is obtained as follows:</p><disp-formula id="deqn10">
+<label>(9)</label>
+<tex-math notation="LaTeX" id="DmEquation10">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+\begin{equation*} \frac{\partial \mathbf{Z}}{\partial \boldsymbol{\Phi}}={\mathbf{X}}^{\mathrm{T}}{\left(\boldsymbol{\Phi} +\mathbf{L}\right)}^{-1}\left\{{\mathbf{I}}_p-{\left(\boldsymbol{\Phi} +\mathbf{L}\right)}^{-1}\boldsymbol{\Phi} \right\} \end{equation*}\end{document}</tex-math>
+</disp-formula><p>By combining Equation (<xref rid="deqn09" ref-type="disp-formula">8</xref>) with Equation (<xref rid="deqn10" ref-type="disp-formula">9</xref>), <inline-formula><tex-math notation="LaTeX" id="ineq53">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\partial \mathcal{L}/\partial \boldsymbol{\Phi}$\end{document}</tex-math></inline-formula> is indicated as below:</p><disp-formula id="deqn11">
+<label>(10)</label>
+<tex-math notation="LaTeX" id="DmEquation11">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+\begin{equation*} \frac{\partial \mathcal{L}}{\partial \boldsymbol{\Phi}}=\frac{1}{n}\left\{\sum{\boldsymbol{\Theta}}_{\ast}\left({\mathbf{P}}_{\ast }-{\mathbf{Y}}_{\ast}\right)\right\}{\mathbf{X}}^{\mathrm{T}}{\left(\boldsymbol{\Phi} +\mathbf{L}\right)}^{-1}\left\{{\mathbf{I}}_p-{\left(\boldsymbol{\Phi} +\mathbf{L}\right)}^{-1}\boldsymbol{\Phi} \right\} \end{equation*}\end{document}</tex-math>
+</disp-formula><p>Subsequently, the expression of <inline-formula><tex-math notation="LaTeX" id="ineq54">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\boldsymbol{\Phi}$\end{document}</tex-math></inline-formula> is transformed to <inline-formula><tex-math notation="LaTeX" id="ineq55">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\boldsymbol{\Phi} =\mathrm{Diag}\left(\boldsymbol{\phi} \right)=\boldsymbol{\phi} {\mathbf{1}}_d\odot{\mathbf{I}}_d$\end{document}</tex-math></inline-formula> by using an <inline-formula><tex-math notation="LaTeX" id="ineq56">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$d$\end{document}</tex-math></inline-formula>-dimensional row vector <inline-formula><tex-math notation="LaTeX" id="ineq57">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+${\mathbf{1}}_d$\end{document}</tex-math></inline-formula>, and then, the derivative of <inline-formula><tex-math notation="LaTeX" id="ineq58">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\boldsymbol{\Phi}$\end{document}</tex-math></inline-formula> &#x000a0;<italic toggle="yes">w.r.t.</italic> &#x000a0;<inline-formula><tex-math notation="LaTeX" id="ineq59">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\boldsymbol{\phi}$\end{document}</tex-math></inline-formula> is indicated as below:</p><disp-formula id="deqn12">
+<label>(11)</label>
+<tex-math notation="LaTeX" id="DmEquation12">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+\begin{equation*} \frac{\partial \boldsymbol{\Phi}}{\partial \boldsymbol{\phi}}={\mathbf{I}}_d{{\mathbf{1}}_d}^{\mathrm{T}} \end{equation*}\end{document}</tex-math>
+</disp-formula><p>By combining Equation (<xref rid="deqn11" ref-type="disp-formula">10</xref>) with Equation (<xref rid="deqn12" ref-type="disp-formula">11</xref>), the derivative of <inline-formula><tex-math notation="LaTeX" id="ineq60">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\mathcal{L}$\end{document}</tex-math></inline-formula> &#x000a0;<italic toggle="yes">w.r.t.</italic> &#x000a0;<inline-formula><tex-math notation="LaTeX" id="ineq61">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\boldsymbol{\phi}$\end{document}</tex-math></inline-formula> can be obtained as</p><disp-formula id="deqn13">
+<tex-math notation="LaTeX" id="DmEquation13">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$$\frac{\partial \mathcal{L}}{\partial \boldsymbol{\phi}}=\frac{1}{n}\left\{\sum{\boldsymbol{\Theta}}_{\ast}\left({\mathbf{P}}_{\ast }-{\mathbf{Y}}_{\ast}\right)\right\}{\mathbf{X}}^{\mathrm{T}}{\left(\boldsymbol{\Phi} +\mathbf{L}\right)}^{-1}\left\{{\mathbf{I}}_d-{\left(\boldsymbol{\Phi} +\mathbf{L}\right)}^{-1}\boldsymbol{\Phi} \right\}\odot{\mathbf{I}}_d{{\mathbf{1}}_d}^{\mathrm{T}},$$\end{document}</tex-math>
+</disp-formula><p>and finally, the gradient <italic toggle="yes">w.r.t.</italic> &#x000a0;<inline-formula><tex-math notation="LaTeX" id="ineq62">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\boldsymbol{\phi}$\end{document}</tex-math></inline-formula> is derived as follows:</p><disp-formula id="deqn14">
+<label>(12)</label>
+<tex-math notation="LaTeX" id="DmEquation14">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+\begin{eqnarray*} &#x00026;&#x00026; \nabla \boldsymbol{\phi} =\frac{1}{n}\left\{\sum{\boldsymbol{\Theta}}_{\ast}\left({\mathbf{P}}_{\ast }-{\mathbf{Y}}_{\ast}\right)\right\}{\mathbf{X}}^{\mathrm{T}}{\left(\boldsymbol{\Phi} +\mathbf{L}\right)}^{-1}\left\{{\mathbf{I}}_d-{\left(\boldsymbol{\Phi} +\mathbf{L}\right)}^{-1}\boldsymbol{\Phi} \right\} \nonumber\\&#x00026;&#x00026; \quad\qquad \odot{\mathbf{I}}_d{{\mathbf{1}}_d}^{\mathrm{T}}+2\delta \boldsymbol{\phi} \end{eqnarray*}\end{document}</tex-math>
+</disp-formula><p>The overall procedure for PPIxGPN is summarized in <xref rid="TB2" ref-type="table">Algorithm 1</xref>.</p><table-wrap position="anchor" id="TB2"><label>Algorithm 1</label><caption><p>PPIxGPN.</p></caption><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/></colgroup><tbody><tr><td align="left" rowspan="1" colspan="1">
+<bold>Input:</bold> &#x000a0;<break/>&#x02003;Independent effects of target proteins <inline-formula><tex-math notation="LaTeX" id="ineq63">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\mathbf{X}\in{\mathbb{R}}^{d\times n}$\end{document}</tex-math></inline-formula><break/>&#x02003;PPI network for target proteins <inline-formula><tex-math notation="LaTeX" id="ineq64">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\mathbf{W}\in{\mathbb{R}}^{d\times d}$\end{document}</tex-math></inline-formula><break/>&#x02003;Real diagnosis for biomarkers <inline-formula><tex-math notation="LaTeX" id="ineq65">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+${\mathbf{Y}}_{\ast}\in{\mathbb{R}}^n$\end{document}</tex-math></inline-formula> (<inline-formula><tex-math notation="LaTeX" id="ineq66">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\ast$\end{document}</tex-math></inline-formula>: A&#x003b2;, GFAP, NfL, pTau)<break/><bold>Output:</bold> Individual risks for biomarkers <inline-formula><tex-math notation="LaTeX" id="ineq67">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+${\mathbf{P}}_{\ast}\in{\mathbb{R}}^n$\end{document}</tex-math></inline-formula><break/>&#x02003;Initialize parameters: <inline-formula><tex-math notation="LaTeX" id="ineq68">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\boldsymbol{\phi} \in{\mathbb{R}}^d$\end{document}</tex-math></inline-formula> and <inline-formula><tex-math notation="LaTeX" id="ineq69">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+${\boldsymbol{\Theta}}_{\ast}\in{\mathbb{R}}^d$\end{document}</tex-math></inline-formula><break/><bold>&#x02003;While</bold> (stopping criterion is not satisfied)<break/><italic toggle="yes">&#x02003;&#x02003;Feedforward</italic><break/>&#x02003;&#x02003;&#x02003;Graph propagation: synergetic effect <inline-formula><tex-math notation="LaTeX" id="ineq70">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\mathbf{Z}$\end{document}</tex-math></inline-formula> by (<xref rid="deqn03" ref-type="disp-formula">3</xref>)<break/>&#x02003;&#x02003;&#x02003;Risk estimation: individual risks <inline-formula><tex-math notation="LaTeX" id="ineq71">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+${\mathbf{P}}_{\ast }$\end{document}</tex-math></inline-formula> by (<xref rid="deqn04" ref-type="disp-formula">4</xref>)<break/><italic toggle="yes">&#x02003;&#x02003;Loss functions</italic><break/>&#x02003;&#x02003;&#x02003;Binary cross-entropy loss <inline-formula><tex-math notation="LaTeX" id="ineq72">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+${\mathcal{L}}_{\ast }$\end{document}</tex-math></inline-formula> by (<xref rid="deqn05" ref-type="disp-formula">5</xref>)<break/>&#x02003;&#x02003;&#x02003;Regularization loss <inline-formula><tex-math notation="LaTeX" id="ineq73">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\mathcal{R}$\end{document}</tex-math></inline-formula> by (<xref rid="deqn06" ref-type="disp-formula">6</xref>)<break/>&#x02003;&#x02003;<italic toggle="yes">Backpropagation</italic><break/>&#x02003;&#x02003;&#x02003;Propagation parameter <inline-formula><tex-math notation="LaTeX" id="ineq74">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+$\boldsymbol{\phi} :=\boldsymbol{\phi} -\eta \nabla \boldsymbol{\phi}$\end{document}</tex-math></inline-formula> by (<xref rid="deqn08" ref-type="disp-formula">7</xref>)<break/>&#x02003;&#x02003;&#x02003;Estimation parameter <inline-formula><tex-math notation="LaTeX" id="ineq75">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+${\boldsymbol{\Theta}}_{\ast }:={\boldsymbol{\Theta}}_{\ast }-\eta \nabla{\boldsymbol{\Theta}}_{\ast }$\end{document}</tex-math></inline-formula> by (<xref rid="deqn14" ref-type="disp-formula">12</xref>)<break/><bold>&#x02003;End while</bold><break/><bold>Return</bold> Individual risks for biomarkers <inline-formula><tex-math notation="LaTeX" id="ineq76">\documentclass[12pt]{minimal}
+\usepackage{amsmath}
+\usepackage{wasysym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{upgreek}
+\usepackage{mathrsfs}
+\setlength{\oddsidemargin}{-69pt}
+\begin{document}
+${\mathbf{P}}_{\ast }$\end{document}</tex-math></inline-formula></td></tr></tbody></table></table-wrap></sec></sec><sec id="sec9"><title>Results</title><sec id="sec10"><title>Data description</title><sec id="sec11"><title>Study participants</title><p>The dataset used in this study was sourced from the UK Biobank (UKB), which recruited over 500,000 participants aged 39&#x02013;70 between 2006 and 2010, with long-term monitoring of their health outcomes (additional details can be at: <ext-link xlink:href="https://biobank.ndph.ox.ac.uk/showcase/" ext-link-type="uri">https://biobank.ndph.ox.ac.uk/showcase/</ext-link>). From the UKB participants, 906 individuals with complete data on four neurodegenerative biomarkers (A&#x003b2;<sub>42/40</sub>, GFAP, NfL, and pTau<sub>181</sub>) were selected for the analytical cohort. Given that higher levels of GFAP, NfL, and pTau indicate increased risk, while lower levels of A&#x003b2;<sub>42/40</sub> signify greater risk, the reciprocal of A&#x003b2;<sub>42/40</sub> (A&#x003b2;<sub>40/42</sub>) was used in this study to maintain consistency in predictions. For each participant, the positivity and negativity for the biomarkers were determined using the &#x0201c;cutoff&#x0201d; [<xref rid="ref34" ref-type="bibr">34</xref>] implemented in R (<ext-link xlink:href="https://github.com/choisy/cutoff" ext-link-type="uri">https://github.com/choisy/cutoff</ext-link>). Of the participants, 783 had follow-up data on the biomarkers, with an average follow-up duration of 3.25&#x000a0;years, enabling the assessment of longitudinal changes. The demographic characteristics of the study participants are presented in <xref rid="TB3" ref-type="table">Table 2</xref>.</p><table-wrap position="float" id="TB3"><label>Table 2</label><caption><p>Demographic characteristics of the study participants.</p></caption><table frame="hsides" rules="groups"><colgroup span="1"><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/></colgroup><thead><tr><th rowspan="2" align="left" colspan="1">Characteristics</th><th rowspan="2" align="left" colspan="1">Total participants (<italic toggle="yes">N</italic>&#x02009;=&#x02009;906)</th><th colspan="3" align="left" rowspan="1">Followed-up participants (<italic toggle="yes">N</italic>&#x02009;=&#x02009;783)</th></tr><tr><th align="left" rowspan="1" colspan="1">Baseline</th><th align="left" rowspan="1" colspan="1">Follow-up</th><th align="left" rowspan="1" colspan="1">
+<italic toggle="yes">P</italic>-value<xref rid="tblfn1" ref-type="table-fn"><sup>a</sup></xref></th></tr></thead><tbody><tr><td align="left" rowspan="1" colspan="1">Female, No. (%)</td><td align="left" rowspan="1" colspan="1">491 (54.2)</td><td align="left" colspan="2" rowspan="1">422 (53.9)</td><td align="left" rowspan="1" colspan="1">&#x02013;</td></tr><tr><td align="left" rowspan="1" colspan="1">Education, med. (IQR)</td><td align="left" rowspan="1" colspan="1">7 (3&#x02013;17)</td><td align="left" colspan="2" rowspan="1">7 (3&#x02013;17)</td><td align="left" rowspan="1" colspan="1">&#x02013;</td></tr><tr><td align="left" rowspan="1" colspan="1">Age, med. (IQR), year</td><td align="left" rowspan="1" colspan="1">58 (54&#x02013;64)</td><td align="left" rowspan="1" colspan="1">58 (53&#x02013;64)</td><td align="left" rowspan="1" colspan="1">61 (57&#x02013;67)</td><td align="left" rowspan="1" colspan="1">&#x0003c;.0001</td></tr><tr><td align="left" rowspan="1" colspan="1">A&#x003b2;-positivity, No. (%)</td><td align="left" rowspan="1" colspan="1">192 (21.2)</td><td align="left" rowspan="1" colspan="1">162 (20.7)</td><td align="left" rowspan="1" colspan="1">265 (33.8)</td><td align="left" rowspan="1" colspan="1">&#x0003c;.0001</td></tr><tr><td align="left" rowspan="1" colspan="1">GFAP-positivity, No. (%)</td><td align="left" rowspan="1" colspan="1">175 (19.3)</td><td align="left" rowspan="1" colspan="1">155 (19.8)</td><td align="left" rowspan="1" colspan="1">205 (26.2)</td><td align="left" rowspan="1" colspan="1">.0027</td></tr><tr><td align="left" rowspan="1" colspan="1">NfL-positivity, No. (%)</td><td align="left" rowspan="1" colspan="1">227 (25.1)</td><td align="left" rowspan="1" colspan="1">189 (24.1)</td><td align="left" rowspan="1" colspan="1">236 (30.1)</td><td align="left" rowspan="1" colspan="1">.0075</td></tr><tr><td align="left" rowspan="1" colspan="1">pTau-positivity, No. (%)</td><td align="left" rowspan="1" colspan="1">212 (23.4)</td><td align="left" rowspan="1" colspan="1">182 (23.2)</td><td align="left" rowspan="1" colspan="1">163 (20.8)</td><td align="left" rowspan="1" colspan="1">.2470</td></tr></tbody></table><table-wrap-foot><fn id="tblfn1"><p>
+<sup>a</sup>
+<italic toggle="yes">P</italic>-values were calculated by comparing the baseline and follow-up measurements for each characteristic among the followed-up participants.</p></fn></table-wrap-foot></table-wrap></sec><sec id="sec12"><title>Plasma samples</title><p>The plasma samples of participants were profiled by the Olink Platform [<xref rid="ref35" ref-type="bibr">35</xref>], where 1463 proteins were totally assayed (further details can be found at: <ext-link xlink:href="https://olink.com/" ext-link-type="uri">https://olink.com/</ext-link>). For the initial data for protein expression, proteins with a missing frequency &#x0003e;5% were excluded, and missing values were estimated using the <italic toggle="yes">k</italic>-nearest neighbor method. Subsequently, protein expression levels were standardized through <italic toggle="yes">Z</italic>-score normalization and then scaled using the logistic function.</p></sec></sec><sec id="sec13"><title>Proteomic assays</title><sec id="sec14"><title>Differentially expressed proteins</title><p>Differential expression analysis (DEA) was conducted to identify proteins associated with neurodegenerative biomarkers among the total assayed proteins. The expression levels of each protein were compared between the case and control groups for the biomarkers, and the statistical significance of those differences is subsequently analyzed. To carry out this analysis, the &#x0201c;limma&#x0201d; R/Bioconductor package [<xref rid="ref36" ref-type="bibr">36</xref>] was utilized. Of the 1412 proteins that passed quality control, DEA identified 237, 344, 411, and 440 DEPs for A&#x003b2;, GFAP, NfL, and pTau, respectively, using a <italic toggle="yes">P</italic>-value threshold of .05 (<xref rid="f2" ref-type="fig">Fig. 2a</xref>). A total of 670 DEPs were associated with neurodegenerative biomarkers, with 113 proteins shared across all biomarkers. These shared DEPs were selected as the target proteins for this study. Among the target proteins, 104 were consistently upregulated across all biomarkers, with an average &#x02013;log<sub>10</sub>&#x000a0;<italic toggle="yes">P</italic>-value of 3.14. NEFL showed the highest &#x02013;log<sub>10</sub>&#x000a0;<italic toggle="yes">P</italic>-value (9.94), followed by WFDC2 (7.63) and GDF15 (6.89). Clinical studies have established significant associations between the plasma levels of these proteins and the pathogenesis of neurodegenerative diseases, including AD and PD [<xref rid="ref11" ref-type="bibr">11</xref>, <xref rid="ref37" ref-type="bibr">37</xref>, <xref rid="ref38" ref-type="bibr">38</xref>]. Detailed results for the target proteins are provided in <xref rid="sup1" ref-type="supplementary-material">Supplementary Table S1</xref>.</p><fig position="float" id="f3"><label>Figure 3</label><caption><p>Structural properties and interaction types in the constructed PPI network. (a) Shows the structural properties of the PPI network for the 113 target proteins and (b) presents functional, physical, and regulatory interactions in the constructed PPI network.</p></caption><graphic xlink:href="bbaf213f3" position="float"/></fig><fig position="float" id="f2"><label>Figure 2</label><caption><p>Proteomic assays of target proteins for neurodegenerative biomarkers. (a) Shows the differentially expressed proteins for neurodegenerative biomarkers. (b) Presents the results for the functional enrichment analysis for 113 proteins that were found to be commonly significant to all biomarkers.</p></caption><graphic xlink:href="bbaf213f2" position="float"/></fig></sec><sec id="sec15"><title>Functional enrichment analysis</title><p>Subsequently, the functional enrichment analysis was performed on the target proteins for neurodegenerative biomarkers by employing the &#x0201c;Enrichr&#x0201d; [<xref rid="ref39" ref-type="bibr">39</xref>] (<ext-link xlink:href="https://maayanlab.cloud/Enrichr/" ext-link-type="uri">https://maayanlab.cloud/Enrichr/</ext-link>). This analysis identified significant terms for the target proteins across five categories of functional annotations: three gene ontology (GO) domains (biological process, cellular component, and molecular function) and two pathway databases (KEGG [<xref rid="ref40" ref-type="bibr">40</xref>] and Reactome [<xref rid="ref41" ref-type="bibr">41</xref>]), with a thresholding <italic toggle="yes">Q</italic>-value of .05. <xref rid="f2" ref-type="fig">Figure 2b</xref> shows the top five terms with high protein frequencies for each category. The findings revealed that the proteins were significantly associated with cytokines, the immune system, and signal transduction, highlighting the critical role of cytokines in influencing the central nervous system through various mechanisms, as well as the neuroinflammation they mediate in the development of neurodegenerative diseases [<xref rid="ref42" ref-type="bibr">42</xref>, <xref rid="ref43" ref-type="bibr">43</xref>].</p></sec><sec id="sec16"><title>Protein&#x02013;protein interaction network construction</title><p>The PPI network for the 113 target proteins was constructed based on the combined scores of PPIs obtained from the STRING database [<xref rid="ref44" ref-type="bibr">44</xref>] (version 12.0, <ext-link xlink:href="https://string-db.org/" ext-link-type="uri">https://string-db.org/</ext-link>). In the constructed network, PPIs with a combined score &#x0003e;0.4 were included, and the edge weights between proteins were first standardized through <italic toggle="yes">Z</italic>-score normalization of the combined score, then scaled to values between 0 and 1 using a logistic function. As a result, the constructed PPI network included 234 interactions among 93 of the 113 proteins, each of which was connected by at least one edge, representing a network density of 5.47% (<xref rid="sup1" ref-type="supplementary-material">Supplementary Fig. S1</xref>). As shown in <xref rid="f3" ref-type="fig">Fig. 3a</xref>, each protein was connected to an average of 5.03 other proteins, with TNFRSF1A having the highest node degree of 19, and the average weight of the 234 edges included in the network was 0.486. Furthermore, we identified PPIs corresponding to functional, physical, and regulatory interactions among the entire set of PPIs (<xref rid="f3" ref-type="fig">Fig. 3b</xref>). Specifically, 20 PPIs were verified as functional interactions through the Reactome database (version 91) [<xref rid="ref41" ref-type="bibr">41</xref>], 14 were identified as physical interactions using IntAct (release 249) [<xref rid="ref45" ref-type="bibr">45</xref>] and BioGRID (release 4.4.240) [<xref rid="ref46" ref-type="bibr">46</xref>] databases, and 47 were confirmed as regulatory interactions based on co-expression evidence in the STRING database.</p><fig position="float" id="f4"><label>Figure 4</label><caption><p>Performance comparison for predicting neurodegenerative risks. The performance of PPIxGPN was evaluated against the baseline model and seven GNN-based methods using AUROC, AUPRC, accuracy, and F1-score. (a) Compares the overall performance metric&#x02014;Calculated as the average of AUROC, AUPRC, accuracy, and F1-score&#x02014;and highlights the performance improvements achieved by PPIxGPN. (b) Presents the individual comparisons for each performance metric, and (c) shows the averages of overall performance metrics for each neurodegenerative biomarker.</p></caption><graphic xlink:href="bbaf213f4" position="float"/></fig></sec></sec><sec id="sec17"><title>Performance evaluation</title><sec id="sec18"><title>Experimental settings</title><p>We conducted three types of experiments to evaluate the performance of the proposed method. First, we compared its performance with that of the baseline model, which trained the independent effect, and seven GNN-based models&#x02014;GCN [<xref rid="ref17" ref-type="bibr">17</xref>], SGC [<xref rid="ref19" ref-type="bibr">19</xref>], EGC [<xref rid="ref20" ref-type="bibr">20</xref>], LGC [<xref rid="ref20" ref-type="bibr">20</xref>], MixHop [<xref rid="ref21" ref-type="bibr">21</xref>], UGCN [<xref rid="ref22" ref-type="bibr">22</xref>], and MOGCN [<xref rid="ref23" ref-type="bibr">23</xref>]&#x02014;applicable to the PPI network. The maximum order of PPIs reflected in those models were 2 for GCN, 3 for SGC, 4 for EGC and MixHop, 5 for LGC and UGCN, and 6 for MOGCN, where a model with a maximum PPI order of <italic toggle="yes">K</italic> considers interactions up to the <italic toggle="yes">K</italic>-hop neighboring proteins in the PPI network. All models were trained using the ADAM optimizer [<xref rid="ref47" ref-type="bibr">47</xref>] with a learning rate of 0.001. The performance was measured by the area under the receiving operating characteristic curve (AUROC), area under precision-recall curve (AUPRC), accuracy, and F1-score, with 100 iterations of five-fold cross-validation.</p><p>Second, we validated the performance improvement obtained by incorporating the synergetic effects derived from PPIxGPN into various ML models that had previously been used to learn the independent effects of proteins. In the blood protein-based diagnostic models, Logistic Regression Classifier, Linear SVM, Kernel SVM, Random Forest Classifier, AdaBoost, and XGBoost were each applied in [<xref rid="ref48" ref-type="bibr">48&#x02013;53</xref>], respectively. In addition to these five models, we employed seven more ML models&#x02014;linear discriminant analysis, Quadratic Discriminant Analysis, Polynomial Support Vector Machines, <italic toggle="yes">K</italic>-Nearest Neighbors, Na&#x000ef;ve Bayes Classifier, Decision Tree Classifier, Generalized Linear Model&#x02014;in our experiments.</p><p>Last, we conducted an empirical analysis of the PPI network focusing on edge density and interaction types. At first, we examined how varying the edge density of the PPI network affects performance in predicting neurodegenerative risk. Specifically, from the constructed network, we randomly selected edges corresponding to 20%, 40%, 60%, and 80% of all PPIs to build respective PPI networks and applied our proposed method. For each proportion, we constructed 100 random networks and performed repeated experiments. The results were compared both to the outcome of learning only the independent effect and to the outcome of our proposed method when applying all PPIs in the constructed network. Next, we highlighted functional, physical, and regulatory interactions in the existing PPI network and constructed new networks accordingly, then applied PPIxGPN to investigate any changes in performance for neurodegenerative risk prediction. For each interaction type, we set the weights of the corresponding edges to 1, constructing three new PPI networks in total. We then applied our proposed method to these networks in the same manner as before.</p></sec><sec id="sec19"><title>Comparison results</title><p>The performance comparison results are illustrated in <xref rid="f4" ref-type="fig">Fig. 4</xref>. By comparing an overall performance metric that averages AUROC, AUPRC, accuracy, and F1-score, PPIxGPN achieved the highest score of 0.599 (<xref rid="f4" ref-type="fig">Fig. 4a</xref>), while that of the comparison methods ranged from 0.502 to 0.571, with PPIxGPN outperforming them by 9.6% on average. Among the comparison methods, MOGCN, with a maximum PPI order of 6, demonstrated the highest average performance of 0.571, while GCN, with a maximum PPI order of 2, exhibited the lowest average performance of 0.523. These findings suggest a positive correlation between the maximum PPI order and performance, with the proposed method achieving optimal results by incorporating global properties of the PPI network. Furthermore, an analysis of individual performance metrics revealed that the proposed method consistently outperformed the comparison methods, achieving superior results across all metrics (<xref rid="f4" ref-type="fig">Fig. 4b</xref>). It was also observed that higher maximum PPI orders contributed to improved performance in individual metrics.</p><fig position="float" id="f5"><label>Figure 5</label><caption><p>Prediction enhancement by incorporating synergetic effects. For 13 machine learning algorithms, the performance of neurodegenerative risk prediction based on learning the independent effect was compared with that based on learning the synergistic effect.</p></caption><graphic xlink:href="bbaf213f5" position="float"/></fig><p>In addition, <xref rid="f4" ref-type="fig">Fig. 4c</xref> shows the performance comparison for each neurodegenerative biomarker. The averages of overall performance metrics across all methods for A&#x003b2;, GFAP, NfL, and pTau were 0.428, 0.557, 0.639, and 0.590, respectively. The proposed method achieved the most optimal results for each biomarker, surpassing the comparison methods by an average of 9.7%, 13.8%, 9.6%, and 5.7% for A&#x003b2;, GFAP, NfL, and pTau, respectively. Among the biomarkers, NfL exhibited the highest performance, while A&#x003b2; demonstrated the lowest performance, with an average of 49.1% lower than the others. These results align with the understanding that plasma A&#x003b2; biomarkers have a lower signal-to-noise ratio and weaker associations with diagnostic outcomes, where clinical studies have highlighted the inherent complexity and variability of A&#x003b2;, influenced by subtle level variations and numerous confounding factors, contributing to diagnostic challenges in dementia [<xref rid="ref54" ref-type="bibr">54&#x02013;56</xref>]. Detailed results of the performance comparison are provided in <xref rid="sup1" ref-type="supplementary-material">Supplementary Table S2</xref>.</p></sec><sec id="sec20"><title>Prediction enhancements</title><p>
+<xref rid="f5" ref-type="fig">Figure 5</xref> presents a comparison of neurodegenerative risk prediction performance, based on training the independent and synergistic effects, across 13 different ML models. Models trained on the synergetic effect achieved an average AUROC of 0.729, representing an 11.6% improvement over the 0.653 average AUROC obtained from the independent effect. This difference was statistically significant, with a <italic toggle="yes">P</italic>-value of 6.72&#x02009;&#x000d7;&#x02009;10<sup>&#x02212;43</sup>. These results demonstrate that the synergetic effect captured by PPIxGPN offers greater discriminative power in biomarker identification compared to the independent effect. Furthermore, our approach performs effectively even with relatively simple ML algorithms, suggesting its generalizability for broader applications.</p><fig position="float" id="f6"><label>Figure 6</label><caption><p>Prediction enhancement by integrating demographic information. The enhanced predictions were achieved by integrating demographic information, such as participants' age, sex, and education scores, into PPIxGPN.</p></caption><graphic xlink:href="bbaf213f6" position="float"/></fig><p>In addition, prediction outcomes were further enhanced by incorporating demographic information, including participants' age, sex, and education scores, into PPIxGPN. As shown in <xref rid="f6" ref-type="fig">Fig. 6</xref>, the enhanced PPIxGPN achieved an AUROC performance of 0.780, a 4.3% improvement over the original result, which was statistically significant with a <italic toggle="yes">P</italic>-value of 4.40&#x02009;&#x000d7;&#x02009;10<sup>&#x02212;163</sup>. The most notable improvement was observed in pTau prediction, with a 6.0% increase, followed by a 4.8% improvement in NfL prediction. Apart from A&#x003b2; prediction, which showed the smallest performance gain, the AUROC improvements for the other three biomarkers were statistically significant. These findings indicate that PPIxGPN not only effectively integrates protein expression levels but also aligns well with demographic information, enhancing predictive performance by providing additional context. This capability improves the model's ability to identify patterns associated with neurodegenerative biomarkers and underscores its potential for robust neurodegenerative risk prediction.</p><fig position="float" id="f7"><label>Figure 7</label><caption><p>Empirical analysis of the PPI network. In predicting neurodegenerative risk: (a) shows the variation in the performance of PPIxGPN according to the edge density of the PPI network, while (b) compares the performance of PPIxGPN when functional, physical, and regulatory interactions are highlighted in the original network.</p></caption><graphic xlink:href="bbaf213f7" position="float"/></fig></sec><sec id="sec21"><title>Empirical analysis</title><p>
+<xref rid="f7" ref-type="fig">Figure 7</xref> presents the results of our empirical analysis of the PPI network, focusing on edge density and interaction types. First, compared to neurodegenerative risk prediction based on learning only independent effects, incorporating synergetic effects between proteins via PPIs resulted in an average 12.9% increase in AUROC, with performance improvements ranging from 9.8% to 15.1% depending on edge density (<xref rid="f7" ref-type="fig">Fig. 7a</xref>). The analysis also showed that higher edge density led to better predictive performance, where using all edges yielded the highest performance with an AUROC of 0.748, which is 4.8% higher than the AUROC of 0.714 achieved when only 20% of the edges were used. Next, when highlighting the edges corresponding to functional, physical, and regulatory interactions in the constructed PPI network, all three networks outperformed the original network, achieving an average 1.1% improvement in AUROC (<xref rid="f7" ref-type="fig">Fig. 7b</xref>). Among these three interaction types, highlighting functional interactions produced the best result with an AUROC of 0.761, which was on average 1.7% higher than the original performance. These findings demonstrate that a model comprehensively accounting for PPIs can enhance the accuracy of neurodegenerative disease risk prediction, suggesting that adopting differentiated strategies based on interaction types may be effective.</p><fig position="float" id="f8"><label>Figure 8</label><caption><p>Discriminative significance of the synergetic effect. (a) Illustrates the distribution of propagation parameters for the target proteins. (b) Compares the protein expressions between the independent and synergetic effects. (c) Evaluates the statistical significance of diagnostic group discrimination between the independent and synergetic effects.</p></caption><graphic xlink:href="bbaf213f8" position="float"/></fig></sec></sec><sec id="sec22"><title>Explanatory analyses</title><sec id="sec23"><title>Discriminative significance of the synergetic effect</title><p>We evaluated the discriminative significance of the synergetic effect derived from PPIxGPN. Initially, the propagation parameters of the target proteins averaged 1.25, with NEFL showing the highest value at 3.47 (<xref rid="f8" ref-type="fig">Fig. 8a</xref> and <xref rid="sup1" ref-type="supplementary-material">Supplementary Table S3</xref>). A correlation of &#x02212;0.1849 (<italic toggle="yes">P</italic>-value&#x02009;=&#x02009;4.99&#x02009;&#x000d7;&#x02009;10<sup>&#x02212;2</sup>) was observed between these parameters and the fluctuation of effects. Compared to the independent effect, the synergetic effect resulted in a 12.5% reduction in average expression values, decreasing from 0.497 (&#x000b1;0.004) to 0.435 (&#x000b1;0.111). Among the proteins, 34 (30.1%) exhibited increased expression, while 79 (69.9%) showed decreased expression, a statistically significant change with a <italic toggle="yes">P</italic>-value of 1.42&#x02009;&#x000d7;&#x02009;10<sup>&#x02212;8</sup> (<xref rid="f8" ref-type="fig">Fig. 8b</xref> and <xref rid="sup1" ref-type="supplementary-material">Supplementary Table S4</xref>). Notably, transitioning from the independent effect to the synergistic effect led to a 27.4-fold increase in the standard deviation of average expression values. Additionally, the differences between the two effects showed a strong correlation (~0.9, <italic toggle="yes">P</italic>-value&#x02009;=&#x02009;1.55&#x02009;&#x000d7;&#x02009;10<sup>&#x02212;23</sup>) with the node degree of proteins in the PPI network (<xref rid="sup1" ref-type="supplementary-material">Supplementary Table S5</xref>), underscoring the enhanced differentiation among proteins achieved by incorporating PPIs.</p><fig position="float" id="f9"><label>Figure 9</label><caption><p>Predictive importance of the target proteins. (a) Compares the estimation parameters for target proteins, including the correlation between group-wise differences between the two effects and the estimation parameters. (b) Presents the SHAP-driven predictive importance of target proteins, along with the correlation between performance contribution and protein importance. (c) Identifies major proteins for neurodegenerative biomarkers and (d) evaluates their effectiveness in neurodegenerative risk prediction.</p></caption><graphic xlink:href="bbaf213f9" position="float"/></fig><p>Furthermore, a comparison of the statistical significance between the independent and synergetic effects across diagnostic groups for neurodegenerative biomarkers revealed substantial improvement. The synergetic effect achieved an average <italic toggle="yes">P</italic>-value of 6.87, representing a 39.4% enhancement compared to the independent effect, which had an average <italic toggle="yes">P</italic>-value of 4.93 (<xref rid="f8" ref-type="fig">Fig. 8c</xref> and <xref rid="sup1" ref-type="supplementary-material">Supplementary Table S6</xref>). Additionally, the propagation parameters were positively correlated with the &#x02013;log<sub>10</sub>&#x000a0;<italic toggle="yes">P</italic>-values of target proteins in the synergetic effect (Pearson correlation&#x02009;=&#x02009;0.3606, <italic toggle="yes">P</italic>-value&#x02009;=&#x02009;8.71&#x02009;&#x000d7;&#x02009;10<sup>&#x02212;5</sup>). These results demonstrate that the synergetic effect derived from PPIxGPN offers a significantly enhanced capacity to distinguish variations in protein expression and their associations with diagnostic groups, compared to the independent effect. The improved discrimination and increased statistical significance highlight the critical role of incorporating PPI networks in predicting neurodegenerative risks and capturing the intricate interactions among proteins.</p></sec><sec id="sec24"><title>Predictive importance of the target proteins</title><p>We further assessed the predictive importance of the target proteins for predicting neurodegenerative risks. First, a comparison of the estimation parameters for each biomarker revealed that, except for A&#x003b2;, more proteins exhibited negative values for the remaining three biomarkers (<xref rid="f9" ref-type="fig">Fig. 9a</xref> and <xref rid="sup1" ref-type="supplementary-material">Supplementary Table S7</xref>). Overall, 48.9% of the proteins contributed to an increase in risks through positive estimation parameter values. Of the target proteins, 13 (11.5%) proteins showed positive estimation parameter values across all biomarkers, with NEFL and GFAP standing out with the most prominent sum of the parameters. Moreover, the estimation parameters showed a positive correlation (Pearson correlation&#x02009;=&#x02009;0.5291, <italic toggle="yes">P</italic>-value&#x02009;=&#x02009;5.74&#x02009;&#x000d7;&#x02009;10<sup>&#x02212;34</sup>) with the diagnostic group-wise differences between the independent and synergetic effects. Next, the importances of target proteins for neurodegenerative risk prediction were evaluated using SHapley Additive exPlanations (SHAP) [<xref rid="ref57" ref-type="bibr">57</xref>]. The average of importances was 0.41, with 41 proteins (36.3%) exceeding this threshold (<xref rid="f9" ref-type="fig">Fig. 9b</xref> and <xref rid="sup1" ref-type="supplementary-material">Supplementary Table S8</xref>), and NEFL and GFAP scored the highest importances, at 2.73 and 2.45, respectively, followed by MB (1.05), CA3 (0.86), and CRIP2 (0.77). A significant positive correlation (Pearson correlation&#x02009;=&#x02009;0.7313, <italic toggle="yes">P</italic>-value&#x02009;=&#x02009;3.69&#x02009;&#x000d7;&#x02009;10<sup>&#x02212;20</sup>) was observed between the protein importances and their individual contributions to prediction performance, measured by the change in AUROC when each protein was excluded from the synergetic effect.</p><fig position="float" id="f10"><label>Figure 10</label><caption><p>Survival analysis for longitudinal changes in neurodegenerative biomarkers. Kaplan&#x02013;Meier survival curves (a&#x02013;d) illustrate the progression from baseline negativity to follow-up positivity for high-risk and low-risk groups based on the predicted risk scores for A&#x003b2;, GFAP, NfL, and pTau, respectively. Participants with predicted risk scores exceeding 0.5 for each biomarker were classified as the high-risk group.</p></caption><graphic xlink:href="bbaf213f10" position="float"/></fig><p>Additionally, the target proteins with significant impacts on increasing risks for neurodegenerative biomarkers were identified by combining estimation parameters and importance scores. For each biomarker, proteins within the top 10% for both metrics were selected as major proteins, resulting in a total of 19 major proteins: 4 for A&#x003b2;, 5 for GFAP, 4 for NfL, and 9 for pTau (<xref rid="f9" ref-type="fig">Fig. 9c</xref> and <xref rid="sup1" ref-type="supplementary-material">Supplementary Table S9</xref>). Among these, three proteins&#x02014;GFAP, NEFL, and KLK4&#x02014;were selected as major proteins for two biomarkers each, where GFAP protein was selected for both GFAP and pTau, NEFL protein for both GFAP and NfL, and KLK4 protein for both NfL and pTau. Then, the effectiveness of these major proteins was validated by analyzing diagnostic group-wise differences in risk score distributions. As shown in <xref rid="f9" ref-type="fig">Fig. 9d</xref>, the positive diagnosis group had an average risk score of 0.637 from major proteins that was 20.1% higher than that from minor proteins, while the negative diagnosis group showed a 1.6% increase. This resulted in a difference in average risk scores between diagnostic groups for major proteins (0.160), which was 164.6% greater than the difference observed for minor proteins (0.060). Furthermore, the risk scores derived from major proteins achieved an AUROC of 0.791 and an AUPRC of 0.562, representing improvements of 33.3% and 93.2%, respectively, compared to the risk scores derived from minor proteins. As a result, this analysis enabled the identification of the predictive contributions of proteins. In particular, by integrating estimation parameters and importance scores, 19 major proteins were identified as key contributors to risk prediction for neurodegenerative biomarkers, demonstrating stronger associations with diagnostic group discrimination and enhancing the predicted risk scores.</p></sec></sec><sec id="sec25"><title>Survival analysis</title><p>At last, we performed a survival analysis to investigate longitudinal changes associated with neurodegenerative biomarkers based on the predicted risk scores. Of the 758 participants with follow-up data, the baseline negative diagnosis groups comprised 621, 628, 594, and 601 participants for A&#x003b2;, GFAP, NfL, and pTau, respectively. Participants with predicted risk scores above 0.5 for each biomarker were classified as the high-risk group, including 233 participants for A&#x003b2;, 169 for GFAP, 154 for NfL, and 168 for pTau. As shown in <xref rid="f10" ref-type="fig">Fig. 10</xref>, the results of this analysis revealed significant differences in survival probabilities between high-risk and low-risk groups, indicating that higher predicted risk scores are associated with markedly lower survival probabilities across all biomarkers. The hazard ratios for the biomarkers were derived as follows: A&#x003b2; at 1.507 (95% CI: 1.066&#x02013;2.132), GFAP at 2.138 (95% CI: 1.351&#x02013;3.381), NfL at 3.5 18 (95% CI: 2.296&#x02013;5.390), and pTau at 2.443 (95% CI: 1.554&#x02013;3.840), with NfL demonstrating the strongest association with survival outcomes. These findings suggest that the risks predicted by PPIxGPN are strongly linked to the progression of neurodegeneration, underscoring the capacity of PPIxGPN to enhance early detection of neurodegenerative diseases by effectively capturing dynamic changes in biomarker profiles over time.</p></sec></sec><sec id="sec26"><title>Conclusion</title><p>In this study, we introduce PPIxGPN, an explainable ML model that integrates PPI networks into plasma proteomic profiling of neurodegenerative biomarkers, offering two key advantages. First, unlike conventional ML approaches that assess proteins independently, PPIxGPN captures synergetic effects by integrating the independent effects of target proteins with the PPI network. Through globality-based feature aggregation, PPIxGPN constructs a comprehensive representation of the PPI network&#x02014;particularly valuable for modeling blood-based biomarkers such as A&#x003b2;<sub>42/40</sub>, GFAP, NfL, and pTau<sub>181</sub>&#x02014;since it identifies both individual expression levels and network-level interdependencies tied to disease risk. Experimental results on the UKB dataset confirm PPIxGPN&#x02019;s superior performance over comparison methods. Second, PPIxGPN adopts a shallow, two-layer architecture (a single propagational layer followed by a fully connected layer), ensuring high explainability by reducing parameter complexity, clarifying each parameter&#x02019;s function, and making the overall process easier to trace. Such intuitive design is especially critical in medical contexts, where clear insight into the biological understanding of model outputs is essential. Furthermore, by identifying major proteins for the neurodegenerative biomarkers and analyzing longitudinal changes in their diagnosis, PPIxGPN not only highlights the biological relevance of these proteins through interpretable outcomes but also effectively captures temporal shifts in biomarker profiles, underscoring its clinical applicability.</p><p>Here are some remarks on the method we proposed. First, the findings in this study are limited to a single cohort with internal validation due to the scarcity of public datasets that include both neurodegenerative biomarkers and plasma proteins. Future studies should validate PPIxGPN using external, multi-cohort datasets across diverse ethnic backgrounds to improve its robustness and generalizability. Second, PPIxGPN can be enhanced by constructing a more refined PPI network, considering the imbalanced nature of PPI characteristics to achieve a more sophisticated representation of protein data [<xref rid="ref58" ref-type="bibr">58</xref>, <xref rid="ref59" ref-type="bibr">59</xref>]. Third, PPIxGPN can be further enriched into a biologically informed model by incorporating molecular pathways and functional annotations, allowing for a deeper understanding of disease mechanisms beyond protein interactions alone. Fourth, extending PPIxGPN into a multimodal model by integrating genetic information, neuroimaging data, and clinical parameters could enhance its ability to predict disease progression, offering more clinically meaningful insights for precision medicine. Last, to bridge the gap between research and clinical practice, further efforts should focus on adapting PPIxGPN for real-world applications, including the development of user-friendly clinical tools that allow healthcare professionals to interpret its predictions effectively.</p><boxed-text id="box01" position="float"><sec id="sec3"><title>Key Points</title><list list-type="bullet"><list-item><p>We introduce Protein&#x02013;Protein Interaction-based eXplainable Graph Propagational Network (PPIxGPN), a novel machine learning (ML) model designed for plasma proteomic profiling of neurodegenerative biomarkers, predicting individual risks for &#x003b2;-amyloid, glial fibrillary acidic protein, neurofilament light, and phosphorylated tau.</p></list-item><list-item><p>PPIxGPN integrates the protein&#x02013;protein interaction (PPI) network with the independent effects of proteins, capturing synergetic effects through globality-based feature aggregation, which enhances the comprehensive representation of PPI networks.</p></list-item><list-item><p>PPIxGPN ensures high explainability with a shallow two-layer architecture, providing interpretable outputs that improve understanding of biological significance and disease progression.</p></list-item><list-item><p>Experimental validation confirms PPIxGPN&#x02019;s superior performance in predicting neurodegenerative risks, demonstrating its ability to identify biologically relevant proteins, generate explainable outcomes, and capture longitudinal biomarker changes.</p></list-item><list-item><p>This study presents PPIxGPN as a powerful, explainable, and biologically informative ML model, offering improved predictive accuracy and clinical interpretability, with strong potential for early diagnosis and precision medicine applications in neurodegenerative diseases.</p></list-item></list></sec></boxed-text></sec><sec sec-type="supplementary-material"><title>Supplementary Material</title><supplementary-material id="sup1" position="float" content-type="local-data"><label>PPIxGPN_SupplementaryData_bbaf213</label><media xlink:href="ppixgpn_supplementarydata_bbaf213.docx"/></supplementary-material></sec></body><back><sec id="sec29"><title>Author contributions</title><p>Sunghong Park conceived of the study; Dong-gi Lee and Hyunjung Shin acquired the data for the study; Sunghong Park, Juhyeon Kim, Seung Ho Kim, and Hyeon Jin Hwang curated data and performed analyses of the study; Sunghong Park, Dong-gi Lee, Juhyeon Kim, Seung Ho Kim, and Hyeon Jin Hwang contributed to interpretation of the analyses of the study; Sunghong Park, Hyunjung Shin, and Hyun Goo Woo acquired the fundings for the study; Sunghong Park, Dong-gi Lee, and Juhyeon Kim drafted the manuscript; Hyunjung Shin and Hyun Goo Woo supervised analyses of the study. All authors involved in reviewing and editing the manuscript.</p></sec><sec id="sec30"><title>&#x000a0;</title><p>Conflict of interest: None declared.</p></sec><sec id="sec31"><title>Funding</title><p>This study was supported by the Basic Science Research Program through the National Research Foundation of Korea (NRF) funded by the Ministry of Education (MOE), Republic of Korea (2022R1A6A3A01086784), and Ajou University Research Fund. This work was also supported by the NRF grants funded by the Ministry of Science and ICT (MSIT), Republic of Korea (2019R1A5A2026045, RS-2022-001653, and 2021R1A2C2003474), the Institute of Information &#x00026; Communications Technology Planning &#x00026; Evaluation grant funded by the MSIT (RS-2023-00255968), a grant of Korea Health Technology R&#x00026;D Project through Korea Health Industry Development Institute (KHIDI) funded by the Ministry of Health and Welfare, Republic of Korea (RS-2021-KH113821), and a grant of &#x0201c;Korea Government Grant Program for Education and Research in Medical AI&#x0201d; through the KHIDI funded by the MOE and MOHW.</p></sec><sec sec-type="data-availability" id="sec28"><title>Data availability</title><p>This research has been conducted using the UK Biobank Resource under Application Number 79011. Requests to access the data should be made via application to UK Biobank (<ext-link xlink:href="https://www.ukbiobank.ac.uk/" ext-link-type="uri">https://www.ukbiobank.ac.uk/</ext-link>). The source codes of this study are available at <ext-link xlink:href="https://github.com/sunghongpark-ai/PPIxGPN" ext-link-type="uri">https://github.com/sunghongpark-ai/PPIxGPN</ext-link>.</p></sec><ref-list id="bib1"><title>References</title><ref id="ref1"><label>1.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Kampmann</surname> &#x000a0;<given-names>M</given-names></string-name>
+</person-group>. <article-title>Molecular and cellular mechanisms of selective vulnerability in neurodegenerative diseases</article-title>. <source><italic toggle="yes">Nat Rev Neurosci</italic></source> &#x000a0;<year>2024</year>;<volume>25</volume>:<fpage>351</fpage>&#x02013;<lpage>71</lpage>. <pub-id pub-id-type="doi">10.1038/s41583-024-00806-0</pub-id><pub-id pub-id-type="pmid">38575768</pub-id>
+</mixed-citation></ref><ref id="ref2"><label>2.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Jack</surname> &#x000a0;<given-names>CR</given-names> &#x000a0;<suffix>Jr</suffix></string-name>, <string-name><surname>Andrews</surname> &#x000a0;<given-names>JS</given-names></string-name>, <string-name><surname>Beach</surname> &#x000a0;<given-names>TG</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Revised criteria for diagnosis and staging of Alzheimer's disease: Alzheimer's association workgroup</article-title>. <source><italic toggle="yes">Alzheimers Dement</italic></source> &#x000a0;<year>2024</year>;<volume>20</volume>:<fpage>5143</fpage>&#x02013;<lpage>69</lpage>. <pub-id pub-id-type="doi">10.1002/alz.13859</pub-id><pub-id pub-id-type="pmid">38934362</pub-id>
+</mixed-citation></ref><ref id="ref3"><label>3.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Skillb&#x000e4;ck</surname> &#x000a0;<given-names>T</given-names></string-name>, <string-name><surname>Farahmand</surname> &#x000a0;<given-names>BY</given-names></string-name>, <string-name><surname>Ros&#x000e9;n</surname> &#x000a0;<given-names>C</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Cerebrospinal fluid tau and amyloid-&#x003b2;1-42 in patients with dementia</article-title>. <source><italic toggle="yes">Brain</italic></source> &#x000a0;<year>2015</year>;<volume>138</volume>:<fpage>2716</fpage>&#x02013;<lpage>31</lpage>. <pub-id pub-id-type="doi">10.1093/brain/awv181</pub-id><pub-id pub-id-type="pmid">26133663</pub-id>
+</mixed-citation></ref><ref id="ref4"><label>4.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Jack</surname> &#x000a0;<given-names>CR</given-names> &#x000a0;<suffix>Jr</suffix></string-name>, <string-name><surname>Bennett</surname> &#x000a0;<given-names>DA</given-names></string-name>, <string-name><surname>Blennow</surname> &#x000a0;<given-names>K</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>NIA-AA research framework: toward a biological definition of Alzheimer's disease</article-title>. <source><italic toggle="yes">Alzheimers Dement</italic></source> &#x000a0;<year>2018</year>;<volume>14</volume>:<fpage>535</fpage>&#x02013;<lpage>62</lpage>. <pub-id pub-id-type="doi">10.1016/j.jalz.2018.02.018</pub-id><pub-id pub-id-type="pmid">29653606</pub-id>
+</mixed-citation></ref><ref id="ref5"><label>5.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Hansson</surname> &#x000a0;<given-names>O</given-names></string-name>
+</person-group>. <article-title>Biomarkers for neurodegenerative diseases</article-title>. <source><italic toggle="yes">Nat Med</italic></source> &#x000a0;<year>2021</year>;<volume>27</volume>:<fpage>954</fpage>&#x02013;<lpage>63</lpage>. <pub-id pub-id-type="doi">10.1038/s41591-021-01382-x</pub-id><pub-id pub-id-type="pmid">34083813</pub-id>
+</mixed-citation></ref><ref id="ref6"><label>6.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Bolsewig</surname> &#x000a0;<given-names>K</given-names></string-name>, <string-name><surname>van Unnik</surname> &#x000a0;<given-names>AAJM</given-names></string-name>, <string-name><surname>Blujdea</surname> &#x000a0;<given-names>ER</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Association of plasma amyloid, P-tau, GFAP, and NfL with CSF, clinical, and cognitive features in patients with dementia with Lewy bodies</article-title>. <source><italic toggle="yes">Neurology</italic></source> &#x000a0;<year>2024</year>;<volume>102</volume>:<fpage>e209418</fpage>. <pub-id pub-id-type="doi">10.1212/WNL.0000000000209418</pub-id><pub-id pub-id-type="pmid">38830138</pub-id>
+</mixed-citation></ref><ref id="ref7"><label>7.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Verberk</surname> &#x000a0;<given-names>IM</given-names></string-name>, <string-name><surname>Thijssen</surname> &#x000a0;<given-names>E</given-names></string-name>, <string-name><surname>Koelewijn</surname> &#x000a0;<given-names>J</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Combination of plasma amyloid beta (1-42/1-40) and glial fibrillary acidic protein strongly associates with cerebral amyloid pathology</article-title>. <source><italic toggle="yes">Alzheimer's research &#x00026; therapy</italic></source> &#x000a0;<year>2020</year>;<volume>12</volume>:<fpage>1</fpage>&#x02013;<lpage>14</lpage>. <pub-id pub-id-type="doi">10.1186/s13195-020-00682-7</pub-id></mixed-citation></ref><ref id="ref8"><label>8.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Karikari</surname> &#x000a0;<given-names>TK</given-names></string-name>, <string-name><surname>Ashton</surname> &#x000a0;<given-names>NJ</given-names></string-name>, <string-name><surname>Brinkmalm</surname> &#x000a0;<given-names>G</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Blood phospho-tau in Alzheimer disease: analysis, interpretation, and clinical utility</article-title>. <source><italic toggle="yes">Nat Rev Neurol</italic></source> &#x000a0;<year>2022</year>;<volume>18</volume>:<fpage>400</fpage>&#x02013;<lpage>18</lpage>. <pub-id pub-id-type="doi">10.1038/s41582-022-00665-2</pub-id><pub-id pub-id-type="pmid">35585226</pub-id>
+</mixed-citation></ref><ref id="ref9"><label>9.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Bavato</surname> &#x000a0;<given-names>F</given-names></string-name>, <string-name><surname>Barro</surname> &#x000a0;<given-names>C</given-names></string-name>, <string-name><surname>Schnider</surname> &#x000a0;<given-names>LK</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Introducing neurofilament light chain measure in psychiatry: current evidence, opportunities, and pitfalls</article-title>. <source><italic toggle="yes">Mol Psychiatry</italic></source> &#x000a0;<year>2024</year>;<volume>29</volume>:<fpage>2543</fpage>&#x02013;<lpage>59</lpage>. <pub-id pub-id-type="doi">10.1038/s41380-024-02524-6</pub-id><pub-id pub-id-type="pmid">38503931</pub-id>
+</mixed-citation></ref><ref id="ref10"><label>10.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Abdelhak</surname> &#x000a0;<given-names>A</given-names></string-name>, <string-name><surname>Foschi</surname> &#x000a0;<given-names>M</given-names></string-name>, <string-name><surname>Abu-Rumeileh</surname> &#x000a0;<given-names>S</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Blood GFAP as an emerging biomarker in brain and spinal cord disorders</article-title>. <source><italic toggle="yes">Nat Rev Neurol</italic></source> &#x000a0;<year>2022</year>;<volume>18</volume>:<fpage>158</fpage>&#x02013;<lpage>72</lpage>. <pub-id pub-id-type="doi">10.1038/s41582-021-00616-3</pub-id><pub-id pub-id-type="pmid">35115728</pub-id>
+</mixed-citation></ref><ref id="ref11"><label>11.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Guo</surname> &#x000a0;<given-names>Y</given-names></string-name>, <string-name><surname>You</surname> &#x000a0;<given-names>J</given-names></string-name>, <string-name><surname>Zhang</surname> &#x000a0;<given-names>Y</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Plasma proteomic profiles predict future dementia in healthy adults</article-title>. <source><italic toggle="yes">Nature Aging</italic></source> &#x000a0;<year>2024</year>;<volume>4</volume>:<fpage>247</fpage>&#x02013;<lpage>60</lpage>. <pub-id pub-id-type="doi">10.1038/s43587-023-00565-0</pub-id><pub-id pub-id-type="pmid">38347190</pub-id>
+</mixed-citation></ref><ref id="ref12"><label>12.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Winchester</surname> &#x000a0;<given-names>LM</given-names></string-name>, <string-name><surname>Harshfield</surname> &#x000a0;<given-names>EL</given-names></string-name>, <string-name><surname>Shi</surname> &#x000a0;<given-names>L</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Artificial intelligence for biomarker discovery in Alzheimer's disease and dementia</article-title>. <source><italic toggle="yes">Alzheimers Dement</italic></source> &#x000a0;<year>2023</year>;<volume>19</volume>:<fpage>5860</fpage>&#x02013;<lpage>71</lpage>. <pub-id pub-id-type="doi">10.1002/alz.13390</pub-id><pub-id pub-id-type="pmid">37654029</pub-id>
+</mixed-citation></ref><ref id="ref13"><label>13.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Evans</surname> &#x000a0;<given-names>LM</given-names></string-name>, <string-name><surname>Arehart</surname> &#x000a0;<given-names>CH</given-names></string-name>, <string-name><surname>Grotzinger</surname> &#x000a0;<given-names>AD</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Transcriptome-wide gene-gene interaction associations elucidate pathways and functional enrichment of complex traits</article-title>. <source><italic toggle="yes">PLoS Genet</italic></source> &#x000a0;<year>2023</year>;<volume>19</volume>:<fpage>e1010693</fpage>. <pub-id pub-id-type="doi">10.1371/journal.pgen.1010693</pub-id><pub-id pub-id-type="pmid">37216417</pub-id>
+</mixed-citation></ref><ref id="ref14"><label>14.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Wu</surname> &#x000a0;<given-names>X</given-names></string-name>, <string-name><surname>Chen</surname> &#x000a0;<given-names>L</given-names></string-name>, <string-name><surname>Wang</surname> &#x000a0;<given-names>X</given-names></string-name></person-group>. <article-title>Network biomarkers, interaction networks and dynamical network biomarkers in respiratory diseases</article-title>. <source><italic toggle="yes">Clin Transl Med</italic></source> &#x000a0;<year>2014</year>;<volume>3</volume>:<fpage>1</fpage>&#x02013;<lpage>7</lpage>. <pub-id pub-id-type="doi">10.1186/2001-1326-3-16</pub-id><pub-id pub-id-type="pmid">24460977</pub-id>
+</mixed-citation></ref><ref id="ref15"><label>15.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Vogel</surname> &#x000a0;<given-names>JW</given-names></string-name>, <string-name><surname>Corriveau-Lecavalier</surname> &#x000a0;<given-names>N</given-names></string-name>, <string-name><surname>Franzmeier</surname> &#x000a0;<given-names>N</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Connectome-based modelling of neurodegenerative diseases: towards precision medicine and mechanistic insight</article-title>. <source><italic toggle="yes">Nat Rev Neurosci</italic></source> &#x000a0;<year>2023</year>;<volume>24</volume>:<fpage>620</fpage>&#x02013;<lpage>39</lpage>. <pub-id pub-id-type="doi">10.1038/s41583-023-00731-8</pub-id><pub-id pub-id-type="pmid">37620599</pub-id>
+</mixed-citation></ref><ref id="ref16"><label>16.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Le</surname> &#x000a0;<given-names>D-H</given-names></string-name>
+</person-group>. <article-title>Machine learning-based approaches for disease gene prediction</article-title>. <source><italic toggle="yes">Brief Funct Genomics</italic></source> &#x000a0;<year>2020</year>;<volume>19</volume>:<fpage>350</fpage>&#x02013;<lpage>63</lpage>. <pub-id pub-id-type="doi">10.1093/bfgp/elaa013</pub-id><pub-id pub-id-type="pmid">32567652</pub-id>
+</mixed-citation></ref><ref id="ref17"><label>17.</label><mixed-citation publication-type="other">
+<person-group person-group-type="author">
+<string-name>Kipf TN, Welling M</string-name>
+</person-group>. <article-title>Semi-supervised classification with graph convolutional networks</article-title>. arXiv preprint 2016;arXiv:1609.02907. <pub-id pub-id-type="doi">10.48550/arXiv.1609.02907</pub-id></mixed-citation></ref><ref id="ref18"><label>18.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Park</surname> &#x000a0;<given-names>S</given-names></string-name>, <string-name><surname>Hong</surname> &#x000a0;<given-names>CH</given-names></string-name>, <string-name><surname>Son</surname> &#x000a0;<given-names>SJ</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Identification of molecular subtypes of dementia by using blood-proteins interaction-aware graph propagational network</article-title>. <source><italic toggle="yes">Brief Bioinform</italic></source> &#x000a0;<year>2024</year>;<volume>25</volume>:<fpage>bbae428</fpage>. <pub-id pub-id-type="doi">10.1093/bib/bbae428</pub-id><pub-id pub-id-type="pmid">39226887</pub-id>
+</mixed-citation></ref><ref id="ref19"><label>19.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>Wu F, Souza A, Zhang T</string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Simplifying graph convolutional networks</article-title>. In: <source>International Conference on Machine Learning</source>, Vol <volume>97</volume>. PMLR, 2019, 6861&#x02013;71. <ext-link xlink:href="https://proceedings.mlr.press/v97/wu19e" ext-link-type="uri">https://proceedings.mlr.press/v97/wu19e</ext-link></mixed-citation></ref><ref id="ref20"><label>20.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Pasa</surname> &#x000a0;<given-names>L</given-names></string-name>, <string-name><surname>Navarin</surname> &#x000a0;<given-names>N</given-names></string-name>, <string-name><surname>Erb</surname> &#x000a0;<given-names>W</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Empowering simple graph convolutional networks</article-title>. <source><italic toggle="yes">IEEE Transactions on Neural Networks and Learning Systems</italic></source> &#x000a0;<year>2023</year>;<volume>35</volume>:<fpage>4385</fpage>&#x02013;<lpage>99</lpage>. <pub-id pub-id-type="doi">10.1109/TNNLS.2022.3232291</pub-id></mixed-citation></ref><ref id="ref21"><label>21.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>Abu-El-Haija S, Perozzi B, Kapoor A</string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Mixhop: Higherorder graph convolutional architectures via sparsified neighborhood mixing</article-title>. In: <source>International Conference on Machine Learning</source>, Vol <volume>97</volume>. PMLR, 2019, 21&#x02013;9. <ext-link xlink:href="https://proceedings.mlr.press/v97/abu-elhaija19a.html" ext-link-type="uri">https://proceedings.mlr.press/v97/abu-elhaija19a.html</ext-link></mixed-citation></ref><ref id="ref22"><label>22.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Jin</surname> &#x000a0;<given-names>D</given-names></string-name>, <string-name><surname>Yu</surname> &#x000a0;<given-names>Z</given-names></string-name>, <string-name><surname>Huo</surname> &#x000a0;<given-names>C</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Universal graph convolutional networks</article-title>. <source><italic toggle="yes">Advances in Neural Information Processing Systems</italic></source> &#x000a0;<year>2021</year>;<volume>34</volume>:<fpage>10654</fpage>&#x02013;<lpage>64</lpage>.</mixed-citation></ref><ref id="ref23"><label>23.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Wang</surname> &#x000a0;<given-names>J</given-names></string-name>, <string-name><surname>Liang</surname> &#x000a0;<given-names>J</given-names></string-name>, <string-name><surname>Cui</surname> &#x000a0;<given-names>J</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Semi-supervised learning with mixed-order graph convolutional networks</article-title>. <source><italic toggle="yes">Inform Sci</italic></source> &#x000a0;<year>2021</year>;<volume>573</volume>:<fpage>171</fpage>&#x02013;<lpage>81</lpage>. <pub-id pub-id-type="doi">10.1016/j.ins.2021.05.057</pub-id></mixed-citation></ref><ref id="ref24"><label>24.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Barabasi</surname> &#x000a0;<given-names>A-L</given-names></string-name>, <string-name><surname>Oltvai</surname> &#x000a0;<given-names>ZN</given-names></string-name></person-group>. <article-title>Network biology: understanding the cell's functional organization</article-title>. <source><italic toggle="yes">Nat Rev Genet</italic></source> &#x000a0;<year>2004</year>;<volume>5</volume>:<fpage>101</fpage>&#x02013;<lpage>13</lpage>. <pub-id pub-id-type="doi">10.1038/nrg1272</pub-id><pub-id pub-id-type="pmid">14735121</pub-id>
+</mixed-citation></ref><ref id="ref25"><label>25.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Han</surname> &#x000a0;<given-names>J-DJ</given-names></string-name>, <string-name><surname>Bertin</surname> &#x000a0;<given-names>N</given-names></string-name>, <string-name><surname>Hao</surname> &#x000a0;<given-names>T</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Evidence for dynamically organized modularity in the yeast protein&#x02013;protein interaction network</article-title>. <source><italic toggle="yes">Nature</italic></source> &#x000a0;<year>2004</year>;<volume>430</volume>:<fpage>88</fpage>&#x02013;<lpage>93</lpage>. <pub-id pub-id-type="doi">10.1038/nature02555</pub-id><pub-id pub-id-type="pmid">15190252</pub-id>
+</mixed-citation></ref><ref id="ref26"><label>26.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Von Mering</surname> &#x000a0;<given-names>C</given-names></string-name>, <string-name><surname>Krause</surname> &#x000a0;<given-names>R</given-names></string-name>, <string-name><surname>Snel</surname> &#x000a0;<given-names>B</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Comparative assessment of large-scale data sets of protein&#x02013;protein interactions</article-title>. <source><italic toggle="yes">Nature</italic></source> &#x000a0;<year>2002</year>;<volume>417</volume>:<fpage>399</fpage>&#x02013;<lpage>403</lpage>. <pub-id pub-id-type="doi">10.1038/nature750</pub-id><pub-id pub-id-type="pmid">12000970</pub-id>
+</mixed-citation></ref><ref id="ref27"><label>27.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Stumpf</surname> &#x000a0;<given-names>MP</given-names></string-name>, <string-name><surname>Thorne</surname> &#x000a0;<given-names>T</given-names></string-name>, <string-name><surname>de Silva</surname> &#x000a0;<given-names>E</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Estimating the size of the human interactome</article-title>. <source><italic toggle="yes">Proc Natl Acad Sci</italic></source> &#x000a0;<year>2008</year>;<volume>105</volume>:<fpage>6959</fpage>&#x02013;<lpage>64</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0708078105</pub-id><pub-id pub-id-type="pmid">18474861</pub-id>
+</mixed-citation></ref><ref id="ref28"><label>28.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Hartman</surname> &#x000a0;<given-names>E</given-names></string-name>, <string-name><surname>Scott</surname> &#x000a0;<given-names>AM</given-names></string-name>, <string-name><surname>Karlsson</surname> &#x000a0;<given-names>C</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Interpreting biologically informed neural networks for enhanced proteomic biomarker discovery and pathway analysis</article-title>. <source><italic toggle="yes">Nat Commun</italic></source> &#x000a0;<year>2023</year>;<volume>14</volume>:<fpage>5359</fpage>. <pub-id pub-id-type="doi">10.1038/s41467-023-41146-4</pub-id><pub-id pub-id-type="pmid">37660105</pub-id>
+</mixed-citation></ref><ref id="ref29"><label>29.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Giacobbe</surname> &#x000a0;<given-names>DR</given-names></string-name>, <string-name><surname>Zhang</surname> &#x000a0;<given-names>Y</given-names></string-name>, <string-name><prefix>de la</prefix> &#x000a0;<surname>Fuente</surname> &#x000a0;<given-names>J</given-names></string-name></person-group>. <article-title>Explainable artificial intelligence and machine learning: novel approaches to face infectious diseases challenges</article-title>. <source><italic toggle="yes">Ann Med</italic></source> &#x000a0;<year>2023</year>;<volume>55</volume>:<fpage>2286336</fpage>. <pub-id pub-id-type="doi">10.1080/07853890.2023.2286336</pub-id><pub-id pub-id-type="pmid">38010090</pub-id>
+</mixed-citation></ref><ref id="ref30"><label>30.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Muhammad</surname> &#x000a0;<given-names>D</given-names></string-name>, <string-name><surname>Bendechache</surname> &#x000a0;<given-names>M</given-names></string-name></person-group>. <article-title>Unveiling the black box: a systematic review of explainable artificial intelligence in medical image analysis</article-title>. <source><italic toggle="yes">Comput Struct Biotechnol J</italic></source> &#x000a0;<year>2024</year>;<volume>24</volume>:<fpage>542</fpage>&#x02013;<lpage>60</lpage>. <pub-id pub-id-type="doi">10.1016/j.csbj.2024.08.005</pub-id><pub-id pub-id-type="pmid">39252818</pub-id>
+</mixed-citation></ref><ref id="ref31"><label>31.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Jurisica</surname> &#x000a0;<given-names>I</given-names></string-name>
+</person-group>. <article-title>Explainable biology for improved therapies in precision medicine: AI is not enough</article-title>. <source><italic toggle="yes">Best Pract Res Clin Rheumatol</italic></source> &#x000a0;<year>2024</year>;<volume>38</volume>:<fpage>102006</fpage>.<pub-id pub-id-type="pmid">39332994</pub-id>
+</mixed-citation></ref><ref id="ref32"><label>32.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Allen</surname> &#x000a0;<given-names>B</given-names></string-name>
+</person-group>. <article-title>The promise of explainable AI in digital health for precision medicine: a systematic review</article-title>. <source><italic toggle="yes">Journal of Personalized Medicine</italic></source> &#x000a0;<year>2024</year>;<volume>14</volume>:<fpage>277</fpage>. <pub-id pub-id-type="doi">10.3390/jpm14030277</pub-id><pub-id pub-id-type="pmid">38541019</pub-id>
+</mixed-citation></ref><ref id="ref33"><label>33.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Bottou</surname> &#x000a0;<given-names>L</given-names></string-name>, <string-name><surname>Curtis</surname> &#x000a0;<given-names>FE</given-names></string-name>, <string-name><surname>Nocedal</surname> &#x000a0;<given-names>J</given-names></string-name></person-group>. <article-title>Optimization methods for large-scale machine learning</article-title>. <source><italic toggle="yes">Siam Review</italic></source> &#x000a0;<year>2018</year>;<volume>60</volume>:<fpage>223</fpage>&#x02013;<lpage>311</lpage>. <pub-id pub-id-type="doi">10.1137/16M1080173</pub-id></mixed-citation></ref><ref id="ref34"><label>34.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Trang</surname> &#x000a0;<given-names>N</given-names></string-name>, <string-name><surname>Choisy</surname> &#x000a0;<given-names>M</given-names></string-name>, <string-name><surname>Nakagomi</surname> &#x000a0;<given-names>T</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Determination of cut-off cycle threshold values in routine RT&#x02013;PCR assays to assist differential diagnosis of norovirus in children hospitalized for acute gastroenteritis</article-title>. <source><italic toggle="yes">Epidemiology &#x00026; Infection</italic></source> &#x000a0;<year>2015</year>;<volume>143</volume>:<fpage>3292</fpage>&#x02013;<lpage>9</lpage>. <pub-id pub-id-type="doi">10.1017/S095026881500059X</pub-id><pub-id pub-id-type="pmid">26418350</pub-id>
+</mixed-citation></ref><ref id="ref35"><label>35.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Wik</surname> &#x000a0;<given-names>L</given-names></string-name>, <string-name><surname>Nordberg</surname> &#x000a0;<given-names>N</given-names></string-name>, <string-name><surname>Broberg</surname> &#x000a0;<given-names>J</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Proximity extension assay in combination with next-generation sequencing for high-throughput proteome-wide analysis</article-title>. <source><italic toggle="yes">Mol Cell Proteomics</italic></source> &#x000a0;<year>2021</year>;<volume>20</volume>:<fpage>100168</fpage>. <pub-id pub-id-type="doi">10.1016/j.mcpro.2021.100168</pub-id><pub-id pub-id-type="pmid">34715355</pub-id>
+</mixed-citation></ref><ref id="ref36"><label>36.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Ritchie</surname> &#x000a0;<given-names>ME</given-names></string-name>, <string-name><surname>Phipson</surname> &#x000a0;<given-names>B</given-names></string-name>, <string-name><surname>Wu</surname> &#x000a0;<given-names>D</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Limma powers differential expression analyses for RNA-sequencing and microarray studies</article-title>. <source><italic toggle="yes">Nucleic Acids Res</italic></source> &#x000a0;<year>2015</year>;<volume>43</volume>:<fpage>e47</fpage>&#x02013;<lpage>7</lpage>. <pub-id pub-id-type="doi">10.1093/nar/gkv007</pub-id><pub-id pub-id-type="pmid">25605792</pub-id>
+</mixed-citation></ref><ref id="ref37"><label>37.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Walker</surname> &#x000a0;<given-names>KA</given-names></string-name>, <string-name><surname>Chen</surname> &#x000a0;<given-names>J</given-names></string-name>, <string-name><surname>Zhang</surname> &#x000a0;<given-names>J</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Large-scale plasma proteomic analysis identifies proteins and pathways associated with dementia risk</article-title>. <source><italic toggle="yes">Nature Aging</italic></source> &#x000a0;<year>2021</year>;<volume>1</volume>:<fpage>473</fpage>&#x02013;<lpage>89</lpage>. <pub-id pub-id-type="doi">10.1038/s43587-021-00064-0</pub-id><pub-id pub-id-type="pmid">37118015</pub-id>
+</mixed-citation></ref><ref id="ref38"><label>38.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Ho</surname> &#x000a0;<given-names>FK</given-names></string-name>, <string-name><surname>Mark</surname> &#x000a0;<given-names>PB</given-names></string-name>, <string-name><surname>Lees</surname> &#x000a0;<given-names>JS</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>A proteomics-based approach for prediction of different cardiovascular diseases and dementia</article-title>. <source><italic toggle="yes">Circulation</italic></source> &#x000a0;<year>2024</year>;<volume>151</volume>:<fpage>277</fpage>&#x02013;<lpage>87</lpage>. <pub-id pub-id-type="doi">10.1161/CIRCULATIONAHA.124.070454</pub-id><pub-id pub-id-type="pmid">39540306</pub-id>
+</mixed-citation></ref><ref id="ref39"><label>39.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Kuleshov</surname> &#x000a0;<given-names>MV</given-names></string-name>, <string-name><surname>Jones</surname> &#x000a0;<given-names>MR</given-names></string-name>, <string-name><surname>Rouillard</surname> &#x000a0;<given-names>AD</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Enrichr: a comprehensive gene set enrichment analysis web server 2016 update</article-title>. <source><italic toggle="yes">Nucleic Acids Res</italic></source> &#x000a0;<year>2016</year>;<volume>44</volume>:<fpage>W90</fpage>&#x02013;<lpage>7</lpage>. <pub-id pub-id-type="doi">10.1093/nar/gkw377</pub-id><pub-id pub-id-type="pmid">27141961</pub-id>
+</mixed-citation></ref><ref id="ref40"><label>40.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Kanehisa</surname> &#x000a0;<given-names>M</given-names></string-name>, <string-name><surname>Furumichi</surname> &#x000a0;<given-names>M</given-names></string-name>, <string-name><surname>Sato</surname> &#x000a0;<given-names>Y</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>KEGG: biological systems database as a model of the real world</article-title>. <source><italic toggle="yes">Nucleic Acids Res</italic></source> &#x000a0;<year>2025</year>;<volume>53</volume>:<fpage>D672</fpage>&#x02013;<lpage>7</lpage>. <pub-id pub-id-type="doi">10.1093/nar/gkae909</pub-id><pub-id pub-id-type="pmid">39417505</pub-id>
+</mixed-citation></ref><ref id="ref41"><label>41.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Milacic</surname> &#x000a0;<given-names>M</given-names></string-name>, <string-name><surname>Beavers</surname> &#x000a0;<given-names>D</given-names></string-name>, <string-name><surname>Conley</surname> &#x000a0;<given-names>P</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>The reactome pathway knowledgebase 2024</article-title>. <source><italic toggle="yes">Nucleic Acids Res</italic></source> &#x000a0;<year>2024</year>;<volume>52</volume>:<fpage>D672</fpage>&#x02013;<lpage>8</lpage>. <pub-id pub-id-type="doi">10.1093/nar/gkad1025</pub-id><pub-id pub-id-type="pmid">37941124</pub-id>
+</mixed-citation></ref><ref id="ref42"><label>42.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Kwon</surname> &#x000a0;<given-names>HS</given-names></string-name>, <string-name><surname>Koh</surname> &#x000a0;<given-names>S-H</given-names></string-name></person-group>. <article-title>Neuroinflammation in neurodegenerative disorders: the roles of microglia and astrocytes</article-title>. <source><italic toggle="yes">Translational Neurodegeneration</italic></source> &#x000a0;<year>2020</year>;<volume>9</volume>:<fpage>42</fpage>. <pub-id pub-id-type="doi">10.1186/s40035-020-00221-2</pub-id><pub-id pub-id-type="pmid">33239064</pub-id>
+</mixed-citation></ref><ref id="ref43"><label>43.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Kumari</surname> &#x000a0;<given-names>S</given-names></string-name>, <string-name><surname>Dhapola</surname> &#x000a0;<given-names>R</given-names></string-name>, <string-name><surname>Sharma</surname> &#x000a0;<given-names>P</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Implicative role of cytokines in neuroinflammation mediated AD and associated signaling pathways: current progress in molecular signaling and therapeutics</article-title>. <source><italic toggle="yes">Ageing Res Rev</italic></source> &#x000a0;<year>2023</year>;<volume>92</volume>:<fpage>102098</fpage>. <pub-id pub-id-type="doi">10.1016/j.arr.2023.102098</pub-id></mixed-citation></ref><ref id="ref44"><label>44.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Szklarczyk</surname> &#x000a0;<given-names>D</given-names></string-name>, <string-name><surname>Kirsch</surname> &#x000a0;<given-names>R</given-names></string-name>, <string-name><surname>Koutrouli</surname> &#x000a0;<given-names>M</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>The STRING database in 2023: protein&#x02013;protein association networks and functional enrichment analyses for any sequenced genome of interest</article-title>. <source><italic toggle="yes">Nucleic Acids Res</italic></source> &#x000a0;<year>2023</year>;<volume>51</volume>:<fpage>D638</fpage>&#x02013;<lpage>46</lpage>. <pub-id pub-id-type="doi">10.1093/nar/gkac1000</pub-id><pub-id pub-id-type="pmid">36370105</pub-id>
+</mixed-citation></ref><ref id="ref45"><label>45.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Del Toro</surname> &#x000a0;<given-names>N</given-names></string-name>, <string-name><surname>Shrivastava</surname> &#x000a0;<given-names>A</given-names></string-name>, <string-name><surname>Ragueneau</surname> &#x000a0;<given-names>E</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>The IntAct database: efficient access to fine-grained molecular interaction data</article-title>. <source><italic toggle="yes">Nucleic Acids Res</italic></source> &#x000a0;<year>2022</year>;<volume>50</volume>:<fpage>D648</fpage>&#x02013;<lpage>53</lpage>. <pub-id pub-id-type="doi">10.1093/nar/gkab1006</pub-id><pub-id pub-id-type="pmid">34761267</pub-id>
+</mixed-citation></ref><ref id="ref46"><label>46.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Stark</surname> &#x000a0;<given-names>C</given-names></string-name>, <string-name><surname>Breitkreutz</surname> &#x000a0;<given-names>B-J</given-names></string-name>, <string-name><surname>Reguly</surname> &#x000a0;<given-names>T</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>BioGRID: a general repository for interaction datasets</article-title>. <source><italic toggle="yes">Nucleic Acids Res</italic></source> &#x000a0;<year>2006</year>;<volume>34</volume>:<fpage>D535</fpage>&#x02013;<lpage>9</lpage>. <pub-id pub-id-type="doi">10.1093/nar/gkj109</pub-id><pub-id pub-id-type="pmid">16381927</pub-id>
+</mixed-citation></ref><ref id="ref47"><label>47.</label><mixed-citation publication-type="other">
+<person-group person-group-type="author">
+<string-name>Kingma DP, Ba J</string-name>
+</person-group>. <article-title>Adam: A method for stochastic optimization</article-title>. arXiv preprint 2014;arXiv:1412.6980. <pub-id pub-id-type="doi">10.48550/arXiv.1412.6980</pub-id></mixed-citation></ref><ref id="ref48"><label>48.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Jiang</surname> &#x000a0;<given-names>Y</given-names></string-name>, <string-name><surname>Uhm</surname> &#x000a0;<given-names>H</given-names></string-name>, <string-name><surname>Ip</surname> &#x000a0;<given-names>FC</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>A blood-based multi-pathway biomarker assay for early detection and staging of Alzheimer's disease across ethnic groups</article-title>. <source><italic toggle="yes">Alzheimers Dement</italic></source> &#x000a0;<year>2024</year>;<volume>20</volume>:<fpage>2000</fpage>&#x02013;<lpage>15</lpage>. <pub-id pub-id-type="doi">10.1002/alz.13676</pub-id><pub-id pub-id-type="pmid">38183344</pub-id>
+</mixed-citation></ref><ref id="ref49"><label>49.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Safi</surname> &#x000a0;<given-names>A</given-names></string-name>, <string-name><surname>Giunti</surname> &#x000a0;<given-names>E</given-names></string-name>, <string-name><surname>Melikechi</surname> &#x000a0;<given-names>O</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Identification of blood plasma protein ratios for distinguishing Alzheimer's disease from healthy controls using machine learning</article-title>. <source><italic toggle="yes">Heliyon</italic></source> &#x000a0;<year>2025</year>;<volume>11</volume>:<fpage>e42349</fpage>. <pub-id pub-id-type="doi">10.1016/j.heliyon.2025.e42349</pub-id><pub-id pub-id-type="pmid">39981365</pub-id>
+</mixed-citation></ref><ref id="ref50"><label>50.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Eke</surname> &#x000a0;<given-names>CS</given-names></string-name>, <string-name><surname>Jammeh</surname> &#x000a0;<given-names>E</given-names></string-name>, <string-name><surname>Li</surname> &#x000a0;<given-names>X</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Early detection of Alzheimer's disease with blood plasma proteins using support vector machines</article-title>. <source><italic toggle="yes">IEEE J Biomed Health Inform</italic></source> &#x000a0;<year>2020</year>;<volume>25</volume>:<fpage>218</fpage>&#x02013;<lpage>26</lpage>. <pub-id pub-id-type="doi">10.1109/JBHI.2020.2984355</pub-id></mixed-citation></ref><ref id="ref51"><label>51.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Jiao</surname> &#x000a0;<given-names>B</given-names></string-name>, <string-name><surname>Ouyang</surname> &#x000a0;<given-names>Z</given-names></string-name>, <string-name><surname>Xiao</surname> &#x000a0;<given-names>X</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Development and validation of machine learning models with blood-based digital biomarkers for Alzheimer&#x02019;s disease diagnosis: a multicohort diagnostic study</article-title>. <source><italic toggle="yes">EClinicalMedicine</italic></source> &#x000a0;<year>2025</year>;<volume>81</volume>:<fpage>103142</fpage>. <pub-id pub-id-type="doi">10.1016/j.eclinm.2025.103142</pub-id><pub-id pub-id-type="pmid">40115175</pub-id>
+</mixed-citation></ref><ref id="ref52"><label>52.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>AlMansoori</surname> &#x000a0;<given-names>ME</given-names></string-name>, <string-name><surname>Jemimah</surname> &#x000a0;<given-names>S</given-names></string-name>, <string-name><surname>Abuhantash</surname> &#x000a0;<given-names>F</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Predicting early Alzheimer&#x02019;s with blood biomarkers and clinical features</article-title>. <source><italic toggle="yes">Sci Rep</italic></source> &#x000a0;<year>2024</year>;<volume>14</volume>:<fpage>6039</fpage>. <pub-id pub-id-type="doi">10.1038/s41598-024-56489-1</pub-id><pub-id pub-id-type="pmid">38472245</pub-id>
+</mixed-citation></ref><ref id="ref53"><label>53.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Lin</surname> &#x000a0;<given-names>H</given-names></string-name>, <string-name><surname>Himali</surname> &#x000a0;<given-names>JJ</given-names></string-name>, <string-name><surname>Satizabal</surname> &#x000a0;<given-names>CL</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Identifying blood biomarkers for dementia using machine learning methods in the Framingham heart study</article-title>. <source><italic toggle="yes">Cells</italic></source> &#x000a0;<year>2022</year>;<volume>11</volume>:<fpage>1506</fpage>. <pub-id pub-id-type="doi">10.3390/cells11091506</pub-id><pub-id pub-id-type="pmid">35563811</pub-id>
+</mixed-citation></ref><ref id="ref54"><label>54.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Rabe</surname> &#x000a0;<given-names>C</given-names></string-name>, <string-name><surname>Bittner</surname> &#x000a0;<given-names>T</given-names></string-name>, <string-name><surname>Jethwa</surname> &#x000a0;<given-names>A</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Clinical performance and robustness evaluation of plasma amyloid-&#x003b2;42/40 prescreening</article-title>. <source><italic toggle="yes">Alzheimers Dement</italic></source> &#x000a0;<year>2023</year>;<volume>19</volume>:<fpage>1393</fpage>&#x02013;<lpage>402</lpage>. <pub-id pub-id-type="doi">10.1002/alz.12801</pub-id><pub-id pub-id-type="pmid">36150024</pub-id>
+</mixed-citation></ref><ref id="ref55"><label>55.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Mohaupt</surname> &#x000a0;<given-names>P</given-names></string-name>, <string-name><surname>Kindermans</surname> &#x000a0;<given-names>J</given-names></string-name>, <string-name><surname>Vialaret</surname> &#x000a0;<given-names>J</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Blood-based biomarkers and plasma A&#x003b2; assays in the differential diagnosis of Alzheimer&#x02019;s disease and behavioral-variant frontotemporal dementia</article-title>. <source><italic toggle="yes">Alzheimer's Research &#x00026; Therapy</italic></source> &#x000a0;<year>2024</year>;<volume>16</volume>:<fpage>279</fpage>. <pub-id pub-id-type="doi">10.1186/s13195-024-01647-w</pub-id></mixed-citation></ref><ref id="ref56"><label>56.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Wang</surname> &#x000a0;<given-names>X</given-names></string-name>, <string-name><surname>Shi</surname> &#x000a0;<given-names>Z</given-names></string-name>, <string-name><surname>Qiu</surname> &#x000a0;<given-names>Y</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Peripheral GFAP and NfL as early biomarkers for dementia: longitudinal insights from the UK biobank</article-title>. <source><italic toggle="yes">BMC Med</italic></source> &#x000a0;<year>2024</year>;<volume>22</volume>:<fpage>192</fpage>. <pub-id pub-id-type="doi">10.1186/s12916-024-03418-8</pub-id><pub-id pub-id-type="pmid">38735950</pub-id>
+</mixed-citation></ref><ref id="ref57"><label>57.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Lundberg</surname> &#x000a0;<given-names>SM</given-names></string-name>, <string-name><surname>Lee</surname> &#x000a0;<given-names>S-I</given-names></string-name></person-group>. <article-title>A unified approach to interpreting model predictions</article-title>. <source><italic toggle="yes">Advances in Neural Information Processing Systems</italic></source> &#x000a0;<year>2017</year>;<volume>30</volume>:1&#x02013;10.</mixed-citation></ref><ref id="ref58"><label>58.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Tang</surname> &#x000a0;<given-names>T</given-names></string-name>, <string-name><surname>Zhang</surname> &#x000a0;<given-names>X</given-names></string-name>, <string-name><surname>Liu</surname> &#x000a0;<given-names>Y</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Machine learning on protein&#x02013;protein interaction prediction: models, challenges and trends</article-title>. <source><italic toggle="yes">Brief Bioinform</italic></source> &#x000a0;<year>2023</year>;<volume>24</volume>:<fpage>bbad076</fpage>. <pub-id pub-id-type="doi">10.1093/bib/bbad076</pub-id><pub-id pub-id-type="pmid">36880207</pub-id>
+</mixed-citation></ref><ref id="ref59"><label>59.</label><mixed-citation publication-type="journal">
+<person-group person-group-type="author">
+<string-name>
+<surname>Tang</surname> &#x000a0;<given-names>T</given-names></string-name>, <string-name><surname>Li</surname> &#x000a0;<given-names>T</given-names></string-name>, <string-name><surname>Li</surname> &#x000a0;<given-names>W</given-names></string-name>. <etal>et&#x000a0;al.</etal></person-group> &#x000a0;<article-title>Anti-symmetric framework for balanced learning of protein&#x02013;protein interactions</article-title>. <source><italic toggle="yes">Bioinformatics</italic></source> &#x000a0;<year>2024</year>;<volume>40</volume>:<fpage>btae603</fpage>. <pub-id pub-id-type="doi">10.1093/bioinformatics/btae603</pub-id><pub-id pub-id-type="pmid">39404784</pub-id>
+</mixed-citation></ref></ref-list></back></article>
