@@ -1,158 +1,102 @@
-import os
-import json
+"""Cross-model verification: majority vote over several judges' labels.
+
+Ablation for the single-model self-verifier. Each --votes file is a judgement
+file produced by 03_verify_or_eval.py with --mode eval under a different judge
+model. Only articles judged by *every* model take part, so all triples get the
+same number of votes.
+"""
+
+import argparse
 from collections import defaultdict
-from typing import List, Dict, Set
+
+from utils import pipeline
 
 
-# =========================
-#       CONFIG
-# =========================
-VOTE_FILES = [
-    "save/save_ablation/triple/triples_gpt-5_minimal_filter1_refine_filter2_gpt-5eval.json",
-    "save/save_ablation/triple/triples_gpt-5_minimal_filter1_refine_filter2_deepseekeval.json",
-    "save/save_ablation/triple/triples_gpt-5_minimal_filter1_refine_filter2_qweneval.json",
-]
-TRIPLE_FILE = "save/save_ablation/triple/triples_gpt-5_minimal_filter1_refine_filter2.json"
-
-FINAL_JUDGEMENT_OUT = "save/save_ablation/triple/triple/triples_gpt-5_minimal_filter1_refine_filter2_crossmodeleval.json"
-FILTERED_TRIPLES_OUT = "save/save_ablation/triple/triple/triples_gpt-5_minimal_filter1_refine_filter2_crossmodelverified.json"
-
-MIN_CORRECT_VOTES = 2
-
-
-# =========================
-#   LOAD JUDGEMENTS
-# =========================
-def load_single_vote_file(path: str) -> Dict[str, Dict[str, str]]:
-    with open(path, "r", encoding="utf-8") as f:
-        data = json.load(f)
-
-    result = {}
-    for item in data:
-        for doc_id, judgement_dict in item.items():
-            result[doc_id] = judgement_dict
-
-    return result
+def parse_args():
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("--votes", nargs="+", required=True, help="Judgement files.")
+    p.add_argument("--triples", required=True, help="Triples the votes refer to.")
+    p.add_argument("--judgement-output", required=True)
+    p.add_argument("--verified-output", required=True)
+    p.add_argument(
+        "--min-correct-votes",
+        type=int,
+        default=2,
+        help="Votes needed to keep a triple (default: majority of 3).",
+    )
+    return p.parse_args()
 
 
-def get_common_doc_ids(vote_dicts: List[Dict[str, Dict[str, str]]]) -> Set[str]:
-    if not vote_dicts:
-        return set()
+def load_votes(paths):
+    """{doc_id: {triple_idx: [label, ...]}} over doc_ids present in every file."""
+    per_file = []
+    for path in paths:
+        per_file.append(
+            {pipeline.record_key(r): next(iter(r.values())) for r in pipeline.read_records(path)}
+        )
 
-    common_doc_ids = set(vote_dicts[0].keys())
-    for vd in vote_dicts[1:]:
-        common_doc_ids &= set(vd.keys())
-
-    return common_doc_ids
-
-def load_vote_files_intersection_by_docid(paths: List[str]) -> Dict[str, Dict[str, List[str]]]:
-    """
-    return:
-    {
-      doc_id: {
-        triple_idx: [Correct, Incorrect, ...]
-      }
-    }
-    """
-    vote_dicts = [load_single_vote_file(path) for path in paths]
-    common_doc_ids = get_common_doc_ids(vote_dicts)
+    common = set(per_file[0])
+    for d in per_file[1:]:
+        common &= set(d)
 
     votes = defaultdict(lambda: defaultdict(list))
-
-    for vd in vote_dicts:
-        for doc_id in common_doc_ids:
-            judgement_dict = vd[doc_id]
-            for idx, label in judgement_dict.items():
+    for d in per_file:
+        for doc_id in common:
+            for idx, label in d[doc_id].items():
                 votes[doc_id][idx].append(label)
 
-    print(f"Total common doc_ids: {len(common_doc_ids)}")
+    print(f"Total common doc_ids: {len(common)}")
     return votes
 
 
-# =========================
-#   MAJORITY VOTING
-# =========================
-def majority_vote(votes: Dict[str, Dict[str, List[str]]]) -> Dict[str, Dict[str, str]]:
+def majority_vote(votes, min_correct_votes):
+    return {
+        doc_id: {
+            idx: "Correct"
+            if sum(l == "Correct" for l in labels) >= min_correct_votes
+            else "Incorrect"
+            for idx, labels in triple_votes.items()
+        }
+        for doc_id, triple_votes in votes.items()
+    }
+
+
+def filter_triples(triples_path, judgement):
+    """Keep triples voted Correct.
+
+    Judgement keys are the triple's 0-based position, matching what
+    03_verify_or_eval.py writes.
     """
-    ≥ MIN_CORRECT_VOTES => Correct
-    else => Incorrect
-    """
-    final = {}
-
-    for doc_id, triple_votes in votes.items():
-        final[doc_id] = {}
-        for idx, labels in triple_votes.items():
-            correct_cnt = sum(l == "Correct" for l in labels)
-            final[doc_id][idx] = (
-                "Correct" if correct_cnt >= MIN_CORRECT_VOTES else "Incorrect"
-            )
-
-    return final
-
-
-# =========================
-#   FILTER TRIPLES
-# =========================
-def filter_triples(
-    triple_file: str,
-    final_judgement: Dict[str, Dict[str, str]],
-) -> Dict[str, List[dict]]:
-    with open(triple_file, "r", encoding="utf-8") as f:
-        triples = json.load(f)
-
-    filtered = {}
-
-    for item in triples:
-        for doc_id, triple_list in item.items():
-            if doc_id not in final_judgement:
+    kept = {}
+    for record in pipeline.read_records(triples_path):
+        for doc_id, triple_list in record.items():
+            if doc_id not in judgement:
                 continue
-
-            keep = []
-            for i, triple in enumerate(triple_list):
-                idx = str(i + 1)  # 注意：判断文件是 1-based
-                if final_judgement[doc_id].get(idx) == "Correct":
-                    keep.append(triple)
-
+            keep = [
+                triple
+                for i, triple in enumerate(triple_list)
+                if judgement[doc_id].get(str(i)) == "Correct"
+            ]
             if keep:
-                filtered[doc_id] = keep
-
-    return filtered
-
-
-def dict_to_list(data: Dict) -> List[dict]:
-    """
-    {doc_id: content} → [{doc_id: content}, ...]
-    """
-    return [{doc_id: content} for doc_id, content in data.items()]
-
-
-def ensure_parent_dir(filepath: str):
-    parent = os.path.dirname(filepath)
-    if parent:
-        os.makedirs(parent, exist_ok=True)
+                kept[doc_id] = keep
+    return kept
 
 
 def main():
-    # 1. load only common doc_ids & vote
-    votes = load_vote_files_intersection_by_docid(VOTE_FILES)
-    final_judgement_dict = majority_vote(votes)
+    args = parse_args()
 
-    # save final judgement
-    final_judgement_list = dict_to_list(final_judgement_dict)
-    ensure_parent_dir(FINAL_JUDGEMENT_OUT)
-    with open(FINAL_JUDGEMENT_OUT, "w", encoding="utf-8") as f:
-        json.dump(final_judgement_list, f, indent=2, ensure_ascii=False)
+    votes = load_votes(args.votes)
+    judgement = majority_vote(votes, args.min_correct_votes)
+    pipeline.write_records(
+        args.judgement_output, [{k: v} for k, v in judgement.items()]
+    )
 
-    # 2. filter triples
-    filtered_triples_dict = filter_triples(TRIPLE_FILE, final_judgement_dict)
+    kept = filter_triples(args.triples, judgement)
+    pipeline.write_records(args.verified_output, [{k: v} for k, v in kept.items()])
 
-    filtered_triples_list = dict_to_list(filtered_triples_dict)
-    ensure_parent_dir(FILTERED_TRIPLES_OUT)
-    with open(FILTERED_TRIPLES_OUT, "w", encoding="utf-8") as f:
-        json.dump(filtered_triples_list, f, indent=2, ensure_ascii=False)
-
-    print(f"Saved final judgement to {FINAL_JUDGEMENT_OUT}")
-    print(f"Saved filtered triples to {FILTERED_TRIPLES_OUT}")
+    print(f"Saved final judgement to {args.judgement_output}")
+    print(f"Saved filtered triples to {args.verified_output}")
+    print(f"Articles kept: {len(kept)}")
 
 
 if __name__ == "__main__":

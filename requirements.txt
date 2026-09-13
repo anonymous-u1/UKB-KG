@@ -1,7 +1,5 @@
 beautifulsoup4==4.14.3
-ipdb==0.13.13
 lxml==6.0.2
-markdown_to_json==2.1.2
 matplotlib==3.10.8
 neo4j==6.0.3
 numpy==2.4.3
@@ -12,6 +10,7 @@ pydantic==2.12.5
 scikit_learn==1.8.0
 scipy==1.17.1
 scispacy==0.6.2
+seaborn==0.13.2
 spacy==3.7.5
 tiktoken==0.11.0
 torch==2.6.0

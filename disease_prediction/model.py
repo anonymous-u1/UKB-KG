@@ -1,10 +1,11 @@
 import torch
 import torch.nn as nn
-import ipdb
 
-class nn_5layer(nn.Module):
+
+class NN5Layer(nn.Module):
     def __init__(self, feature_num, label_num, hidden_size):
         super().__init__()
+
         self.feature_num = feature_num
         self.label_num = label_num
         self.hidden_size = hidden_size
@@ -25,11 +26,16 @@ class nn_5layer(nn.Module):
         return x
 
     def initialize(self):
-        for i, m in enumerate(self.linears):
-            if isinstance(m, nn.Linear):
-                if i < len(self.linears) - 1:
-                    nn.init.kaiming_normal_(m.weight, nonlinearity='relu')
-                else:
-                    nn.init.kaiming_normal_(m.weight, nonlinearity='linear')
-                if m.bias is not None:
-                    nn.init.zeros_(m.bias)
+        """Initialize linear-layer weights and biases."""
+
+        for i, linear in enumerate(self.linears):
+            if i < len(self.linears) - 1:
+                nn.init.kaiming_normal_(
+                    linear.weight,
+                    nonlinearity="relu"
+                )
+            else:
+                nn.init.kaiming_normal_(linear.weight, nonlinearity='linear')
+
+            if linear.bias is not None:
+                nn.init.zeros_(linear.bias)

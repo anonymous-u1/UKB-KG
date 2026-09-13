@@ -31,6 +31,40 @@ The evaluation results must follow the exact order of the input triples, and mus
 ```
 """
 
+evaluation_table_prompt_structured = """# INSTRUCTION  
+--------------------
+You will be provided with one or more tables and a set of triples extracted from them. 
+Your task is to evaluate whether each triple is "Correct" or "Incorrect" based on the table content.  
+
+# EVALUATION_CRITERIA
+--------------------
+- Correct: The relationship expressed in the triple is clearly supported by the information in the table.
+- Incorrect: The relationship expressed in the triple is not supported by the information in the table.
+
+# INPUT_TABLE
+--------------------
+<<table>>
+
+# EXTRACTED_TRIPLES
+--------------------
+Each triple is structured as: [ head | relation | tail ]
+<<triples>>
+
+# RESPONSE_FORMAT 
+--------------------
+Evaluate each extracted triple ONE BY ONE based on the *EVALUATION_CRITERIA* and categorize it as "Correct" or "Incorrect." 
+The evaluation results must follow the exact order of the input triples, and must adhere to the following JSON schema:
+```json
+{
+  "Evaluations": [
+    {"Result": "Correct or Incorrect"},
+    {"Result": "Correct or Incorrect"},
+    ...
+  ]
+}
+```
+"""
+
 recall_evaluation_prompt_structured = """
 # INSTRUCTION
 --------------------

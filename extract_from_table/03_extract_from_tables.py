@@ -1,52 +1,43 @@
-import scispacy
-import spacy
-import os
-import io
-import sys
-import re
-import json
-import prompts
+"""Stage 3 (table): extract triples, or cohort baseline info, from tables.
+
+Two modes over the two buckets that 02_select_tables produced:
+
+  triples   relation tables -> triples, in the same record format as the text
+            pipeline, so they share the downstream filter/refine/verify stages
+  baseline  baseline tables -> structured study-cohort demographics
+"""
+
 import argparse
-import tiktoken
-from pydantic import BaseModel
-from llm.openai_chat import *
-from typing import Optional, List
-from pathlib import Path
+import inspect
+import io
+import os
+import sys
 import time
 
+import prompts
+from pydantic import BaseModel
+
+from llm.openai_chat import chat_structured
+from utils import pipeline
+from utils.pmc_xml import count_tokens
+
 import warnings
+
 warnings.filterwarnings("ignore", category=FutureWarning)
 
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 sys.stdout.reconfigure(line_buffering=True)
-nlp = spacy.load("en_core_sci_scibert")
-encoder = tiktoken.encoding_for_model('gpt-4o')
-
-
-def args_argument():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--mode', type=str, required=True)
-    parser.add_argument('--rel_save_path', type=str, required=True, help='Path to save the triples.')
-    parser.add_argument('--baseline_save_path', type=str, required=True, help='Path to save the baseline info.')
-    parser.add_argument('--rel_folder_dir', type=str, required=True, help='Path to the rel tables.')
-    parser.add_argument('--baseline_folder_dir', type=str, required=True, help='Path to the baseline tables.')
-    parser.add_argument('--llm', type=str, required=True)
-    parser.add_argument('--effort', type=str, required=True)
-    parser.add_argument('-c', '--chunk', type=int, required=True)
-    parser.add_argument('-n', '--number_of_chunk', type=int, required=True)
-    parser.add_argument('--chunk_size', type=int, required=True)
-    parser.add_argument('--get_triple_prompt', type=str, required=True)
-    parser.add_argument('--get_baseline_prompt', type=str, required=True)
-    args = parser.parse_args()
-    return args
 
 
 class TripleForm(BaseModel):
     Entity1: str
     Relation: str
     Entity2: str
+
+
 class TripleExtractionForm(BaseModel):
     Triples: list[TripleForm]
+
 
 class InfoForm(BaseModel):
     cohort_description: str
@@ -58,124 +49,112 @@ class InfoForm(BaseModel):
     racial_distribution: str
     educational_attainment: str
     employment_status: str
+
+
 class BaselineInfoForm(BaseModel):
     Cohorts: list[InfoForm]
-    
-    
-def get_triples(table_content):
-    try:
-        get_triple_prompt = getattr(prompts, args.get_triple_prompt).replace('<<tables>>', table_content)
-        response = chat_structured(args.llm, get_triple_prompt, TripleExtractionForm, args.effort)
-        tokens = encoder.encode(get_triple_prompt)
-        tokens_count = len(tokens)
 
-        triples = response['Triples']
-        new_triples = {}
-        if triples and len(triples) > 0:
-            for index, triple in enumerate(triples):
-                triple_key = f"triple{index}"
-                new_triples[triple_key] = {
-                    "head": {"name": triple['Entity1']},
-                    "relation": {"name": triple['Relation']},
-                    "tail": {"name": triple['Entity2']}
-                }
-            return new_triples, tokens_count
-        else:
+
+def parse_args():
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("--mode", required=True, choices=["triples", "baseline"])
+    p.add_argument("--table-dir", required=True, help="Selected tables for this mode.")
+    p.add_argument("--output", required=True)
+    p.add_argument("--llm", required=True)
+    p.add_argument("--effort", required=True)
+    p.add_argument("--shard", type=int, default=1)
+    p.add_argument("--num-shards", type=int, default=1)
+    p.add_argument("--get-triple-prompt", default="extract_triples_from_tables_structured")
+    p.add_argument("--get-baseline-prompt", default="extract_baseline_from_tables_structured")
+    p.add_argument("--flush-every", type=int, default=10)
+    return p.parse_args()
+
+
+def get_triples(table_content, args):
+    try:
+        prompt = getattr(prompts, args.get_triple_prompt).replace(
+            "<<tables>>", table_content
+        )
+        response = chat_structured(args.llm, prompt, TripleExtractionForm, args.effort)
+        tokens_count = count_tokens(prompt)
+
+        triples = response["Triples"]
+        if not triples:
             return None, None
+
+        return [
+            {
+                "head": {"name": t["Entity1"]},
+                "relation": {"name": t["Relation"]},
+                "tail": {"name": t["Entity2"]},
+            }
+            for t in triples
+        ], tokens_count
     except Exception as e:
         print(f"❌ {e}")
         print(inspect.currentframe().f_lineno)
         return None, None
 
 
-def get_baseline_info(table_content):
+def get_baseline_info(table_content, args):
     try:
-        get_baseline_prompt = getattr(prompts, args.get_baseline_prompt).replace('<<tables>>', table_content)
-        response = chat_structured(args.llm, get_baseline_prompt, BaselineInfoForm, args.effort)
+        prompt = getattr(prompts, args.get_baseline_prompt).replace(
+            "<<tables>>", table_content
+        )
+        response = chat_structured(args.llm, prompt, BaselineInfoForm, args.effort)
+        tokens_count = count_tokens(prompt)
 
-        tokens = encoder.encode(get_baseline_prompt)
-        tokens_count = len(tokens)
-
-        baseline_info = response['Cohorts']
-        if baseline_info and len(baseline_info) > 0:
-            return baseline_info, tokens_count
-        else:
+        baseline_info = response["Cohorts"]
+        if not baseline_info:
             return None, None
+        return baseline_info, tokens_count
     except Exception as e:
         print(f"❌ {e}")
         print(inspect.currentframe().f_lineno)
         return None, None
 
 
-def save_cache(cache_file, save_path):
-    with open(save_path, 'r', encoding='utf-8') as f:
-        data = json.load(f)
-        data.extend(cache_file)
-    with open(save_path, 'w', encoding='utf-8') as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
-
-
-def extract(save_path, folder_dir, file_names):
-    if not os.path.isfile(save_path):
-        with open(save_path, 'w', encoding='utf-8') as f:
-            f.write('[]')
-        print(f"create {save_path}.\n")
-        file_names_saved = []
-    else:
-        with open(save_path, 'r', encoding='utf-8') as f:
-            files = json.load(f)
-            file_names_saved = [next(iter(file)) for file in files] if files else []
+def extract(args, file_names):
+    done = pipeline.open_output(args.output)
 
     valid_articles = 0
     total_tokens = 0
-
-    cache_batch = []
-    save_dict = {}
-
+    batch = []
     start = time.time()
-    for i, file_name in enumerate(file_names, start=1):
+
+    for file_name in file_names:
+        # Key on the article, not the table file, so text and table triples merge.
         file_name_xml = file_name.replace(".txt", ".xml")
-        if file_name_xml in file_names_saved:
+        if file_name_xml in done:
             continue
-            
+
         print(file_name)
-        table_path = os.path.join(folder_dir, file_name)
-        with open(table_path, "r", encoding="utf-8") as f:
+        with open(os.path.join(args.table_dir, file_name), "r", encoding="utf-8") as f:
             table_content = f.read()
 
         if not table_content:
             continue
 
-        if args.mode == "triple":
-            triples, tokens_count = get_triples(table_content)
-            if triples:
-                save_dict[file_name_xml] = []
-                for triple in triples.values():
-                    save_dict[file_name_xml].append(triple)
+        if args.mode == "triples":
+            payload, tokens_count = get_triples(table_content, args)
+        else:
+            payload, tokens_count = get_baseline_info(table_content, args)
 
-                cache_batch.append(save_dict)
-                save_dict = {}
-                valid_articles += 1
-                total_tokens += tokens_count
-        elif args.mode == "baseline":
-            baseline_info, tokens_count = get_baseline_info(table_content)
-            if baseline_info:
-                cache_batch.append({file_name_xml: baseline_info})
-                valid_articles += 1
-                total_tokens += tokens_count
+        if not payload:
+            continue
 
-        if i % 10 == 0:
-            save_cache(cache_batch, save_path)
-            cache_batch = []
-            save_dict = {}
-            if valid_articles > 0:
-                print(f"Average tokens per valid table: {total_tokens / valid_articles:.2f}")
+        batch.append({file_name_xml: payload})
+        valid_articles += 1
+        total_tokens += tokens_count
 
-    if cache_batch:
-        save_cache(cache_batch, save_path)
+        if len(batch) >= args.flush_every:
+            pipeline.append_records(args.output, batch)
+            batch = []
+            print(f"Average tokens per valid table: {total_tokens / valid_articles:.2f}")
 
-    end = time.time()
-    runtime = (end - start) / 60
+    pipeline.append_records(args.output, batch)
+
+    runtime = (time.time() - start) / 60
     print("\n====================== Extraction Summary ======================")
     print(f"Total valid articles: {valid_articles}")
     print(f"Total tokens counted: {total_tokens}")
@@ -186,34 +165,16 @@ def extract(save_path, folder_dir, file_names):
 
 
 if __name__ == "__main__":
-    args = args_argument()
-    if args.mode == "triple":
-        save_path = args.rel_save_path
-        folder_dir = args.rel_folder_dir
-    elif args.mode == "baseline":
-        save_path = args.baseline_save_path
-        folder_dir = args.baseline_folder_dir
-    else:
-        raise ValueError("Unknown mode")
+    args = parse_args()
 
-    all_file_names = os.listdir(folder_dir)
-    all_file_names.sort()
-    print(f"Using LLM: {args.llm}")
+    all_file_names = sorted(f for f in os.listdir(args.table_dir) if f.endswith(".txt"))
+    file_names = pipeline.shard_items(all_file_names, args.shard, args.num_shards)
 
-    chunk_size = args.chunk_size
-    if args.chunk == 0:
-        file_names = all_file_names
-        save_path = save_path
-        print("File: all (no chunking)")
-    else:
-        start_idx = (args.chunk - 1) * chunk_size
-        end_idx = start_idx + chunk_size if args.chunk < args.number_of_chunk else None
-        print(f"File: {start_idx}-{'' if end_idx is None else end_idx}")
-        file_names = all_file_names[start_idx:end_idx]
+    print(f"Using LLM: {args.llm} (effort={args.effort}), mode: {args.mode}")
+    print(
+        f"Shard {args.shard}/{args.num_shards}: "
+        f"{len(file_names)} of {len(all_file_names)} table files"
+    )
+    print(f"Output: {args.output}")
 
-        suffix = f"_{(end_idx or len(all_file_names))}"
-        save_path = save_path.replace('.json', f'{suffix}.json')
-
-    print(f"Mode: {args.mode}. Total files: {len(file_names)}. Save path:{save_path}")
-
-    extract(save_path, folder_dir, file_names)
+    extract(args, file_names)

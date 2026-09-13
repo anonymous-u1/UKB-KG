@@ -16,12 +16,16 @@ elif [[ "$METHOD" == *"cot"* || "$METHOD" == *"none"* ]]; then
     NAME="${LLM}_${EFFORT}_${DATA}_${METHOD}_chunk-${CHUNK}"
 fi
 
+# The knowledge graph this run retrieves from: $SAVE_ROOT/$RUN_NAME of the
+# run_postprocess.sh run that built it.
+KG_DIR="save/sample"
+
 DATA_PATH="rag/data/${DATA}/test_set.json"
 SAVE_PATH="rag/save/${NAME}.json"
 PROMPT_PATH="rag/save/prompt/${NAME}.txt"
 RESPONSE_PATH="rag/save/response/${NAME}.txt"
-TRIPLE_CSV_PATH="save/csv/triples_gpt-5_minimal_filter1_refine_filter2_gpt-5verified_umlslinked98_bioscompleted_neo4j.csv"
-UKB_NODE_EMB_PATH="save/csv/triples_gpt-5_minimal_filter1_refine_filter2_gpt-5verified_umlslinked98_bioscompleted_node_emb.npz"
+TRIPLE_CSV_PATH="${KG_DIR}/csv/triples_with_attributes.csv"
+UKB_NODE_EMB_PATH="${KG_DIR}/csv/node_emb.npz"
 DATA_ENTITY_EMB_PATH="rag/data/${DATA}/test_set_entity_map_emb.npz"
 LOG="rag/log/${NAME}_$(date '+%m-%d-%H-%M').log"
 

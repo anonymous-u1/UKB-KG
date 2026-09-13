@@ -1,213 +1,158 @@
-import json
+"""Entity normalization, deduplication and semantic typing.
+
+Three steps, in this order:
+
+  1. Case unification (--mode ukb only). Mentions that differ only in case are
+     collapsed onto the most frequent variant, so "Type 2 Diabetes" and
+     "type 2 diabetes" become one node. The most frequent form is used rather
+     than lowercasing everything, to keep acronyms and gene symbols intact.
+  2. Deduplication of identical triples within an article.
+  3. Semantic typing. Every entity is assigned one of the semantic groups
+     by the classifier trained in entity_type_tag/, and each relation is typed
+     by its endpoint pair (e.g. "CHEM-DISO").
+
+BIOS-derived edges (--mode completion) skip step 1: their names come from the
+BIOS vocabulary and are already canonical.
+"""
+
+import argparse
 from collections import Counter, defaultdict
+
 from entity_type_tag.entity_type import EntityTypeClassifier
+from utils import pipeline
 
 
-def process_ukb(json_path, output_path, relabel_entity=False):
-    with open(json_path, "r", encoding="utf-8") as f:
-        data = json.load(f)
+def parse_args():
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("--input", required=True)
+    p.add_argument("--output", required=True)
+    p.add_argument(
+        "--mode",
+        required=True,
+        choices=["ukb", "completion"],
+        help="'ukb' for literature triples, 'completion' for BIOS-derived edges.",
+    )
+    p.add_argument("--model-dir", default="entity_type_tag/save/save_35w_256")
+    return p.parse_args()
 
-    # === Step 1. Unify triples that differ only in case ===
-    all_entities = []
-    for paper in data:
-        for pmc, triples in paper.items():
-            for tri in triples:
-                all_entities.append(tri["head"]["name"].strip())
-                all_entities.append(tri["tail"]["name"].strip())
 
-    counter = Counter(all_entities)
+def iter_triples(records):
+    for record in records:
+        for _, triples in record.items():
+            for triple in triples:
+                yield triple
 
-    group_dict = defaultdict(list)
-    for ent in counter.keys():
-        group_dict[ent.lower()].append(ent)
+
+def unify_case(records, label):
+    """Collapse case-only variants of an entity onto its most frequent form."""
+    counter = Counter()
+    for triple in iter_triples(records):
+        counter[triple["head"]["name"].strip()] += 1
+        counter[triple["tail"]["name"].strip()] += 1
+
+    groups = defaultdict(list)
+    for ent in counter:
+        groups[ent.lower()].append(ent)
 
     replace_map = {}
-    for lower_form, variants in group_dict.items():
+    for variants in groups.values():
         if len(variants) == 1:
             continue
-
-        best_form = max(variants, key=lambda x: counter[x])
+        best = max(variants, key=lambda x: counter[x])
         for v in variants:
-            replace_map[v] = best_form
+            replace_map[v] = best
 
-    print(f"[Unify - UKB] Total of {len(replace_map)} entity variant groups requiring uniformity were found.")
-
-    updated_data = []
-
-    for paper in data:
-        updated_paper = {}
-        for pmc, triples in paper.items():
-            updated_triples = []
-            for tri in triples:
-                h = tri["head"]["name"].strip()
-                t = tri["tail"]["name"].strip()
-                r = tri["relation"]["name"].strip()
-                tri["head"]["name"] = replace_map.get(h, h)
-                tri["tail"]["name"] = replace_map.get(t, t)
-                tri["relation"]["name"] = r
-                updated_triples.append(tri)
-            updated_paper[pmc] = updated_triples
-        updated_data.append(updated_paper)
-
-    print("[Unify - UKB] 示例替换映射（前10个）:")
+    print(f"[Unify - {label}] Found {len(replace_map)} entity variants to unify.")
+    print(f"[Unify - {label}] Example replacements (first 10):")
     for k, v in list(replace_map.items())[:10]:
         print(f"  {k} → {v}")
 
-    # === Step 2. PMC internal triple deduplication ===
-    total_triples_before = 0
-    total_triples_after = 0
-    deduped_data = []
+    for triple in iter_triples(records):
+        for role in ("head", "tail"):
+            name = triple[role]["name"].strip()
+            triple[role]["name"] = replace_map.get(name, name)
+        triple["relation"]["name"] = triple["relation"]["name"].strip()
 
-    for data_point in updated_data:
-        pmc, triples = next(iter(data_point.items()))
-        total_triples_before += len(triples)
+    return records
 
-        seen = set()
-        unique_triples = []
-        for tri in triples:
-            key = (
-                tri["head"]["name"].strip(),
-                tri["relation"]["name"].strip(),
-                tri["tail"]["name"].strip(),
-            )
-            if key not in seen:
-                seen.add(key)
-                unique_triples.append(tri)
-        total_triples_after += len(unique_triples)
 
-        deduped_data.append({pmc: unique_triples})
+def deduplicate(records, label):
+    """Drop repeated (head, relation, tail) within each article."""
+    before = after = 0
+    deduped = []
 
-    print(f"[Deduplication - UKB] Total PMC entries: {len(deduped_data)}")
-    print(f"[Deduplication - UKB] Total triples before deduplication: {total_triples_before}")
-    print(f"[Deduplication - UKB] Total triples after deduplication:  {total_triples_after}")
-    print(f"[Deduplication - UKB] Total duplicates removed: {total_triples_before - total_triples_after}")
-
-    # === Step 3. entity typing ===
-    stats = defaultdict(set)
-
-    if relabel_entity:
-        clf = EntityTypeClassifier(model_dir="entity_type_tag/save/save_35w_256")
-
-        entity_set = set()
-        for paper in deduped_data:
-            for _, triples in paper.items():
-                for tri in triples:
-                    entity_set.add(tri["head"]["name"])
-                    entity_set.add(tri["tail"]["name"])
-
-        entity_list = list(entity_set)
-        entity2type = clf.predict_dict(entity_list)
-
-        for paper in deduped_data:
-            for _, triples in paper.items():
-                for tri in triples:
-                    h = tri["head"]["name"]
-                    t = tri["tail"]["name"]
-                    tri["head"]["type"] = entity2type[h]
-                    tri["tail"]["type"] = entity2type[t]
-                    tri["relation"]["type"] = f"{entity2type[h]}-{entity2type[t]}"
-
-                    stats[entity2type[h]].add(h)
-                    stats[entity2type[t]].add(t)
-
-        print("[Typing - UKB] === Entity count per class for UKB Triples ===")
-        for k, v in stats.items():
-            print(k, len(v))
-
-        entity_to_types = defaultdict(set)
-        for ent, typ in entity2type.items():
-            entity_to_types[ent].add(typ)
-
-        conflicts = {e: t for e, t in entity_to_types.items() if len(t) > 1}
-        print(f"[Typing - UKB] Entities with multiple types: {len(conflicts)}")
-
-    with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(deduped_data, f, ensure_ascii=False, indent=2)
-
-    print(f"✅ Save updated file to {output_path}")
-        
-
-def process_completion(input_path, output_path):
-    clf = EntityTypeClassifier(model_dir="entity_type_tag/save/save_35w_256")
-
-    with open(input_path, "r", encoding="utf-8") as f:
-        data = json.load(f)
-
-    # === Step 1. Triple deduplication ===
-    total_triples_before = 0
-    total_triples_after = 0
-    deduped_data = []
-
-    for data_point in data:
-        pmc, triples = next(iter(data_point.items()))
-        total_triples_before += len(triples)
+    for record in records:
+        key, triples = next(iter(record.items()))
+        before += len(triples)
 
         seen = set()
-        unique_triples = []
-        for tri in triples:
-            key = (
-                tri["head"]["name"].strip(),
-                tri["relation"]["name"].strip(),
-                tri["tail"]["name"].strip(),
+        unique = []
+        for triple in triples:
+            triple_key = (
+                triple["head"]["name"].strip(),
+                triple["relation"]["name"].strip(),
+                triple["tail"]["name"].strip(),
             )
-            if key not in seen:
-                seen.add(key)
-                unique_triples.append(tri)
-        total_triples_after += len(unique_triples)
+            if triple_key not in seen:
+                seen.add(triple_key)
+                unique.append(triple)
 
-        deduped_data.append({pmc: unique_triples})
+        after += len(unique)
+        deduped.append({key: unique})
 
-    print(f"[Deduplication - Completion] Total PMC entries: {len(deduped_data)}")
-    print(f"[Deduplication - Completion] Total triples before deduplication: {total_triples_before}")
-    print(f"[Deduplication - Completion] Total triples after deduplication:  {total_triples_after}")
-    print(f"[Deduplication - Completion] Total duplicates removed: {total_triples_before - total_triples_after}")
+    print(f"[Deduplication - {label}] Total entries: {len(deduped)}")
+    print(f"[Deduplication - {label}] Triples before: {before}")
+    print(f"[Deduplication - {label}] Triples after:  {after}")
+    print(f"[Deduplication - {label}] Duplicates removed: {before - after}")
+    return deduped
 
-    # === Step 2. Entity typing ===
+
+def assign_types(records, clf, label):
+    """Type every entity once, then stamp the types onto every triple."""
+    entity_set = set()
+    for triple in iter_triples(records):
+        entity_set.add(triple["head"]["name"])
+        entity_set.add(triple["tail"]["name"])
+
+    entity_list = sorted(entity_set)
+    print(f"[Typing - {label}] Classifying {len(entity_list)} unique entities ...")
+    entity2type = clf.predict_dict(entity_list)
+
     stats = defaultdict(set)
+    for triple in iter_triples(records):
+        h = triple["head"]["name"]
+        t = triple["tail"]["name"]
+        triple["head"]["type"] = entity2type[h]
+        triple["tail"]["type"] = entity2type[t]
+        triple["relation"]["type"] = f"{entity2type[h]}-{entity2type[t]}"
+        stats[entity2type[h]].add(h)
+        stats[entity2type[t]].add(t)
 
-    for paper in deduped_data:
-        for _, triples in paper.items():
-            entity_set = set()
-            for tri in triples:
-                entity_set.add(tri["head"]["name"])
-                entity_set.add(tri["tail"]["name"])
+    print(f"[Typing - {label}] === Entity count per class ===")
+    for k in sorted(stats):
+        print(f"  {k}: {len(stats[k])}")
 
-            entity_list = list(entity_set)
-            entity2type = clf.predict_dict(entity_list)
-
-            for tri in triples:
-                h = tri["head"]["name"]
-                t = tri["tail"]["name"]
-                tri["head"]["type"] = entity2type[h]
-                tri["tail"]["type"] = entity2type[t]
-                tri["relation"]["type"] = f"{entity2type[h]}-{entity2type[t]}"
-
-                stats[entity2type[h]].add(h)
-                stats[entity2type[t]].add(t)
-
-    print("[Typing - Completion] === Entity count per class for Completion Triples===")
-    for k, v in stats.items():
-        print(k, len(v))
-
-    entity_to_types = defaultdict(set)
-    for ent, typ in entity2type.items():
-        entity_to_types[ent].add(typ)
-
-    conflicts = {e: t for e, t in entity_to_types.items() if len(t) > 1}
-    print(f"[Typing - Completion] Entities with multiple types: {len(conflicts)}")
-
-    with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(deduped_data, f, ensure_ascii=False, indent=2)
+    return records
 
 
-ukb_input_path = 'save/save_sample/triple/triples_gpt-5_minimal_filter1_refine_filter2_gpt-5verified_umlslinked98.json'
-ukb_output_path = ukb_input_path.replace(".json", "_processed.json")
-completion_input_path = 'save/save_bios/triple/triples_gpt-5_minimal_filter1_refine_filter2_gpt-5verified_umlslinked98_completion.json'
-completion_output_path = completion_input_path.replace(".json", "_typed.json")
-# ukb_input_path = 'save/save_sample/triple/triples_gpt-5_minimal_wo_ner_filter1_refine_filter2_gpt-5verified_umlslinked98.json'
-# ukb_output_path = ukb_input_path.replace(".json", "_processed.json")
+def main():
+    args = parse_args()
+    label = "UKB" if args.mode == "ukb" else "Completion"
+    print(f"Mode: {args.mode}\nInput:  {args.input}\nOutput: {args.output}")
 
-# for ukb triples
-process_ukb(ukb_input_path, ukb_output_path, relabel_entity=True)
-# for completion triples
-process_completion(completion_input_path, completion_output_path)
+    records = pipeline.read_records(args.input)
+
+    if args.mode == "ukb":
+        records = unify_case(records, label)
+
+    records = deduplicate(records, label)
+
+    clf = EntityTypeClassifier(model_dir=args.model_dir)
+    records = assign_types(records, clf, label)
+
+    pipeline.write_records(args.output, records)
+    print(f"✅ Saved processed file to {args.output}")
+
+
+if __name__ == "__main__":
+    main()

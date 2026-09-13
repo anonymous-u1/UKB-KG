@@ -1,3 +1,17 @@
+"""Build the entity-typing training set from UMLS.
+
+Maps every English UMLS term onto one of the semantic groups listed in
+umls/SemGroups_UKB.txt, then downsamples to N_SAMPLE_PER_GROUP per group.
+
+MRSTY.RRF and MRCONSO.RRF are not redistributed here: UMLS requires a UTS
+licence. Place them under entity_type_tag/umls/ before running. See the Data
+Requirements section of the README.
+
+The TAG in the output filenames records the per-group sample size, and must
+match the filenames in 02_train.sh.
+"""
+
+import os
 import random
 from collections import defaultdict, Counter
 from tqdm import tqdm
@@ -6,17 +20,28 @@ RANDOM_SEED = 42
 random.seed(RANDOM_SEED)
 
 # 1. Config
-MRSTY_PATH = "entity_type_tag/umls/MRSTY.RRF"
-MRCONSO_PATH = "entity_type_tag/umls/MRCONSO.RRF"
-SEMGROUP_PATH = "entity_type_tag/umls/SemGroups_UKB.txt"
-
-OUT_DIR = "entity_type_tag/data"
-TRAIN_PATH = f"{OUT_DIR}/train_data.txt"
-EVAL_PATH = f"{OUT_DIR}/eval_data.txt"
-TEST_PATH = f"{OUT_DIR}/test_data.txt"
-ALL_PATH = f"{OUT_DIR}/all_data.txt"
+UMLS_DIR = "entity_type_tag/umls"
+MRSTY_PATH = f"{UMLS_DIR}/MRSTY.RRF"
+MRCONSO_PATH = f"{UMLS_DIR}/MRCONSO.RRF"
+SEMGROUP_PATH = f"{UMLS_DIR}/SemGroups_UKB.txt"
 
 N_SAMPLE_PER_GROUP = 350000
+
+OUT_DIR = "entity_type_tag/data"
+TAG = "35w"  # 350k per group; keep in sync with N_SAMPLE_PER_GROUP and 02_train.sh
+TRAIN_PATH = f"{OUT_DIR}/train_data_{TAG}.txt"
+EVAL_PATH = f"{OUT_DIR}/eval_data_{TAG}.txt"
+TEST_PATH = f"{OUT_DIR}/test_data_{TAG}.txt"
+ALL_PATH = f"{OUT_DIR}/all_data_{TAG}.txt"
+
+os.makedirs(OUT_DIR, exist_ok=True)
+
+for _required in (MRSTY_PATH, MRCONSO_PATH, SEMGROUP_PATH):
+    if not os.path.isfile(_required):
+        raise FileNotFoundError(
+            f"{_required} not found. UMLS files must be obtained separately; "
+            "see README > Data Requirements."
+        )
 
 PRINT_TRUE_MULTI_GROUP_EXAMPLES = True
 N_PRINT_TRUE_MULTI_GROUP = 10

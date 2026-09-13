@@ -1,0 +1,27 @@
+{
+  "seed": 20260908,
+  "n_phecodes": 1560,
+  "embedding_dim": 1000,
+  "n_latent_factors": 24,
+  "mapped_phecodes": 1504,
+  "splits": {
+    "train": {
+      "n_subjects": 500,
+      "codes_per_subject": 11.53,
+      "labels_per_subject": 5.21,
+      "labels_with_positives": 679
+    },
+    "val": {
+      "n_subjects": 200,
+      "codes_per_subject": 11.17,
+      "labels_per_subject": 5.17,
+      "labels_with_positives": 421
+    },
+    "test": {
+      "n_subjects": 200,
+      "codes_per_subject": 12.01,
+      "labels_per_subject": 5.43,
+      "labels_with_positives": 446
+    }
+  }
+}

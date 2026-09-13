@@ -1,53 +1,87 @@
-import io
-import os
-import sys
-import json
-import re
+"""Stage 2: filter and revise candidate triples.
+
+Three modes, run in this order:
+
+  llm_filter   drop triples the LLM judges not to express a biomedical relation
+  refine       let the LLM rewrite heads/relations/tails into canonical form
+  rule_filter  apply deterministic surface-form rules (no LLM calls)
+
+The same script handles both text- and table-derived triples: the record format
+is identical, so only --input/--output differ.
+"""
+
 import argparse
-import tiktoken
-import prompts
-from llm.openai_chat import *
-from pathlib import Path
-from pydantic import BaseModel
-import time
 import inspect
+import io
+import re
+import sys
+import time
+
+import prompts
+from pydantic import BaseModel
+
+from llm.openai_chat import chat_structured
+from utils import pipeline
+from utils.pmc_xml import count_tokens
 
 import warnings
+
 warnings.filterwarnings("ignore", category=FutureWarning)
 
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 sys.stdout.reconfigure(line_buffering=True)
-encoder = tiktoken.encoding_for_model('gpt-4o')
+
+LLM_MODES = ("llm_filter", "refine")
+
 
 class TripleForm(BaseModel):
     Entity1: str
     Relation: str
     Entity2: str
+
+
 class TripleListForm(BaseModel):
     Triples: list[TripleForm]
 
-def args_argument():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('-p', '--triple_path', type=str, required=True)
-    parser.add_argument('-m', '--mode', type=str, required=True)
-    parser.add_argument('--llm', type=str, required=True)
-    parser.add_argument('--effort', type=str, required=True)
-    parser.add_argument('--filter_prompt', type=str, required=True)
-    parser.add_argument('--refine_prompt', type=str, required=True)
-    args = parser.parse_args()
+
+def parse_args():
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument("--input", required=True)
+    p.add_argument("--output", required=True)
+    p.add_argument("--mode", required=True, choices=["llm_filter", "refine", "rule_filter"])
+    p.add_argument("--llm", default="")
+    p.add_argument("--effort", default="")
+    p.add_argument("--filter-prompt", default="triple_filter_prompt_structured")
+    p.add_argument("--refine-prompt", default="triple_refine_prompt_structured")
+    p.add_argument("--shard", type=int, default=1)
+    p.add_argument("--num-shards", type=int, default=1)
+    p.add_argument("--flush-every", type=int, default=10)
+    args = p.parse_args()
+    if args.mode in LLM_MODES and not args.llm:
+        p.error(f"--llm is required for mode {args.mode}")
+    if args.mode == "rule_filter" and args.num_shards > 1:
+        # rule_filter makes no API calls and reports corpus-level counts, so it
+        # is always run over the whole file at once.
+        p.error("rule_filter does not support sharding")
     return args
+
+
+# ------------------------------------------------------- rule_filter mode
 
 
 def count_words(s: str) -> int:
     return len(re.split(r"[ _]+", s.strip()))
 
+
 def is_pure_digit_or_symbol(s: str) -> bool:
     s = s.strip()
     if not s:
         return True
-    return re.search(r'[A-Za-z]', s) is None
+    return re.search(r"[A-Za-z]", s) is None
+
 
 def should_exclude_triple(head: str, tail: str, relation: str) -> bool:
+    """Surface-form rules for triples that cannot be valid KG edges."""
     if not head.strip() or not tail.strip() or not relation.strip():
         return True
     if head == tail:
@@ -71,155 +105,129 @@ def safe_get_str(d: dict, *keys) -> str:
     return str(d).strip() if d is not None else ""
 
 
-def filter_triples(input_path, output_path):
-    with open(input_path, 'r', encoding='utf-8') as f:
-        data_points = json.load(f)
+def rule_filter(input_path, output_path):
+    records = pipeline.read_records(input_path)
 
-    filtered_data = []
+    filtered = []
     total_triples = kept_triples = 0
-    total_papers = len(data_points)
     kept_papers = 0
 
-    for data_point in data_points:
-        key, triples = next(iter(data_point.items()))
-        valid_triples = []
+    for record in records:
+        key, triples = next(iter(record.items()))
+        valid = []
 
         for triple in triples:
-            head = safe_get_str(triple, 'head', 'name')
-            tail = safe_get_str(triple, 'tail', 'name')
-            relation = safe_get_str(triple, 'relation', 'name')
+            head = safe_get_str(triple, "head", "name")
+            tail = safe_get_str(triple, "tail", "name")
+            relation = safe_get_str(triple, "relation", "name")
             total_triples += 1
 
             if not should_exclude_triple(head, tail, relation):
-                valid_triples.append(triple)
+                valid.append(triple)
                 kept_triples += 1
 
-        if valid_triples:
-            filtered_data.append({key: valid_triples})
+        if valid:
+            filtered.append({key: valid})
             kept_papers += 1
 
-    with open(output_path, 'w', encoding='utf-8') as f:
-        json.dump(filtered_data, f, indent=2, ensure_ascii=False)
+    pipeline.write_records(output_path, filtered)
 
-    print(f"=== Filtering complete. ===")
-    print(f"Total papers:  {total_papers:,}")
+    print("=== Filtering complete. ===")
+    print(f"Total papers:  {len(records):,}")
     print(f"Kept papers:   {kept_papers:,}")
     print(f"Total triples: {total_triples:,}")
     print(f"Kept triples:  {kept_triples:,}")
     print(f"Filtered file saved to: {output_path}")
-    
-    
-def save_cache(cache_file, save_path):
-    with open(save_path, 'r', encoding='utf-8') as f:
-        data = json.load(f)
-        data.extend(cache_file)
-    with open(save_path, 'w', encoding='utf-8') as f:
-        json.dump(data, f, indent=2, ensure_ascii=False)
 
 
-def get_triples(triples_text, mode):
+# ---------------------------------------------------------- LLM modes
+
+
+def call_llm(triples_text, mode, args):
+    """Returns (triples, prompt_tokens) or (None, None)."""
     try:
-        if mode == "refine":
-            llm_prompt = getattr(prompts, args.refine_prompt).replace('<<triples>>', triples_text)
-        elif mode == "llm_filter":
-            llm_prompt = getattr(prompts, args.filter_prompt).replace('<<triples>>', triples_text)
-        response = chat_structured(args.llm, llm_prompt, TripleListForm, args.effort)
-        tokens = encoder.encode(llm_prompt)
-        tokens_count = len(tokens)
-        print(f'Prompt has {tokens_count} tokens')
+        prompt_name = args.refine_prompt if mode == "refine" else args.filter_prompt
+        prompt = getattr(prompts, prompt_name).replace("<<triples>>", triples_text)
+        response = chat_structured(args.llm, prompt, TripleListForm, args.effort)
 
-        triples = response['Triples']
-        new_triples = {}
-        if triples and len(triples) > 0:
-            for index, triple in enumerate(triples):
-                triple_key = f"triple{index}"
-                new_triples[triple_key] = {
-                    "head": {"name": triple['Entity1']},
-                    "relation": {"name": triple['Relation']},
-                    "tail": {"name": triple['Entity2']}
-                }
-            return new_triples, tokens_count
-        else:
+        tokens_count = count_tokens(prompt)
+        print(f"Prompt has {tokens_count} tokens")
+
+        triples = response["Triples"]
+        if not triples:
             return None, None
+
+        return [
+            {
+                "head": {"name": t["Entity1"]},
+                "relation": {"name": t["Relation"]},
+                "tail": {"name": t["Entity2"]},
+            }
+            for t in triples
+        ], tokens_count
     except Exception as e:
         print(f"❌ {e}")
         print(inspect.currentframe().f_lineno)
         return None, None
 
 
-def refine(input_path, output_path, mode):
-    if not os.path.isfile(output_path):
-        with open(output_path, 'w', encoding='utf-8') as f:
-            f.write('[]')
-        print(f"Created {output_path}.\n")
-        refined_files = []
-    else:
-        with open(output_path, 'r', encoding='utf-8') as f:
-            saved_data = json.load(f)
-            refined_files = [next(iter(data)) for data in saved_data] if saved_data else []
+def render_triples(triples) -> str:
+    return "".join(
+        f"{j + 1}. [ {t['head']['name']} | {t['relation']['name']} | {t['tail']['name']} ]\n"
+        for j, t in enumerate(triples)
+    )
 
-    with open(input_path, "r", encoding='utf-8') as f:
-        triples_data = json.load(f)
-    print(f"Loaded {len(triples_data)} triple files from {input_path}")
+
+def llm_filter_or_refine(input_path, output_path, mode, args):
+    done = pipeline.open_output(output_path)
+
+    all_records = pipeline.read_records(input_path)
+    records = pipeline.shard_items(all_records, args.shard, args.num_shards)
+    print(f"Loaded {len(all_records)} triple records from {input_path}")
+    print(
+        f"Shard {args.shard}/{args.num_shards}: {len(records)} articles in this shard"
+    )
 
     valid_articles = 0
-    total_triples_count = 0
-    total_refined_triples_count = 0
-    total_tokens = 0
-
-    cache_batch = []
-    save_dict = {}
-
+    total_in = total_out = total_tokens = 0
+    batch = []
     start = time.time()
-    for i, triples_dict in enumerate(triples_data, start=1):
-        file_name = next(iter(triples_dict.keys()))
-        if file_name in refined_files:
+
+    for record in records:
+        file_name = next(iter(record.keys()))
+        if file_name in done:
             continue
 
         print(f"[{mode}]: {file_name}")
-        triples = triples_dict[file_name]
-        triples_count = len(triples)
-        total_triples_count += triples_count
+        triples = record[file_name]
+        total_in += len(triples)
 
-        triples_text = ""
-        for j, triple in enumerate(triples):
-            triples_text += str(j + 1) + ". [ " + triple["head"]["name"] + " | " + triple["relation"][
-                "name"] + " | " + triple["tail"]["name"] + " ]\n"
-
+        triples_text = render_triples(triples)
         if not triples_text:
             continue
 
-        refined_triples, tokens_count = get_triples(triples_text, mode)
+        new_triples, tokens_count = call_llm(triples_text, mode, args)
+        if not new_triples:
+            continue
 
-        if refined_triples:
-            save_dict[file_name] = []
-            for triple in refined_triples.values():
-                save_dict[file_name].append(triple)
+        batch.append({file_name: new_triples})
+        valid_articles += 1
+        total_tokens += tokens_count
+        total_out += len(new_triples)
+        print(f"Refined {len(new_triples)}/{len(triples)} triples for {file_name}")
 
-            cache_batch.append(save_dict)
-            save_dict = {}
-            valid_articles += 1
-            total_tokens += tokens_count
-            refined_triples_count = len(refined_triples)
-            total_refined_triples_count += refined_triples_count
-            print(f"Refined {refined_triples_count}/{triples_count} triples for {file_name}")
+        if len(batch) >= args.flush_every:
+            pipeline.append_records(output_path, batch)
+            batch = []
+            print(f"Average tokens per valid article: {total_tokens / valid_articles:.2f}")
 
-        if i % 10 == 0:
-            save_cache(cache_batch, output_path)
-            cache_batch = []
-            save_dict = {}
-            if valid_articles > 0:
-                print(f"Average tokens per valid table: {total_tokens / valid_articles:.2f}")
+    pipeline.append_records(output_path, batch)
 
-    if cache_batch:
-        save_cache(cache_batch, output_path)
-
-    end = time.time()
-    runtime = (end - start) / 60
-    print("\n====================== Verification Summary ======================")
+    runtime = (time.time() - start) / 60
+    print(f"\n====================== {mode} Summary ======================")
     print(f"Total valid articles: {valid_articles}")
-    print(f"Total triples: {total_triples_count}")
-    print(f"Total refined triples: {total_refined_triples_count}")
+    print(f"Total triples in:  {total_in}")
+    print(f"Total triples out: {total_out}")
     print(f"Total tokens counted: {total_tokens}")
     if valid_articles > 0:
         print(f"Average tokens per valid article: {total_tokens / valid_articles:.2f}")
@@ -228,24 +236,10 @@ def refine(input_path, output_path, mode):
 
 
 if __name__ == "__main__":
-    args = args_argument()
-    triple_path = args.triple_path
-    mode = args.mode
+    args = parse_args()
+    print(f"Mode: {args.mode}\nInput:  {args.input}\nOutput: {args.output}")
 
-    if mode == 'llm_filter':
-        input_path = triple_path
-        output_path = input_path.replace('.json', f'_filter1.json')
-    elif mode == 'refine':
-        input_path = triple_path.replace('.json', f'_filter1.json')
-        output_path = input_path.replace('.json', f'_refine.json')
-    elif mode == 'rule_filter':
-        input_path = triple_path.replace('.json', f'_filter1_refine.json')
-        output_path = input_path.replace('.json', f'_filter2.json')
+    if args.mode == "rule_filter":
+        rule_filter(args.input, args.output)
     else:
-        raise Exception(f"Unrecognized mode: {mode}")
-    print(f"Input Path: {input_path}\nOutput Path: {output_path}")
-
-    if mode == 'rule_filter':
-        filter_triples(input_path, output_path)
-    else:
-        refine(input_path, output_path, mode)
+        llm_filter_or_refine(args.input, args.output, args.mode, args)
